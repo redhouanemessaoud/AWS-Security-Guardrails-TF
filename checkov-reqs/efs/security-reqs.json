@@ -1,0 +1,26 @@
+[
+    {
+        "ID": "Efs-001",
+        "name": "EFS access points should enforce a root directory",
+        "cloudProvider": "AWS",
+        "service name": "efs"
+    },
+    {
+        "ID": "Efs-002",
+        "name": "EFS access points should enforce a user identity",
+        "cloudProvider": "AWS",
+        "service name": "efs"
+    },
+    {
+        "ID": "Efs-003",
+        "name": "Ensure EFS is securely encrypted",
+        "cloudProvider": "AWS",
+        "service name": "efs"
+    },
+    {
+        "ID": "Efs-004",
+        "name": "Ensure resource is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "efs"
+    }
+]

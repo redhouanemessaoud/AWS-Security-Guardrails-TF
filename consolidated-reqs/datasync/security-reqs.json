@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "datasync:001",
+    "name": "Enable CloudWatch Logging for DataSync Tasks",
+    "description": "Ensure that all AWS DataSync tasks have CloudWatch logging enabled by configuring the CloudWatchLogGroupArn property. This allows for comprehensive monitoring and troubleshooting of data transfer activities.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "datasync:002",
+    "name": "Use AWS KMS Customer Managed Key for DataSync Encryption",
+    "description": "Configure DataSync tasks to use AWS Key Management Service (KMS) Customer Managed Keys (CMKs) for encryption of data in transit and at rest. This provides enhanced control and auditing capabilities for data protection.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "datasync:003",
+    "name": "Restrict DataSync Task Access to Specific VPC Endpoints",
+    "description": "Configure DataSync tasks to use specific VPC endpoints for data transfer, restricting network access and enhancing security. This ensures that data transfer occurs only through designated and controlled network paths.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "datasync:004",
+    "name": "Implement Least Privilege Access for DataSync Tasks",
+    "description": "Ensure that IAM roles associated with DataSync tasks follow the principle of least privilege, granting only the necessary permissions required for the specific data transfer operations.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "datasync:005",
+    "name": "Enable Integrity Verification for DataSync Transfers",
+    "description": "Configure DataSync tasks to perform integrity checks during data transfer by enabling the 'Verify Data' option. This ensures that the data transferred matches the source data, maintaining data integrity.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "datasync:006",
+    "name": "Use HTTPS for DataSync Connections",
+    "description": "Ensure that all DataSync connections use HTTPS (TLS) for secure communication. This applies to connections with storage systems, file systems, and object storage locations.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "datasync:007",
+    "name": "Implement Task-Level Filters for DataSync",
+    "description": "Configure appropriate task-level filters for DataSync tasks to ensure that only necessary and authorized data is transferred. This helps in maintaining data security and reduces the risk of unauthorized data exposure.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "datasync:008",
+    "name": "Enable AWS CloudTrail for DataSync API Activity Monitoring",
+    "description": "Ensure that AWS CloudTrail is configured to capture all API activities related to DataSync operations. This provides a comprehensive audit trail for security analysis, resource change tracking, and compliance auditing.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "datasync:009",
+    "name": "Implement Regular Review of DataSync Task Configurations",
+    "description": "Establish a process for regular review and audit of DataSync task configurations, including access permissions, encryption settings, and network configurations. This helps maintain the security posture and identifies any deviations from security best practices.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "datasync:010",
+    "name": "Use Secure Authentication Methods for DataSync Tasks",
+    "description": "Ensure that DataSync tasks use secure authentication methods appropriate for the source and destination locations. For example, use IAM roles for AWS services, and secure protocols like SMB encryption or NFS Kerberos for on-premises file systems.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

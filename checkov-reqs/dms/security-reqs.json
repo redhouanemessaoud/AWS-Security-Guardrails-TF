@@ -1,0 +1,38 @@
+[
+    {
+        "ID": "Dms-001",
+        "name": "Ensure AWS Database Migration Service endpoints have SSL configured",
+        "cloudProvider": "AWS",
+        "service name": "dms"
+    },
+    {
+        "ID": "Dms-002",
+        "name": "Ensure DMS endpoint uses Customer Managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "dms"
+    },
+    {
+        "ID": "Dms-003",
+        "name": "DMS replication instance should not be publicly accessible",
+        "cloudProvider": "AWS",
+        "service name": "dms"
+    },
+    {
+        "ID": "Dms-004",
+        "name": "Ensure DMS replication instance gets all minor upgrade automatically",
+        "cloudProvider": "AWS",
+        "service name": "dms"
+    },
+    {
+        "ID": "Dms-005",
+        "name": "Ensure DMS replication instance is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "dms"
+    },
+    {
+        "ID": "Dms-006",
+        "name": "Ensure DMS S3 uses Customer Managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "dms"
+    }
+]

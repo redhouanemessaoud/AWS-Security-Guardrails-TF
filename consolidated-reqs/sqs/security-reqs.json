@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "sqs:001",
+    "name": "Enable Server-Side Encryption with AWS KMS for SQS Queues",
+    "description": "Ensure that all SQS queues have server-side encryption enabled using AWS Key Management Service (KMS) Customer Managed Keys (CMKs). This provides an additional layer of data protection for messages in transit and at rest.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sqs:002",
+    "name": "Restrict SQS Queue Access to Specific AWS Accounts or Services",
+    "description": "Ensure that SQS queue policies restrict access to only specified AWS accounts, IAM principals, or AWS services. This helps prevent unauthorized access to the queue and its messages.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "sqs:003",
+    "name": "Implement Least Privilege Access for SQS Queues",
+    "description": "Ensure that IAM policies and SQS queue policies follow the principle of least privilege, granting only the necessary permissions to authorized entities. Avoid using wildcard (*) permissions in queue policies.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "sqs:004",
+    "name": "Enable Dead-Letter Queues for SQS",
+    "description": "Configure Dead-Letter Queues (DLQs) for SQS queues to capture and isolate messages that fail to be processed. This helps in troubleshooting and ensures that no messages are lost due to processing failures.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "sqs:005",
+    "name": "Implement SQS Queue Access Logging",
+    "description": "Enable CloudWatch Logs for SQS to track and monitor queue access and usage patterns. This aids in security analysis, auditing, and troubleshooting.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "sqs:006",
+    "name": "Use VPC Endpoints for SQS Access",
+    "description": "Configure VPC endpoints for SQS to enable secure, private communication between VPCs and SQS without traversing the public internet. This enhances security and reduces data transfer costs.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "sqs:007",
+    "name": "Implement Message Retention Period for SQS Queues",
+    "description": "Set an appropriate message retention period for SQS queues to ensure messages are not stored indefinitely. This helps in managing storage costs and adhering to data retention policies.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "sqs:008",
+    "name": "Enable Server-Side Encryption in Transit for SQS",
+    "description": "Ensure that all communication with SQS queues uses HTTPS (TLS) to encrypt data in transit. This protects the confidentiality and integrity of messages as they travel between clients and SQS.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sqs:009",
+    "name": "Implement SQS Queue Tagging",
+    "description": "Apply relevant tags to SQS queues for better resource organization, cost allocation, and access control. Use tags to identify critical queues that require additional security measures.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "sqs:010",
+    "name": "Configure SQS Queue Alarms",
+    "description": "Set up CloudWatch alarms for SQS queues to monitor and alert on metrics such as ApproximateNumberOfMessagesVisible, ApproximateAgeOfOldestMessage, and NumberOfMessagesSent. This helps in detecting abnormal queue behavior or potential security issues.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  }
+]

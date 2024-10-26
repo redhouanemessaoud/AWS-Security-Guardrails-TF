@@ -1,0 +1,20 @@
+[
+    {
+        "ID": "Autoscaling-001",
+        "name": "Autoscaling groups should supply tags to launch configurations",
+        "cloudProvider": "AWS",
+        "service name": "autoscaling"
+    },
+    {
+        "ID": "Autoscaling-002",
+        "name": "Ensure EC2 Auto Scaling groups use EC2 launch templates",
+        "cloudProvider": "AWS",
+        "service name": "autoscaling"
+    },
+    {
+        "ID": "Autoscaling-003",
+        "name": "Ensure that auto Scaling groups that are associated with a load balancer are using Elastic Load Balancing health checks.",
+        "cloudProvider": "AWS",
+        "service name": "autoscaling"
+    }
+]

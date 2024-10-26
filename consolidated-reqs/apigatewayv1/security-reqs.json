@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "apigatewayv1:001",
+    "name": "Use private API Gateway endpoints",
+    "description": "Ensure that API Gateway endpoints are configured as private to restrict access to only within the VPC. This prevents unauthorized access from the public internet and enhances the security of your APIs.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "apigatewayv1:002",
+    "name": "Enable AWS X-Ray tracing for API Gateway REST API stages",
+    "description": "Enable AWS X-Ray active tracing for all API Gateway REST API stages to gain insights into the performance and behavior of your APIs, facilitating troubleshooting and optimization.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "apigatewayv1:003",
+    "name": "Attach AWS WAF ACL to API Gateway stages",
+    "description": "Ensure that all API Gateway stages have an AWS WAF (Web Application Firewall) ACL attached to protect against common web exploits and malicious traffic.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "apigatewayv1:004",
+    "name": "Enable logging for API Gateway stages",
+    "description": "Enable comprehensive logging for all API Gateway stages to capture detailed information about requests and responses, aiding in security analysis and troubleshooting.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "apigatewayv1:005",
+    "name": "Enable client certificate authentication for backend endpoints",
+    "description": "Configure client certificate authentication for API Gateway stages to securely access backend endpoints, ensuring that only authorized clients can communicate with your backend services.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "apigatewayv1:006",
+    "name": "Encrypt API Gateway REST API cache data at rest",
+    "description": "Ensure that all methods in API Gateway REST API stages with caching enabled have encryption configured for data at rest, using AWS KMS Customer Managed Keys (CMKs) for enhanced security.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "apigatewayv1:007",
+    "name": "Configure authorizers for API Gateway at API or method level",
+    "description": "Implement appropriate authorizers (such as AWS IAM, Lambda authorizers, or Amazon Cognito user pools) at either the API or method level to control access to your API resources.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "apigatewayv1:008",
+    "name": "Use latest TLS security policy for API Gateway custom domain names",
+    "description": "Ensure that API Gateway custom domain names are configured with the latest TLS security policy to enforce strong encryption for data in transit.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "apigatewayv1:009",
+    "name": "Enable request validation for API Gateway methods",
+    "description": "Configure request validation for API Gateway methods to ensure that incoming requests meet specified criteria, reducing the risk of invalid or malicious inputs.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "apigatewayv1:010",
+    "name": "Implement throttling for API Gateway methods",
+    "description": "Configure appropriate throttling limits for API Gateway methods to protect backend services from being overwhelmed by excessive requests and to mitigate potential DoS attacks.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "apigatewayv1:011",
+    "name": "Enable API Gateway caching with encryption",
+    "description": "Enable caching for API Gateway stages and methods where appropriate, ensuring that cached data is encrypted using AWS KMS Customer Managed Keys (CMKs) to protect sensitive information.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "apigatewayv1:012",
+    "name": "Disable detailed execution logging in API Gateway method settings",
+    "description": "Ensure that detailed execution logging (Data Trace) is disabled in API Gateway method settings to prevent potential exposure of sensitive information in logs.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "apigatewayv1:013",
+    "name": "Implement API key validation for API Gateway methods",
+    "description": "Configure API key validation for appropriate API Gateway methods to control and monitor access to your APIs, enabling usage plans and throttling based on API keys.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "apigatewayv1:014",
+    "name": "Enable mutual TLS authentication for API Gateway custom domain names",
+    "description": "Configure mutual TLS (mTLS) authentication for API Gateway custom domain names to ensure that both the client and server verify each other's certificates, providing an additional layer of security.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "apigatewayv1:015",
+    "name": "Implement resource policies for API Gateway APIs",
+    "description": "Configure resource policies for API Gateway APIs to control access from specific AWS accounts, VPC endpoints, or IP ranges, enhancing the security posture of your APIs.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

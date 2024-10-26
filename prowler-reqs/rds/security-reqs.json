@@ -1,0 +1,233 @@
+[
+    {
+        "ID": "Rds-001",
+        "name": "Check if RDS instances have multi-AZ enabled.",
+        "description": "Check if RDS instances have multi-AZ enabled.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-002",
+        "name": "Check if RDS instance is using a supported engine version",
+        "description": "Check if RDS is using a supported engine version for MariaDB, MySQL and PostgreSQL",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-003",
+        "name": "Check if RDS Parameter Group events are subscribed.",
+        "description": "Ensure that Amazon RDS event notification subscriptions are enabled for database parameter groups events.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-004",
+        "name": "Ensure RDS clusters have minor version upgrade enabled.",
+        "description": "Ensure RDS clusters have minor version upgrade enabled.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-005",
+        "name": "Check if RDS cluster is integrated with CloudWatch Logs.",
+        "description": "Check if RDS cluster is integrated with CloudWatch Logs. The types valid are Aurora MySQL, Aurora PostgreSQL, MySQL, PostgreSQL.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-006",
+        "name": "Check if RDS instances storage is encrypted.",
+        "description": "Check if RDS instances storage is encrypted.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-007",
+        "name": "Check if RDS DB clusters have copy tags to snapshots enabled",
+        "description": "Check if RDS DB clusters have copy tags to snapshots enabled, Aurora instances do not support this feature at instance level so those who are clustered will be scan by this check.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-008",
+        "name": "Check if RDS DB instances have copy tags to snapshots enabled",
+        "description": "Check if RDS DB instances have copy tags to snapshots enabled, Aurora instances can not have this feature enabled at this level, they will have it at cluster level",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-009",
+        "name": "Check if RDS clusters storage is encrypted.",
+        "description": "Check if RDS clusters storage is encrypted.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-010",
+        "name": "Ensure that your Amazon RDS instances are not using the default master username.",
+        "description": "Ensure that your Amazon RDS instances are not using the default master username.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-011",
+        "name": "Check if RDS clusters have IAM authentication enabled.",
+        "description": "Check if RDS clusters have IAM authentication enabled.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-012",
+        "name": "Check if RDS Aurora MySQL Clusters have backtrack enabled.",
+        "description": "Ensure that the Backtrack feature is enabled for your Amazon Aurora (with MySQL compatibility) database clusters in order to backtrack your clusters to a specific time, without using backups. Backtrack is an Amazon RDS feature that allows you to specify the amount of time that an Aurora MySQL database cluster needs to retain change records, in order to have a fast way to recover from user errors, such as dropping the wrong table or deleting the wrong row by moving your MySQL database to a prior point in time without the need to restore from a recent backup.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-013",
+        "name": "Check if RDS Instances events are subscribed.",
+        "description": "Ensure that Amazon RDS event notification subscriptions are enabled for database database events, particularly maintenance, configuration change and failure.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-014",
+        "name": "Check if RDS instances has enhanced monitoring enabled.",
+        "description": "Check if RDS instances has enhanced monitoring enabled.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-015",
+        "name": "Check if RDS instances are deployed within a VPC.",
+        "description": "Check if RDS instances are deployed within a VPC.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-016",
+        "name": "Check if RDS instances have deletion protection enabled.",
+        "description": "Check if RDS instances have deletion protection enabled.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-017",
+        "name": "Check if RDS Snapshots and Cluster Snapshots are public.",
+        "description": "Check if RDS Snapshots and Cluster Snapshots are public.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-018",
+        "name": "Ensure that the SSL/TLS certificates configured for your Amazon RDS are not expired.",
+        "description": "To maintain Amazon RDS database security and avoid interruption of the applications that are using RDS and/or Aurora databases, rotate the required SSL/TLS certificates and update the deprecated Certificate Authority (CA) certificates at the Amazon RDS instance level.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-019",
+        "name": "Ensure there are no Public Accessible RDS instances.",
+        "description": "Ensure there are no Public Accessible RDS instances.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-020",
+        "name": "Check if RDS Cluster critical events are subscribed.",
+        "description": "Ensure that Amazon RDS event notification subscriptions are enabled for database cluster events, particularly maintenance and failure.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-021",
+        "name": "Check if RDS instances are using non-default ports.",
+        "description": "Checks if an instance uses a port other than the default port of the database engine. The control fails if the RDS instance uses the default port.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-022",
+        "name": "Check if RDS clusters have deletion protection enabled.",
+        "description": "Check if RDS clusters have deletion protection enabled.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-023",
+        "name": "Check if RDS clusters are using non-default ports.",
+        "description": "Checks if an cluster uses a port other than the default port of the database engine. The control fails if the RDS cluster uses the default port.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-024",
+        "name": "Check if RDS clusters have multi-AZ enabled.",
+        "description": "Check if RDS clusters have multi-AZ enabled.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-025",
+        "name": "Check if RDS instances have backup enabled.",
+        "description": "Check if RDS instances have backup enabled.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-026",
+        "name": "Ensure that your Amazon RDS clusters are not using the default master username.",
+        "description": "Ensure that your Amazon RDS clusters are not using the default master username.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-027",
+        "name": "Ensure RDS instances have minor version upgrade enabled.",
+        "description": "Ensure RDS instances have minor version upgrade enabled.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-028",
+        "name": "Check if RDS Snapshots and Cluster Snapshots are encrypted.",
+        "description": "Check if RDS Snapshots and Cluster Snapshots are encrypted.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-029",
+        "name": "Check if RDS Security Group events are subscribed.",
+        "description": "Ensure that Amazon RDS event notification subscriptions are enabled for database security groups events.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-030",
+        "name": "Check if RDS instances are protected by a backup plan.",
+        "description": "Check if RDS instances are protected by a backup plan.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-031",
+        "name": "Check if RDS instances have IAM authentication enabled.",
+        "description": "Check if RDS instances have IAM authentication enabled.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-032",
+        "name": "Check if RDS instances is integrated with CloudWatch Logs.",
+        "description": "Check if RDS instances is integrated with CloudWatch Logs.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-033",
+        "name": "Check if RDS instances client connections are encrypted (Microsoft SQL Server, PostgreSQL, MySQL, MariaDB, Aurora PostgreSQL, and Aurora MySQL).",
+        "description": "For SQL Server, PostgreSQL and Aurora PostgreSQL databases, if the rds.force_ssl parameter value is set to 0, the Transport Encryption feature is not enabled. For MySQL, Aurora MySQL and MariaDB databases, if the require_secure_transport parameter value is set to OFF, the Transport Encryption feature is not enabled.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    }
+]

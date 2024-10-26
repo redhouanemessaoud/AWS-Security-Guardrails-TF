@@ -1,0 +1,44 @@
+[
+    {
+        "ID": "Cloudtrail-001",
+        "name": "Ensure CloudTrail defines an SNS Topic",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-002",
+        "name": "Ensure CloudTrail is enabled in all Regions",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-003",
+        "name": "Ensure CloudTrail log file validation is enabled",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-004",
+        "name": "Ensure CloudTrail logging is enabled",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-005",
+        "name": "Ensure CloudTrail logs are encrypted at rest using KMS CMKs",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-006",
+        "name": "Ensure CloudTrail trails are integrated with CloudWatch Logs",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-007",
+        "name": "Ensure CloudTrail Event Data Store uses CMK",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    }
+]

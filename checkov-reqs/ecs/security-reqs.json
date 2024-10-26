@@ -1,0 +1,62 @@
+[
+    {
+        "ID": "Ecs-001",
+        "name": "Ensure container insights are enabled on ECS cluster",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-002",
+        "name": "Ensure ECS Cluster enables logging of ECS Exec",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-003",
+        "name": "Ensure ECS Cluster logging is enabled and client to container communication uses CMK",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-004",
+        "name": "Ensure ECS Fargate services run on the latest Fargate platform version",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-005",
+        "name": "Ensure ECS services do not have public IP addresses assigned to them automatically",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-006",
+        "name": "Ensure ECS containers are limited to read-only access to root filesystems",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-007",
+        "name": "Ensure ECS containers should run as non-privileged",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-008",
+        "name": "Ensure ECS task definitions should not share the host\u2019s process namespace",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-009",
+        "name": "Ensure Encryption in transit is enabled for EFS volumes in ECS Task definitions",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-010",
+        "name": "Ensure that the Execution Role ARN and the Task Role ARN are different in ECS Task definitions",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    }
+]

@@ -1,0 +1,56 @@
+[
+    {
+        "ID": "Elasticache-001",
+        "name": "Ensure ElastiCache clusters do not use the default subnet group",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-002",
+        "name": "Ensure ElastiCache for Redis cache clusters have auto minor version upgrades enabled",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-003",
+        "name": "Ensure that Amazon ElastiCache Redis clusters have automatic backup turned on",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-004",
+        "name": "Ensure all data stored in the ElastiCache Replication Group is securely encrypted at rest",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-005",
+        "name": "Ensure all data stored in the ElastiCache Replication Group is securely encrypted at transit",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-006",
+        "name": "Ensure all data stored in the ElastiCache Replication Group is securely encrypted at transit and has auth token",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-007",
+        "name": "Ensure AWS ElastiCache Redis cluster with Multi-AZ Automatic Failover feature set to enabled",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-008",
+        "name": "Ensure ElastiCache replication group is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-009",
+        "name": "Ensure no aws_elasticache_security_group resources exist",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    }
+]

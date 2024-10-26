@@ -1,0 +1,44 @@
+[
+    {
+        "ID": "Eks-001",
+        "name": "Ensure Network Policy is Enabled and Set as Appropriate",
+        "description": "Ensure that Network Policy is enabled and set as appropriate in Amazon EKS clusters. Network Policy provides pod-level firewalling to restrict traffic between sources, enhancing network security within the cluster.",
+        "cloudProvider": "AWS",
+        "service name": "eks"
+    },
+    {
+        "ID": "Eks-002",
+        "name": "Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs)",
+        "description": "Ensure Kubernetes Secrets are encrypted using Customer Master Keys (CMKs)",
+        "cloudProvider": "AWS",
+        "service name": "eks"
+    },
+    {
+        "ID": "Eks-003",
+        "name": "Ensure Kubernetes cluster runs on a supported Kubernetes version",
+        "description": "Ensure Kubernetes cluster runs on a supported Kubernetes version",
+        "cloudProvider": "AWS",
+        "service name": "eks"
+    },
+    {
+        "ID": "Eks-004",
+        "name": "Ensure EKS Clusters are not publicly accessible",
+        "description": "Ensure that your Amazon EKS cluster's Kubernetes API server endpoint is not publicly accessible from the Internet in order to avoid exposing private data and minimizing security risks.",
+        "cloudProvider": "AWS",
+        "service name": "eks"
+    },
+    {
+        "ID": "Eks-005",
+        "name": "Ensure Clusters are created with Private Nodes",
+        "description": "Ensure that clusters are created with private nodes, disabling public IP addresses for cluster nodes. Private nodes have no public IP addresses, restricting access to internal networks and enhancing security.",
+        "cloudProvider": "AWS",
+        "service name": "eks"
+    },
+    {
+        "ID": "Eks-006",
+        "name": "Ensure EKS Control Plane Logging is enabled for all required log types",
+        "description": "Ensure EKS Control Plane Logging is enabled for all required log types",
+        "cloudProvider": "AWS",
+        "service name": "eks"
+    }
+]

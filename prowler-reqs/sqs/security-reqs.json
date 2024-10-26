@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "Sqs-001",
+        "name": "Check if SQS queues have policy set as Public",
+        "description": "Check if SQS queues have policy set as Public",
+        "cloudProvider": "AWS",
+        "service name": "sqs"
+    },
+    {
+        "ID": "Sqs-002",
+        "name": "Check if SQS queues have Server Side Encryption enabled",
+        "description": "Check if SQS queues have Server Side Encryption enabled",
+        "cloudProvider": "AWS",
+        "service name": "sqs"
+    }
+]

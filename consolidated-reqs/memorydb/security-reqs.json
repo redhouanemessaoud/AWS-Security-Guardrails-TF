@@ -1,0 +1,86 @@
+[
+  {
+    "ID": "memorydb:001",
+    "name": "Enable encryption in transit for MemoryDB clusters",
+    "description": "Ensure that all MemoryDB clusters have encryption in transit enabled using TLS 1.2 or higher to protect data as it moves between the client and the cluster nodes.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "memorydb:002",
+    "name": "Enable encryption at rest for MemoryDB clusters using AWS KMS Customer Managed Keys (CMKs)",
+    "description": "Ensure that all MemoryDB clusters have encryption at rest enabled using AWS Key Management Service (KMS) Customer Managed Keys (CMKs) to protect data stored on disk.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "memorydb:003",
+    "name": "Enable encryption for MemoryDB snapshots using AWS KMS Customer Managed Keys (CMKs)",
+    "description": "Ensure that all MemoryDB snapshots are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMKs) to protect the data in the snapshots.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "memorydb:004",
+    "name": "Configure MemoryDB clusters to use private subnets only",
+    "description": "Ensure that MemoryDB clusters are deployed in private subnets within a VPC to prevent direct internet access and maintain network isolation.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "memorydb:005",
+    "name": "Implement least privilege access for MemoryDB clusters",
+    "description": "Ensure that IAM policies granting access to MemoryDB clusters follow the principle of least privilege, providing only the necessary permissions to authorized entities for specific actions.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "memorydb:006",
+    "name": "Enable automatic failover for MemoryDB clusters",
+    "description": "Ensure that automatic failover is enabled for MemoryDB clusters to maintain high availability in case of node failures.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "memorydb:007",
+    "name": "Configure security groups for MemoryDB clusters to restrict inbound traffic",
+    "description": "Ensure that security groups associated with MemoryDB clusters allow inbound traffic only from necessary sources and on required ports to minimize the attack surface.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "memorydb:008",
+    "name": "Enable Multi-AZ deployment for MemoryDB clusters",
+    "description": "Ensure that MemoryDB clusters are deployed across multiple Availability Zones to enhance fault tolerance and data durability.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "memorydb:009",
+    "name": "Implement regular backups for MemoryDB clusters",
+    "description": "Ensure that regular backups are configured for MemoryDB clusters to enable point-in-time recovery and protect against data loss.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "memorydb:010",
+    "name": "Enable MemoryDB event notifications",
+    "description": "Configure MemoryDB event notifications to receive alerts for important cluster events, such as failovers, configuration changes, and backup-related events.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "memorydb:011",
+    "name": "Implement MemoryDB parameter groups with secure configurations",
+    "description": "Ensure that MemoryDB parameter groups are configured with secure settings, such as enforcing TLS connections and setting appropriate memory limits.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "memorydb:012",
+    "name": "Use latest MemoryDB engine version",
+    "description": "Ensure that MemoryDB clusters are using the latest supported engine version to benefit from security patches, bug fixes, and new features.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

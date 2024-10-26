@@ -1,0 +1,92 @@
+[
+    {
+        "ID": "Cloudfront-001",
+        "name": "CloudFront Distribution should have WAF enabled",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-002",
+        "name": "Ensure AWS CloudFront attached WAFv2 WebACL is configured with AMR for Log4j Vulnerability",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-003",
+        "name": "Ensure AWS CloudFront distribution is using secure SSL protocols for HTTPS communication",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-004",
+        "name": "Ensure AWS CloudFront distribution uses custom SSL certificate",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-005",
+        "name": "Ensure AWS CloudFront Distribution with S3 have Origin Access set to enabled",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-006",
+        "name": "Ensure AWS CloudFront origin protocol policy enforces HTTPS-only",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-007",
+        "name": "Ensure AWS CloudFront web distribution has geo restriction enabled",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-008",
+        "name": "Ensure CloudFront distribution has a default root object configured",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-009",
+        "name": "Ensure CloudFront distribution has a response headers policy attached",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-010",
+        "name": "Ensure CloudFront distribution has Access Logging enabled",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-011",
+        "name": "Ensure CloudFront distribution is enabled",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-012",
+        "name": "Ensure CloudFront distribution ViewerProtocolPolicy is set to HTTPS",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-013",
+        "name": "Ensure CloudFront distributions should have origin failover configured",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-014",
+        "name": "Verify CloudFront Distribution Viewer Certificate is using TLS v1.2",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-015",
+        "name": "Ensure CloudFront response header policy enforces Strict Transport Security",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    }
+]

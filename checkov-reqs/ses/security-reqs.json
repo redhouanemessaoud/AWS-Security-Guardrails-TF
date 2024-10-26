@@ -1,0 +1,8 @@
+[
+    {
+        "ID": "Ses-001",
+        "name": "Ensure SES Configuration Set enforces TLS usage",
+        "cloudProvider": "AWS",
+        "service name": "ses"
+    }
+]

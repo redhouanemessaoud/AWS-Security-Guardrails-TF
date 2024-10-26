@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "apigatewayv2:001",
+    "name": "Enable access logging for API Gateway V2",
+    "description": "Ensure that access logging is enabled for all API Gateway V2 APIs. This will provide detailed information about requests made to the API, including the identity of the caller, the time of the call, the request parameters, and the response elements returned by the API.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "apigatewayv2:002",
+    "name": "Configure authorizers for API Gateway V2",
+    "description": "Implement appropriate authorizers for all API Gateway V2 APIs to control access to your API resources. This can include JWT authorizers, Lambda authorizers, or IAM authorization depending on your security requirements.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "apigatewayv2:003",
+    "name": "Specify authorization type for all API Gateway V2 routes",
+    "description": "Ensure that all routes in API Gateway V2 APIs have a specified authorization type. This can be NONE, JWT, AWS_IAM, or CUSTOM, depending on your security requirements for each specific route.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "apigatewayv2:004",
+    "name": "Enable encryption in transit for API Gateway V2",
+    "description": "Enforce HTTPS endpoints for all API Gateway V2 APIs by using TLS 1.2 or later. This ensures that all data transmitted between the client and the API is encrypted in transit.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "apigatewayv2:005",
+    "name": "Implement throttling for API Gateway V2",
+    "description": "Configure appropriate throttling limits for all API Gateway V2 APIs to protect your backend services from traffic spikes and potential DoS attacks.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "apigatewayv2:006",
+    "name": "Enable AWS WAF for API Gateway V2",
+    "description": "Associate AWS WAF web ACLs with API Gateway V2 APIs to protect against common web exploits and improve the overall security posture of your APIs.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "apigatewayv2:007",
+    "name": "Implement API Gateway V2 usage plans and API keys",
+    "description": "Create and associate usage plans and API keys with API Gateway V2 APIs to control and monitor API usage, implement throttling, and manage access for different clients or partners.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "apigatewayv2:008",
+    "name": "Configure cross-origin resource sharing (CORS) for API Gateway V2",
+    "description": "Implement appropriate CORS configurations for API Gateway V2 APIs to control which domains can access your API resources, enhancing security by preventing unauthorized cross-origin requests.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "apigatewayv2:009",
+    "name": "Enable detailed CloudWatch metrics for API Gateway V2",
+    "description": "Enable detailed CloudWatch metrics for all API Gateway V2 APIs to gain insights into API performance, latency, and error rates, facilitating better monitoring and troubleshooting.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "apigatewayv2:010",
+    "name": "Implement least privilege access for API Gateway V2",
+    "description": "Ensure that IAM policies associated with API Gateway V2 resources follow the principle of least privilege, granting only the necessary permissions to authorized entities for managing and accessing the APIs.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "apigatewayv2:011",
+    "name": "Configure custom domain names with TLS certificates for API Gateway V2",
+    "description": "Set up custom domain names with valid TLS certificates for all API Gateway V2 APIs to provide a branded and secure endpoint for API consumers.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "apigatewayv2:012",
+    "name": "Implement request validation for API Gateway V2",
+    "description": "Enable request validation for API Gateway V2 APIs to ensure that incoming requests meet the defined API schema, reducing the risk of invalid or malicious requests reaching your backend services.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "apigatewayv2:013",
+    "name": "Configure appropriate timeouts for API Gateway V2 integrations",
+    "description": "Set appropriate timeout values for all API Gateway V2 integrations to prevent long-running requests from consuming excessive resources and potentially impacting API availability.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "apigatewayv2:014",
+    "name": "Implement API caching for API Gateway V2",
+    "description": "Enable API caching for appropriate API Gateway V2 routes to improve performance and reduce the load on your backend services, while ensuring that sensitive or frequently changing data is not cached.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "apigatewayv2:015",
+    "name": "Configure stage variables for API Gateway V2",
+    "description": "Utilize stage variables in API Gateway V2 to manage environment-specific configurations securely, allowing for easier management of different deployment stages without exposing sensitive information.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

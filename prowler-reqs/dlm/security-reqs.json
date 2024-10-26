@@ -1,0 +1,9 @@
+[
+    {
+        "ID": "Dlm-001",
+        "name": "Ensure EBS Snapshot lifecycle policies are defined.",
+        "description": "Ensure EBS Snapshot lifecycle policies are defined.",
+        "cloudProvider": "AWS",
+        "service name": "dlm"
+    }
+]

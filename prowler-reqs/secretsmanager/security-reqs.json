@@ -1,0 +1,23 @@
+[
+    {
+        "ID": "Secretsmanager-001",
+        "name": "Check if Secrets Manager secret rotation is enabled.",
+        "description": "Check if Secrets Manager secret rotation is enabled.",
+        "cloudProvider": "AWS",
+        "service name": "secretsmanager"
+    },
+    {
+        "ID": "Secretsmanager-002",
+        "name": "Ensure Secrets Manager secrets are not publicly accessible.",
+        "description": "This control checks whether Secrets Manager secrets are not publicly accessible via resource policies.",
+        "cloudProvider": "AWS",
+        "service name": "secretsmanager"
+    },
+    {
+        "ID": "Secretsmanager-003",
+        "name": "Ensure secrets manager secrets are not unused",
+        "description": "Checks whether Secrets Manager secrets are unused.",
+        "cloudProvider": "AWS",
+        "service name": "secretsmanager"
+    }
+]

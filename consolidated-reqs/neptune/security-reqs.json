@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "neptune:001",
+    "name": "Enable CloudWatch audit logs for Neptune Clusters",
+    "description": "Ensure that Neptune Clusters have audit logs enabled and are sending them to CloudWatch for monitoring and analysis of database activities.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "neptune:002",
+    "name": "Enable encryption at rest for Neptune Clusters using AWS KMS Customer Managed Keys (CMK)",
+    "description": "Ensure that Neptune Clusters have encryption at rest enabled using AWS Key Management Service (KMS) Customer Managed Keys (CMK) to protect sensitive data stored in the database.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "neptune:003",
+    "name": "Enable tag copying to snapshots for Neptune DB clusters",
+    "description": "Configure Neptune DB clusters to automatically copy all tags to snapshots when they are created, ensuring consistent resource tracking and management.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "neptune:004",
+    "name": "Enable encryption for Neptune DB cluster snapshots using AWS KMS Customer Managed Keys (CMK)",
+    "description": "Ensure that Neptune DB cluster snapshots are encrypted at rest using AWS Key Management Service (KMS) Customer Managed Keys (CMK) to protect sensitive data from unauthorized access.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "neptune:005",
+    "name": "Configure appropriate backup retention period for Neptune Clusters",
+    "description": "Set an appropriate backup retention period for Neptune Clusters to ensure data recoverability. The retention period should be aligned with your organization's data retention policies and compliance requirements.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "neptune:006",
+    "name": "Enable IAM authentication for Neptune Clusters",
+    "description": "Enable IAM authentication for Neptune Clusters to leverage AWS Identity and Access Management (IAM) for managing database access, providing fine-grained control over user permissions.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "neptune:007",
+    "name": "Ensure Neptune Clusters are deployed in private subnets",
+    "description": "Deploy Neptune Clusters in private subnets within a VPC to prevent direct internet access and enhance network security. Use VPC endpoints or a bastion host for secure access to the clusters.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "neptune:008",
+    "name": "Prevent public accessibility of Neptune DB manual cluster snapshots",
+    "description": "Ensure that Neptune DB manual cluster snapshots are not configured for public accessibility to prevent unauthorized access to potentially sensitive data.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "neptune:009",
+    "name": "Enable Multi-AZ deployment for Neptune Clusters",
+    "description": "Configure Neptune Clusters with Multi-AZ deployment to enhance availability and durability by automatically provisioning and maintaining a synchronous standby replica in a different Availability Zone.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "neptune:010",
+    "name": "Enable deletion protection for Neptune Clusters",
+    "description": "Enable deletion protection for Neptune Clusters to prevent accidental deletion of the database. This adds an additional layer of security requiring manual disabling before a cluster can be deleted.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "neptune:011",
+    "name": "Configure secure TLS connections for Neptune Clusters",
+    "description": "Ensure that Neptune Clusters are configured to use secure TLS connections for all client communications. Enforce the use of the latest supported TLS version and strong cipher suites.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "neptune:012",
+    "name": "Implement least privilege access for Neptune Clusters",
+    "description": "Configure IAM policies and Neptune cluster policies to follow the principle of least privilege, granting only the necessary permissions to authorized entities for accessing and managing the Neptune clusters.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "neptune:013",
+    "name": "Enable VPC security group restrictions for Neptune Clusters",
+    "description": "Configure VPC security groups for Neptune Clusters to allow inbound connections only from authorized sources and on required ports. Regularly review and update these security group rules.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "neptune:014",
+    "name": "Implement regular patching for Neptune Clusters",
+    "description": "Establish a process to regularly apply security patches and updates to Neptune Clusters. This includes scheduling maintenance windows and testing patches in non-production environments before applying to production clusters.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "neptune:015",
+    "name": "Monitor Neptune Cluster performance and security metrics",
+    "description": "Set up CloudWatch alarms to monitor key performance and security metrics for Neptune Clusters. This includes CPU utilization, memory usage, network throughput, and failed login attempts. Configure appropriate thresholds and notification mechanisms.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  }
+]

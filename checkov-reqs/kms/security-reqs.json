@@ -1,0 +1,26 @@
+[
+    {
+        "ID": "Kms-001",
+        "name": "Ensure KMS key is enabled",
+        "cloudProvider": "AWS",
+        "service name": "kms"
+    },
+    {
+        "ID": "Kms-002",
+        "name": "Ensure KMS key policy does not contain wildcard (*) principal",
+        "cloudProvider": "AWS",
+        "service name": "kms"
+    },
+    {
+        "ID": "Kms-003",
+        "name": "Ensure KMS key Policy is defined",
+        "cloudProvider": "AWS",
+        "service name": "kms"
+    },
+    {
+        "ID": "Kms-004",
+        "name": "Ensure rotation for customer created CMKs is enabled",
+        "cloudProvider": "AWS",
+        "service name": "kms"
+    }
+]

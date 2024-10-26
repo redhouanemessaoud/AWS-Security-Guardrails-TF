@@ -1,0 +1,74 @@
+[
+    {
+        "ID": "Elasticsearch-001",
+        "name": "Ensure all data stored in the Elasticsearch is encrypted with a CMK",
+        "cloudProvider": "AWS",
+        "service name": "elasticsearch"
+    },
+    {
+        "ID": "Elasticsearch-002",
+        "name": "Ensure all data stored in the Elasticsearch is securely encrypted at rest",
+        "cloudProvider": "AWS",
+        "service name": "elasticsearch"
+    },
+    {
+        "ID": "Elasticsearch-003",
+        "name": "Ensure all Elasticsearch has node-to-node encryption enabled",
+        "cloudProvider": "AWS",
+        "service name": "elasticsearch"
+    },
+    {
+        "ID": "Elasticsearch-004",
+        "name": "Ensure AWS ElasticSearch/OpenSearch Fine-grained access control is enabled",
+        "cloudProvider": "AWS",
+        "service name": "elasticsearch"
+    },
+    {
+        "ID": "Elasticsearch-005",
+        "name": "Ensure Elasticsearch Domain Audit Logging is enabled",
+        "cloudProvider": "AWS",
+        "service name": "elasticsearch"
+    },
+    {
+        "ID": "Elasticsearch-006",
+        "name": "Ensure Elasticsearch Domain enforces HTTPS",
+        "cloudProvider": "AWS",
+        "service name": "elasticsearch"
+    },
+    {
+        "ID": "Elasticsearch-007",
+        "name": "Ensure Elasticsearch Domain Logging is enabled",
+        "cloudProvider": "AWS",
+        "service name": "elasticsearch"
+    },
+    {
+        "ID": "Elasticsearch-008",
+        "name": "Ensure Elasticsearch domains are configured with at least three dedicated master nodes for HA",
+        "cloudProvider": "AWS",
+        "service name": "elasticsearch"
+    },
+    {
+        "ID": "Elasticsearch-009",
+        "name": "Ensure ElasticSearch/OpenSearch has dedicated master node enabled",
+        "cloudProvider": "AWS",
+        "service name": "elasticsearch"
+    },
+    {
+        "ID": "Elasticsearch-010",
+        "name": "Ensure that Elasticsearch is configured inside a VPC",
+        "cloudProvider": "AWS",
+        "service name": "elasticsearch"
+    },
+    {
+        "ID": "Elasticsearch-011",
+        "name": "Ensure that Elasticsearch is not using the default Security Group",
+        "cloudProvider": "AWS",
+        "service name": "elasticsearch"
+    },
+    {
+        "ID": "Elasticsearch-012",
+        "name": "Verify Elasticsearch domain is using an up to date TLS policy",
+        "cloudProvider": "AWS",
+        "service name": "elasticsearch"
+    }
+]

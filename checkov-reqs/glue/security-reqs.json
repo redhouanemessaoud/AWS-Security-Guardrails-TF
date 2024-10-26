@@ -1,0 +1,20 @@
+[
+    {
+        "ID": "Glue-001",
+        "name": "Ensure Glue component has a security configuration associated",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    },
+    {
+        "ID": "Glue-002",
+        "name": "Ensure Glue Data Catalog Encryption is enabled",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    },
+    {
+        "ID": "Glue-003",
+        "name": "Ensure Glue Security Configuration Encryption is enabled",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    }
+]

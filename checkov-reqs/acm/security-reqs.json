@@ -1,0 +1,20 @@
+[
+    {
+        "ID": "Acm-001",
+        "name": "Ensure AWS ACM Certificate domain name does not include wildcards",
+        "cloudProvider": "AWS",
+        "service name": "acm"
+    },
+    {
+        "ID": "Acm-002",
+        "name": "Ensure Create before destroy for ACM certificates",
+        "cloudProvider": "AWS",
+        "service name": "acm"
+    },
+    {
+        "ID": "Acm-003",
+        "name": "Verify logging preference for ACM certificates",
+        "cloudProvider": "AWS",
+        "service name": "acm"
+    }
+]

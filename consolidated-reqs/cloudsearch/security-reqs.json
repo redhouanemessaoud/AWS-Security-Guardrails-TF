@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "cloudsearch:001",
+    "name": "Enforce HTTPS for CloudSearch Domain Access",
+    "description": "Ensure that all CloudSearch domains enforce the use of HTTPS (TLS) for all access. This should be configured in the domain's access policies to only allow secure connections.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "cloudsearch:002",
+    "name": "Use Latest TLS Version for CloudSearch Domain Connections",
+    "description": "Configure CloudSearch domains to use the latest supported TLS version for all client connections. This ensures the highest level of connection security and encryption strength.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "cloudsearch:003",
+    "name": "Enable Encryption at Rest for CloudSearch Domain",
+    "description": "Enable encryption at rest for all CloudSearch domains using AWS Key Management Service (KMS) Customer Managed Keys (CMKs). This ensures that all data indexed and stored in CloudSearch is encrypted when not in use.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "cloudsearch:004",
+    "name": "Implement VPC for CloudSearch Domain",
+    "description": "Configure CloudSearch domains to use VPC access, placing the domain's endpoints within a specified VPC. This provides network isolation and allows for more granular control over access to the domain.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "cloudsearch:005",
+    "name": "Restrict CloudSearch Domain Access to Specific VPC Endpoints",
+    "description": "When using VPC access for CloudSearch domains, restrict access to specific VPC endpoints or security groups. This ensures that only authorized resources within the VPC can access the CloudSearch domain.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "cloudsearch:006",
+    "name": "Implement IAM Policies for CloudSearch Domain Access",
+    "description": "Create and apply IAM policies that follow the principle of least privilege for accessing CloudSearch domains. These policies should grant only the necessary permissions to authorized entities for managing and using the CloudSearch domains.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "cloudsearch:007",
+    "name": "Enable CloudSearch Domain Monitoring with CloudWatch",
+    "description": "Configure CloudWatch to monitor CloudSearch domains, setting up alarms for critical metrics such as search latency, indexing latency, and successful requests. This helps in detecting and responding to performance issues or potential security incidents.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudsearch:008",
+    "name": "Implement Regular Backups for CloudSearch Domain Data",
+    "description": "Establish a regular backup process for the data indexed in CloudSearch domains. This can be achieved by periodically exporting the domain's data to a secure S3 bucket, ensuring data recoverability in case of incidents.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "cloudsearch:009",
+    "name": "Use Secure Configuration for CloudSearch Suggesters",
+    "description": "When configuring suggesters for CloudSearch domains, ensure that sensitive data is not included in the suggestions. Review and sanitize data used for suggestions to prevent potential data leakage through autocomplete functionalities.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "cloudsearch:010",
+    "name": "Implement Access Policies for CloudSearch Document and Search Endpoints",
+    "description": "Create and apply access policies that restrict access to CloudSearch document and search endpoints. These policies should allow access only from authorized AWS accounts, IAM users, or IP ranges, ensuring that indexing and searching operations are performed only by trusted entities.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "ID": "Elasticache-001",
+        "name": "Ensure Elasticache Redis clusters have automatic failover enabled.",
+        "description": "Ensure Elasticache Redis OSS cache clusters use automatic failover.",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-002",
+        "name": "Ensure Elasticache Cluster is not using a public subnet",
+        "description": "Ensure Elasticache Cluster is not using a public subnet",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-003",
+        "name": "Ensure Elasticache Redis cache cluster has automatic backups enabled.",
+        "description": "Ensure Elasticache Redis cache cluster has automatic backups enabled.",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-004",
+        "name": "Ensure Elasticache Redis cache cluster has Multi-AZ enabled.",
+        "description": "Ensure Elasticache Redis cache cluster has Multi-AZ enabled.",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-005",
+        "name": "Ensure Elasticache Redis cache clusters have in transit encryption enabled.",
+        "description": "Ensure Elasticache Redis cache clusters have in transit encryption enabled.",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-006",
+        "name": "Ensure Elasticache Redis cache clusters have at rest encryption enabled.",
+        "description": "Ensure Elasticache Redis cache clusters have at rest encryption enabled.",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-007",
+        "name": "Ensure Elasticache Elasticache Redis replication groups of earlier versions should have Redis OSS AUTH enabled.",
+        "description": "Ensure Elasticache Redis replication groups of earlier versions use Redis OSS AUTH.",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    },
+    {
+        "ID": "Elasticache-008",
+        "name": "Ensure Elasticache Redis cache clusters have automatic minor upgrades enabled.",
+        "description": "Ensure Elasticache Redis cache clusters have automatic minor upgrades enabled.",
+        "cloudProvider": "AWS",
+        "service name": "elasticache"
+    }
+]

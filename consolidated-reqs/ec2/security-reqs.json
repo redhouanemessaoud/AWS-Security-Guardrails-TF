@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "ec2:001",
+    "name": "Disable public IP addresses for EC2 instances",
+    "description": "Ensure that EC2 instances are not assigned public IP addresses. Use private IP addresses and access instances through a bastion host or VPN connection.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "ec2:002",
+    "name": "Enable encryption for EBS volumes",
+    "description": "Ensure that all EBS volumes attached to EC2 instances are encrypted using AWS KMS Customer Managed Keys (CMKs).",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ec2:003",
+    "name": "Attach IAM roles to EC2 instances",
+    "description": "Ensure that IAM roles are attached to EC2 instances instead of using IAM user credentials. This follows the principle of least privilege and improves security management.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "ec2:004",
+    "name": "Enforce the use of IMDSv2 on EC2 instances",
+    "description": "Ensure that Instance Metadata Service Version 2 (IMDSv2) is enforced on all EC2 instances to protect against SSRF vulnerabilities.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ec2:005",
+    "name": "Remove sensitive information from EC2 user data",
+    "description": "Ensure that no sensitive information or secrets are stored in EC2 user data. Use AWS Secrets Manager or Systems Manager Parameter Store for managing secrets.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ec2:006",
+    "name": "Enable detailed monitoring for EC2 instances",
+    "description": "Ensure that detailed monitoring is enabled for EC2 instances to provide more frequent metrics and improve visibility into instance performance and health.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "ec2:007",
+    "name": "Use EBS-optimized instances",
+    "description": "Ensure that EC2 instances are EBS-optimized to provide dedicated throughput between EC2 and EBS, optimizing storage performance.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ec2:008",
+    "name": "Restrict security group ingress rules",
+    "description": "Ensure that security group ingress rules do not allow unrestricted access (0.0.0.0/0) to any port. Restrict access to specific IP ranges or security groups.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "ec2:009",
+    "name": "Use VPC endpoints for AWS service access",
+    "description": "Implement VPC endpoints to securely access AWS services from EC2 instances without requiring internet access or NAT devices.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "ec2:010",
+    "name": "Enable termination protection for critical EC2 instances",
+    "description": "Enable termination protection for critical EC2 instances to prevent accidental termination.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ec2:011",
+    "name": "Use latest generation instance types",
+    "description": "Ensure that EC2 instances use the latest generation instance types to benefit from improved performance and security features.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ec2:012",
+    "name": "Implement EC2 instance patching using AWS Systems Manager",
+    "description": "Use AWS Systems Manager Patch Manager to automate the process of patching EC2 instances with security updates and bug fixes.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ec2:013",
+    "name": "Enable EBS snapshot encryption",
+    "description": "Ensure that all EBS snapshots are encrypted using AWS KMS Customer Managed Keys (CMKs).",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ec2:014",
+    "name": "Implement EC2 instance isolation using dedicated hosts or instances",
+    "description": "Use EC2 Dedicated Hosts or Dedicated Instances for workloads requiring physical isolation at the host hardware level.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ec2:015",
+    "name": "Enable VPC flow logs",
+    "description": "Ensure that VPC flow logs are enabled to capture information about IP traffic going to and from network interfaces in the VPC.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  }
+]

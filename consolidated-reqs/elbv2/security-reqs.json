@@ -1,0 +1,86 @@
+[
+  {
+    "ID": "elbv2:001",
+    "name": "Use AWS WAF Web ACL for Application Load Balancers",
+    "description": "Ensure that all Application Load Balancers (ALBs) have an AWS WAF Web ACL attached to protect against common web exploits and malicious traffic patterns.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elbv2:002",
+    "name": "Enable Access Logging for Elastic Load Balancers",
+    "description": "Enable access logging for all Elastic Load Balancers (Application, Network, and Gateway) to capture detailed information about requests sent to the load balancer. Configure logs to be stored in a dedicated S3 bucket with appropriate access controls and encryption.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "elbv2:003",
+    "name": "Configure Application Load Balancers with Strictest Desync Mitigation Mode",
+    "description": "Configure all Application Load Balancers with the strictest desync mitigation mode to protect against desync attacks. If the strictest mode is not feasible, ensure that at least the 'defensive' mode is configured and the 'drop_invalid_header_fields' attribute is enabled.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elbv2:004",
+    "name": "Deploy Elastic Load Balancers Across Multiple Availability Zones",
+    "description": "Ensure that all Elastic Load Balancers (Application, Network, and Gateway) are configured to operate across at least two Availability Zones (AZs) to maintain high availability and fault tolerance in case of an AZ failure.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elbv2:005",
+    "name": "Use Secure TLS Configuration for Load Balancer Listeners",
+    "description": "Configure all HTTPS listeners on Elastic Load Balancers to use only secure TLS protocols (TLS 1.2 or higher) and strong cipher suites. Regularly review and update the security policy to align with the latest security best practices.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elbv2:006",
+    "name": "Enable Deletion Protection for Elastic Load Balancers",
+    "description": "Enable deletion protection for all Elastic Load Balancers to prevent accidental deletion of critical load balancer resources.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elbv2:007",
+    "name": "Configure HTTPS Listeners for Application Load Balancers",
+    "description": "Ensure that all Application Load Balancers use HTTPS listeners with valid SSL/TLS certificates. Configure HTTP to HTTPS redirection for any HTTP listeners to enforce encrypted communication.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elbv2:008",
+    "name": "Use AWS Certificate Manager for Load Balancer SSL/TLS Certificates",
+    "description": "Use SSL/TLS certificates provided by AWS Certificate Manager (ACM) for all HTTPS listeners on Elastic Load Balancers. ACM simplifies certificate management and ensures automatic renewal of certificates.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elbv2:009",
+    "name": "Enable Cross-Zone Load Balancing for Network and Gateway Load Balancers",
+    "description": "Enable cross-zone load balancing for Network and Gateway Load Balancers to ensure even distribution of traffic across all registered targets in all enabled Availability Zones.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elbv2:010",
+    "name": "Configure Health Checks for Load Balancer Target Groups",
+    "description": "Configure appropriate health checks for all target groups associated with Elastic Load Balancers. Ensure that health check protocols, ports, and paths are correctly set to accurately determine the health of backend targets.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elbv2:011",
+    "name": "Implement Secure Listener Rules for Application Load Balancers",
+    "description": "Configure secure listener rules for Application Load Balancers to control traffic routing based on request attributes. Implement rules to block or redirect potentially malicious requests and enforce security policies.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elbv2:012",
+    "name": "Use VPC Security Groups to Control Traffic to Load Balancers",
+    "description": "Assign appropriate VPC security groups to Elastic Load Balancers to control inbound and outbound traffic. Configure security group rules to allow only necessary traffic and follow the principle of least privilege.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  }
+]

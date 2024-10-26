@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "elasticsearch:001",
+    "name": "Enable encryption at rest using AWS KMS Customer Managed Key (CMK) for Elasticsearch domains",
+    "description": "Ensure all data stored in the Elasticsearch domains is encrypted at rest using AWS KMS Customer Managed Keys (CMKs). This provides an additional layer of security and control over the encryption keys.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "elasticsearch:002",
+    "name": "Enable node-to-node encryption for Elasticsearch domains",
+    "description": "Enable node-to-node encryption for all Elasticsearch domains to ensure that data is encrypted in transit between nodes within the Elasticsearch cluster.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "elasticsearch:003",
+    "name": "Enable fine-grained access control for Elasticsearch domains",
+    "description": "Ensure AWS Elasticsearch/OpenSearch fine-grained access control is enabled for all domains. This feature provides granular control over data access and operations within the Elasticsearch cluster.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "elasticsearch:004",
+    "name": "Enable audit logging for Elasticsearch domains",
+    "description": "Enable audit logging for all Elasticsearch domains to track and monitor user activities, including authentication attempts, access to indices, and document-level operations.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "elasticsearch:005",
+    "name": "Enforce HTTPS for all Elasticsearch domain endpoints",
+    "description": "Ensure that all Elasticsearch domain endpoints enforce HTTPS connections to encrypt data in transit and prevent man-in-the-middle attacks.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elasticsearch:006",
+    "name": "Configure Elasticsearch domains with at least three dedicated master nodes",
+    "description": "Ensure Elasticsearch domains are configured with at least three dedicated master nodes for high availability and improved cluster stability.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elasticsearch:007",
+    "name": "Deploy Elasticsearch domains within a VPC",
+    "description": "Ensure that all Elasticsearch domains are deployed within a Virtual Private Cloud (VPC) to enhance network isolation and security.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elasticsearch:008",
+    "name": "Use custom security groups for Elasticsearch domains",
+    "description": "Ensure that Elasticsearch domains use custom security groups instead of the default security group. Configure these security groups with minimal necessary inbound and outbound rules.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elasticsearch:009",
+    "name": "Use latest TLS policy for Elasticsearch domains",
+    "description": "Verify and ensure that all Elasticsearch domains are using the most up-to-date TLS policy to maintain strong encryption for data in transit.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elasticsearch:010",
+    "name": "Enable error logging for Elasticsearch domains",
+    "description": "Enable error logging for all Elasticsearch domains to capture and monitor error events, facilitating troubleshooting and performance optimization.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "elasticsearch:011",
+    "name": "Implement IP-based access control for Elasticsearch domains",
+    "description": "Configure IP-based access control policies for Elasticsearch domains to restrict access to specific IP ranges or CIDR blocks, enhancing security by limiting potential attack surfaces.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elasticsearch:012",
+    "name": "Enable automated snapshots for Elasticsearch domains",
+    "description": "Enable automated snapshots for all Elasticsearch domains to ensure regular backups of cluster data, facilitating disaster recovery and data protection.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "elasticsearch:013",
+    "name": "Implement least privilege access for Elasticsearch domains",
+    "description": "Ensure that IAM policies for Elasticsearch domains follow the principle of least privilege, granting only the necessary permissions to authorized entities for specific operations and resources.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "elasticsearch:014",
+    "name": "Enable UltraWarm storage for Elasticsearch domains",
+    "description": "Enable UltraWarm storage for Elasticsearch domains that require cost-effective storage for less frequently accessed data while maintaining fast query performance.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elasticsearch:015",
+    "name": "Configure cross-cluster search for Elasticsearch domains",
+    "description": "Set up cross-cluster search for Elasticsearch domains that require querying data across multiple clusters, ensuring proper security configurations and access controls are in place.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

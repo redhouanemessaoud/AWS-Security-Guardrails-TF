@@ -1,0 +1,20 @@
+[
+    {
+        "ID": "Backup-001",
+        "name": "Ensure that EBS are added in the backup plans of AWS Backup",
+        "cloudProvider": "AWS",
+        "service name": "backup"
+    },
+    {
+        "ID": "Backup-002",
+        "name": "Ensure that Elastic File System (Amazon EFS) file systems are added in the backup plans of AWS Backup",
+        "cloudProvider": "AWS",
+        "service name": "backup"
+    },
+    {
+        "ID": "Backup-003",
+        "name": "Ensure Backup Vault is encrypted at rest using KMS CMK",
+        "cloudProvider": "AWS",
+        "service name": "backup"
+    }
+]

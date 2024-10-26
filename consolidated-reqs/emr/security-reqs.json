@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "emr:001",
+    "name": "Enable EMR Account Public Access Block",
+    "description": "Enable EMR Account Public Access Block to prevent public access to all EMR clusters in the account. This setting helps ensure that EMR resources are not inadvertently exposed to the internet.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "emr:002",
+    "name": "Disable Public IP Addresses for EMR Cluster Instances",
+    "description": "Configure EMR clusters to launch EC2 instances without public IP addresses. This ensures that cluster nodes are not directly accessible from the internet and can only be accessed through private networking.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "emr:003",
+    "name": "Use Security Configuration for EMR Clusters",
+    "description": "Create and apply a security configuration to all EMR clusters. The security configuration should include settings for encryption, authentication, and authorization to ensure a comprehensive security posture for the cluster.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "emr:004",
+    "name": "Restrict EMR Cluster Security Group Access",
+    "description": "Configure EMR cluster security groups to allow access only from known and authorized sources. Avoid using '0.0.0.0/0' in security group rules and instead specify precise IP ranges or security group IDs for inbound traffic.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "emr:005",
+    "name": "Configure Kerberos Authentication for EMR Clusters",
+    "description": "For EMR clusters requiring Kerberos authentication, ensure that the Kerberos Realm is properly set. This enhances the cluster's security by providing strong authentication for users and services.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "emr:006",
+    "name": "Enable At-Rest Encryption for EMR Cluster using AWS KMS",
+    "description": "Configure EMR cluster security settings to use AWS Key Management Service (KMS) Customer Master Keys (CMKs) for at-rest encryption of data. This should be applied to both EMRFS data in S3 and local disk storage.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "emr:007",
+    "name": "Enable Encryption of EBS Volumes for EMR Cluster",
+    "description": "Ensure that the EMR cluster security configuration enables encryption of EBS volumes attached to EC2 instances in the cluster. This protects data stored on these volumes at rest.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "emr:008",
+    "name": "Enable In-Transit Encryption for EMR Cluster",
+    "description": "Configure the EMR cluster security settings to enable in-transit encryption. This should include enabling TLS for node-to-node communication and for connections to other AWS services.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "emr:009",
+    "name": "Enable Local Disk Encryption for EMR Cluster",
+    "description": "Ensure that the EMR cluster security configuration enables encryption of local disks on cluster nodes. This protects temporary data and spill files stored on the instance storage.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "emr:010",
+    "name": "Use IAM Roles for EMR Cluster EC2 Instances",
+    "description": "Configure EMR clusters to use IAM roles for EC2 instances instead of IAM users or access keys. This follows AWS best practices for secure access management and eliminates the need to manage long-term credentials.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "emr:011",
+    "name": "Enable EMR Cluster Logging",
+    "description": "Configure EMR clusters to send logs to Amazon S3. This includes application logs, Hadoop and YARN logs, and instance state logs. Ensure that the S3 bucket used for logging is properly secured and has appropriate retention policies.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "emr:012",
+    "name": "Use VPC for EMR Cluster Deployment",
+    "description": "Deploy EMR clusters within a Virtual Private Cloud (VPC) to leverage network isolation and security controls. Configure the VPC with appropriate subnets, route tables, and network ACLs to control traffic flow to and from the EMR cluster.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "emr:013",
+    "name": "Implement EMR Fine-Grained Access Control",
+    "description": "Utilize EMR's integration with AWS Lake Formation to implement fine-grained access control for data lakes. This allows for controlling access to specific columns, rows, and tables in the EMR cluster's datasets.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "emr:014",
+    "name": "Enable EMR Step Execution Auditing",
+    "description": "Configure EMR to use AWS CloudTrail for auditing step execution. This provides visibility into who ran which steps on the EMR cluster, enhancing accountability and traceability.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "emr:015",
+    "name": "Use Latest EMR Release with Security Patches",
+    "description": "Always use the latest EMR release version when creating new clusters to ensure you have the most recent security patches and updates for the Hadoop ecosystem components.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

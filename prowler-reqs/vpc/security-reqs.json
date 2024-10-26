@@ -1,0 +1,72 @@
+[
+    {
+        "ID": "Vpc-001",
+        "name": "Ensure routing tables for VPC peering are least access.",
+        "description": "Ensure routing tables for VPC peering are least access.",
+        "cloudProvider": "AWS",
+        "service name": "vpc"
+    },
+    {
+        "ID": "Vpc-002",
+        "name": "Ensure VPC subnets do not assign public IP by default",
+        "description": "Ensure VPC subnets do not assign public IP by default",
+        "cloudProvider": "AWS",
+        "service name": "vpc"
+    },
+    {
+        "ID": "Vpc-003",
+        "name": "Ensure all VPC has subnets in more than one availability zone",
+        "description": "Ensure all VPC has subnets in more than one availability zone",
+        "cloudProvider": "AWS",
+        "service name": "vpc"
+    },
+    {
+        "ID": "Vpc-004",
+        "name": "Both VPN tunnels for an AWS Site-to-Site VPN connection should be up",
+        "description": "A VPN tunnel is an encrypted link where data can pass from the customer network to or from AWS within an AWS Site-to-Site VPN connection. Each VPN connection includes two VPN tunnels which you can simultaneously use for high availability. Ensuring that both VPN tunnels are up for a VPN connection is important for confirming a secure and highly available connection between an AWS VPC and your remote network.",
+        "cloudProvider": "AWS",
+        "service name": "vpc"
+    },
+    {
+        "ID": "Vpc-005",
+        "name": "Find trust boundaries in VPC endpoint services allowlisted principles.",
+        "description": "Find trust boundaries in VPC endpoint services allowlisted principles.",
+        "cloudProvider": "AWS",
+        "service name": "vpc"
+    },
+    {
+        "ID": "Vpc-006",
+        "name": "Find trust boundaries in VPC endpoint connections.",
+        "description": "Find trust boundaries in VPC endpoint connections.",
+        "cloudProvider": "AWS",
+        "service name": "vpc"
+    },
+    {
+        "ID": "Vpc-007",
+        "name": "Ensure VPC Flow Logging is Enabled in all VPCs.",
+        "description": "Ensure VPC Flow Logging is Enabled in all VPCs.",
+        "cloudProvider": "AWS",
+        "service name": "vpc"
+    },
+    {
+        "ID": "Ec2-008",
+        "name": "Amazon EC2 should be configured to use VPC endpoints that are created for the Amazon EC2 service.",
+        "description": "Ensure that a service endpoint for Amazon EC2 is created for each VPC. The check fails if a VPC does not have a VPC endpoint created for the Amazon EC2 service.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Vpc-009",
+        "name": "Ensure there are VPCs in more than one region",
+        "description": "Ensure there are VPCs in more than one region",
+        "cloudProvider": "AWS",
+        "service name": "vpc"
+    },
+    {
+        "ID": "Vpc-010",
+        "name": "Ensure all VPC has public and private subnets defined",
+        "description": "Ensure all VPC has public and private subnets defined",
+        "cloudProvider": "AWS",
+        "service name": "vpc"
+    }
+]

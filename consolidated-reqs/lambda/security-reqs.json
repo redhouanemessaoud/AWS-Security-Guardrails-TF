@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "lambda:001",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for Lambda Function Environment Variables Encryption",
+    "description": "Ensure that Lambda function environment variables are encrypted using AWS KMS Customer Managed Keys (CMK) instead of the default AWS managed key. This provides greater control over the encryption process and allows for key rotation and access control.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "lambda:002",
+    "name": "Enable Code Signing for Lambda Functions",
+    "description": "Configure code signing for Lambda functions to ensure that only trusted code is deployed. This helps prevent unauthorized code modifications and improves the overall security posture of the Lambda functions.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "lambda:003",
+    "name": "Use Only Supported and Non-Deprecated Lambda Function Runtimes",
+    "description": "Ensure that Lambda functions use only supported and non-deprecated runtimes. Regularly update the runtime versions to benefit from the latest security patches and performance improvements.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "lambda:004",
+    "name": "Implement Dead Letter Queues for Lambda Functions",
+    "description": "Configure Dead Letter Queues (DLQ) for Lambda functions to capture and handle failed function invocations. This helps in debugging and ensures that failed events are not lost.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "lambda:005",
+    "name": "Set Function-Level Concurrent Execution Limits for Lambda Functions",
+    "description": "Configure function-level concurrent execution limits for Lambda functions to prevent a single function from consuming all available concurrent executions, which could impact other functions or services.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "lambda:006",
+    "name": "Deploy Lambda Functions Within a VPC",
+    "description": "Ensure that Lambda functions are deployed within a Virtual Private Cloud (VPC) to provide network isolation and control. This allows the function to access resources within the VPC securely and reduces exposure to public internet threats.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "lambda:007",
+    "name": "Enable X-Ray Tracing for Lambda Functions",
+    "description": "Enable AWS X-Ray tracing for Lambda functions to gain insights into function performance and to help identify and troubleshoot issues in distributed applications.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "lambda:008",
+    "name": "Secure Lambda Function URLs with Authentication",
+    "description": "When using Lambda Function URLs, ensure that the AuthType is not set to NONE. Configure appropriate authentication mechanisms such as IAM or Lambda authorizers to control access to the function URL.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "lambda:009",
+    "name": "Restrict Lambda Function Resource-Based Policies",
+    "description": "Ensure that Lambda function resource-based policies do not grant public access. Restrict access to only known and authorized AWS accounts or IAM principals.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "lambda:010",
+    "name": "Use SourceArn or SourceAccount in Lambda Function Permissions for AWS Services",
+    "description": "When granting permissions to AWS services to invoke Lambda functions, use the SourceArn or SourceAccount condition keys in the resource-based policy to limit the scope of the permissions and prevent confused deputy scenarios.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "lambda:011",
+    "name": "Deploy Lambda Functions Across Multiple Availability Zones",
+    "description": "When deploying Lambda functions that are connected to a VPC, ensure they are configured to run in at least two Availability Zones (AZs) to improve fault tolerance and availability.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "lambda:012",
+    "name": "Implement Least Privilege IAM Roles for Lambda Functions",
+    "description": "Assign IAM roles to Lambda functions following the principle of least privilege. Grant only the necessary permissions required for the function to perform its tasks, and regularly review and update these permissions.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "lambda:013",
+    "name": "Enable Enhanced Monitoring for Lambda Functions",
+    "description": "Enable enhanced monitoring for Lambda functions to gain more detailed insights into function performance, including memory usage, disk usage, and network usage. This helps in optimizing function configurations and identifying potential security issues.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "lambda:014",
+    "name": "Implement Input Validation for Lambda Functions",
+    "description": "Implement proper input validation in Lambda function code to prevent injection attacks and unexpected behavior. Validate and sanitize all input data before processing.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "lambda:015",
+    "name": "Use AWS Secrets Manager for Storing Sensitive Information",
+    "description": "Store sensitive information such as API keys, database credentials, or other secrets used by Lambda functions in AWS Secrets Manager instead of environment variables. Retrieve secrets at runtime to enhance security.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  }
+]

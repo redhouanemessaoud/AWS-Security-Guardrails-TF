@@ -1,0 +1,26 @@
+[
+    {
+        "ID": "Networkfirewall-001",
+        "name": "Ensure Network firewall has logging configuration defined",
+        "cloudProvider": "AWS",
+        "service name": "networkfirewall"
+    },
+    {
+        "ID": "Networkfirewall-002",
+        "name": "Ensure that Network firewall encryption is via a CMK",
+        "cloudProvider": "AWS",
+        "service name": "networkfirewall"
+    },
+    {
+        "ID": "Networkfirewall-003",
+        "name": "Ensure that Network firewalls have deletion protection enabled",
+        "cloudProvider": "AWS",
+        "service name": "networkfirewall"
+    },
+    {
+        "ID": "Networkfirewall-004",
+        "name": "Ensure Network Firewall Policy defines an encryption configuration that uses a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "networkfirewall"
+    }
+]

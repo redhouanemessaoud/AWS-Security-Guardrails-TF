@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "ecs:001",
+    "name": "Avoid storing secrets in ECS task definition environment variables",
+    "description": "Ensure that secrets are not stored in plain text within ECS task definition environment variables. Instead, use AWS Secrets Manager or AWS Systems Manager Parameter Store to securely manage and retrieve sensitive information.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ecs:002",
+    "name": "Configure secure networking modes and user definitions for ECS task definitions",
+    "description": "Ensure that ECS task definitions with host networking mode have secure container definitions. Avoid using privileged=true and user=root. Instead, use the principle of least privilege by setting specific, non-root users and minimizing container privileges.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ecs:003",
+    "name": "Disable automatic public IP assignment for ECS services",
+    "description": "Configure ECS services to not automatically assign public IP addresses. Set the AssignPublicIP parameter to DISABLED to ensure containers are not inadvertently exposed to the internet.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "ecs:004",
+    "name": "Prevent the use of privileged containers in ECS task definitions",
+    "description": "Ensure that the privileged parameter in the container definition of ECS Task Definitions is set to false. This prevents containers from gaining elevated privileges on the host container instance.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ecs:005",
+    "name": "Enable Container Insights for ECS clusters",
+    "description": "Enable Container Insights for all ECS clusters to collect, aggregate, and summarize metrics and logs from containerized applications. This provides better visibility into container performance and operational health.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "ecs:006",
+    "name": "Enforce read-only root filesystem for ECS containers",
+    "description": "Configure ECS containers with read-only access to root filesystems by setting the readonlyRootFilesystem parameter to true in the container definition. This helps prevent malicious activities and unauthorized changes to the container's filesystem.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ecs:007",
+    "name": "Prevent ECS task definitions from sharing the host's process namespace",
+    "description": "Ensure that ECS task definitions do not share the host's process namespace with their containers. This isolation helps maintain the security boundary between the host and containers.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ecs:008",
+    "name": "Implement logging configuration for ECS task definition containers",
+    "description": "Ensure that all containers in ECS task definitions have a logging configuration specified. Configure the logConfiguration property with an appropriate logDriver to enable comprehensive logging of container activities.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "ecs:009",
+    "name": "Use the latest Fargate platform version for ECS Fargate services",
+    "description": "Ensure that all ECS Fargate services are running on the latest Fargate platform version. Regularly update the platform version to benefit from the latest security patches, performance improvements, and features.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ecs:010",
+    "name": "Enable ECS Exec logging",
+    "description": "Enable logging for ECS Exec to maintain an audit trail of command executions within containers. Configure logging to a secure, centralized location for monitoring and analysis.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "ecs:011",
+    "name": "Use AWS KMS Customer Managed Keys for ECS Exec logging encryption",
+    "description": "Ensure that ECS Exec logging uses AWS KMS Customer Managed Keys (CMK) for encryption. This provides an additional layer of security and control over the encryption process for sensitive log data.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ecs:012",
+    "name": "Enable encryption in transit for EFS volumes in ECS task definitions",
+    "description": "Ensure that encryption in transit is enabled for EFS volumes used in ECS task definitions. This protects data as it moves between ECS tasks and the EFS file system.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ecs:013",
+    "name": "Use separate IAM roles for ECS task execution and task functionality",
+    "description": "Ensure that the Execution Role ARN and the Task Role ARN are different in ECS task definitions. This separation of duties helps maintain the principle of least privilege by assigning distinct permissions for task execution and runtime functionality.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "ecs:014",
+    "name": "Implement VPC endpoints for ECS and ECR",
+    "description": "Configure VPC endpoints for Amazon ECS and Amazon ECR to enable private communication between your VPC and these services without traversing the public internet. This enhances security by reducing exposure to potential threats.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "ecs:015",
+    "name": "Implement ECS task networking using awsvpc network mode",
+    "description": "Use the awsvpc network mode for ECS tasks to provide each task with its own elastic network interface and primary private IP address. This improves security isolation between containers and simplifies the application of security groups at the task level.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  }
+]

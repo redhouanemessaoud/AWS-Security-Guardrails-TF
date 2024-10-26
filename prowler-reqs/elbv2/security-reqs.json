@@ -1,0 +1,65 @@
+[
+    {
+        "ID": "Elbv2-001",
+        "name": "Check if Application Load Balancer has a WAF ACL attached.",
+        "description": "Check if Application Load Balancer has a WAF ACL attached.",
+        "cloudProvider": "AWS",
+        "service name": "elbv2"
+    },
+    {
+        "ID": "Elbv2-002",
+        "name": "Check if Elastic Load Balancers have logging enabled.",
+        "description": "Check if Elastic Load Balancers have logging enabled.",
+        "cloudProvider": "AWS",
+        "service name": "elbv2"
+    },
+    {
+        "ID": "Elbv2-003",
+        "name": "Check whether the Application Load Balancer is configured with strictest desync mitigation mode, if not check if at least is configured with the drop_invalid_header_fields attribute",
+        "description": "Check whether the Application Load Balancer is configured with strictest desync mitigation mode, if not check if at least is configured with the drop_invalid_header_fields attribute",
+        "cloudProvider": "AWS",
+        "service name": "elbv2"
+    },
+    {
+        "ID": "Elbv2-004",
+        "name": "Elastic Load Balancer V2 (ELBv2) is Configured Across Multiple Availability Zones (AZs)",
+        "description": "Ensure whether Elastic Load Balancer V2 (Application, Network, or Gateway Load Balancer) is configured to operate across multiple Availability Zones (AZs). Ensuring that your load balancer is spread across at least two AZs helps maintain high availability and fault tolerance in case of an AZ failure.",
+        "cloudProvider": "AWS",
+        "service name": "elbv2"
+    },
+    {
+        "ID": "Elbv2-005",
+        "name": "Check if Elastic Load Balancers have insecure SSL ciphers.",
+        "description": "Check if Elastic Load Balancers have insecure SSL ciphers.",
+        "cloudProvider": "AWS",
+        "service name": "elbv2"
+    },
+    {
+        "ID": "Elbv2-006",
+        "name": "Check for internet facing Elastic Load Balancers.",
+        "description": "Check for internet facing Elastic Load Balancers.",
+        "cloudProvider": "AWS",
+        "service name": "elbv2"
+    },
+    {
+        "ID": "Elbv2-007",
+        "name": "Check if Elastic Load Balancers have SSL listeners.",
+        "description": "Check if Elastic Load Balancers have SSL listeners.",
+        "cloudProvider": "AWS",
+        "service name": "elbv2"
+    },
+    {
+        "ID": "Elbv2-008",
+        "name": "Check if Elastic Load Balancers have deletion protection enabled.",
+        "description": "Check if Elastic Load Balancers have deletion protection enabled.",
+        "cloudProvider": "AWS",
+        "service name": "elbv2"
+    },
+    {
+        "ID": "Elbv2-009",
+        "name": "Check if ELBV2 has listeners underneath.",
+        "description": "Check if ELBV2 has listeners underneath.",
+        "cloudProvider": "AWS",
+        "service name": "elbv2"
+    }
+]

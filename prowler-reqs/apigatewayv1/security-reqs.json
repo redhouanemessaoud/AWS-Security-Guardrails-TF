@@ -1,0 +1,58 @@
+[
+    {
+        "ID": "Apigateway-001",
+        "name": "Check if API Gateway endpoint is public or private.",
+        "description": "Check if API Gateway endpoint is public or private.",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-002",
+        "name": "Check if AWS X-Ray tracing is enabled for API Gateway REST API stages.",
+        "description": "This control checks whether AWS X-Ray active tracing is enabled for your Amazon API Gateway REST API stages.",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-003",
+        "name": "Check if API Gateway Stage has a WAF ACL attached.",
+        "description": "Check if API Gateway Stage has a WAF ACL attached.",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-004",
+        "name": "Check if API Gateway Stage has logging enabled.",
+        "description": "Check if API Gateway Stage has logging enabled.",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-005",
+        "name": "Check if API Gateway Stage has client certificate enabled to access your backend endpoint.",
+        "description": "Check if API Gateway Stage has client certificate enabled to access your backend endpoint.",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-006",
+        "name": "Check if API Gateway REST API cache data is encrypted at rest.",
+        "description": "This control checks whether all methods in API Gateway REST API stages that have cache enabled are encrypted. The control fails if any method in an API Gateway REST API stage is configured to cache and the cache is not encrypted.",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-007",
+        "name": "Check if API Gateway has configured authorizers at api or method level.",
+        "description": "Check if API Gateway has configured authorizers at api or method level.",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-008",
+        "name": "Check if API Gateway public endpoint has an authorizer configured.",
+        "description": "Check if API Gateway public endpoint has an authorizer configured.",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    }
+]

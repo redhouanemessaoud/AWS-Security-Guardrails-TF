@@ -1,0 +1,20 @@
+[
+    {
+        "ID": "Mskcluster-001",
+        "name": "Ensure MSK Cluster encryption in rest and transit is enabled",
+        "cloudProvider": "AWS",
+        "service name": "mskcluster"
+    },
+    {
+        "ID": "Mskcluster-002",
+        "name": "Ensure MSK Cluster logging is enabled",
+        "cloudProvider": "AWS",
+        "service name": "mskcluster"
+    },
+    {
+        "ID": "Mskcluster-003",
+        "name": "Ensure MSK nodes are private",
+        "cloudProvider": "AWS",
+        "service name": "mskcluster"
+    }
+]

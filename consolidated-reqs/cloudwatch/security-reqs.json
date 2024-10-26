@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "cloudwatch:001",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for CloudWatch Log Group Encryption",
+    "description": "Ensure that all CloudWatch Log Groups are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMKs) for enhanced security and control over the encryption process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "cloudwatch:002",
+    "name": "Configure Appropriate Retention Period for CloudWatch Log Groups",
+    "description": "Set a retention period of at least 1 year for all CloudWatch Log Groups to ensure long-term storage and availability of log data for auditing, compliance, and forensic purposes.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:003",
+    "name": "Enable CloudWatch Alarm Actions",
+    "description": "Ensure that all CloudWatch Alarms have their actions enabled to allow automatic notification and response to monitored events and threshold breaches.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:004",
+    "name": "Configure CloudWatch Alarm Actions for ALARM State",
+    "description": "Ensure that all CloudWatch Alarms have at least one action configured for the ALARM state to enable proper notification and response to critical events.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:005",
+    "name": "Implement Log Metric Filter and Alarm for Unauthorized API Calls",
+    "description": "Create a CloudWatch log metric filter and alarm to detect and alert on unauthorized API calls, enhancing security monitoring and incident response capabilities.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:006",
+    "name": "Implement Log Metric Filter and Alarm for AWS Management Console Authentication Failures",
+    "description": "Establish a CloudWatch log metric filter and alarm to monitor and alert on AWS Management Console authentication failures, helping to detect potential security breaches or brute force attempts.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:007",
+    "name": "Implement Log Metric Filter and Alarm for IAM Policy Changes",
+    "description": "Set up a CloudWatch log metric filter and alarm to track and notify on any changes made to IAM policies, ensuring prompt awareness of potential security policy modifications.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:008",
+    "name": "Implement Log Metric Filter and Alarm for Security Group Changes",
+    "description": "Create a CloudWatch log metric filter and alarm to detect and alert on any modifications to security groups, helping to maintain network security integrity.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:009",
+    "name": "Implement Log Metric Filter and Alarm for Network Access Control List (NACL) Changes",
+    "description": "Establish a CloudWatch log metric filter and alarm to monitor and notify on any changes to Network Access Control Lists (NACLs), ensuring visibility into network access modifications.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:010",
+    "name": "Implement Log Metric Filter and Alarm for AWS Config Configuration Changes",
+    "description": "Set up a CloudWatch log metric filter and alarm to track and alert on any modifications to AWS Config configurations, maintaining awareness of changes to compliance and security monitoring settings.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:011",
+    "name": "Implement Log Metric Filter and Alarm for S3 Bucket Policy Changes",
+    "description": "Create a CloudWatch log metric filter and alarm to detect and notify on any alterations to S3 bucket policies, ensuring prompt awareness of potential security policy modifications for S3 resources.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:012",
+    "name": "Implement Log Metric Filter and Alarm for AWS Organizations Changes",
+    "description": "Establish a CloudWatch log metric filter and alarm to monitor and alert on any changes to AWS Organizations structure or policies, maintaining visibility into organizational-level modifications.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:013",
+    "name": "Implement Log Metric Filter and Alarm for VPC Changes",
+    "description": "Set up a CloudWatch log metric filter and alarm to track and notify on any modifications to VPC configurations, ensuring awareness of changes to network architecture and settings.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:014",
+    "name": "Implement Log Metric Filter and Alarm for Route Table Changes",
+    "description": "Create a CloudWatch log metric filter and alarm to detect and alert on any changes to route tables, helping to maintain the integrity of network routing configurations.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudwatch:015",
+    "name": "Implement Log Metric Filter and Alarm for Network Gateway Changes",
+    "description": "Establish a CloudWatch log metric filter and alarm to monitor and notify on any modifications to network gateways, ensuring visibility into changes affecting network connectivity and security.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  }
+]

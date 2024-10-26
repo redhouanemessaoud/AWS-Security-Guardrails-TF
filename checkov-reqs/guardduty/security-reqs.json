@@ -1,0 +1,14 @@
+[
+    {
+        "ID": "Guardduty-001",
+        "name": "Ensure GuardDuty is enabled to specific org/region",
+        "cloudProvider": "AWS",
+        "service name": "guardduty"
+    },
+    {
+        "ID": "Guardduty-002",
+        "name": "Ensure that GuardDuty detector is enabled",
+        "cloudProvider": "AWS",
+        "service name": "guardduty"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "ID": "Cloudsearch-001",
+        "name": "Ensure that CloudSearch is using https",
+        "cloudProvider": "AWS",
+        "service name": "cloudsearch"
+    },
+    {
+        "ID": "Cloudsearch-002",
+        "name": "Ensure that CloudSearch is using latest TLS",
+        "cloudProvider": "AWS",
+        "service name": "cloudsearch"
+    }
+]

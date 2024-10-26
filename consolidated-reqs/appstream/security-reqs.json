@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "appstream:001",
+    "name": "Limit AppStream user maximum session duration to 10 hours",
+    "description": "Configure AppStream user session settings to ensure that the maximum session duration is limited to 10 hours or less. This helps to prevent prolonged unauthorized access and reduces the risk of session hijacking.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "appstream:002",
+    "name": "Disable default Internet access for AppStream fleet streaming instances",
+    "description": "Ensure that the default Internet access option remains unchecked for Amazon AppStream fleet streaming instances. This prevents direct outbound internet access from the instances, reducing the attack surface and potential for data exfiltration. If internet access is required, it should be provisioned through controlled channels such as NAT gateways or proxy servers.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "appstream:003",
+    "name": "Set AppStream session idle disconnect timeout to 10 minutes or less",
+    "description": "Configure the AppStream session idle disconnect timeout to 10 minutes or less. This ensures that inactive sessions are automatically terminated, reducing the risk of unauthorized access to abandoned sessions.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "appstream:004",
+    "name": "Set AppStream session disconnect timeout to 5 minutes or less",
+    "description": "Configure the AppStream session disconnect timeout to 5 minutes or less. This setting determines how long a session remains active after a user disconnects, ensuring that resources are freed up promptly and reducing the window of opportunity for potential session hijacking.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "appstream:005",
+    "name": "Enable encryption for AppStream 2.0 user sessions",
+    "description": "Ensure that encryption is enabled for all AppStream 2.0 user sessions. This protects data in transit between the user's device and the AppStream 2.0 streaming instance, safeguarding against eavesdropping and man-in-the-middle attacks.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "appstream:006",
+    "name": "Use AWS KMS Customer Managed Keys (CMK) for AppStream 2.0 encryption",
+    "description": "Utilize AWS Key Management Service (KMS) Customer Managed Keys (CMK) for encryption of AppStream 2.0 resources, including user sessions and persistent storage. This provides enhanced control over the encryption keys and allows for fine-grained access control and auditing of key usage.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "appstream:007",
+    "name": "Implement least privilege access for AppStream 2.0 fleet and stack management",
+    "description": "Ensure that IAM policies for AppStream 2.0 fleet and stack management follow the principle of least privilege. Grant only the necessary permissions required for specific roles or users to perform their tasks, minimizing the potential impact of compromised credentials.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "appstream:008",
+    "name": "Enable AppStream 2.0 usage reports",
+    "description": "Enable AppStream 2.0 usage reports to gain insights into session activity, application usage, and user behavior. This information can be valuable for security monitoring, capacity planning, and identifying potential anomalies or misuse.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "appstream:009",
+    "name": "Configure AppStream 2.0 to use latest streaming protocols",
+    "description": "Ensure that AppStream 2.0 fleets are configured to use the latest available streaming protocols. This helps to maintain optimal performance and security by leveraging the most up-to-date features and protections provided by AWS.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "appstream:010",
+    "name": "Implement network isolation for AppStream 2.0 fleets",
+    "description": "Configure AppStream 2.0 fleets to run within isolated VPC subnets with appropriate network access controls. Use security groups and network ACLs to restrict inbound and outbound traffic to only necessary sources and destinations, minimizing the attack surface.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "appstream:011",
+    "name": "Enable AppStream 2.0 user file persistence with encryption",
+    "description": "If user file persistence is required, enable it with encryption for AppStream 2.0. Ensure that user data stored between sessions is encrypted using AWS KMS Customer Managed Keys (CMK) to protect sensitive information at rest.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "appstream:012",
+    "name": "Implement regular patching and updates for AppStream 2.0 images",
+    "description": "Establish a process for regularly updating and patching AppStream 2.0 images. This should include updating the operating system, applications, and security software to address known vulnerabilities and ensure the latest security features are in place.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "appstream:013",
+    "name": "Configure AppStream 2.0 to use SAML 2.0-based authentication",
+    "description": "Integrate AppStream 2.0 with a SAML 2.0-based identity provider for user authentication. This allows for centralized access management, enforcement of strong authentication policies, and seamless single sign-on (SSO) experiences for users.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "appstream:014",
+    "name": "Enable AppStream 2.0 application entitlements",
+    "description": "Utilize AppStream 2.0 application entitlements to control which users or groups have access to specific applications within a stack. This ensures that users can only access the applications they need, adhering to the principle of least privilege.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "appstream:015",
+    "name": "Implement AppStream 2.0 resource tagging for enhanced management and security",
+    "description": "Apply consistent and meaningful tags to AppStream 2.0 resources such as fleets, stacks, and images. Use these tags for better resource organization, access control, and cost allocation, which can indirectly improve security by enabling more granular management of resources.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

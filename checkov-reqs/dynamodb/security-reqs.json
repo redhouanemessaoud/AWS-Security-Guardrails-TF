@@ -1,0 +1,38 @@
+[
+    {
+        "ID": "Dynamodb-001",
+        "name": "Ensure DAX cluster endpoint is using TLS",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-002",
+        "name": "Ensure DAX is encrypted at rest (default is unencrypted)",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-003",
+        "name": "Ensure DynamoDB point in time recovery (backup) is enabled for global tables",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-004",
+        "name": "Ensure DynamoDB point in time recovery (backup) is enabled",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-005",
+        "name": "Ensure DynamoDB Tables are encrypted using a KMS Customer Managed CMK",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-006",
+        "name": "Ensure DynamoDB table replica KMS encryption uses CMK",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    }
+]

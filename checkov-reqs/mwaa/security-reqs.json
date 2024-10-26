@@ -1,0 +1,26 @@
+[
+    {
+        "ID": "Mwaa-001",
+        "name": "Ensure MWAA environment has scheduler logs enabled",
+        "cloudProvider": "AWS",
+        "service name": "mwaa"
+    },
+    {
+        "ID": "Mwaa-002",
+        "name": "Ensure MWAA environment has webserver logs enabled",
+        "cloudProvider": "AWS",
+        "service name": "mwaa"
+    },
+    {
+        "ID": "Mwaa-003",
+        "name": "Ensure MWAA environment has worker logs enabled",
+        "cloudProvider": "AWS",
+        "service name": "mwaa"
+    },
+    {
+        "ID": "Mwaa-004",
+        "name": "Ensure MWAA environment is not publicly accessible",
+        "cloudProvider": "AWS",
+        "service name": "mwaa"
+    }
+]

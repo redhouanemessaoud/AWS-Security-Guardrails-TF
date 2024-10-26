@@ -1,0 +1,8 @@
+[
+    {
+        "ID": "Bedrock-001",
+        "name": "Ensure Bedrock Agent is encrypted with a CMK",
+        "cloudProvider": "AWS",
+        "service name": "bedrock"
+    }
+]

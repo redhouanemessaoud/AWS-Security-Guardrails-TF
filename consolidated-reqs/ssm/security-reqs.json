@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "ssm:001",
+    "name": "Ensure SSM documents are not publicly accessible",
+    "description": "Configure SSM documents to be private and accessible only to authorized principals within the organization. This prevents unauthorized access to sensitive operational information and potential misuse of automation workflows.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ssm:002",
+    "name": "Use AWS KMS Customer Managed Keys (CMK) for encrypting SSM parameters",
+    "description": "Encrypt SSM parameters using AWS KMS Customer Managed Keys (CMK) instead of the default AWS managed keys. This provides greater control over the encryption process and allows for fine-grained access control to the parameters.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ssm:003",
+    "name": "Enable encryption for Session Manager data in transit",
+    "description": "Configure Session Manager to use AWS KMS encryption for data transmitted between the client and the managed instances. This ensures that all session data is encrypted during transmission, protecting against potential eavesdropping or man-in-the-middle attacks.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ssm:004",
+    "name": "Enable and encrypt Session Manager logs",
+    "description": "Enable logging for Session Manager and configure encryption for the logs using AWS KMS Customer Managed Keys (CMK). Store the logs in a designated S3 bucket or CloudWatch Logs group with appropriate access controls to maintain an audit trail of session activities.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "ssm:005",
+    "name": "Implement least privilege access for SSM documents and parameters",
+    "description": "Configure IAM policies to grant only the necessary permissions for users and roles to access and manage SSM documents and parameters. Regularly review and update these permissions to ensure they adhere to the principle of least privilege.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "ssm:006",
+    "name": "Enable AWS Config rules for SSM patch compliance",
+    "description": "Implement AWS Config rules to continuously monitor and assess the patch compliance status of EC2 instances managed by Systems Manager. Configure automated remediation actions or notifications for non-compliant instances to ensure timely patching.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ssm:007",
+    "name": "Use secure string parameter type for sensitive data in SSM Parameter Store",
+    "description": "Store sensitive information such as passwords, API keys, and connection strings as SecureString type parameters in SSM Parameter Store. This ensures that the parameter value is encrypted using AWS KMS and is not visible in plaintext.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ssm:008",
+    "name": "Implement version control for SSM documents",
+    "description": "Use version control for SSM documents to track changes, enable rollback capabilities, and maintain a history of document modifications. This helps in managing and auditing changes to automation workflows and configurations.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ssm:009",
+    "name": "Configure SSM Agent to use VPC endpoints",
+    "description": "Configure the SSM Agent on EC2 instances to communicate with Systems Manager services using VPC endpoints. This ensures that traffic between the instances and SSM services does not traverse the public internet, enhancing security and reducing exposure.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "ssm:010",
+    "name": "Implement resource tags for SSM managed instances",
+    "description": "Apply consistent and meaningful tags to EC2 instances managed by Systems Manager. Use these tags for organizing resources, controlling access through IAM policies, and facilitating cost allocation and reporting.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ssm:011",
+    "name": "Enable SSM Inventory for managed instances",
+    "description": "Enable SSM Inventory to automatically collect metadata about your managed instances, including installed applications, network configurations, and system properties. This information aids in maintaining an up-to-date inventory of your infrastructure and supports compliance and audit requirements.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "ssm:012",
+    "name": "Implement SSM Patch Manager baseline with auto-approval rules",
+    "description": "Create and maintain SSM Patch Manager baselines with auto-approval rules for critical and security updates. Configure patch groups and maintenance windows to ensure timely and consistent patching across your managed instances.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ssm:013",
+    "name": "Use SSM Run Command with approval workflow for critical operations",
+    "description": "Implement an approval workflow for critical SSM Run Command operations using AWS Systems Manager Change Manager. This ensures that sensitive or high-impact commands are reviewed and approved before execution, enhancing operational safety and compliance.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ssm:014",
+    "name": "Configure SSM Session Manager to use AWS PrivateLink",
+    "description": "Use AWS PrivateLink to establish private connectivity between your VPC and Session Manager, eliminating the need for an internet gateway or NAT device. This enhances security by keeping network traffic within the AWS network and reduces exposure to the public internet.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "ssm:015",
+    "name": "Implement SSM Parameter Store hierarchies for organized secret management",
+    "description": "Organize SSM parameters using hierarchies to simplify management and access control of secrets and configuration data. Use path-based naming conventions and IAM policies to grant fine-grained access to specific parameter paths or hierarchies.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

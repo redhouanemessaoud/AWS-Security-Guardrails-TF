@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "fms:001",
+    "name": "Ensure AWS Firewall Manager security policies are compliant",
+    "description": "Regularly review and ensure that all AWS Firewall Manager security policies defined in the administrator account are compliant with organizational security standards. This includes verifying that policies are correctly applied across accounts and resources, and that they enforce the intended security controls.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "fms:002",
+    "name": "Implement least privilege access for AWS Firewall Manager",
+    "description": "Ensure that IAM roles and policies associated with AWS Firewall Manager follow the principle of least privilege. Grant only the necessary permissions required for managing Firewall Manager policies and resources across the organization.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "fms:003",
+    "name": "Enable AWS Firewall Manager logging",
+    "description": "Enable logging for AWS Firewall Manager to capture detailed information about policy changes, compliance status, and other relevant events. Configure logs to be sent to a centralized logging solution for analysis and auditing purposes.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "fms:004",
+    "name": "Implement AWS Firewall Manager policies for WAF",
+    "description": "Create and maintain AWS Firewall Manager policies to centrally manage AWS WAF rules across accounts and resources in the organization. Ensure that these policies enforce consistent web application firewall protections.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "fms:005",
+    "name": "Implement AWS Firewall Manager policies for Shield Advanced",
+    "description": "Create and maintain AWS Firewall Manager policies to centrally manage AWS Shield Advanced protections across accounts and resources in the organization. Ensure that these policies provide consistent DDoS protection for critical resources.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "fms:006",
+    "name": "Implement AWS Firewall Manager policies for Security Groups",
+    "description": "Create and maintain AWS Firewall Manager policies to centrally manage Amazon VPC security groups across accounts and resources in the organization. Ensure that these policies enforce consistent network access controls.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "fms:007",
+    "name": "Regularly review and update AWS Firewall Manager policies",
+    "description": "Establish a process to regularly review and update AWS Firewall Manager policies to ensure they remain aligned with evolving security requirements and organizational changes. This should include periodic assessments of policy effectiveness and coverage.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "fms:008",
+    "name": "Implement AWS Firewall Manager policies for Network Firewall",
+    "description": "Create and maintain AWS Firewall Manager policies to centrally manage AWS Network Firewall rules across accounts and resources in the organization. Ensure that these policies provide consistent network traffic filtering and monitoring.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "fms:009",
+    "name": "Configure AWS Firewall Manager notifications",
+    "description": "Set up AWS Firewall Manager notifications to alert administrators about policy violations, non-compliant resources, and other security-related events. Configure notifications to be sent through appropriate channels such as Amazon SNS.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "fms:010",
+    "name": "Implement AWS Firewall Manager policies for DNS Firewall",
+    "description": "Create and maintain AWS Firewall Manager policies to centrally manage Route 53 Resolver DNS Firewall rules across accounts and resources in the organization. Ensure that these policies provide consistent DNS-level protection against threats.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  }
+]

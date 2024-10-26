@@ -1,0 +1,44 @@
+[
+    {
+        "ID": "Ec2-001",
+        "name": "EC2 instance should not have public IP.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-002",
+        "name": "Ensure all data stored in the Launch configuration or instance Elastic Blocks Store is securely encrypted",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-003",
+        "name": "Ensure an IAM role is attached to EC2 instance",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-004",
+        "name": "Ensure Instance Metadata Service Version 1 is not enabled",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-005",
+        "name": "Ensure no hard-coded secrets exist in EC2 user data",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-006",
+        "name": "Ensure that detailed monitoring is enabled for EC2 instances",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-007",
+        "name": "Ensure that EC2 is EBS optimized",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    }
+]

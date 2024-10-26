@@ -1,0 +1,26 @@
+[
+    {
+        "ID": "Route53-001",
+        "name": "Route53 A Record has Attached Resource",
+        "cloudProvider": "AWS",
+        "service name": "route53"
+    },
+    {
+        "ID": "Route53-002",
+        "name": "Ensure Domain Name System (DNS) query logging is enabled for Amazon Route 53 hosted zones",
+        "cloudProvider": "AWS",
+        "service name": "route53"
+    },
+    {
+        "ID": "Route53-003",
+        "name": "Ensure Domain Name System Security Extensions (DNSSEC) signing is enabled for Amazon Route 53 public hosted zones",
+        "cloudProvider": "AWS",
+        "service name": "route53"
+    },
+    {
+        "ID": "Route53-004",
+        "name": "Ensure Route 53 domains have transfer lock protection",
+        "cloudProvider": "AWS",
+        "service name": "route53"
+    }
+]

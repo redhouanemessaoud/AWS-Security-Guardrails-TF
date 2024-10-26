@@ -1,0 +1,23 @@
+[
+    {
+        "ID": "Sns-001",
+        "name": "Ensure there are no SNS subscriptions using HTTP endpoints",
+        "description": "Ensure there are no SNS subscriptions using HTTP endpoints",
+        "cloudProvider": "AWS",
+        "service name": "sns"
+    },
+    {
+        "ID": "Sns-002",
+        "name": "Ensure there are no SNS Topics unencrypted",
+        "description": "Ensure there are no SNS Topics unencrypted",
+        "cloudProvider": "AWS",
+        "service name": "sns"
+    },
+    {
+        "ID": "Sns-003",
+        "name": "Check if SNS topics have policy set as Public",
+        "description": "Check if SNS topics have policy set as Public",
+        "cloudProvider": "AWS",
+        "service name": "sns"
+    }
+]

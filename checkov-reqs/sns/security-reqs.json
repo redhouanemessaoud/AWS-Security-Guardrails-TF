@@ -1,0 +1,14 @@
+[
+    {
+        "ID": "Sns-001",
+        "name": "Ensure all data stored in the SNS topic is encrypted",
+        "cloudProvider": "AWS",
+        "service name": "sns"
+    },
+    {
+        "ID": "Sns-002",
+        "name": "Ensure SNS topic policy is not public by only allowing specific services or principals to access it",
+        "cloudProvider": "AWS",
+        "service name": "sns"
+    }
+]

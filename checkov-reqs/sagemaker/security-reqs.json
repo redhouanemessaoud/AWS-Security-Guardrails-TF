@@ -1,0 +1,74 @@
+[
+    {
+        "ID": "Sagemaker-001",
+        "name": "Ensure Amazon Sagemaker Data Quality Job encrypts all communications between instances used for monitoring jobs",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-002",
+        "name": "Ensure Amazon Sagemaker Data Quality Job uses KMS to encrypt data on attached storage volume",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-003",
+        "name": "Ensure Amazon Sagemaker Data Quality Job uses KMS to encrypt model artifacts",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-004",
+        "name": "Ensure Sagemaker domain and notebook instance are encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-005",
+        "name": "Ensure all data stored in the Sagemaker Endpoint is securely encrypted at rest",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-006",
+        "name": "Ensure Amazon SageMaker Flow Definition uses KMS for output configurations",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-007",
+        "name": "Ensure Amazon SageMaker model uses network isolation",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-008",
+        "name": "Ensure Amazon SageMaker Notebook Instance only allows for IMDSv2",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-009",
+        "name": "Ensure SageMaker notebook instances should be launched into a custom VPC",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-010",
+        "name": "Ensure SageMaker Notebook is encrypted at rest using KMS CMK",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-011",
+        "name": "Ensure SageMaker Users should not have root access to SageMaker notebook instances",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-012",
+        "name": "Ensure that direct internet access is disabled for an Amazon SageMaker Notebook Instance",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    }
+]

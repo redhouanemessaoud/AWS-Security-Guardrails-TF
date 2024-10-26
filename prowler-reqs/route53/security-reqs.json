@@ -1,0 +1,30 @@
+[
+    {
+        "ID": "Route53-001",
+        "name": "Check if Route53 public hosted zones are logging queries to CloudWatch Logs.",
+        "description": "Check if Route53 public hosted zones are logging queries to CloudWatch Logs.",
+        "cloudProvider": "AWS",
+        "service name": "route53"
+    },
+    {
+        "ID": "Route53-002",
+        "name": "Enable Transfer Lock for a Route53 Domain.",
+        "description": "Enable Transfer Lock for a Route53 Domain.",
+        "cloudProvider": "AWS",
+        "service name": "route53"
+    },
+    {
+        "ID": "Route53-003",
+        "name": "Enable Privacy Protection for for a Route53 Domain.",
+        "description": "Enable Privacy Protection for for a Route53 Domain.",
+        "cloudProvider": "AWS",
+        "service name": "route53"
+    },
+    {
+        "ID": "Route53-004",
+        "name": "Check if Route53 Records contains dangling IPs.",
+        "description": "Check if Route53 Records contains dangling IPs.",
+        "cloudProvider": "AWS",
+        "service name": "route53"
+    }
+]

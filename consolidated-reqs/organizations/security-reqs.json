@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "organizations:001",
+    "name": "Enable AWS Organizations AI services opt-out policy",
+    "description": "Enable the AWS Organizations opt-out policy for AI services to prevent AWS from using content processed by AI services for service improvements. This policy should be applied at the organization level to ensure consistent application across all member accounts.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "organizations:002",
+    "name": "Restrict AWS Regions using Service Control Policies (SCPs)",
+    "description": "Implement Service Control Policies (SCPs) to restrict access to only the AWS Regions required for your organization's operations. This helps reduce the attack surface and ensures resources are deployed only in approved regions.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "organizations:003",
+    "name": "Enable and attach tag policies in AWS Organizations",
+    "description": "Enable tag policies in AWS Organizations and attach them to the organization's root, organizational units (OUs), or accounts as appropriate. Tag policies help enforce consistent tagging strategies across the organization, improving resource management and cost allocation.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "organizations:004",
+    "name": "Restrict AWS Organizations delegated administrators to trusted accounts",
+    "description": "Ensure that only trusted accounts are designated as delegated administrators in AWS Organizations. Maintain a list of approved accounts and regularly review and update the delegated administrator assignments to prevent unauthorized access to organization-wide settings and resources.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "organizations:005",
+    "name": "Implement AWS Organizations for centralized management",
+    "description": "Ensure that all AWS accounts are part of an AWS Organizations structure. This enables centralized management of multiple AWS accounts, including consolidated billing, policy-based account management, and centralized security controls.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "organizations:006",
+    "name": "Enable AWS Organizations Service Control Policies (SCPs)",
+    "description": "Enable and implement Service Control Policies (SCPs) in AWS Organizations to set permission guardrails across the entire organization, organizational units (OUs), or individual accounts. SCPs help enforce security baselines and prevent overly permissive IAM policies.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "organizations:007",
+    "name": "Implement a multi-account strategy using AWS Organizations",
+    "description": "Design and implement a multi-account strategy using AWS Organizations, creating separate accounts for different environments (e.g., development, testing, production) or business units. This improves security isolation and simplifies access management.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "organizations:008",
+    "name": "Enable AWS Config aggregation using AWS Organizations",
+    "description": "Set up AWS Config aggregation using AWS Organizations to centralize configuration and compliance data from all member accounts. This provides a unified view of resource configurations and compliance status across the organization.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "organizations:009",
+    "name": "Implement AWS Organizations Backup Policies",
+    "description": "Enable and configure AWS Organizations Backup Policies to enforce consistent backup strategies across all member accounts. This ensures critical data is backed up according to organizational standards and compliance requirements.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "organizations:010",
+    "name": "Enable AWS Security Hub integration with AWS Organizations",
+    "description": "Configure AWS Security Hub integration with AWS Organizations to automatically enable Security Hub for all accounts in the organization. This provides centralized security and compliance monitoring across the entire AWS environment.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "organizations:011",
+    "name": "Implement AWS Organizations IAM Access Analyzer Policies",
+    "description": "Enable and configure AWS Organizations IAM Access Analyzer Policies to automatically analyze resource policies across all member accounts. This helps identify resources shared with external entities and potential security risks.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "organizations:012",
+    "name": "Use AWS Organizations to centralize CloudTrail logging",
+    "description": "Configure AWS Organizations to centralize CloudTrail logging by creating an organization trail that logs all events for all AWS accounts in the organization. This ensures comprehensive and consistent logging across all accounts.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "organizations:013",
+    "name": "Implement AWS Organizations password policy",
+    "description": "Create and apply an AWS Organizations password policy to enforce strong password requirements across all member accounts. This ensures consistent password standards throughout the organization.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "organizations:014",
+    "name": "Enable AWS Organizations consolidated billing",
+    "description": "Enable consolidated billing in AWS Organizations to centralize payment and take advantage of volume discounts. This also provides better visibility into organization-wide AWS spend and usage patterns.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "organizations:015",
+    "name": "Implement AWS Organizations data residency policies",
+    "description": "Create and apply AWS Organizations policies to enforce data residency requirements, ensuring that data and resources are only created in approved AWS Regions that comply with regulatory and organizational standards.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  }
+]

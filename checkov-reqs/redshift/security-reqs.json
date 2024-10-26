@@ -1,0 +1,74 @@
+[
+    {
+        "ID": "Redshift-001",
+        "name": "Ensure all data stored in the Redshift cluster is securely encrypted at rest",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-002",
+        "name": "Ensure Amazon Redshift clusters should have automatic snapshots enabled",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-003",
+        "name": "Ensure Redshift Cluster logging is enabled",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-004",
+        "name": "Ensure Redshift clusters do not use the default database name",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-005",
+        "name": "Ensure Redshift clusters use enhanced VPC routing",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-006",
+        "name": "Ensure Redshift is not deployed outside of a VPC",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-007",
+        "name": "Ensure that Redshift cluster is encrypted by KMS",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-008",
+        "name": "Ensured that Redshift cluster allowing version upgrade by default",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-009",
+        "name": "Redshift cluster should not be publicly accessible",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-010",
+        "name": "Ensure Redshift uses SSL",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-011",
+        "name": "Ensure RedShift snapshot copy is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-012",
+        "name": "Ensure that Redshift Serverless namespace is encrypted by KMS using a customer managed key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    }
+]

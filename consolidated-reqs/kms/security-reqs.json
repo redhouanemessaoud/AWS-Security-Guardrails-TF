@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "kms:001",
+    "name": "Enable Key Rotation for Customer Managed Keys (CMK)",
+    "description": "Ensure that automatic key rotation is enabled for all Customer Managed Keys (CMKs) with a rotation period of 90 days. This helps maintain the security of your encryption keys by regularly generating new cryptographic material.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "kms:002",
+    "name": "Prevent Unintentional Deletion of KMS Keys",
+    "description": "Implement safeguards to prevent accidental deletion of KMS keys. This includes setting an appropriate key deletion window (minimum 7 days) and regularly reviewing keys scheduled for deletion to ensure critical keys are not inadvertently removed.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "kms:003",
+    "name": "Ensure KMS Keys Are Actively Used",
+    "description": "Regularly audit and identify any Customer Managed Keys (CMKs) that are not being actively used. Unused keys should be scheduled for deletion after thorough verification to optimize key management and reduce unnecessary costs.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "kms:004",
+    "name": "Implement Least Privilege Access for KMS Keys",
+    "description": "Ensure that KMS key policies and IAM policies grant only the necessary permissions to authorized entities. Avoid using wildcard (*) principals in key policies, and instead specify exact AWS account IDs or IAM roles that require access to the keys.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "kms:005",
+    "name": "Enable Logging for KMS Key Usage",
+    "description": "Ensure that AWS CloudTrail logs capture all KMS key usage events. This includes enabling logging for all key management actions and cryptographic operations to maintain a comprehensive audit trail of key activities.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "kms:006",
+    "name": "Use Separate KMS Keys for Different Applications or Data Classifications",
+    "description": "Implement a strategy to use distinct KMS keys for different applications, services, or data classifications. This segregation helps in maintaining better access control and limits the potential impact if a single key is compromised.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "kms:007",
+    "name": "Implement Multi-Region KMS Keys for Critical Data",
+    "description": "For applications requiring high availability across regions, use multi-region KMS keys. This ensures that encrypted data can be decrypted in multiple AWS regions without the need to re-encrypt or transfer keys between regions.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "kms:008",
+    "name": "Regular Review and Rotation of KMS Key Policies",
+    "description": "Establish a process for regular review and rotation of KMS key policies. This should include periodic audits of key permissions, removal of outdated access, and updates to align with current security requirements and organizational changes.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "kms:009",
+    "name": "Enable Automatic Key Deletion for Imported Key Material",
+    "description": "For KMS keys with imported key material, enable automatic key deletion when the imported key material expires. This ensures that keys with expired material are promptly removed, maintaining the integrity of your encryption ecosystem.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "kms:010",
+    "name": "Implement KMS Key Aliases for Simplified Management",
+    "description": "Use KMS key aliases to create user-friendly names for your Customer Managed Keys (CMKs). This simplifies key management, makes it easier to identify the purpose of each key, and allows for seamless key rotation without updating application configurations.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

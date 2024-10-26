@@ -1,0 +1,26 @@
+[
+    {
+        "ID": "Sqs-001",
+        "name": "Ensure all data stored in the SQS queue is encrypted",
+        "cloudProvider": "AWS",
+        "service name": "sqs"
+    },
+    {
+        "ID": "Sqs-002",
+        "name": "Ensure AWS SQS uses CMK not AWS default keys for encryption",
+        "cloudProvider": "AWS",
+        "service name": "sqs"
+    },
+    {
+        "ID": "Sqs-003",
+        "name": "Ensure SQS queue policy is not public by only allowing specific services or principals to access it",
+        "cloudProvider": "AWS",
+        "service name": "sqs"
+    },
+    {
+        "ID": "Sqs-004",
+        "name": "Ensure SQS policy does not allow ALL (*) actions.",
+        "cloudProvider": "AWS",
+        "service name": "sqs"
+    }
+]

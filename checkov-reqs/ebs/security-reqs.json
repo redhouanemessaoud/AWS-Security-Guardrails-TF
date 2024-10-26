@@ -1,0 +1,32 @@
+[
+    {
+        "ID": "Ebs-001",
+        "name": "Ensure EBS default encryption is enabled",
+        "cloudProvider": "AWS",
+        "service name": "ebs"
+    },
+    {
+        "ID": "Ebs-002",
+        "name": "Ensure EBS Snapshot Copy is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "ebs"
+    },
+    {
+        "ID": "Ebs-003",
+        "name": "Ensure all data stored in the EBS is securely encrypted",
+        "cloudProvider": "AWS",
+        "service name": "ebs"
+    },
+    {
+        "ID": "Ebs-004",
+        "name": "Ensure EBS Volume is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "ebs"
+    },
+    {
+        "ID": "Ebs-005",
+        "name": "Ensure that only encrypted EBS volumes are attached to EC2 instances",
+        "cloudProvider": "AWS",
+        "service name": "ebs"
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "ID": "Apigateway-001",
+        "name": "Ensure Create before destroy for API deployments",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-002",
+        "name": "Ensure API Gateway Domain uses a modern security Policy",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-003",
+        "name": "Ensure API gateway method has authorization or API key set",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-004",
+        "name": "Ensure AWS API gateway request is validated",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-005",
+        "name": "Ensure there is no open access to back-end resources through API",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-006",
+        "name": "Ensure API Gateway method setting caching is enabled",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-007",
+        "name": "Ensure API Gateway method setting caching is set to encrypted",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-008",
+        "name": "Ensure API Gateway stage have logging level defined as appropriate",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-009",
+        "name": "Ensure Data Trace is not enabled in API Gateway Method Settings",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-010",
+        "name": "Ensure Create before destroy for API Gateway",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-011",
+        "name": "Ensure public API gateway are protected by WAF",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-012",
+        "name": "Ensure API Gateway caching is enabled",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-013",
+        "name": "Ensure API Gateway has Access Logging enabled",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-014",
+        "name": "Ensure API Gateway has X-Ray Tracing enabled",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-015",
+        "name": "Ensure AWS API Gateway endpoints uses client certificate authentication",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "ID": "Ssm-001",
+        "name": "Ensure Session Manager data is encrypted in transit",
+        "cloudProvider": "AWS",
+        "service name": "ssm"
+    },
+    {
+        "ID": "Ssm-002",
+        "name": "Ensure Session Manager logs are enabled and encrypted",
+        "cloudProvider": "AWS",
+        "service name": "ssm"
+    },
+    {
+        "ID": "Ssm-003",
+        "name": "Ensure SSM documents are not Public",
+        "cloudProvider": "AWS",
+        "service name": "ssm"
+    },
+    {
+        "ID": "Ssm-004",
+        "name": "AWS SSM Parameter should be Encrypted",
+        "cloudProvider": "AWS",
+        "service name": "ssm"
+    },
+    {
+        "ID": "Ssm-005",
+        "name": "Ensure SSM parameters are using KMS CMK",
+        "cloudProvider": "AWS",
+        "service name": "ssm"
+    },
+    {
+        "ID": "Ssm-006",
+        "name": "Ensure terraform is not sending SSM secrets to untrusted domains over HTTP",
+        "cloudProvider": "AWS",
+        "service name": "ssm"
+    }
+]

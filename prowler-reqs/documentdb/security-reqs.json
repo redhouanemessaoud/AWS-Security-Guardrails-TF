@@ -1,0 +1,37 @@
+[
+    {
+        "ID": "Documentdb-001",
+        "name": "Check if DocumentDB cluster storage is encrypted.",
+        "description": "Check if DocumentDB cluster storage is encrypted.",
+        "cloudProvider": "AWS",
+        "service name": "documentdb"
+    },
+    {
+        "ID": "Documentdb-002",
+        "name": "Check if DocumentDB Clusters have backup enabled.",
+        "description": "Check if DocumentDB Clusters have backup enabled.",
+        "cloudProvider": "AWS",
+        "service name": "DocumentDB"
+    },
+    {
+        "ID": "Documentdb-003",
+        "name": "Check if DocumentDB manual cluster snapshot is public.",
+        "description": "Check if DocumentDB manual cluster snapshot is public.",
+        "cloudProvider": "AWS",
+        "service name": "documentdb"
+    },
+    {
+        "ID": "Documentdb-004",
+        "name": "Check if DocumentDB clusters are using the log export feature.",
+        "description": "Check if DocumentDB clusters are using the log export feature.",
+        "cloudProvider": "AWS",
+        "service name": "documentdb"
+    },
+    {
+        "ID": "Documentdb-005",
+        "name": "Check if DocumentDB Clusters has deletion protection enabled.",
+        "description": "Check if DocumentDB Clusters has deletion protection enabled.",
+        "cloudProvider": "AWS",
+        "service name": "documentdb"
+    }
+]

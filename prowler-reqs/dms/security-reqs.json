@@ -1,0 +1,30 @@
+[
+    {
+        "ID": "Dms-001",
+        "name": "Ensure DMS instances have multi az enabled.",
+        "description": "Ensure DMS instances have multi az enabled.",
+        "cloudProvider": "AWS",
+        "service name": "dms"
+    },
+    {
+        "ID": "Dms-002",
+        "name": "Ensure DMS instances are not publicly accessible.",
+        "description": "Ensure DMS instances are not publicly accessible.",
+        "cloudProvider": "AWS",
+        "service name": "dms"
+    },
+    {
+        "ID": "Dms-003",
+        "name": "Ensure DMS instances have auto minor version upgrade enabled.",
+        "description": "Ensure DMS instances have auto minor version upgrade enabled.",
+        "cloudProvider": "AWS",
+        "service name": "dms"
+    },
+    {
+        "ID": "Dms-004",
+        "name": "Ensure SSL mode is enabled in DMS endpoint",
+        "description": "This check ensures that SSL mode is enabled for all AWS Database Migration Service (DMS) endpoints. Enabling SSL provides encryption in transit for data transferred through these endpoints.",
+        "cloudProvider": "AWS",
+        "service name": "dms"
+    }
+]

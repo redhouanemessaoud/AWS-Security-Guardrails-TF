@@ -1,0 +1,23 @@
+[
+    {
+        "ID": "Emr-001",
+        "name": "EMR Account Public Access Block enabled.",
+        "description": "EMR Account Public Access Block enabled.",
+        "cloudProvider": "AWS",
+        "service name": "emr"
+    },
+    {
+        "ID": "Emr-002",
+        "name": "EMR Cluster without Public IP.",
+        "description": "EMR Cluster without Public IP.",
+        "cloudProvider": "AWS",
+        "service name": "emr"
+    },
+    {
+        "ID": "Emr-003",
+        "name": "Publicly accessible EMR Cluster.",
+        "description": "Publicly accessible EMR Cluster.",
+        "cloudProvider": "AWS",
+        "service name": "emr"
+    }
+]

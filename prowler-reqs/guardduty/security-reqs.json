@@ -1,0 +1,58 @@
+[
+    {
+        "ID": "Guardduty-001",
+        "name": "There are High severity GuardDuty findings ",
+        "description": "There are High severity GuardDuty findings ",
+        "cloudProvider": "AWS",
+        "service name": "guardduty"
+    },
+    {
+        "ID": "Guardduty-002",
+        "name": "Ensure that GuardDuty Malware Protection for EC2 is enabled.",
+        "description": "GuardDuty Malware Protection for EC2 helps you detect the potential presence of malware by scanning the Amazon Elastic Block Store (Amazon EBS) volumes that are attached to Amazon Elastic Compute Cloud (Amazon EC2) instances and container workloads.",
+        "cloudProvider": "AWS",
+        "service name": "guardduty"
+    },
+    {
+        "ID": "Guardduty-003",
+        "name": "Check if GuardDuty is enabled",
+        "description": "Check if GuardDuty is enabled",
+        "cloudProvider": "AWS",
+        "service name": "guardduty"
+    },
+    {
+        "ID": "Guardduty-004",
+        "name": "Check if GuardDuty S3 Protection is enabled.",
+        "description": "This control checks whether GuardDuty S3 Protection is enabled in the account.",
+        "cloudProvider": "AWS",
+        "service name": "guardduty"
+    },
+    {
+        "ID": "Guardduty-005",
+        "name": "Check if GuardDuty RDS Protection is enabled.",
+        "description": "Check if GuardDuty RDS Protection is enabled to ensure monitoring and threat detection for RDS activity.",
+        "cloudProvider": "AWS",
+        "service name": "guardduty"
+    },
+    {
+        "ID": "Guardduty-006",
+        "name": "GuardDuty EKS Audit Log Monitoring Enabled",
+        "description": "Checks whether GuardDuty EKS Audit Log Monitoring is enabled as source in a detector.",
+        "cloudProvider": "AWS",
+        "service name": "guardduty"
+    },
+    {
+        "ID": "Guardduty-007",
+        "name": "Check if GuardDuty Lambda Protection is enabled.",
+        "description": "GuardDuty Lambda Protection helps you identify potential security threats when an AWS Lambda function gets invoked. After you enable Lambda Protection, GuardDuty starts monitoring Lambda network activity logs associated with the Lambda functions in your AWS account.",
+        "cloudProvider": "AWS",
+        "service name": "guardduty"
+    },
+    {
+        "ID": "Guardduty-008",
+        "name": "GuardDuty is centrally managed",
+        "description": "GuardDuty is centrally managed",
+        "cloudProvider": "AWS",
+        "service name": "guardduty"
+    }
+]

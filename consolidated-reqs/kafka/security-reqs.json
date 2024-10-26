@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "kafka:001",
+    "name": "Use private subnets for MSK cluster deployment",
+    "description": "Deploy Amazon MSK clusters in private subnets within a VPC to prevent direct internet access and enhance network security. Ensure that the subnets are configured with appropriate route tables and network ACLs to control traffic flow.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "kafka:002",
+    "name": "Enable mutual TLS authentication for MSK cluster",
+    "description": "Enable mutual TLS authentication for the MSK cluster to ensure that both the client and the server are authenticated. This provides an additional layer of security for communication within the Kafka cluster by verifying the identity of both parties.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "kafka:003",
+    "name": "Disable unauthenticated access for MSK cluster",
+    "description": "Ensure that unauthenticated access is disabled for the MSK cluster. Configure the cluster to require authentication for all client connections, preventing unauthorized access to the Kafka resources.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "kafka:004",
+    "name": "Enable enhanced monitoring for MSK brokers",
+    "description": "Enable enhanced monitoring for MSK brokers to gain additional visibility into the performance and behavior of the Kafka cluster. This allows for better insights into potential issues and helps in optimizing the cluster's performance.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "kafka:005",
+    "name": "Use AWS KMS Customer Managed Key for MSK cluster encryption at rest",
+    "description": "Configure the MSK cluster to use a Customer Managed Key (CMK) from AWS Key Management Service (KMS) for encryption at rest. This provides enhanced control over the encryption process and allows for fine-grained key management.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "kafka:006",
+    "name": "Use the latest supported Apache Kafka version for MSK cluster",
+    "description": "Ensure that the MSK cluster is using the latest supported version of Apache Kafka. Regularly update the cluster to benefit from the latest security features, bug fixes, and performance improvements provided by AWS and the Apache Kafka community.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "kafka:007",
+    "name": "Enable encryption in transit for MSK cluster",
+    "description": "Enable encryption in transit for the MSK cluster to protect data as it travels across the network. Configure TLS encryption for communication between clients and brokers, as well as between brokers within the cluster.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "kafka:008",
+    "name": "Implement fine-grained access control for MSK cluster",
+    "description": "Implement fine-grained access control for the MSK cluster using AWS IAM policies. Define specific permissions for different user groups or applications to access topics, consumer groups, and perform various Kafka operations, following the principle of least privilege.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "kafka:009",
+    "name": "Configure secure client authentication for MSK cluster",
+    "description": "Configure secure client authentication for the MSK cluster using either IAM access control or SASL/SCRAM authentication. This ensures that only authorized clients can connect to and interact with the Kafka cluster.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "kafka:010",
+    "name": "Enable automatic minor version upgrades for MSK cluster",
+    "description": "Enable automatic minor version upgrades for the MSK cluster to ensure that the cluster automatically receives patches and minor version updates. This helps maintain the cluster's security posture by applying the latest security fixes.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "kafka:011",
+    "name": "Implement multi-AZ deployment for MSK cluster",
+    "description": "Deploy the MSK cluster across multiple Availability Zones (AZs) to enhance high availability and fault tolerance. This ensures that the cluster can continue to operate even if one AZ experiences an outage.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "kafka:012",
+    "name": "Configure MSK cluster logging",
+    "description": "Enable and configure logging for the MSK cluster. Set up broker logs to be delivered to Amazon CloudWatch Logs, Amazon S3, or Amazon Kinesis Data Firehose for centralized log management and analysis.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "kafka:013",
+    "name": "Implement MSK cluster monitoring using Amazon CloudWatch",
+    "description": "Set up monitoring for the MSK cluster using Amazon CloudWatch. Configure appropriate metrics and alarms to track the cluster's performance, resource utilization, and potential security issues.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "kafka:014",
+    "name": "Use VPC peering or AWS Transit Gateway for secure MSK cluster access",
+    "description": "Implement VPC peering or AWS Transit Gateway to enable secure access to the MSK cluster from other VPCs or on-premises networks. This ensures that traffic between the Kafka clients and the cluster remains within the AWS network.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "kafka:015",
+    "name": "Implement proper topic and partition management for MSK cluster",
+    "description": "Implement proper topic and partition management practices for the MSK cluster. This includes setting appropriate retention periods, configuring partition counts based on throughput requirements, and implementing topic-level security to control access to sensitive data.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

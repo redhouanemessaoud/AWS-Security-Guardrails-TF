@@ -1,0 +1,38 @@
+[
+    {
+        "ID": "Securitygroup-001",
+        "name": "Ensure the default security group of every VPC restricts all traffic",
+        "cloudProvider": "AWS",
+        "service name": "securitygroup"
+    },
+    {
+        "ID": "Securitygroup-002",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port -1",
+        "cloudProvider": "AWS",
+        "service name": "securitygroup"
+    },
+    {
+        "ID": "Securitygroup-003",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 22",
+        "cloudProvider": "AWS",
+        "service name": "securitygroup"
+    },
+    {
+        "ID": "Securitygroup-004",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 3389",
+        "cloudProvider": "AWS",
+        "service name": "securitygroup"
+    },
+    {
+        "ID": "Securitygroup-005",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0:0 to port 80",
+        "cloudProvider": "AWS",
+        "service name": "securitygroup"
+    },
+    {
+        "ID": "Securitygroup-006",
+        "name": "Ensure that Security Groups are attached to another resource",
+        "cloudProvider": "AWS",
+        "service name": "securitygroup"
+    }
+]

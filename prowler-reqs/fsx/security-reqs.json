@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "Fsx-001",
+        "name": "Check if FSx file systems are configured to copy tags to backups.",
+        "description": "Check if an Amazon FSx file system is configured to copy tags to backups. The control fails if this configuration isn't enabled.",
+        "cloudProvider": "AWS",
+        "service name": "fsx"
+    },
+    {
+        "ID": "Fsx-002",
+        "name": "Check if FSx file systems are configured to copy tags to volumes.",
+        "description": "Check if an Amazon FSx file system is configured to copy tags to volumes. The control fails if this configuration isn't enabled.",
+        "cloudProvider": "AWS",
+        "service name": "fsx"
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "ID": "Memorydb-001",
+        "name": "Ensure MemoryDB data is encrypted in transit",
+        "cloudProvider": "AWS",
+        "service name": "memorydb"
+    },
+    {
+        "ID": "Memorydb-002",
+        "name": "Ensure MemoryDB is encrypted at rest using KMS CMKs",
+        "cloudProvider": "AWS",
+        "service name": "memorydb"
+    },
+    {
+        "ID": "Memorydb-003",
+        "name": "Ensure MemoryDB snapshot is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "memorydb"
+    }
+]

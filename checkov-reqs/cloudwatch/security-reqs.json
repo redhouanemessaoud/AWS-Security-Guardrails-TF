@@ -1,0 +1,26 @@
+[
+    {
+        "ID": "Cloudwatch-001",
+        "name": "Ensure CloudWatch log groups retains logs for at least 1 year",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-002",
+        "name": "Ensure that CloudWatch Log Group is encrypted by KMS",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-003",
+        "name": "Ensure that CloudWatch Log Group specifies retention days",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-004",
+        "name": "Ensure that CloudWatch alarm actions are enabled",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    }
+]

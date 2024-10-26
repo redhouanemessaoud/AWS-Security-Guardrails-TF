@@ -1,0 +1,30 @@
+[
+    {
+        "ID": "Eventbridge-001",
+        "name": "Ensure that your AWS EventBridge event bus is not exposed to everyone",
+        "description": "Ensure that your AWS EventBridge event bus is not exposed to everyone.",
+        "cloudProvider": "AWS",
+        "service name": "eventbridge"
+    },
+    {
+        "ID": "Eventbridge-002",
+        "name": "Ensure that AWS EventBridge event buses do not allow unknown cross-account access for delivery of events.",
+        "description": "Ensure that AWS EventBridge event buses do not allow unknown cross-account access for delivery of events.",
+        "cloudProvider": "AWS",
+        "service name": "eventbridge"
+    },
+    {
+        "ID": "Eventbridge-003",
+        "name": "Check if EventBridge global endpoints have event replication enabled.",
+        "description": "Check if event replication is enabled for an Amazon EventBridge global endpoint. The control fails if event replication isn't enabled.",
+        "cloudProvider": "AWS",
+        "service name": "eventbridge"
+    },
+    {
+        "ID": "Eventbridge-004",
+        "name": "Ensure that AWS EventBridge schema registries do not allow unknown cross-account access for delivery of events.",
+        "description": "Ensure that AWS EventBridge schema registries do not allow unknown cross-account access for delivery of events.",
+        "cloudProvider": "AWS",
+        "service name": "eventbridge"
+    }
+]

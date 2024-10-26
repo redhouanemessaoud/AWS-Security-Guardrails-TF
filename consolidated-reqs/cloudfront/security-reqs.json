@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "cloudfront:001",
+    "name": "Enforce HTTPS-only communication for CloudFront distributions",
+    "description": "Configure CloudFront distributions to use HTTPS-only communication by setting the ViewerProtocolPolicy to 'HTTPS-only' for all cache behaviors. This ensures that all client-to-CloudFront and CloudFront-to-origin communication is encrypted.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "cloudfront:002",
+    "name": "Enable Server Name Indication (SNI) for CloudFront distributions",
+    "description": "Configure CloudFront distributions to use Server Name Indication (SNI) for serving HTTPS requests. This allows multiple SSL/TLS certificates to be used on a single IP address, improving security and reducing costs.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "cloudfront:003",
+    "name": "Ensure CloudFront distributions point to valid S3 origins",
+    "description": "Verify that all CloudFront distributions are configured with valid and existing S3 buckets as origins. Regularly audit and update origin configurations to prevent potential security risks and service disruptions.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "cloudfront:004",
+    "name": "Implement geo-restriction for CloudFront distributions",
+    "description": "Enable geo-restriction for CloudFront distributions to control access to content based on the geographic location of viewers. Configure either allowlist or blocklist of countries as per the content distribution requirements.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "cloudfront:005",
+    "name": "Configure origin failover for CloudFront distributions",
+    "description": "Set up origin failover for CloudFront distributions by configuring origin groups with a primary and a secondary origin. This ensures high availability and continuity of content delivery in case the primary origin becomes unavailable.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "cloudfront:006",
+    "name": "Use Origin Access Control (OAC) for CloudFront distributions with S3 origins",
+    "description": "Implement Origin Access Control (OAC) for CloudFront distributions that use S3 buckets as origins. This ensures that S3 bucket contents are accessible only through CloudFront and not directly from the S3 URL.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "cloudfront:007",
+    "name": "Enable Field-Level Encryption for sensitive data in CloudFront distributions",
+    "description": "Configure Field-Level Encryption for CloudFront distributions to encrypt specific data fields before sending the data to your origin. This provides an additional layer of security for sensitive information throughout the entire application stack.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "cloudfront:008",
+    "name": "Enable access logging for CloudFront distributions",
+    "description": "Activate access logging for all CloudFront distributions to capture detailed information about every user request received by CloudFront. Configure logs to be stored in a designated S3 bucket with appropriate access controls and lifecycle policies.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudfront:009",
+    "name": "Use latest TLS version for CloudFront viewer and origin connections",
+    "description": "Configure CloudFront distributions to use the latest TLS version (currently TLS 1.2 or higher) for both viewer connections and origin connections. Disable support for older, deprecated SSL/TLS protocols to enhance security.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "cloudfront:010",
+    "name": "Configure default root object for CloudFront distributions",
+    "description": "Set a default root object (e.g., index.html) for all CloudFront distributions to ensure that requests to the root URL of your distribution return a specific object instead of listing the contents of your distribution.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "cloudfront:011",
+    "name": "Integrate AWS WAF with CloudFront distributions",
+    "description": "Associate AWS WAF (Web Application Firewall) with CloudFront distributions to protect against common web exploits and bots that could affect availability, compromise security, or consume excessive resources.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "cloudfront:012",
+    "name": "Use custom SSL/TLS certificates for CloudFront distributions",
+    "description": "Configure CloudFront distributions to use custom SSL/TLS certificates (ACM or IAM) instead of the default CloudFront certificate. This enhances security and provides a consistent branded experience for your users.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "cloudfront:013",
+    "name": "Implement response headers policy for CloudFront distributions",
+    "description": "Attach a response headers policy to CloudFront distributions to add security headers to HTTP responses. Include headers such as Strict-Transport-Security (HSTS), Content-Security-Policy, X-Frame-Options, and X-XSS-Protection to enhance the security posture of your web applications.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "cloudfront:014",
+    "name": "Enforce HTTPS for CloudFront origin protocol policy",
+    "description": "Configure the CloudFront origin protocol policy to enforce HTTPS-only communication between CloudFront and your custom origins. This ensures end-to-end encryption of data in transit.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "cloudfront:015",
+    "name": "Implement standard encryption for real-time logs",
+    "description": "When using real-time logs with CloudFront, ensure that standard encryption is enabled for the Kinesis data stream. This protects the log data at rest and ensures compliance with data protection regulations.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  }
+]

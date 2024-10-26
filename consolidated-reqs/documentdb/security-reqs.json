@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "documentdb:001",
+    "name": "Enable encryption at rest for DocumentDB clusters using AWS KMS Customer Managed Keys (CMK)",
+    "description": "Ensure that all DocumentDB clusters have encryption at rest enabled using AWS Key Management Service (KMS) Customer Managed Keys (CMK). This provides an additional layer of data protection for your stored data.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "documentdb:002",
+    "name": "Enable automatic backups for DocumentDB clusters with adequate retention period",
+    "description": "Configure automatic backups for all DocumentDB clusters with a retention period of at least 7 days. This ensures that you can recover your data in case of accidental deletion or corruption.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "documentdb:003",
+    "name": "Disable public access for DocumentDB manual cluster snapshots",
+    "description": "Ensure that all manual snapshots of DocumentDB clusters are not publicly accessible. This prevents unauthorized access to potentially sensitive data stored in these snapshots.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "documentdb:004",
+    "name": "Enable log export feature for DocumentDB clusters",
+    "description": "Configure the log export feature for all DocumentDB clusters to send audit logs, profiler logs, and slow query logs to Amazon CloudWatch Logs. This enables better monitoring and analysis of database activities.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "documentdb:005",
+    "name": "Enable deletion protection for DocumentDB clusters",
+    "description": "Activate deletion protection for all DocumentDB clusters to prevent accidental deletion of the database. This adds an additional safeguard against data loss.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "documentdb:006",
+    "name": "Enable audit logging for DocumentDB clusters",
+    "description": "Activate audit logging for all DocumentDB clusters to track and record database activities. This helps in monitoring user actions, detecting suspicious activities, and maintaining compliance requirements.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "documentdb:007",
+    "name": "Enforce TLS connections for DocumentDB clusters",
+    "description": "Ensure that Transport Layer Security (TLS) is enforced for all connections to DocumentDB clusters. This secures data in transit between the client and the database instance.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "documentdb:008",
+    "name": "Enable encryption at rest for DocumentDB global clusters",
+    "description": "Ensure that all DocumentDB global clusters have encryption at rest enabled using AWS Key Management Service (KMS) Customer Managed Keys (CMK). This provides an additional layer of data protection for your globally distributed data.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "documentdb:009",
+    "name": "Implement least privilege access for DocumentDB clusters",
+    "description": "Ensure that IAM policies and DocumentDB cluster policies follow the principle of least privilege, granting only the necessary permissions to authorized entities. This minimizes the potential impact of compromised credentials.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "documentdb:010",
+    "name": "Enable enhanced monitoring for DocumentDB clusters",
+    "description": "Activate enhanced monitoring for all DocumentDB clusters to collect detailed metrics at the operating system level. This provides deeper insights into the performance and health of your database instances.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "documentdb:011",
+    "name": "Use latest TLS version for DocumentDB connections",
+    "description": "Ensure that the latest supported TLS version is used for all connections to DocumentDB clusters. This provides the most up-to-date security for data in transit.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "documentdb:012",
+    "name": "Implement secure password policies for DocumentDB users",
+    "description": "Enforce strong password policies for all DocumentDB users, including minimum length, complexity requirements, and regular password rotation. This helps protect against unauthorized access through weak or compromised credentials.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "documentdb:013",
+    "name": "Restrict network access to DocumentDB clusters",
+    "description": "Configure security groups and network ACLs to restrict network access to DocumentDB clusters. Allow connections only from necessary and approved IP ranges or VPC resources.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "documentdb:014",
+    "name": "Enable automatic minor version upgrades for DocumentDB clusters",
+    "description": "Configure automatic minor version upgrades for all DocumentDB clusters to ensure they receive the latest security patches and bug fixes automatically.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "documentdb:015",
+    "name": "Implement regular patching schedule for DocumentDB clusters",
+    "description": "Establish and follow a regular patching schedule for DocumentDB clusters to apply the latest security updates and patches. This helps maintain the overall security posture of your database instances.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

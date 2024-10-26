@@ -1,0 +1,20 @@
+[
+    {
+        "ID": "Athena-001",
+        "name": "Ensure Athena Database is encrypted at rest (default is unencrypted)",
+        "cloudProvider": "AWS",
+        "service name": "athena"
+    },
+    {
+        "ID": "Athena-002",
+        "name": "Ensure Athena Workgroup should enforce configuration to prevent client disabling encryption",
+        "cloudProvider": "AWS",
+        "service name": "athena"
+    },
+    {
+        "ID": "Athena-003",
+        "name": "Ensure that Athena Workgroup is encrypted",
+        "cloudProvider": "AWS",
+        "service name": "athena"
+    }
+]

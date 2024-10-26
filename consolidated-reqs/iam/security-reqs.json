@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "iam:001",
+    "name": "Implement least privilege access for IAM policies",
+    "description": "Ensure that IAM policies follow the principle of least privilege, granting only the necessary permissions to authorized entities. Avoid using wildcard (*) permissions or attaching policies that allow full access to services (e.g., '*:*', 'iam:*', 'kms:*', 'cloudtrail:*'). Instead, specify exact actions and resources required for each role or user.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:002",
+    "name": "Configure strong IAM password policy",
+    "description": "Implement a strong IAM password policy that requires a minimum length of 14 characters, includes uppercase and lowercase letters, numbers, and symbols, expires passwords within 90 days, and prevents password reuse for at least 24 previous passwords.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:003",
+    "name": "Enforce multi-factor authentication (MFA) for all IAM users",
+    "description": "Ensure that multi-factor authentication (MFA) is enabled for all IAM users, especially those with console access or elevated privileges. Prefer hardware MFA devices for enhanced security.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:004",
+    "name": "Restrict use of the AWS root account",
+    "description": "Avoid using the AWS root account for daily operations. Ensure that the root account does not have access keys and is protected with hardware MFA. Create and use IAM users with appropriate permissions for administrative tasks.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:005",
+    "name": "Use IAM roles for EC2 instances and AWS services",
+    "description": "Utilize IAM roles instead of long-term access keys for EC2 instances and other AWS services. This practice enhances security by providing temporary, automatically rotating credentials.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:006",
+    "name": "Implement regular access key rotation",
+    "description": "Implement a process to regularly rotate IAM user access keys. Disable or delete unused access keys and user accounts promptly.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:007",
+    "name": "Use IAM groups for access management",
+    "description": "Organize IAM users into groups and attach policies to groups rather than individual users. Ensure that all IAM users are members of at least one IAM group to simplify access management.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:008",
+    "name": "Implement IAM access analyzer",
+    "description": "Enable and utilize IAM Access Analyzer to identify resources in your organization and accounts that are shared with an external entity. Regularly review and address the findings to ensure appropriate resource access.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:009",
+    "name": "Use Service Control Policies (SCPs) for organizational control",
+    "description": "Implement Service Control Policies (SCPs) at the AWS Organizations level to set permission guardrails across all accounts in your organization. Use SCPs to enforce security baselines and prevent privilege escalation.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:010",
+    "name": "Implement and maintain IAM user access reviews",
+    "description": "Regularly review and audit IAM users, groups, roles, and policies to ensure that access remains appropriate. Remove or update permissions that are no longer needed or align with job responsibilities.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:011",
+    "name": "Use IAM policy conditions for enhanced security",
+    "description": "Leverage IAM policy conditions to add extra security controls, such as restricting access based on IP ranges, time of day, or the use of multi-factor authentication (MFA).",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:012",
+    "name": "Implement cross-account access using IAM roles",
+    "description": "When granting cross-account access, use IAM roles instead of creating IAM users in each account. This approach provides better security and easier management of cross-account access.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:013",
+    "name": "Use IAM policy simulator for testing",
+    "description": "Utilize the IAM policy simulator to test and validate the effects of IAM policies before applying them to users, groups, or roles. This helps ensure that policies grant the intended permissions and do not inadvertently allow excessive access.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "iam:014",
+    "name": "Implement IAM credential report monitoring",
+    "description": "Regularly generate and review IAM credential reports to monitor the status of user credentials, including passwords, access keys, and MFA devices. Use this information to enforce security policies and identify potential security risks.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "iam:015",
+    "name": "Use temporary security credentials for federated access",
+    "description": "When integrating with external identity providers, use temporary security credentials (IAM roles and the AWS Security Token Service) instead of creating IAM users. This approach enhances security and simplifies access management for federated users.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

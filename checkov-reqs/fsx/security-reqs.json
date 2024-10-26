@@ -1,0 +1,20 @@
+[
+    {
+        "ID": "Fsx-001",
+        "name": "Ensure lustre file systems is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "fsx"
+    },
+    {
+        "ID": "Fsx-002",
+        "name": "Ensure fx ontap file system is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "fsx"
+    },
+    {
+        "ID": "Fsx-003",
+        "name": "Ensure FSX Windows filesystem is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "fsx"
+    }
+]

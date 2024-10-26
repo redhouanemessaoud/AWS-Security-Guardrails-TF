@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "appsync:001",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for AppSync API Cache Encryption at Rest",
+    "description": "Ensure that the AppSync API cache is encrypted at rest using an AWS KMS Customer Managed Key (CMK). This provides an additional layer of security and control over the encryption keys used to protect the cached data.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "appsync:002",
+    "name": "Enable Encryption in Transit for AppSync API Cache",
+    "description": "Ensure that data transferred to and from the AppSync API cache is encrypted in transit using TLS 1.2 or later. This protects the confidentiality and integrity of data as it moves between the API and the cache.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "appsync:003",
+    "name": "Enable Field-Level Logging for AppSync API",
+    "description": "Enable field-level logging for the AppSync API to capture detailed information about each resolver invocation. This provides granular visibility into API operations, aiding in debugging, performance optimization, and security analysis.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "appsync:004",
+    "name": "Enable CloudWatch Logging for AppSync API",
+    "description": "Enable CloudWatch logging for the AppSync API to capture API-level logs. Configure appropriate log retention periods and ensure that logs are stored in a dedicated log group for easier management and analysis.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "appsync:005",
+    "name": "Integrate AppSync API with AWS WAF",
+    "description": "Protect the AppSync API by integrating it with AWS WAF (Web Application Firewall). Configure appropriate WAF rules to defend against common web exploits and provide an additional layer of security for your API endpoints.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "appsync:006",
+    "name": "Implement Least Privilege Access for AppSync API",
+    "description": "Ensure that IAM policies for AppSync API access follow the principle of least privilege. Grant only the necessary permissions to authorized entities for managing and accessing the API and its resources.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "appsync:007",
+    "name": "Enable AWS CloudTrail for AppSync API Monitoring",
+    "description": "Ensure that AWS CloudTrail is configured to capture all AppSync API management events. This provides an audit trail of API configuration changes and access patterns for security analysis and compliance purposes.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "appsync:008",
+    "name": "Implement Private Endpoints for AppSync API",
+    "description": "Configure AppSync API to use VPC endpoints or AWS PrivateLink to keep API traffic within the AWS network and reduce exposure to the public internet. This enhances security by limiting the API's attack surface.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "appsync:009",
+    "name": "Enable HTTPS-Only Access for AppSync API",
+    "description": "Enforce HTTPS-only access to the AppSync API by configuring the API to reject any non-HTTPS requests. This ensures that all API communications are encrypted in transit.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "appsync:010",
+    "name": "Implement Strong Authentication for AppSync API",
+    "description": "Configure strong authentication mechanisms for the AppSync API, such as AWS IAM, Amazon Cognito User Pools, or OpenID Connect. Ensure that all API access requires proper authentication and authorization.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "appsync:011",
+    "name": "Enable and Configure API Request Throttling",
+    "description": "Enable and configure appropriate request throttling limits for the AppSync API to protect against excessive use and potential denial-of-service attacks. Set rate limits based on your application's requirements and expected traffic patterns.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "appsync:012",
+    "name": "Implement Data Validation for AppSync API Inputs",
+    "description": "Implement robust input validation for all AppSync API requests using schema validation and custom resolvers. This helps prevent injection attacks and ensures that only valid and expected data is processed by the API.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "appsync:013",
+    "name": "Enable and Configure AppSync API Caching Securely",
+    "description": "If using AppSync API caching, ensure it is configured securely. Set appropriate TTL values, use encryption at rest and in transit, and implement cache invalidation strategies to maintain data freshness and security.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "appsync:014",
+    "name": "Implement Secure Error Handling for AppSync API",
+    "description": "Configure secure error handling for the AppSync API to prevent sensitive information leakage. Ensure that error messages returned to clients do not expose internal system details or sensitive data.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "appsync:015",
+    "name": "Use Latest GraphQL Schema Version for AppSync API",
+    "description": "Ensure that the AppSync API is using the latest version of the GraphQL schema. Regularly review and update the schema to incorporate security best practices and remove any deprecated or insecure fields or types.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

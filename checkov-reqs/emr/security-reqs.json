@@ -1,0 +1,44 @@
+[
+    {
+        "ID": "Emr-001",
+        "name": "Ensure AWS EMR cluster is configured with security configuration",
+        "cloudProvider": "AWS",
+        "service name": "emr"
+    },
+    {
+        "ID": "Emr-002",
+        "name": "Ensure that Amazon EMR clusters\u2019 security groups are not open to the world",
+        "cloudProvider": "AWS",
+        "service name": "emr"
+    },
+    {
+        "ID": "Emr-003",
+        "name": "Ensure that EMR clusters with Kerberos have Kerberos Realm set",
+        "cloudProvider": "AWS",
+        "service name": "emr"
+    },
+    {
+        "ID": "Emr-004",
+        "name": "Ensure EMR Cluster security configuration encryption is using SSE-KMS",
+        "cloudProvider": "AWS",
+        "service name": "emr"
+    },
+    {
+        "ID": "Emr-005",
+        "name": "Ensure EMR Cluster security configuration encrypts EBS disks",
+        "cloudProvider": "AWS",
+        "service name": "emr"
+    },
+    {
+        "ID": "Emr-006",
+        "name": "Ensure EMR Cluster security configuration encrypts InTransit",
+        "cloudProvider": "AWS",
+        "service name": "emr"
+    },
+    {
+        "ID": "Emr-007",
+        "name": "Ensure EMR Cluster security configuration encrypts local disks",
+        "cloudProvider": "AWS",
+        "service name": "emr"
+    }
+]

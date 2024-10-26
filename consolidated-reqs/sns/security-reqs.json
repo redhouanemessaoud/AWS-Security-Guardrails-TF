@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "sns:001",
+    "name": "Use HTTPS endpoints for SNS subscriptions",
+    "description": "Ensure all SNS subscriptions use HTTPS endpoints instead of HTTP to encrypt data in transit. This helps protect sensitive information from potential eavesdropping or man-in-the-middle attacks.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "sns:002",
+    "name": "Enable server-side encryption for SNS topics using KMS CMK",
+    "description": "Enable server-side encryption for all SNS topics using AWS Key Management Service (KMS) Customer Managed Keys (CMK). This ensures that all data stored within the SNS topics is encrypted at rest, providing an additional layer of data protection.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sns:003",
+    "name": "Implement least privilege access for SNS topics",
+    "description": "Ensure SNS topic policies follow the principle of least privilege by restricting access to only specified AWS accounts, services, or IAM principals. Avoid using wildcard principals or overly permissive policies to minimize the risk of unauthorized access.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "sns:004",
+    "name": "Enable SNS topic encryption in transit",
+    "description": "Enforce the use of HTTPS (TLS) for all access to SNS topics to ensure data encryption in transit. This helps protect sensitive information from potential eavesdropping or man-in-the-middle attacks during transmission.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "sns:005",
+    "name": "Implement SNS access logging",
+    "description": "Enable SNS access logging to track API calls made to SNS topics. This helps in monitoring and auditing access patterns, detecting unauthorized access attempts, and maintaining compliance with security policies.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "sns:006",
+    "name": "Implement SNS message filtering",
+    "description": "Use SNS message filtering to control which messages are delivered to specific subscriptions. This helps in implementing fine-grained access control and reduces the risk of sensitive information being sent to unauthorized endpoints.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "sns:007",
+    "name": "Enable SNS topic tagging",
+    "description": "Implement a consistent tagging strategy for SNS topics to improve resource management, cost allocation, and security governance. Tags should include information such as owner, project, environment, and data classification.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "sns:008",
+    "name": "Implement SNS dead-letter queues",
+    "description": "Configure dead-letter queues (DLQ) for SNS topics to capture messages that fail to be delivered. This helps in identifying and troubleshooting delivery issues, ensuring no critical messages are lost, and maintaining the reliability of the messaging system.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "sns:009",
+    "name": "Implement SNS message attributes for enhanced security",
+    "description": "Use SNS message attributes to include additional metadata with messages, such as encryption context or security labels. This can be used to implement fine-grained access control and enhance the overall security of the messaging system.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sns:010",
+    "name": "Regularly review and rotate SNS access keys",
+    "description": "Implement a process to regularly review and rotate access keys used for SNS API calls. This helps minimize the risk of compromised credentials and ensures ongoing security of the SNS topics.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

@@ -1,0 +1,68 @@
+[
+    {
+        "ID": "Lambda-001",
+        "name": "Check encryption settings for Lambda environmental variable",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-002",
+        "name": "Ensure AWS Lambda function is configured to validate code-signing",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-003",
+        "name": "Ensure Lambda Runtime is not deprecated",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-004",
+        "name": "Ensure no hard-coded secrets exist in lambda environment",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-005",
+        "name": "Ensure that AWS Lambda function is configured for a Dead Letter Queue(DLQ)",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-006",
+        "name": "Ensure that AWS Lambda function is configured for function-level concurrent execution limit",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-007",
+        "name": "Ensure that AWS Lambda function is configured inside a VPC",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-008",
+        "name": "X-Ray tracing is enabled for Lambda",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-009",
+        "name": "Ensure that Lambda function URLs AuthType is not None",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-010",
+        "name": "Ensure that AWS Lambda function is not publicly accessible",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-011",
+        "name": "Ensure that AWS Lambda function permissions delegated to AWS services are limited by SourceArn or SourceAccount",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    }
+]

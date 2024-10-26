@@ -1,0 +1,44 @@
+[
+    {
+        "ID": "Docdb-001",
+        "name": "Ensure DocumentDB has an adequate backup retention period",
+        "cloudProvider": "AWS",
+        "service name": "docdb"
+    },
+    {
+        "ID": "Docdb-002",
+        "name": "Ensure DocumentDB is encrypted at rest (default is unencrypted)",
+        "cloudProvider": "AWS",
+        "service name": "docdb"
+    },
+    {
+        "ID": "Docdb-003",
+        "name": "Ensure DocumentDB is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "docdb"
+    },
+    {
+        "ID": "Docdb-004",
+        "name": "Ensure DocumentDB Logging is enabled",
+        "cloudProvider": "AWS",
+        "service name": "docdb"
+    },
+    {
+        "ID": "Docdb-005",
+        "name": "Ensure DocumentDB has audit logs enabled",
+        "cloudProvider": "AWS",
+        "service name": "docdb"
+    },
+    {
+        "ID": "Docdb-006",
+        "name": "Ensure DocumentDB TLS is not disabled",
+        "cloudProvider": "AWS",
+        "service name": "docdb"
+    },
+    {
+        "ID": "Docdb-007",
+        "name": "Ensure DocumentDB Global Cluster is encrypted at rest (default is unencrypted)",
+        "cloudProvider": "AWS",
+        "service name": "docdb"
+    }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "mwaa:001",
+    "name": "Enable Scheduler Logs for MWAA Environment",
+    "description": "Ensure that scheduler logs are enabled for the MWAA environment. Scheduler logs provide information about task scheduling and execution, which is crucial for monitoring and troubleshooting the Apache Airflow environment.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "mwaa:002",
+    "name": "Enable Webserver Logs for MWAA Environment",
+    "description": "Ensure that webserver logs are enabled for the MWAA environment. Webserver logs capture information about user interactions with the Airflow UI, which is essential for auditing and monitoring user activities.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "mwaa:003",
+    "name": "Enable Worker Logs for MWAA Environment",
+    "description": "Ensure that worker logs are enabled for the MWAA environment. Worker logs provide detailed information about task execution and worker node operations, which is critical for debugging and performance monitoring.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "mwaa:004",
+    "name": "Enforce Private Network Access for MWAA Environment",
+    "description": "Configure the MWAA environment to be accessible only through private networks. This involves using VPC endpoints for MWAA and ensuring that the MWAA environment is not accessible from the public internet.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "mwaa:005",
+    "name": "Use AWS KMS Customer Managed Key for MWAA Environment Encryption",
+    "description": "Ensure that the MWAA environment uses a Customer Managed Key (CMK) from AWS Key Management Service (KMS) for encryption. This provides enhanced control over the encryption keys used to protect sensitive data in the MWAA environment.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "mwaa:006",
+    "name": "Implement Least Privilege IAM Roles for MWAA Environment",
+    "description": "Create and assign IAM roles with the minimum necessary permissions for the MWAA environment. This includes separate roles for execution and tasks, ensuring that each role has only the permissions required for its specific functions.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "mwaa:007",
+    "name": "Enable MWAA Environment Monitoring with Amazon CloudWatch",
+    "description": "Configure Amazon CloudWatch to monitor the MWAA environment. Set up relevant metrics and alarms to track the health, performance, and utilization of the MWAA environment.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "mwaa:008",
+    "name": "Implement Secure Network Configuration for MWAA Environment",
+    "description": "Configure the MWAA environment with secure network settings. This includes placing the environment in private subnets, using security groups to restrict inbound and outbound traffic, and ensuring that network ACLs are properly configured to allow only necessary traffic.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "mwaa:009",
+    "name": "Enable Latest Apache Airflow Version for MWAA Environment",
+    "description": "Ensure that the MWAA environment is running the latest supported version of Apache Airflow. Regularly update the environment to benefit from the latest security patches and features.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "mwaa:010",
+    "name": "Implement Secure Configuration for MWAA Environment S3 Bucket",
+    "description": "Configure the S3 bucket used by the MWAA environment with appropriate security settings. This includes enabling server-side encryption with AWS KMS, enabling versioning, and implementing appropriate bucket policies to restrict access.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "mwaa:011",
+    "name": "Enable MWAA Environment Tagging",
+    "description": "Implement a comprehensive tagging strategy for the MWAA environment. Use tags to categorize and manage resources, control access, and track costs associated with the MWAA environment.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "mwaa:012",
+    "name": "Implement Secure Secrets Management for MWAA Environment",
+    "description": "Use AWS Secrets Manager or AWS Systems Manager Parameter Store to securely manage and rotate sensitive information such as database credentials, API keys, and other secrets used in the MWAA environment.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "mwaa:013",
+    "name": "Enable MWAA Environment Backup and Recovery",
+    "description": "Implement a backup and recovery strategy for the MWAA environment. This includes regular backups of the environment configuration, DAGs, and associated data to ensure business continuity and disaster recovery capabilities.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "mwaa:014",
+    "name": "Implement Secure DAG Deployment Process for MWAA Environment",
+    "description": "Establish a secure process for deploying DAGs to the MWAA environment. This includes using version control, implementing code review processes, and ensuring that only authorized personnel can deploy DAGs to the production environment.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "mwaa:015",
+    "name": "Enable MWAA Environment Integration with AWS WAF",
+    "description": "Integrate the MWAA environment with AWS Web Application Firewall (WAF) to protect against common web exploits and attacks. Configure appropriate WAF rules to secure the Airflow web interface and API endpoints.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  }
+]

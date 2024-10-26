@@ -1,0 +1,32 @@
+[
+    {
+        "ID": "Appsync-001",
+        "name": "Ensure AppSync API Cache is encrypted at rest",
+        "cloudProvider": "AWS",
+        "service name": "appsync"
+    },
+    {
+        "ID": "Appsync-002",
+        "name": "Ensure AppSync API Cache is encrypted in transit",
+        "cloudProvider": "AWS",
+        "service name": "appsync"
+    },
+    {
+        "ID": "Appsync-003",
+        "name": "Ensure AppSync has Field-Level logs enabled",
+        "cloudProvider": "AWS",
+        "service name": "appsync"
+    },
+    {
+        "ID": "Appsync-004",
+        "name": "Ensure AppSync has Logging enabled",
+        "cloudProvider": "AWS",
+        "service name": "appsync"
+    },
+    {
+        "ID": "Appsync-005",
+        "name": "Ensure AppSync is protected by WAF",
+        "cloudProvider": "AWS",
+        "service name": "appsync"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "ID": "Backup-001",
+        "name": "Check if AWS Backup recovery points are encrypted at rest.",
+        "description": "This control checks if an AWS Backup recovery point is encrypted at rest. The control fails if the recovery point isn't encrypted at rest.",
+        "cloudProvider": "AWS",
+        "service name": "backup"
+    },
+    {
+        "ID": "Backup-002",
+        "name": "Ensure that there is at least one AWS Backup report plan",
+        "description": "This check ensures that there is at least one backup report plan in place.",
+        "cloudProvider": "AWS",
+        "service name": "backup"
+    },
+    {
+        "ID": "Backup-003",
+        "name": "Ensure AWS Backup vaults exist",
+        "description": "This check ensures that AWS Backup vaults exist to provide a secure and durable storage location for backup data.",
+        "cloudProvider": "AWS",
+        "service name": "backup"
+    },
+    {
+        "ID": "Backup-004",
+        "name": "Ensure that AWS Backup vaults are encrypted with AWS KMS",
+        "description": "This check ensures that AWS Backup vaults are encrypted with AWS KMS.",
+        "cloudProvider": "AWS",
+        "service name": "backup"
+    },
+    {
+        "ID": "Backup-005",
+        "name": "Ensure that there is at least one AWS Backup plan",
+        "description": "This check ensures that there is at least one backup plan in place.",
+        "cloudProvider": "AWS",
+        "service name": "backup"
+    }
+]

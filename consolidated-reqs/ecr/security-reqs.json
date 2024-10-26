@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "ecr:001",
+    "name": "Enable Encryption at Rest using AWS KMS Customer Managed Key (CMK) for ECR Repositories",
+    "description": "Ensure that all Amazon ECR repositories are encrypted at rest using AWS Key Management Service (KMS) Customer Managed Keys (CMKs). This provides an additional layer of security for container images stored in ECR.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ecr:002",
+    "name": "Enable Image Scanning on Push for ECR Repositories",
+    "description": "Enable automatic image scanning for all ECR repositories when images are pushed. This helps identify vulnerabilities in container images before they are deployed.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ecr:003",
+    "name": "Configure Tag Immutability for ECR Repositories",
+    "description": "Enable tag immutability for all ECR repositories to prevent image tags from being overwritten. This ensures consistency and traceability of container images.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ecr:004",
+    "name": "Implement Lifecycle Policies for ECR Repositories",
+    "description": "Configure lifecycle policies for all ECR repositories to automatically manage the retention and expiration of container images. This helps maintain storage efficiency and reduces the risk of using outdated images.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ecr:005",
+    "name": "Ensure ECR Repositories are Private",
+    "description": "Verify that all ECR repositories are set as private to prevent unauthorized access to container images. Public repositories should not be used unless explicitly required and approved.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ecr:006",
+    "name": "Implement Least Privilege Access for ECR Repositories",
+    "description": "Ensure that IAM policies for ECR repositories follow the principle of least privilege, granting only the necessary permissions to authorized entities for pushing, pulling, and managing container images.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "ecr:007",
+    "name": "Enable Encryption in Transit for ECR Repositories",
+    "description": "Enforce the use of HTTPS (TLS) for all interactions with ECR repositories to ensure encryption of data in transit. This includes pushing, pulling, and managing container images.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "ecr:008",
+    "name": "Implement Cross-Region Replication for Critical ECR Repositories",
+    "description": "Enable cross-region replication for critical ECR repositories to ensure data redundancy and availability of container images across multiple AWS regions.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ecr:009",
+    "name": "Monitor and Remediate Vulnerabilities in ECR Images",
+    "description": "Regularly review the results of ECR image scans and implement a process to remediate identified vulnerabilities in a timely manner. This may include updating base images, applying patches, or rebuilding images with security fixes.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ecr:010",
+    "name": "Implement ECR Repository Policies",
+    "description": "Configure ECR repository policies to control access at the repository level, complementing IAM policies. This allows for fine-grained access control and the ability to share repositories across AWS accounts securely.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "ecr:011",
+    "name": "Enable AWS CloudTrail for ECR API Activity Monitoring",
+    "description": "Ensure that AWS CloudTrail is configured to capture all ECR API activities. This provides an audit trail for monitoring and investigating actions taken on ECR repositories and images.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "ecr:012",
+    "name": "Implement ECR Image Tagging Strategy",
+    "description": "Establish and enforce a consistent image tagging strategy for all ECR repositories. This should include version information, build identifiers, and other relevant metadata to ensure proper image identification and management.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ecr:013",
+    "name": "Use FIPS Endpoints for ECR in Sensitive Workloads",
+    "description": "For workloads that require FIPS 140-2 compliance, ensure that FIPS endpoints are used when interacting with ECR repositories. This provides additional cryptographic protection for sensitive container images.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ecr:014",
+    "name": "Implement ECR Pull Through Cache Repositories Securely",
+    "description": "If using ECR pull through cache repositories, ensure they are configured securely with appropriate access controls and encryption settings. This helps maintain the security of cached public images within your private ECR environment.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ecr:015",
+    "name": "Enable ECR Scan Findings Export to Security Hub",
+    "description": "Configure ECR to export image scan findings to AWS Security Hub for centralized vulnerability management and compliance reporting across your AWS environment.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  }
+]

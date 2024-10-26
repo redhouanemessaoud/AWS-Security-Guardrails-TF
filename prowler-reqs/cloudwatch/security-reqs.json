@@ -1,0 +1,149 @@
+[
+    {
+        "ID": "Cloudwatch-001",
+        "name": "Ensure a log metric filter and alarm exist for unauthorized API calls.",
+        "description": "Ensure a log metric filter and alarm exist for unauthorized API calls.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-002",
+        "name": "Ensure route table changes are monitored",
+        "description": "Real-time monitoring of API calls can be achieved by directing Cloud Trail Logs to CloudWatch Logs, or an external Security information and event management (SIEM)environment, and establishing corresponding metric filters and alarms. Routing tablesare used to route network traffic between subnets and to network gateways. It isrecommended that a metric filter and alarm be established for changes to route tables.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-003",
+        "name": "Ensure a log metric filter and alarm exist for changes to network gateways.",
+        "description": "Ensure a log metric filter and alarm exist for changes to network gateways.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-004",
+        "name": "Ensure a log metric filter and alarm exist for S3 bucket policy changes.",
+        "description": "Ensure a log metric filter and alarm exist for S3 bucket policy changes.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-005",
+        "name": "Check if CloudWatch log groups are protected by AWS KMS.",
+        "description": "Check if CloudWatch log groups are protected by AWS KMS.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-006",
+        "name": "Ensure a log metric filter and alarm exist for CloudTrail configuration changes.",
+        "description": "Ensure a log metric filter and alarm exist for CloudTrail configuration changes.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-007",
+        "name": "Check if CloudWatch has allowed cross-account sharing.",
+        "description": "Check if CloudWatch has allowed cross-account sharing.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-008",
+        "name": "Check if CloudWatch Log Groups have a retention policy of specific days.",
+        "description": "Check if CloudWatch Log Groups have a retention policy of specific days.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-009",
+        "name": "Ensure a log metric filter and alarm exist for VPC changes.",
+        "description": "Ensure a log metric filter and alarm exist for VPC changes.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-010",
+        "name": "Check if secrets exists in CloudWatch logs.",
+        "description": "Check if secrets exists in CloudWatch logs",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-011",
+        "name": "Ensure a log metric filter and alarm exist for AWS Organizations changes.",
+        "description": "Ensure a log metric filter and alarm exist for AWS Organizations changes.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-012",
+        "name": "Check if CloudWatch alarms have specified actions configured for the ALARM state.",
+        "description": "This control checks whether an Amazon CloudWatch alarm has at least one action configured for the ALARM state. The control fails if the alarm doesn't have an action configured for the ALARM state.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-013",
+        "name": "Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created KMS CMKs.",
+        "description": "Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created KMS CMKs.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-014",
+        "name": "Ensure a log metric filter and alarm exist for AWS Management Console authentication failures.",
+        "description": "Ensure a log metric filter and alarm exist for AWS Management Console authentication failures.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-015",
+        "name": "Ensure a log metric filter and alarm exist for Management Console sign-in without MFA.",
+        "description": "Ensure a log metric filter and alarm exist for Management Console sign-in without MFA.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-016",
+        "name": "Ensure a log metric filter and alarm exist for security group changes.",
+        "description": "Ensure a log metric filter and alarm exist for security group changes.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-017",
+        "name": "Ensure a log metric filter and alarm exist for changes to Network Access Control Lists (NACL).",
+        "description": "Ensure a log metric filter and alarm exist for changes to Network Access Control Lists (NACL).",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-018",
+        "name": "Ensure a log metric filter and alarm exist for usage of root account.",
+        "description": "Ensure a log metric filter and alarm exist for usage of root account.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-019",
+        "name": "Ensure a log metric filter and alarm exist for IAM policy changes.",
+        "description": "Ensure a log metric filter and alarm exist for IAM policy changes.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-020",
+        "name": "Check if CloudWatch alarms have actions enabled",
+        "description": "Alarm actions automatically alert you when a monitored metric is outside the defined threshold. If the alarm action is deactivated, no actions are run when the alarm changes state, and you won't be alerted to changes in monitored metrics. We recommend activating CloudWatch alarm actions to help you quickly respond to security and operational issues.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    },
+    {
+        "ID": "Cloudwatch-021",
+        "name": "Ensure a log metric filter and alarm exist for AWS Config configuration changes.",
+        "description": "Ensure a log metric filter and alarm exist for AWS Config configuration changes.",
+        "cloudProvider": "AWS",
+        "service name": "cloudwatch"
+    }
+]

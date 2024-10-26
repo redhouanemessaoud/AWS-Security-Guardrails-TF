@@ -1,0 +1,30 @@
+[
+    {
+        "ID": "Appstream-001",
+        "name": "Ensure user maximum session duration is no longer than 10 hours.",
+        "description": "Ensure user maximum session duration is no longer than 10 hours.",
+        "cloudProvider": "AWS",
+        "service name": "appstream"
+    },
+    {
+        "ID": "Appstream-002",
+        "name": "Ensure default Internet Access from your Amazon AppStream fleet streaming instances should remain unchecked.",
+        "description": "Ensure default Internet Access from your Amazon AppStream fleet streaming instances should remain unchecked.",
+        "cloudProvider": "AWS",
+        "service name": "appstream"
+    },
+    {
+        "ID": "Appstream-003",
+        "name": "Ensure session idle disconnect timeout is set to 10 minutes or less.",
+        "description": "Ensure session idle disconnect timeout is set to 10 minutes or less.",
+        "cloudProvider": "AWS",
+        "service name": "appstream"
+    },
+    {
+        "ID": "Appstream-004",
+        "name": "Ensure session disconnect timeout is set to 5 minutes or less.",
+        "description": "Ensure session disconnect timeout is set to 5 minutes or less",
+        "cloudProvider": "AWS",
+        "service name": "appstream"
+    }
+]

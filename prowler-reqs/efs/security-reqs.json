@@ -1,0 +1,44 @@
+[
+    {
+        "ID": "Efs-001",
+        "name": "EFS mount targets should not be publicly accessible",
+        "description": "This control checks whether an Amazon EFS mount target is associated with a public subnet since it can be accessed from the internet.",
+        "cloudProvider": "AWS",
+        "service name": "efs"
+    },
+    {
+        "ID": "Efs-002",
+        "name": "Check if EFS have policies which allow access to any client within the VPC",
+        "description": "Check if EFS have policies which allow access to any client within the VPC",
+        "cloudProvider": "AWS",
+        "service name": "efs"
+    },
+    {
+        "ID": "Efs-003",
+        "name": "Check if EFS protects sensitive data with encryption at rest",
+        "description": "Check if EFS protects sensitive data with encryption at rest",
+        "cloudProvider": "AWS",
+        "service name": "efs"
+    },
+    {
+        "ID": "Efs-004",
+        "name": "EFS access points should enforce a user identity",
+        "description": "This control checks whether Amazon EFS access points are configured to enforce a user identity. This control fails if a POSIX user identity is not defined while creating the EFS access point.",
+        "cloudProvider": "AWS",
+        "service name": "efs"
+    },
+    {
+        "ID": "Efs-005",
+        "name": "Check if EFS File systems have backup enabled",
+        "description": "Check if EFS File systems have backup enabled",
+        "cloudProvider": "AWS",
+        "service name": "efs"
+    },
+    {
+        "ID": "Efs-006",
+        "name": "EFS access points should enforce a root directory",
+        "description": "This control checks if Amazon EFS access points are configured to enforce a root directory. The control fails if the value of Path is set to / (the default root directory of the file system).",
+        "cloudProvider": "AWS",
+        "service name": "efs"
+    }
+]

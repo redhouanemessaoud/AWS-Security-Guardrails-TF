@@ -1,0 +1,100 @@
+[
+    {
+        "ID": "Cloudtrail-001",
+        "name": "Ensure CloudTrail Insight is enabled",
+        "description": "Ensure CloudTrail Insight is enabled",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-002",
+        "name": "Ensure the S3 bucket CloudTrail bucket requires MFA delete",
+        "description": "Ensure the S3 bucket CloudTrail bucket requires MFA",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-003",
+        "name": "Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucket",
+        "description": "Ensure S3 bucket access logging is enabled on the CloudTrail S3 bucket",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-004",
+        "name": "Ensure the S3 bucket CloudTrail logs is not publicly accessible",
+        "description": "Ensure the S3 bucket CloudTrail logs to is not publicly accessible",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-005",
+        "name": "Ensure CloudTrail logging management events in All Regions",
+        "description": "Ensure CloudTrail logging management events in All Regions",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-006",
+        "name": "Check if S3 buckets have Object-level logging for read events is enabled in CloudTrail.",
+        "description": "Ensure that all your AWS CloudTrail trails are configured to log Data events in order to record S3 object-level API operations, such as GetObject, DeleteObject and PutObject, for individual S3 buckets or for all current and future S3 buckets provisioned in your AWS account.",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-007",
+        "name": "Ensure CloudTrail log file validation is enabled",
+        "description": "Ensure CloudTrail log file validation is enabled",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-008",
+        "name": "Ensure there are no potential LLM Jacking threats in CloudTrail.",
+        "description": "This check ensures that there are no potential LLM Jacking threats in CloudTrail. LLM Jacking attacks involve unauthorized access to cloud-hosted large language model (LLM) services, such as AWS Bedrock, by exploiting exposed credentials or vulnerabilities. These attacks can lead to resource hijacking, unauthorized model invocations, and high operational costs for the victim organization.",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-009",
+        "name": "Check if S3 buckets have Object-level logging for write events is enabled in CloudTrail.",
+        "description": "Ensure that all your AWS CloudTrail trails are configured to log Data events in order to record S3 object-level API operations, such as GetObject, DeleteObject and PutObject, for individual S3 buckets or for all current and future S3 buckets provisioned in your AWS account.",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-010",
+        "name": "Ensure there are no potential enumeration threats in CloudTrail",
+        "description": "This check ensures that there are no potential enumeration threats in CloudTrail.",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-011",
+        "name": "Ensure CloudTrail trails are integrated with CloudWatch Logs",
+        "description": "Ensure CloudTrail trails are integrated with CloudWatch Logs",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-012",
+        "name": "Ensure CloudTrail logs are encrypted at rest using KMS CMKs",
+        "description": "Ensure CloudTrail logs are encrypted at rest using KMS CMKs",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-013",
+        "name": "Ensure there are no potential privilege escalation threats in CloudTrail",
+        "description": "This check ensures that there are no potential privilege escalation threats in CloudTrail.",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    },
+    {
+        "ID": "Cloudtrail-014",
+        "name": "Ensure CloudTrail is enabled in all regions",
+        "description": "Ensure CloudTrail is enabled in all regions",
+        "cloudProvider": "AWS",
+        "service name": "cloudtrail"
+    }
+]

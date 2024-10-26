@@ -1,0 +1,182 @@
+[
+    {
+        "ID": "Iam-001",
+        "name": "Ensure IAM root user doesnt have Access keys",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-002",
+        "name": "Ensure IAM password policy expires passwords within 90 days or less",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-003",
+        "name": "Ensure IAM password policy prevents password reuse",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-004",
+        "name": "Ensure IAM password policy requires at least one lowercase letter",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-005",
+        "name": "Ensure IAM password policy requires at least one number",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-006",
+        "name": "Ensure IAM password policy requires at least one symbol",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-007",
+        "name": "Ensure IAM password policy requires at least one uppercase letter",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-008",
+        "name": "Ensure IAM password policy requires minimum length of 14 or greater",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-009",
+        "name": "Ensure that IAM groups includes at least one IAM user",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-010",
+        "name": "Ensure that all IAM users are members of at least one IAM group.",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-011",
+        "name": "Ensure AWS IAM policy does not allow full IAM privileges",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-012",
+        "name": "Ensure no IAM policies documents allow \u201c*\u201d as a statement\u2019s resource for restrictable actions",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-013",
+        "name": "Disallow IAM roles, users, and groups from using the AWS AdministratorAccess policy",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-014",
+        "name": "Ensure AWS Managed IAMFullAccess IAM policy is not used.",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-015",
+        "name": "Disallow policies from using the AWS AdministratorAccess policy",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-016",
+        "name": "Ensure IAM policies are attached only to groups or roles (Reducing access management complexity may in-turn reduce opportunity for a principal to inadvertently receive or retain excessive privileges.)",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-017",
+        "name": "Ensure GitHub Actions OIDC trust policies only allows actions from a specific known organization",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-018",
+        "name": "Ensure IAM policies does not allow credentials exposure",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-019",
+        "name": "Ensure IAM policies does not allow data exfiltration",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-020",
+        "name": "Ensure IAM policies does not allow permissions management / resource exposure without constraints",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-021",
+        "name": "Ensure IAM policies does not allow privilege escalation",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-022",
+        "name": "Ensure IAM policies does not allow write access without constraints",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-023",
+        "name": "Ensure IAM policies that allow full \u201c-\u201d administrative privileges are not created",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-024",
+        "name": "Ensure no IAM policies documents allow \u201c*\u201d as a statement\u2019s actions",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-025",
+        "name": "Ensure no IAM policies documents allow ALL or any AWS principal permissions to the resource",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-026",
+        "name": "Ensure AWS IAM policy does not allow assume role permission across all services",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-027",
+        "name": "Ensure IAM role allows only specific services or principals to assume it",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-028",
+        "name": "Ensure SageMaker notebook instance IAM policy is not overly permissive",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-029",
+        "name": "Ensure access is controlled through SSO and not AWS IAM defined users",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-030",
+        "name": "Ensure an IAM User does not have access to the console",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    }
+]

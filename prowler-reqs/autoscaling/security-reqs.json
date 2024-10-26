@@ -1,0 +1,51 @@
+[
+    {
+        "ID": "Autoscaling-001",
+        "name": "EC2 Auto Scaling Group should use multiple instance types in multiple Availability Zones.",
+        "description": "This control checks whether an Amazon EC2 Auto Scaling group uses multiple instance types in all the Availability Zones, meaning that there should be multiple Availability Zones with multiple instances on each one. The control fails if the Auto Scaling group has only one instance type defined.",
+        "cloudProvider": "AWS",
+        "service name": "autoscaling"
+    },
+    {
+        "ID": "Autoscaling-002",
+        "name": "Check if Auto Scaling group launch configurations require Instance Metadata Service Version 2 (IMDSv2).",
+        "description": "This control checks whether IMDSv2 is enabled on all instances launched by Amazon EC2 Auto Scaling groups. The control fails if the Instance Metadata Service (IMDS) version isn't included in the launch configuration or is configured as token optional, which allows either IMDSv1 or IMDSv2.",
+        "cloudProvider": "AWS",
+        "service name": "autoscaling"
+    },
+    {
+        "ID": "Autoscaling-003",
+        "name": "Check if Amazon EC2 instances launched using Auto Scaling group launch configurations have Public IP addresses.",
+        "description": "This control checks whether an Auto Scaling group's associated launch configuration assigns a public IP address to the group's instances. The control fails if the associated launch configuration assigns a public IP address.",
+        "cloudProvider": "AWS",
+        "service name": "autoscaling"
+    },
+    {
+        "ID": "Autoscaling-004",
+        "name": "EC2 Auto Scaling Group should use multiple Availability Zones",
+        "description": "EC2 Auto Scaling Group should use multiple Availability Zones",
+        "cloudProvider": "AWS",
+        "service name": "autoscaling"
+    },
+    {
+        "ID": "Autoscaling-005",
+        "name": "Check if Auto Scaling groups associated with a load balancer use ELB health checks.",
+        "description": "This control checks whether an Amazon EC2 Auto Scaling group that is associated with a load balancer uses Elastic Load Balancing (ELB) health checks. The control fails if the Auto Scaling group doesn't use ELB health checks.",
+        "cloudProvider": "AWS",
+        "service name": "autoscaling"
+    },
+    {
+        "ID": "Autoscaling-006",
+        "name": "Check if Amazon EC2 Auto Scaling groups use EC2 launch templates.",
+        "description": "This control checks whether an Amazon EC2 Auto Scaling group is created using an EC2 launch template. The control fails if the Auto Scaling group is not created with a launch template or if a launch template is not specified in a mixed instances policy.",
+        "cloudProvider": "AWS",
+        "service name": "autoscaling"
+    },
+    {
+        "ID": "Autoscaling-007",
+        "name": "[DEPRECATED] Find secrets in EC2 Auto Scaling Launch Configuration",
+        "description": "[DEPRECATED] Find secrets in EC2 Auto Scaling Launch Configuration",
+        "cloudProvider": "AWS",
+        "service name": "autoscaling"
+    }
+]

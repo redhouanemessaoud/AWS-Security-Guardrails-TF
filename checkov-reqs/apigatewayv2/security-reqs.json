@@ -1,0 +1,8 @@
+[
+    {
+        "ID": "Apigatewayv2-001",
+        "name": "Ensure API GatewayV2 routes specify an authorization type",
+        "cloudProvider": "AWS",
+        "service name": "apigatewayv2"
+    }
+]

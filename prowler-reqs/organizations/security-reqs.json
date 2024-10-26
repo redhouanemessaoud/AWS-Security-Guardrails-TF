@@ -1,0 +1,37 @@
+[
+    {
+        "ID": "Organizations-001",
+        "name": "Ensure that AWS Organizations opt-out of AI services policy is enabled.",
+        "description": "This control checks whether the AWS Organizations opt-out of AI services policy is enabled. The control fails if the policy is not enabled.",
+        "cloudProvider": "AWS",
+        "service name": "organizations"
+    },
+    {
+        "ID": "Organizations-002",
+        "name": "Check if AWS Regions are restricted with SCP policies",
+        "description": "As best practice, AWS Regions should be restricted and only allow the ones that are needed.",
+        "cloudProvider": "AWS",
+        "service name": "organizations"
+    },
+    {
+        "ID": "Organizations-003",
+        "name": "Check if an AWS Organization has tags policies enabled and attached.",
+        "description": "Check if an AWS Organization has tags policies enabled and attached.",
+        "cloudProvider": "AWS",
+        "service name": "organizations"
+    },
+    {
+        "ID": "Organizations-004",
+        "name": "Check if AWS Organizations delegated administrators are trusted",
+        "description": "This check verify if there are AWS Organizations delegated administrators and if they are trusted (you can define your trusted delegated administrator in Prowler configuration)",
+        "cloudProvider": "AWS",
+        "service name": "organizations"
+    },
+    {
+        "ID": "Organizations-005",
+        "name": "Check if account is part of an AWS Organizations",
+        "description": "Ensure that AWS Organizations service is currently in use.",
+        "cloudProvider": "AWS",
+        "service name": "organizations"
+    }
+]

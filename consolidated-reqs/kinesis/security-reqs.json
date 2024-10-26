@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "kinesis:001",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for Kinesis Stream Encryption",
+    "description": "Ensure Kinesis streams use server-side encryption with AWS KMS Customer Managed Keys (CMK) for data protection. Configure the stream to use a specific CMK for encryption, allowing for better control and auditing of the encryption process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "kinesis:002",
+    "name": "Enable Enhanced Fan-Out for Kinesis Data Streams Consumers",
+    "description": "Enable enhanced fan-out for Kinesis Data Streams consumers to improve throughput and reduce latency. This feature provides dedicated throughput for each consumer, allowing for more efficient data processing in multi-consumer scenarios.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "kinesis:003",
+    "name": "Implement Least Privilege Access for Kinesis Streams",
+    "description": "Ensure that IAM policies for Kinesis streams follow the principle of least privilege, granting only the necessary permissions to authorized entities. Define granular permissions for different operations such as reading, writing, and describing streams.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "kinesis:004",
+    "name": "Enable Server-Side Encryption for Kinesis Firehose Delivery Streams",
+    "description": "Ensure that Kinesis Firehose delivery streams have server-side encryption enabled using AWS KMS Customer Managed Keys (CMK). This protects data at rest within the delivery stream before it's delivered to the destination.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "kinesis:005",
+    "name": "Configure Secure VPC Endpoints for Kinesis Streams",
+    "description": "Use VPC endpoints to privately connect your VPC to Kinesis Data Streams without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection. This ensures that traffic between your VPC and Kinesis remains within the AWS network.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "kinesis:006",
+    "name": "Implement Monitoring and Alerting for Kinesis Streams",
+    "description": "Set up CloudWatch alarms to monitor Kinesis streams for operational and security-related metrics. Configure alerts for scenarios such as high error rates, throttling events, or unusual spikes in read/write operations.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "kinesis:007",
+    "name": "Enable Enhanced Monitoring for Kinesis Data Streams",
+    "description": "Enable enhanced monitoring for Kinesis Data Streams to gain additional insights into shard-level metrics. This provides more granular data for troubleshooting and optimizing stream performance.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "kinesis:008",
+    "name": "Implement Secure Data Retention for Kinesis Streams",
+    "description": "Configure appropriate data retention periods for Kinesis streams based on compliance and business requirements. Ensure that data is retained only for the necessary duration and is securely deleted afterwards.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "kinesis:009",
+    "name": "Use Latest AWS SDK Version for Kinesis Client Applications",
+    "description": "Ensure that all Kinesis client applications use the latest version of the AWS SDK. This ensures access to the most up-to-date features, performance improvements, and security patches.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "kinesis:010",
+    "name": "Implement Secure Key Management for Kinesis Producer Library (KPL)",
+    "description": "When using the Kinesis Producer Library (KPL), implement secure key management practices. Use AWS Secrets Manager or AWS Systems Manager Parameter Store to securely store and rotate credentials used by the KPL.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

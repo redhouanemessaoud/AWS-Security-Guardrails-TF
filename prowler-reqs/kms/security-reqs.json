@@ -1,0 +1,30 @@
+[
+    {
+        "ID": "Kms-001",
+        "name": "Check if there are CMK KMS keys not used.",
+        "description": "Check if there are CMK KMS keys not used.",
+        "cloudProvider": "AWS",
+        "service name": "kms"
+    },
+    {
+        "ID": "Kms-002",
+        "name": "Check exposed KMS keys",
+        "description": "Check exposed KMS keys",
+        "cloudProvider": "AWS",
+        "service name": "kms"
+    },
+    {
+        "ID": "Kms-003",
+        "name": "Ensure rotation for customer created KMS CMKs is enabled.",
+        "description": "Ensure rotation for customer created KMS CMKs is enabled.",
+        "cloudProvider": "AWS",
+        "service name": "kms"
+    },
+    {
+        "ID": "Kms-004",
+        "name": "AWS KMS keys should not be deleted unintentionally",
+        "description": "Ensure there is no customer keys scheduled for deletion.",
+        "cloudProvider": "AWS",
+        "service name": "kms"
+    }
+]

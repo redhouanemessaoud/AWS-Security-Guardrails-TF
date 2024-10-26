@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "networkfirewall:001",
+    "name": "Enable AWS Network Firewall logging",
+    "description": "Configure logging for AWS Network Firewall to capture and store network traffic logs. Set up logging destinations such as Amazon S3, CloudWatch Logs, or Kinesis Data Firehose to store and analyze the logs for security monitoring and compliance purposes.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "networkfirewall:002",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for Network Firewall encryption",
+    "description": "Configure AWS Network Firewall to use a Customer Managed Key (CMK) from AWS Key Management Service (KMS) for encryption of firewall resources. This provides enhanced control over the encryption keys and allows for fine-grained access control and auditing of key usage.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "networkfirewall:003",
+    "name": "Enable deletion protection for AWS Network Firewall",
+    "description": "Activate deletion protection for AWS Network Firewall resources to prevent accidental deletion. This adds an additional layer of security by requiring manual disabling of the protection before the firewall can be deleted.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "networkfirewall:004",
+    "name": "Implement stateful inspection rules in AWS Network Firewall",
+    "description": "Configure stateful inspection rules in AWS Network Firewall to analyze network traffic patterns and maintain connection state information. This allows for more advanced traffic filtering based on the full context of a network connection.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "networkfirewall:005",
+    "name": "Implement stateless rules in AWS Network Firewall",
+    "description": "Set up stateless rules in AWS Network Firewall to filter network traffic based on individual packets without considering the state of the connection. This provides basic packet filtering capabilities for quick and efficient traffic management.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "networkfirewall:006",
+    "name": "Configure AWS Network Firewall rule groups",
+    "description": "Organize firewall rules into logical rule groups within AWS Network Firewall. This allows for better management, reusability, and easier updates of firewall policies across multiple firewalls or VPCs.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "networkfirewall:007",
+    "name": "Implement custom domain lists in AWS Network Firewall",
+    "description": "Create and use custom domain lists in AWS Network Firewall rules to filter traffic based on specific domain names or patterns. This enables more granular control over allowed or blocked network communications.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "networkfirewall:008",
+    "name": "Enable AWS Network Firewall association with multiple VPCs",
+    "description": "Configure AWS Network Firewall to be associated with multiple VPCs within the same region. This centralizes network security management and ensures consistent policy enforcement across different VPCs in the organization.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "networkfirewall:009",
+    "name": "Implement TLS inspection in AWS Network Firewall",
+    "description": "Configure TLS inspection in AWS Network Firewall to decrypt, inspect, and re-encrypt HTTPS traffic. This allows for thorough inspection of encrypted traffic for potential security threats while maintaining end-to-end encryption.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "networkfirewall:010",
+    "name": "Configure AWS Network Firewall alert and flow logging",
+    "description": "Set up both alert and flow logging for AWS Network Firewall. Alert logs capture information about security events, while flow logs provide detailed records of network traffic. Configure these logs to be sent to appropriate destinations for analysis and monitoring.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "networkfirewall:011",
+    "name": "Implement custom actions in AWS Network Firewall",
+    "description": "Define and use custom actions in AWS Network Firewall rules to specify unique handling of matched traffic. This allows for more flexible and tailored responses to specific network events or patterns.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "networkfirewall:012",
+    "name": "Enable high availability for AWS Network Firewall",
+    "description": "Configure AWS Network Firewall for high availability by deploying it across multiple Availability Zones within a region. This ensures continuous protection and minimizes the risk of service interruptions due to infrastructure failures.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "networkfirewall:013",
+    "name": "Implement regular reviews and updates of AWS Network Firewall rules",
+    "description": "Establish a process for regular reviews and updates of AWS Network Firewall rules and policies. This ensures that the firewall configuration remains effective, up-to-date, and aligned with the organization's evolving security requirements and threat landscape.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "networkfirewall:014",
+    "name": "Integrate AWS Network Firewall with AWS Security Hub",
+    "description": "Configure integration between AWS Network Firewall and AWS Security Hub to centralize security findings and alerts. This provides a comprehensive view of the security posture across multiple AWS services and simplifies management of security events.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "networkfirewall:015",
+    "name": "Implement least privilege access for AWS Network Firewall management",
+    "description": "Apply the principle of least privilege when granting access to manage AWS Network Firewall resources. Use IAM policies to restrict access to only the necessary actions and resources required for each role or user managing the firewall.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "ID": "Workspaces-001",
+        "name": "Ensure that Workspace root volumes are encrypted",
+        "cloudProvider": "AWS",
+        "service name": "workspaces"
+    },
+    {
+        "ID": "Workspaces-002",
+        "name": "Ensure that Workspace user volumes are encrypted",
+        "cloudProvider": "AWS",
+        "service name": "workspaces"
+    }
+]

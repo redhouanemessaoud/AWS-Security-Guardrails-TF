@@ -1,0 +1,65 @@
+[
+    {
+        "ID": "Dynamodb-001",
+        "name": "Check if DynamoDB Accelerator (DAX) clusters are encrypted in transit.",
+        "description": "This control checks whether an Amazon DynamoDB Accelerator (DAX) cluster is encrypted in transit, with the endpoint encryption type set to TLS. The control fails if the DAX cluster isn't encrypted in transit.",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-002",
+        "name": "Check if DynamoDB tables point-in-time recovery (PITR) is enabled.",
+        "description": "Check if DynamoDB tables point-in-time recovery (PITR) is enabled.",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-003",
+        "name": "Check if DynamoDB tables have deletion protection enabled.",
+        "description": "This control checks whether an Amazon DynamoDB table has deletion protection enabled to prevent accidental deletion during regular table management operations.",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-004",
+        "name": "Check if DynamoDB DAX Clusters are encrypted at rest.",
+        "description": "Check if DynamoDB DAX Clusters are encrypted at rest.",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-005",
+        "name": "Check if DynamoDB Accelerator (DAX) clusters have nodes in multiple availability zones.",
+        "description": "This control checks whether an Amazon DynamoDB Accelerator (DAX) cluster has nodes in multiple availability zones.",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-006",
+        "name": "Check if DynamoDB tables are included in a backup plan.",
+        "description": "This control checks whether an Amazon DynamoDB table is covered by a backup plan. The control fails if the DynamoDB table isn't included in a backup plan.",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-007",
+        "name": "DynamoDB tables should not be accessible from other AWS accounts",
+        "description": "This check determines if the DynamoDB table is accessible from other AWS accounts.",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-008",
+        "name": "Check if DynamoDB tables automatically scale capacity with demand.",
+        "description": "This check ensures that DynamoDB tables can scale their read and write capacity as needed, either using on-demand capacity mode or provisioned mode with auto scaling configured.",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    },
+    {
+        "ID": "Dynamodb-009",
+        "name": "Check if DynamoDB table has encryption at rest enabled using CMK KMS.",
+        "description": "Check if DynamoDB table has encryption at rest enabled using CMK KMS.",
+        "cloudProvider": "AWS",
+        "service name": "dynamodb"
+    }
+]

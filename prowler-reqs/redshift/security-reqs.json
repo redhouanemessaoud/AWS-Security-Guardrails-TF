@@ -1,0 +1,72 @@
+[
+    {
+        "ID": "Redshift-001",
+        "name": "Check if Amazon Redshift clusters are using the default Admin username.",
+        "description": "This control checks whether an Amazon Redshift cluster has changed the admin username from its default value. The control fails if the admin username is set to 'awsuser'.",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-002",
+        "name": "Check if Redshift cluster has audit logging enabled",
+        "description": "Check if Redshift cluster has audit logging enabled",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-003",
+        "name": "Check if Redshift clusters are encrypted at rest.",
+        "description": "This control checks whether Amazon Redshift clusters are encrypted at rest. The control fails if a Redshift cluster isn't encrypted at rest.",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-004",
+        "name": "Check if Redshift clusters are using enhanced VPC routing.",
+        "description": "This control checks whether an Amazon Redshift cluster has EnhancedVpcRouting enabled. Enhanced VPC routing forces all COPY and UNLOAD traffic between the cluster and data repositories to go through your VPC, allowing you to use VPC security features such as security groups and network access control lists.",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-005",
+        "name": "Check for Publicly Accessible Redshift Clusters",
+        "description": "Check for Publicly Accessible Redshift Clusters",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-006",
+        "name": "Check for Redshift Automatic Version Upgrade",
+        "description": "Check for Redshift Automatic Version Upgrade",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-007",
+        "name": "Check if Redshift clusters have Multi-AZ enabled.",
+        "description": "This control checks whether Amazon Redshift clusters have Multi-AZ enabled.",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-008",
+        "name": "Check if connections to Amazon Redshift clusters are encrypted in transit.",
+        "description": "This control checks whether connections to Amazon Redshift clusters are required to use encryption in transit. The control fails if the Redshift cluster parameter 'require_SSL' isn't set to True.",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-009",
+        "name": "Check if Redshift Clusters have automated snapshots enabled",
+        "description": "Check if Redshift Clusters have automated snapshots enabled",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    },
+    {
+        "ID": "Redshift-010",
+        "name": "Check if Redshift clusters are using the default database name.",
+        "description": "This control checks whether an Amazon Redshift cluster has changed the database name from its default value. The control fails if the database name is set to 'dev'.",
+        "cloudProvider": "AWS",
+        "service name": "redshift"
+    }
+]

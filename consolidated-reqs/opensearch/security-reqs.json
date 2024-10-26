@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "opensearch:001",
+    "name": "Enable Fine-Grained Access Control for OpenSearch Domains",
+    "description": "Ensure that fine-grained access control is enabled for all OpenSearch domains to provide granular control over data access and operations. This includes configuring role-based access control (RBAC) and setting up appropriate permissions for users and roles.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "opensearch:002",
+    "name": "Enable Encryption at Rest for OpenSearch Domains using AWS KMS",
+    "description": "Ensure that all OpenSearch domains have encryption at rest enabled using AWS Key Management Service (KMS) Customer Managed Keys (CMKs) to protect sensitive data stored in the domains.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "opensearch:003",
+    "name": "Enable Node-to-Node Encryption for OpenSearch Domains",
+    "description": "Ensure that node-to-node encryption is enabled for all OpenSearch domains to secure communication between nodes within the cluster.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "opensearch:004",
+    "name": "Enable HTTPS for OpenSearch Domain Endpoints",
+    "description": "Ensure that HTTPS is enforced for all OpenSearch domain endpoints to secure data in transit. Configure the domains to accept only HTTPS connections using the latest TLS version.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "opensearch:005",
+    "name": "Enable Audit Logging for OpenSearch Domains",
+    "description": "Enable audit logging for all OpenSearch domains to track and monitor user activities, including authentication attempts, data access, and index-level operations.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "opensearch:006",
+    "name": "Configure Three Dedicated Master Nodes for OpenSearch Domains",
+    "description": "Ensure that each OpenSearch domain is configured with at least three dedicated master nodes to increase cluster stability and high availability.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "opensearch:007",
+    "name": "Enable Zone Awareness for OpenSearch Domains",
+    "description": "Enable Zone Awareness for OpenSearch domains to distribute nodes across multiple Availability Zones, enhancing fault tolerance and high availability.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "opensearch:008",
+    "name": "Implement VPC-based Access Control for OpenSearch Domains",
+    "description": "Deploy OpenSearch domains within a VPC and use VPC security groups to control access. Avoid public access to the domains and ensure that they are only accessible from authorized VPCs or through VPN/Direct Connect.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "opensearch:009",
+    "name": "Enable Automated Snapshots for OpenSearch Domains",
+    "description": "Enable automated snapshots for all OpenSearch domains to ensure regular backups of your data. Configure appropriate retention periods based on your data recovery requirements.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "opensearch:010",
+    "name": "Implement IP-based Access Control for OpenSearch Domains",
+    "description": "Configure IP-based access policies for OpenSearch domains to restrict access to specific IP ranges or CIDR blocks, ensuring that only authorized networks can access the domains.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "opensearch:011",
+    "name": "Enable UltraWarm and Cold Storage for OpenSearch Domains",
+    "description": "Enable UltraWarm and Cold Storage for OpenSearch domains that handle large amounts of data to optimize storage costs while maintaining data accessibility.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "opensearch:012",
+    "name": "Implement Cross-Cluster Search for OpenSearch Domains",
+    "description": "Configure cross-cluster search for OpenSearch domains that need to share data or perform searches across multiple clusters, ensuring secure communication between clusters.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "opensearch:013",
+    "name": "Enable Custom Endpoint for OpenSearch Domains",
+    "description": "Configure custom endpoints for OpenSearch domains to provide a consistent URL for accessing the domain, simplifying domain upgrades and enhancing security by obscuring the underlying infrastructure.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "opensearch:014",
+    "name": "Implement Least Privilege Access for OpenSearch Domains",
+    "description": "Ensure that IAM policies and OpenSearch domain access policies follow the principle of least privilege, granting only the necessary permissions to authorized entities for managing and accessing the domains.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "opensearch:015",
+    "name": "Enable Slow Log Publishing for OpenSearch Domains",
+    "description": "Enable slow log publishing for OpenSearch domains to identify and troubleshoot performance issues by logging queries that exceed specified execution time thresholds.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  }
+]

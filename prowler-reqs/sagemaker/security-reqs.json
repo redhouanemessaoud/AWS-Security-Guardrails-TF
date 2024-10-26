@@ -1,0 +1,79 @@
+[
+    {
+        "ID": "Sagemaker-001",
+        "name": "Check if Amazon SageMaker Training jobs have network isolation enabled",
+        "description": "Check if Amazon SageMaker Training jobs have network isolation enabled",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-002",
+        "name": "SageMaker endpoint production variants should have at least two initial instances",
+        "description": "This control checks whether production variants of an Amazon SageMaker endpoint have an initial instance count greater than 1. A single instance creates a single point of failure and reduces availability.",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-003",
+        "name": "Check if Amazon SageMaker Models have VPC settings configured",
+        "description": "Check if Amazon SageMaker Models have VPC settings configured",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-004",
+        "name": "Check if Amazon SageMaker Training jobs have volume and output with KMS encryption enabled",
+        "description": "Check if Amazon SageMaker Training jobs have volume and output with KMS encryption enabled",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-005",
+        "name": "Check if Amazon SageMaker Training job have VPC settings configured.",
+        "description": "Check if Amazon SageMaker Training job have VPC settings configured.",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-006",
+        "name": "Check if Amazon SageMaker Notebook instances have root access disabled",
+        "description": "Check if Amazon SageMaker Notebook instances have root access disabled",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-007",
+        "name": "Check if Amazon SageMaker Training jobs have intercontainer encryption enabled",
+        "description": "Check if Amazon SageMaker Training jobs have intercontainer encryption enabled",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-008",
+        "name": "Check if Amazon SageMaker Models have network isolation enabled",
+        "description": "Check if Amazon SageMaker Models have network isolation enabled",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-009",
+        "name": "Check if Amazon SageMaker Notebook instances have direct internet access",
+        "description": "Check if Amazon SageMaker Notebook instances have direct internet access",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-010",
+        "name": "Check if Amazon SageMaker Notebook instances have data encryption enabled",
+        "description": "Check if Amazon SageMaker Notebook instances have data encryption enabled",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    },
+    {
+        "ID": "Sagemaker-011",
+        "name": "Check if Amazon SageMaker Notebook instances have VPC settings configured",
+        "description": "Check if Amazon SageMaker Notebook instances have VPC settings configured",
+        "cloudProvider": "AWS",
+        "service name": "sagemaker"
+    }
+]

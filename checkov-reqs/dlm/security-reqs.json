@@ -1,0 +1,26 @@
+[
+    {
+        "ID": "Dlm-001",
+        "name": "Ensure DLM cross region events are encrypted",
+        "cloudProvider": "AWS",
+        "service name": "dlm"
+    },
+    {
+        "ID": "Dlm-002",
+        "name": "Ensure DLM cross region events are encrypted with Customer Managed Key",
+        "cloudProvider": "AWS",
+        "service name": "dlm"
+    },
+    {
+        "ID": "Dlm-003",
+        "name": "Ensure DLM cross region schedules are encrypted",
+        "cloudProvider": "AWS",
+        "service name": "dlm"
+    },
+    {
+        "ID": "Dlm-004",
+        "name": "Ensure DLM cross region schedules are encrypted using a Customer Managed Key",
+        "cloudProvider": "AWS",
+        "service name": "dlm"
+    }
+]

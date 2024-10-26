@@ -1,0 +1,86 @@
+[
+    {
+        "ID": "Opensearch-001",
+        "name": "Check if Amazon Elasticsearch/Opensearch Service domains have internal user database enabled",
+        "description": "Check if Amazon Elasticsearch/Opensearch Service domains have internal user database enabled",
+        "cloudProvider": "AWS",
+        "service name": "opensearch"
+    },
+    {
+        "ID": "Opensearch-002",
+        "name": "Check if Amazon Elasticsearch/Opensearch Service domains have audit logging enabled",
+        "description": "Check if Amazon Elasticsearch/Opensearch Service domains have audit logging enabled",
+        "cloudProvider": "AWS",
+        "service name": "opensearch"
+    },
+    {
+        "ID": "Opensearch-003",
+        "name": "Check if Amazon Elasticsearch/Opensearch Service domains have encryption at-rest enabled",
+        "description": "Check if Amazon Elasticsearch/Opensearch Service domains have encryption at-rest enabled",
+        "cloudProvider": "AWS",
+        "service name": "opensearch"
+    },
+    {
+        "ID": "Opensearch-004",
+        "name": "Check if Amazon Elasticsearch/Opensearch Service domains have logging enabled",
+        "description": "Check if Amazon Elasticsearch/Opensearch Service domains have logging enabled",
+        "cloudProvider": "AWS",
+        "service name": "opensearch"
+    },
+    {
+        "ID": "Opensearch-005",
+        "name": "Check if Amazon Elasticsearch/Opensearch Service domains have fine grained access control enabled",
+        "description": "Check if Amazon Elasticsearch/Opensearch Service domains have fine grained access control enabled",
+        "cloudProvider": "AWS",
+        "service name": "opensearch"
+    },
+    {
+        "ID": "Opensearch-006",
+        "name": "Check if Amazon Elasticsearch/Opensearch Service domains has either Amazon Cognito or SAML authentication for Kibana enabled",
+        "description": "Check if Amazon Elasticsearch/Opensearch Service domains has Amazon Cognito or SAML authentication for Kibana enabled",
+        "cloudProvider": "AWS",
+        "service name": "opensearch"
+    },
+    {
+        "ID": "Opensearch-007",
+        "name": "OpenSearch Service Domain should have at least three dedicated master nodes",
+        "description": "OpenSearch Service uses dedicated master nodes to increase cluster stability. A minimum of three dedicated master nodes is recommended to ensure high availability.",
+        "cloudProvider": "AWS",
+        "service name": "opensearch"
+    },
+    {
+        "ID": "Opensearch-008",
+        "name": "Check if Amazon Elasticsearch/Opensearch Service domains have enforce HTTPS enabled",
+        "description": "Check if Amazon Elasticsearch/Opensearch Service domains have enforce HTTPS enabled",
+        "cloudProvider": "AWS",
+        "service name": "opensearch"
+    },
+    {
+        "ID": "Opensearch-009",
+        "name": "Check if Amazon Elasticsearch/Opensearch Service domains have updates available",
+        "description": "Check if Amazon Elasticsearch/Opensearch Service domains have updates available",
+        "cloudProvider": "AWS",
+        "service name": "opensearch"
+    },
+    {
+        "ID": "Opensearch-010",
+        "name": "Check if Amazon Opensearch/Elasticsearch domains are publicly accessible",
+        "description": "Check if Amazon Opensearch/Elasticsearch domains are publicly accessible via their access policies.",
+        "cloudProvider": "AWS",
+        "service name": "opensearch"
+    },
+    {
+        "ID": "Opensearch-011",
+        "name": "Ensure Elasticsearch/Opensearch domains have fault-tolerant data nodes.",
+        "description": "This control checks whether Elasticsearch/Opensearch domains are fault-tolerant with at least three data nodes and cross-zone replication (Zone Awareness) enabled.",
+        "cloudProvider": "AWS",
+        "service name": "opensearch"
+    },
+    {
+        "ID": "Opensearch-012",
+        "name": "Check if Amazon Elasticsearch/Opensearch Service domains have node-to-node encryption enabled",
+        "description": "Check if Amazon Elasticsearch/Opensearch Service domains have node-to-node encryption enabled",
+        "cloudProvider": "AWS",
+        "service name": "opensearch"
+    }
+]

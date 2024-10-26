@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "bedrock:001",
+    "name": "Enable encryption for Amazon Bedrock model invocation logs using AWS KMS",
+    "description": "Ensure that Amazon Bedrock model invocation logs are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMKs) to protect sensitive data in the request and response logs for all model invocations.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "bedrock:002",
+    "name": "Configure Prompt Attack Filter strength to HIGH for Amazon Bedrock Guardrails",
+    "description": "Set the prompt attack filter strength to HIGH for Amazon Bedrock guardrails to mitigate prompt injection and bypass techniques, enhancing the security of model interactions.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "bedrock:003",
+    "name": "Enable model invocation logging for Amazon Bedrock",
+    "description": "Enable model invocation logging for Amazon Bedrock to collect metadata, requests, and responses for all model invocations in your AWS account, facilitating auditing and monitoring of AI model usage.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "bedrock:004",
+    "name": "Enable Sensitive Information Filters for Amazon Bedrock Guardrails",
+    "description": "Configure and enable sensitive information filters for Amazon Bedrock guardrails to prevent the leakage of sensitive data such as personally identifiable information (PII), financial data, or confidential corporate information during model interactions.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "bedrock:005",
+    "name": "Encrypt Amazon Bedrock Agent with AWS KMS Customer Managed Key",
+    "description": "Ensure that Amazon Bedrock Agents are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMKs) to protect sensitive data associated with the agents.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "bedrock:006",
+    "name": "Implement least privilege access for Amazon Bedrock resources",
+    "description": "Ensure that IAM policies for Amazon Bedrock follow the principle of least privilege, granting only the necessary permissions to authorized entities for accessing and managing Bedrock resources.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "bedrock:007",
+    "name": "Restrict Amazon Bedrock access to specific VPC endpoints",
+    "description": "Configure Amazon Bedrock to only allow access through specific VPC endpoints to ensure that all traffic to and from Bedrock services remains within the AWS network and does not traverse the public internet.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "bedrock:008",
+    "name": "Enable AWS KMS encryption for Amazon Bedrock data at rest",
+    "description": "Ensure that all data at rest in Amazon Bedrock, including model artifacts and associated metadata, is encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMKs).",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "bedrock:009",
+    "name": "Implement secure TLS configuration for Amazon Bedrock API calls",
+    "description": "Ensure that all API calls to Amazon Bedrock use the latest secure TLS version and cipher suites to protect data in transit.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "bedrock:010",
+    "name": "Configure Amazon Bedrock to use AWS PrivateLink",
+    "description": "Set up Amazon Bedrock to use AWS PrivateLink to enable private connectivity between your VPC and Bedrock services without exposing traffic to the public internet.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "bedrock:011",
+    "name": "Implement resource-based policies for Amazon Bedrock resources",
+    "description": "Apply resource-based policies to Amazon Bedrock resources to control access from specific AWS accounts or IAM principals, ensuring fine-grained access control.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "bedrock:012",
+    "name": "Enable AWS Config rules for monitoring Amazon Bedrock configurations",
+    "description": "Set up AWS Config rules to continuously monitor and assess the configuration settings of Amazon Bedrock resources, ensuring compliance with security best practices and organizational policies.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "bedrock:013",
+    "name": "Implement data retention policies for Amazon Bedrock logs and data",
+    "description": "Define and implement data retention policies for Amazon Bedrock logs, model invocation data, and other associated data to comply with regulatory requirements and minimize data storage risks.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "bedrock:014",
+    "name": "Configure Amazon Bedrock to use AWS WAF for API protection",
+    "description": "Integrate Amazon Bedrock with AWS Web Application Firewall (WAF) to protect Bedrock APIs from common web exploits and malicious traffic patterns.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "bedrock:015",
+    "name": "Implement regular security assessments for Amazon Bedrock deployments",
+    "description": "Conduct regular security assessments and penetration testing of Amazon Bedrock deployments to identify and remediate potential vulnerabilities in configurations, access controls, and integration points.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

@@ -1,0 +1,9 @@
+[
+    {
+        "ID": "Mq-001",
+        "name": "MQ Broker Auto Minor Version Upgrades should be enabled.",
+        "description": "Ensure that automatic minor version upgrades are enabled on Amazon MQ brokers.",
+        "cloudProvider": "AWS",
+        "service name": "mq"
+    }
+]

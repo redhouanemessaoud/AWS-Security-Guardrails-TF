@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "mskcluster:001",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for MSK Cluster Encryption at Rest",
+    "description": "Ensure that Amazon Managed Streaming for Apache Kafka (MSK) clusters use AWS Key Management Service (KMS) Customer Managed Keys (CMK) for encryption at rest. This provides enhanced control and auditing capabilities for the encryption keys used to protect your data.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "mskcluster:002",
+    "name": "Enable TLS Encryption for MSK Cluster Data in Transit",
+    "description": "Ensure that all data transmitted between clients and the MSK cluster, as well as between the cluster's brokers, is encrypted using Transport Layer Security (TLS). Configure the cluster to use the latest supported TLS version to protect data in transit.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "mskcluster:003",
+    "name": "Enable Logging for MSK Cluster",
+    "description": "Enable logging for the MSK cluster to capture broker logs, including server logs, CloudWatch logs, and S3 logs. This helps in monitoring, troubleshooting, and auditing cluster activities.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "mskcluster:004",
+    "name": "Deploy MSK Cluster in Private Subnets",
+    "description": "Ensure that MSK cluster nodes are deployed in private subnets within the VPC. This prevents direct internet access to the cluster and enhances network security.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "mskcluster:005",
+    "name": "Implement Fine-Grained Access Control for MSK Cluster",
+    "description": "Enable and configure fine-grained access control for the MSK cluster using AWS IAM. This allows you to define granular permissions for different users or applications accessing the cluster resources.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "mskcluster:006",
+    "name": "Configure Security Groups for MSK Cluster",
+    "description": "Set up security groups for the MSK cluster to control inbound and outbound traffic. Ensure that only necessary ports are open and access is restricted to known IP ranges or security groups.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "mskcluster:007",
+    "name": "Enable Enhanced Monitoring for MSK Cluster",
+    "description": "Enable enhanced monitoring for the MSK cluster to collect detailed metrics at the broker level. This provides deeper insights into cluster performance and helps in proactive management.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "mskcluster:008",
+    "name": "Implement MSK Cluster Multi-AZ Deployment",
+    "description": "Deploy the MSK cluster across multiple Availability Zones (AZs) to ensure high availability and fault tolerance. This protects against AZ-level failures and improves overall cluster resilience.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "mskcluster:009",
+    "name": "Enable Automatic Version Upgrades for MSK Cluster",
+    "description": "Enable automatic version upgrades for the MSK cluster to ensure it always runs on the latest, most secure version of Apache Kafka. This helps in addressing security vulnerabilities and benefiting from new features.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "mskcluster:010",
+    "name": "Implement MSK Cluster Scaling and Rightsizing",
+    "description": "Regularly monitor and adjust the MSK cluster size to ensure it meets performance requirements while optimizing costs. Implement auto-scaling policies where applicable to handle varying workloads efficiently.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "mskcluster:011",
+    "name": "Enable MSK Cluster Monitoring with Prometheus",
+    "description": "Enable open-source monitoring with Prometheus for the MSK cluster. This allows for more detailed and customizable monitoring of cluster metrics, enhancing observability and troubleshooting capabilities.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "mskcluster:012",
+    "name": "Implement Secure Client Authentication for MSK Cluster",
+    "description": "Configure secure client authentication for the MSK cluster using TLS mutual authentication or SASL/SCRAM. This ensures that only authorized clients can connect to the cluster.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "mskcluster:013",
+    "name": "Enable MSK Cluster Configuration History",
+    "description": "Enable configuration history for the MSK cluster to track and audit changes to cluster configurations over time. This helps in change management and troubleshooting.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "mskcluster:014",
+    "name": "Implement MSK Cluster Backup and Recovery Strategy",
+    "description": "Develop and implement a comprehensive backup and recovery strategy for the MSK cluster. This should include regular backups of topic data and cluster configurations, and a tested recovery process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "mskcluster:015",
+    "name": "Use Custom Configuration for MSK Cluster",
+    "description": "Implement custom configurations for the MSK cluster to optimize security settings. This includes adjusting parameters like minimum in-sync replicas, unclean leader election, and auto-create topics to enhance data integrity and cluster security.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

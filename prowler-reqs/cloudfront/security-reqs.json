@@ -1,0 +1,93 @@
+[
+    {
+        "ID": "Cloudfront-001",
+        "name": "Check if CloudFront distributions are set to HTTPS.",
+        "description": "Check if CloudFront distributions are set to HTTPS.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-002",
+        "name": "Check if CloudFront distributions are using SNI to serve HTTPS requests.",
+        "description": "Check if CloudFront distributions are using SNI to serve HTTPS requests.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-003",
+        "name": "CloudFront distributions should not point to non-existent S3 origins.",
+        "description": "This control checks whether Amazon CloudFront distributions are pointing to non-existent Amazon S3 origins. The control fails if the origin is configured to point to a non-existent bucket.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-004",
+        "name": "Check if Geo restrictions are enabled in CloudFront distributions.",
+        "description": "Check if Geo restrictions are enabled in CloudFront distributions.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-005",
+        "name": "Check if CloudFront distributions have origin failover enabled.",
+        "description": "Check if CloudFront distributions have origin failover enabled.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-006",
+        "name": "Check if CloudFront distributions with S3 origin use OAC.",
+        "description": "Check if CloudFront distributions use origin access control.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-007",
+        "name": "Check if CloudFront distributions have Field Level Encryption enabled.",
+        "description": "Check if CloudFront distributions have Field Level Encryption enabled.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-008",
+        "name": "Check if CloudFront distributions have logging enabled.",
+        "description": "Check if CloudFront distributions have logging enabled.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-009",
+        "name": "Check if CloudFront distributions are using deprecated SSL protocols.",
+        "description": "Check if CloudFront distributions are using deprecated SSL protocols.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-010",
+        "name": "Check if CloudFront distributions encrypt traffic to custom origins.",
+        "description": "Check if CloudFront distributions encrypt traffic to custom origins.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-011",
+        "name": "Check if CloudFront distributions have a default root object.",
+        "description": "Check if CloudFront distributions have a default root object.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-012",
+        "name": "Check if CloudFront distributions are using WAF.",
+        "description": "Check if CloudFront distributions are using WAF.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    },
+    {
+        "ID": "Cloudfront-013",
+        "name": "CloudFront distributions should use custom SSL/TLS certificates.",
+        "description": "Ensure that your Amazon CloudFront distributions are configured to use a custom SSL/TLS certificate instead of the default one.",
+        "cloudProvider": "AWS",
+        "service name": "cloudfront"
+    }
+]

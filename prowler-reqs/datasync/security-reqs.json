@@ -1,0 +1,9 @@
+[
+    {
+        "ID": "Datasync-001",
+        "name": "DataSync tasks should have logging enabled",
+        "description": "This control checks if AWS DataSync tasks have logging enabled. The control fails if the task doesn't have the CloudWatchLogGroupArn property defined.",
+        "cloudProvider": "AWS",
+        "service name": "datasync"
+    }
+]

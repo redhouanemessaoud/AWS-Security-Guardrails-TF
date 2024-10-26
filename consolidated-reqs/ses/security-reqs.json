@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "ses:001",
+    "name": "Restrict SES identity access to known principals or accounts",
+    "description": "Ensure that SES identities are not publicly accessible and their resource policies grant access only to known and authorized AWS principals or accounts. This helps prevent unauthorized use of your SES resources.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "ses:002",
+    "name": "Enforce TLS for SES Configuration Sets",
+    "description": "Configure SES Configuration Sets to enforce the use of TLS (Transport Layer Security) for all email communications. This ensures that emails sent through SES are encrypted in transit, protecting the confidentiality of the content.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "ses:003",
+    "name": "Enable DKIM signing for SES identities",
+    "description": "Enable DomainKeys Identified Mail (DKIM) signing for all SES identities. DKIM helps prevent email spoofing by allowing receiving email systems to verify that the email was indeed sent by the domain it claims to be from.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ses:004",
+    "name": "Implement SPF records for SES domains",
+    "description": "Create and publish Sender Policy Framework (SPF) records for all domains used with SES. SPF helps prevent email spoofing by specifying which IP addresses are authorized to send email on behalf of your domain.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ses:005",
+    "name": "Enable SES event publishing to CloudWatch",
+    "description": "Configure SES to publish email sending events to Amazon CloudWatch. This allows for monitoring and tracking of email delivery, bounces, complaints, and other important metrics related to your SES usage.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "ses:006",
+    "name": "Implement SES suppression list management",
+    "description": "Regularly manage and update the SES account-level suppression list to prevent sending emails to addresses that have previously bounced or complained. This helps maintain a good sender reputation and improves email deliverability.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ses:007",
+    "name": "Use SES API v2 for enhanced security features",
+    "description": "Utilize SES API version 2 instead of version 1 when integrating SES with applications. SES API v2 provides enhanced security features and improved performance compared to the older version.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ses:008",
+    "name": "Implement SES sending authorization policies",
+    "description": "Use SES sending authorization policies to control which IAM users or roles can send emails on behalf of your verified SES identities. This provides fine-grained access control over email sending permissions.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "ses:009",
+    "name": "Enable SES feedback notifications",
+    "description": "Configure SES to send feedback notifications (bounces, complaints, and delivery notifications) to an SNS topic. This allows for real-time monitoring and handling of email delivery issues.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "ses:010",
+    "name": "Implement SES content filtering",
+    "description": "Enable and configure SES content filtering options to scan outgoing emails for malware, phishing attempts, or other potentially harmful content before sending. This helps protect recipients and maintain a good sender reputation.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

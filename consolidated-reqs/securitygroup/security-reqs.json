@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "securitygroup:001",
+    "name": "Restrict all traffic in default security group for every VPC",
+    "description": "Ensure that the default security group of every VPC restricts all inbound and outbound traffic. This means removing any allow rules and only keeping deny rules to prevent any unintended network access.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "securitygroup:002",
+    "name": "Prevent unrestricted inbound access on all ports",
+    "description": "Ensure no security groups allow ingress from 0.0.0.0/0 to port range 0-65535 (represented as port -1 in some APIs). This prevents unrestricted access from the internet to all ports and protocols.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "securitygroup:003",
+    "name": "Prevent unrestricted inbound SSH access",
+    "description": "Ensure no security groups allow ingress from 0.0.0.0/0 to port 22 (SSH). SSH access should be restricted to known IP ranges or through a bastion host.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "securitygroup:004",
+    "name": "Prevent unrestricted inbound RDP access",
+    "description": "Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389 (RDP). RDP access should be restricted to known IP ranges or through a bastion host.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "securitygroup:005",
+    "name": "Prevent unrestricted inbound HTTP access",
+    "description": "Ensure no security groups allow ingress from 0.0.0.0/0 to port 80 (HTTP). HTTP traffic should be routed through a load balancer or API gateway instead of directly to instances.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "securitygroup:006",
+    "name": "Ensure all security groups are attached to AWS resources",
+    "description": "Verify that all security groups are attached to at least one AWS resource (e.g., EC2 instance, RDS database, ELB). Unattached security groups should be removed to maintain a clean and manageable network configuration.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "securitygroup:007",
+    "name": "Implement least privilege access in security group rules",
+    "description": "Ensure that security group rules follow the principle of least privilege, allowing only necessary inbound and outbound traffic. Review and remove any overly permissive rules regularly.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "securitygroup:008",
+    "name": "Use security group names and descriptions effectively",
+    "description": "Implement a consistent naming convention and provide clear, descriptive information in the security group description field. This helps in easy identification and management of security groups.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "securitygroup:009",
+    "name": "Limit number of rules per security group",
+    "description": "Keep the number of rules in each security group to a minimum. AWS limits each security group to 60 inbound and 60 outbound rules. Approaching this limit can make management difficult and may impact performance.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "securitygroup:010",
+    "name": "Use VPC endpoints for AWS service access",
+    "description": "Utilize VPC endpoints for AWS services instead of allowing outbound internet access in security groups. This enhances security by keeping traffic within the AWS network.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "securitygroup:011",
+    "name": "Implement security group egress rules",
+    "description": "Define explicit outbound (egress) rules in security groups instead of allowing all outbound traffic by default. This helps in controlling and monitoring outbound connections from your resources.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "securitygroup:012",
+    "name": "Use security groups as sources in rules",
+    "description": "Leverage security group IDs as sources in security group rules instead of IP ranges when possible. This allows for more dynamic and easier-to-maintain network security configurations.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "securitygroup:013",
+    "name": "Implement regular security group audits",
+    "description": "Establish a process for regular audits of security groups to identify and remove unused, duplicate, or overly permissive rules. This helps maintain a clean and secure network configuration.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "securitygroup:014",
+    "name": "Use Network ACLs in conjunction with security groups",
+    "description": "Implement Network Access Control Lists (NACLs) at the subnet level in addition to security groups for layered network security. NACLs can provide an additional stateless filtering mechanism.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "securitygroup:015",
+    "name": "Tag security groups for better management",
+    "description": "Apply relevant tags to security groups for easier management, cost allocation, and automation. Include tags for owner, purpose, environment, and associated application or service.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

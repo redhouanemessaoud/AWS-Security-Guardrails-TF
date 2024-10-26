@@ -1,0 +1,14 @@
+[
+    {
+        "ID": "Appflow-001",
+        "name": "Ensure AppFlow connector profile uses CMK",
+        "cloudProvider": "AWS",
+        "service name": "appflow"
+    },
+    {
+        "ID": "Appflow-002",
+        "name": "Ensure AppFlow flow uses CMK",
+        "cloudProvider": "AWS",
+        "service name": "appflow"
+    }
+]

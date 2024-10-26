@@ -1,0 +1,51 @@
+[
+    {
+        "ID": "Kafka-001",
+        "name": "Kafka Cluster Exposed to the Public",
+        "description": "The Kafka cluster is publicly accessible, which can expose sensitive data and increase the attack surface.",
+        "cloudProvider": "AWS",
+        "service name": "kafka"
+    },
+    {
+        "ID": "Kafka-002",
+        "name": "Ensure Mutual TLS Authentication is Enabled for Kafka Cluster",
+        "description": "Mutual TLS Authentication ensures that both the client and the server are authenticated, providing an additional layer of security for communication within the Kafka cluster.",
+        "cloudProvider": "AWS",
+        "service name": "kafka"
+    },
+    {
+        "ID": "Kafka-003",
+        "name": "Ensure Kafka Cluster has unrestricted access disabled",
+        "description": "Kafka Clusters should not have unrestricted access enabled. Unrestricted access allows anyone to access the Kafka Cluster without any authentication. It is recommended to disable unrestricted access to prevent unauthorized access to the Kafka Cluster.",
+        "cloudProvider": "AWS",
+        "service name": "kafka"
+    },
+    {
+        "ID": "Kafka-004",
+        "name": "Ensure Enhanced Monitoring is Enabled for MSK (Kafka) Brokers",
+        "description": "Enhanced monitoring provides additional visibility into the performance and behavior of MSK (Kafka) brokers. By enabling enhanced monitoring, you can gain insights into potential issues and optimize the performance of your Kafka clusters.",
+        "cloudProvider": "AWS",
+        "service name": "kafka"
+    },
+    {
+        "ID": "Kafka-005",
+        "name": "Ensure Kafka Cluster Encryption at Rest Uses Customer Managed Keys (CMK)",
+        "description": "Kafka Cluster data stored at rest should be encrypted using Customer Managed Keys (CMK) for enhanced security and control over the encryption process.",
+        "cloudProvider": "AWS",
+        "service name": "kafka"
+    },
+    {
+        "ID": "Kafka-006",
+        "name": "MSK cluster should use the latest version.",
+        "description": "Ensure that your Amazon Managed Streaming for Apache Kafka (MSK) cluster is using the latest version to benefit from the latest security features, bug fixes, and performance improvements.",
+        "cloudProvider": "AWS",
+        "service name": "kafka"
+    },
+    {
+        "ID": "Kafka-007",
+        "name": "Ensure Kafka Cluster Encryption in Transit is Enabled",
+        "description": "Kafka clusters should have encryption in transit enabled to protect data as it travels across the network. This ensures that data is encrypted when transmitted between clients and brokers, preventing unauthorized access or data breaches.",
+        "cloudProvider": "AWS",
+        "service name": "kafka"
+    }
+]

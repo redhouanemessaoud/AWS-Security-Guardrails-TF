@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "route53:001",
+    "name": "Enable Query Logging for Route 53 Public Hosted Zones",
+    "description": "Enable query logging for all Route 53 public hosted zones to capture DNS queries. Configure logging to send the query logs to Amazon CloudWatch Logs for analysis and monitoring purposes.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "route53:002",
+    "name": "Enable Transfer Lock for Route 53 Domains",
+    "description": "Enable the transfer lock feature for all Route 53 registered domains to prevent unauthorized transfers to other registrars. This adds an extra layer of security to domain management.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "route53:003",
+    "name": "Enable Privacy Protection for Route 53 Domains",
+    "description": "Enable privacy protection for all Route 53 registered domains to mask personal information in WHOIS queries. This helps prevent the exposure of domain owners' personal details to the public.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "route53:004",
+    "name": "Remove Dangling DNS Records in Route 53",
+    "description": "Regularly audit and remove any Route 53 DNS records that point to non-existent or decommissioned resources. This includes removing A records that reference deleted EC2 instances or Elastic IPs that are no longer in use.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "route53:005",
+    "name": "Enable DNSSEC Signing for Route 53 Public Hosted Zones",
+    "description": "Enable Domain Name System Security Extensions (DNSSEC) signing for all Route 53 public hosted zones to provide authentication of DNS responses and prevent DNS spoofing attacks.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "route53:006",
+    "name": "Implement Least Privilege Access for Route 53 Management",
+    "description": "Ensure that IAM policies for Route 53 management follow the principle of least privilege. Grant only the necessary permissions to authorized entities for managing DNS records, domains, and hosted zones.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "route53:007",
+    "name": "Use AWS KMS Customer Managed Keys for DNSSEC Signing",
+    "description": "When enabling DNSSEC signing for Route 53 public hosted zones, use AWS Key Management Service (KMS) Customer Managed Keys (CMKs) instead of AWS managed keys for better control and auditing of the encryption keys used in the signing process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "route53:008",
+    "name": "Implement Monitoring for Critical DNS Changes",
+    "description": "Set up Amazon CloudWatch alarms to monitor and alert on critical DNS changes in Route 53, such as modifications to NS records, SOA records, or changes to DNSSEC configurations. This helps in quickly detecting and responding to unauthorized or accidental changes.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "route53:009",
+    "name": "Use Private Hosted Zones for Internal DNS Resolution",
+    "description": "Utilize Route 53 private hosted zones for internal DNS resolution within VPCs. This ensures that internal domain names are not resolvable from the public internet and provides better control over internal network traffic.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "route53:010",
+    "name": "Implement Health Checks for DNS Failover",
+    "description": "Configure Route 53 health checks and DNS failover for critical endpoints to improve the availability and reliability of applications. This ensures automatic routing of traffic to healthy endpoints in case of failures.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "Apigateway-001",
+        "name": "Ensure API Gateway V2 has Access Logging enabled.",
+        "description": "Ensure API Gateway V2 has Access Logging enabled.",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    },
+    {
+        "ID": "Apigateway-002",
+        "name": "Checks if API Gateway V2 has configured authorizers.",
+        "description": "Checks if API Gateway V2 has configured authorizers.",
+        "cloudProvider": "AWS",
+        "service name": "apigateway"
+    }
+]

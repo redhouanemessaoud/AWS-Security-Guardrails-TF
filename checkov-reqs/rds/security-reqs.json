@@ -1,0 +1,206 @@
+[
+    {
+        "ID": "Rds-001",
+        "name": "Ensure that RDS database cluster snapshot is encrypted",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-002",
+        "name": "Ensure all data stored in RDS is not publicly accessible",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-003",
+        "name": "Ensure all data stored in the RDS is securely encrypted at rest",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-004",
+        "name": "Ensure AWS RDS database instance configured with encryption in transit",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-005",
+        "name": "Ensure DB instance gets all minor upgrades automatically",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-006",
+        "name": "Ensure Postgres RDS as aws_db_instance has Query Logging enabled",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-007",
+        "name": "Ensure RDS database has IAM authentication enabled",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-008",
+        "name": "Ensure RDS instance with copy tags to snapshots is enabled",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-009",
+        "name": "Ensure RDS Performance Insights are encrypted using KMS CMKs",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-010",
+        "name": "Ensure RDS uses a modern CaCert",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-011",
+        "name": "Ensure that AWS database instances have deletion protection enabled",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-012",
+        "name": "Ensure that enhanced monitoring is enabled for Amazon RDS instances",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-013",
+        "name": "Ensure that RDS instances has backup policy",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-014",
+        "name": "Ensure that RDS instances have Multi-AZ enabled",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-015",
+        "name": "Ensure that RDS instances have performance insights enabled",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-016",
+        "name": "Ensure that RDS PostgreSQL instances use a non vulnerable version with the log_fdw extension (https://aws.amazon.com/security/security-bulletins/AWS-2022-004/)",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-017",
+        "name": "Ensure that respective logs of Amazon Relational Database Service (Amazon RDS) are enabled",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-018",
+        "name": "Ensure replicated backups are encrypted at rest using KMS CMKs",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-019",
+        "name": "Ensure every security group and rule has a description",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-020",
+        "name": "Ensure no aws_db_security_group resources exist",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-021",
+        "name": "Ensure DB Snapshots are not Public",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-022",
+        "name": "Ensure DB Snapshot copy uses CMK",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-023",
+        "name": "Ensure all data stored in Aurora is securely encrypted at rest",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-024",
+        "name": "Ensure Postgres RDS as aws_rds_cluster has Query Logging enabled",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-025",
+        "name": "Ensure RDS cluster configured to copy tags to snapshots",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-026",
+        "name": "Ensure RDS cluster has IAM authentication enabled",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-027",
+        "name": "Ensure RDS Clusters are encrypted using KMS CMKs",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-028",
+        "name": "Ensure that RDS Aurora Clusters have backtracking enabled",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-029",
+        "name": "Ensure that RDS Cluster audit logging is enabled for MySQL engine",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-030",
+        "name": "Ensure that RDS Cluster log capture is enabled",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-031",
+        "name": "Ensure that RDS clusters has backup plan of AWS Backup",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-032",
+        "name": "Ensure that RDS clusters have deletion protection enabled",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-033",
+        "name": "Ensure RDS Cluster activity streams are encrypted using KMS CMKs",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Rds-034",
+        "name": "Ensure that RDS global clusters are encrypted",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    }
+]

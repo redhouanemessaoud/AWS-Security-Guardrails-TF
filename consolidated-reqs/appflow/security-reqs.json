@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "appflow:001",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for AppFlow Connector Profile Encryption",
+    "description": "Ensure that AppFlow connector profiles are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMKs) for enhanced security and control over encryption keys.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "appflow:002",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for AppFlow Flow Encryption",
+    "description": "Ensure that AppFlow flows are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMKs) to protect sensitive data during processing and transfer.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "appflow:003",
+    "name": "Enable Encryption in Transit for AppFlow Flows",
+    "description": "Ensure that all AppFlow flows use encryption in transit with the latest TLS protocols to protect data as it moves between source and destination.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "appflow:004",
+    "name": "Implement Least Privilege Access for AppFlow Flows",
+    "description": "Ensure that IAM policies for AppFlow flows follow the principle of least privilege, granting only the necessary permissions to authorized entities for accessing source and destination resources.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "appflow:005",
+    "name": "Enable AppFlow Flow Logging",
+    "description": "Enable logging for AppFlow flows to capture detailed information about flow executions, including start time, end time, status, and any errors encountered during the process.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "appflow:006",
+    "name": "Configure AppFlow Flow Failure Handling",
+    "description": "Implement appropriate error handling and notification mechanisms for AppFlow flows to ensure timely response to failures and data transfer issues.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "appflow:007",
+    "name": "Implement Data Validation for AppFlow Flows",
+    "description": "Configure data validation rules within AppFlow flows to ensure the integrity and quality of data being transferred between source and destination.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "appflow:008",
+    "name": "Use Private Connectivity for AppFlow Flows",
+    "description": "Utilize AWS PrivateLink or VPC endpoints for AppFlow to establish private connectivity between VPCs and AppFlow, reducing exposure to the public internet.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "appflow:009",
+    "name": "Implement Regular Review of AppFlow Flow Configurations",
+    "description": "Establish a process for regular review and audit of AppFlow flow configurations to ensure they remain aligned with security best practices and business requirements.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "appflow:010",
+    "name": "Enable AppFlow Tags for Resource Management",
+    "description": "Implement a consistent tagging strategy for AppFlow resources to enhance resource management, cost allocation, and security tracking.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

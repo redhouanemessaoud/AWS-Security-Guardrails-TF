@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "mq:001",
+    "name": "Enable automatic minor version upgrades for Amazon MQ brokers",
+    "description": "Ensure that automatic minor version upgrades are enabled on all Amazon MQ brokers to receive the latest security patches and bug fixes automatically.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "mq:002",
+    "name": "Enable audit logging for Amazon MQ brokers",
+    "description": "Enable audit logging for all Amazon MQ brokers to track and monitor broker actions, configuration changes, and access attempts.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "mq:003",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for Amazon MQ broker encryption",
+    "description": "Ensure that all Amazon MQ brokers are encrypted using a Customer Managed Key (CMK) from AWS Key Management Service (KMS) for enhanced control over the encryption process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "mq:004",
+    "name": "Disable public accessibility for Amazon MQ brokers",
+    "description": "Ensure that all Amazon MQ brokers are not publicly accessible and are only reachable from within the VPC or through authorized VPN connections.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "mq:005",
+    "name": "Enable general logging for Amazon MQ brokers",
+    "description": "Enable general logging for all Amazon MQ brokers to capture information about broker operations, connections, and message flows for troubleshooting and monitoring purposes.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "mq:006",
+    "name": "Keep Amazon MQ brokers updated to the latest major version",
+    "description": "Regularly update Amazon MQ brokers to the latest major version to ensure access to the most recent features, performance improvements, and security enhancements.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "mq:007",
+    "name": "Use VPC peering or AWS PrivateLink for Amazon MQ broker access",
+    "description": "Configure VPC peering or AWS PrivateLink to enable secure, private access to Amazon MQ brokers from other VPCs or on-premises networks without exposing the brokers to the public internet.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "mq:008",
+    "name": "Implement least privilege access for Amazon MQ brokers",
+    "description": "Ensure that IAM policies granting access to Amazon MQ brokers follow the principle of least privilege, providing only the necessary permissions to authorized entities for managing and accessing the brokers.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "mq:009",
+    "name": "Enable encryption in transit for Amazon MQ brokers",
+    "description": "Ensure that all Amazon MQ brokers have encryption in transit enabled, using the latest supported TLS version, to protect data communications between clients and brokers.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "mq:010",
+    "name": "Configure Amazon MQ brokers in a multi-AZ deployment",
+    "description": "Deploy Amazon MQ brokers in a multi-Availability Zone configuration to enhance high availability and fault tolerance for critical messaging workloads.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "mq:011",
+    "name": "Implement Amazon MQ broker network access control",
+    "description": "Configure security groups and network ACLs to control inbound and outbound traffic to Amazon MQ brokers, allowing access only from authorized sources on required ports.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "mq:012",
+    "name": "Enable CloudWatch monitoring for Amazon MQ brokers",
+    "description": "Configure CloudWatch monitoring for all Amazon MQ brokers to track performance metrics, set up alarms for abnormal behavior, and ensure optimal operation of the messaging system.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "mq:013",
+    "name": "Implement message persistence for Amazon MQ brokers",
+    "description": "Configure message persistence for Amazon MQ brokers to ensure that messages are not lost in case of broker restarts or failures, enhancing data durability and reliability.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "mq:014",
+    "name": "Use strong authentication mechanisms for Amazon MQ broker access",
+    "description": "Implement strong authentication mechanisms, such as username and password with complexity requirements or LDAP authentication, for accessing Amazon MQ brokers to prevent unauthorized access.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "mq:015",
+    "name": "Regularly rotate Amazon MQ broker credentials",
+    "description": "Implement a process to regularly rotate credentials (usernames and passwords) used for accessing Amazon MQ brokers to minimize the risk of unauthorized access due to compromised credentials.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

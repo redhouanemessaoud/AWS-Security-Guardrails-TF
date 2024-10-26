@@ -1,0 +1,23 @@
+[
+    {
+        "ID": "Ssm-001",
+        "name": "Check if there are SSM Documents set as public.",
+        "description": "Check if there are SSM Documents set as public.",
+        "cloudProvider": "AWS",
+        "service name": "ssm"
+    },
+    {
+        "ID": "Ssm-002",
+        "name": "Find secrets in SSM Documents.",
+        "description": "Find secrets in SSM Documents.",
+        "cloudProvider": "AWS",
+        "service name": "ssm"
+    },
+    {
+        "ID": "Ssm-003",
+        "name": "Check if EC2 instances managed by Systems Manager are compliant with patching requirements.",
+        "description": "Check if EC2 instances managed by Systems Manager are compliant with patching requirements.",
+        "cloudProvider": "AWS",
+        "service name": "ssm"
+    }
+]

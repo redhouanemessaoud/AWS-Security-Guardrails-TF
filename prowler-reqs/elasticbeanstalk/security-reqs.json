@@ -1,0 +1,23 @@
+[
+    {
+        "ID": "Elasticbeanstalk-001",
+        "name": "Elastic Beanstalk managed platform updates should be enabled",
+        "description": "This control checks whether managed platform updates are enabled for an Elastic Beanstalk environment. The control fails if no managed platform updates are enabled.",
+        "cloudProvider": "AWS",
+        "service name": "elasticbeanstalk"
+    },
+    {
+        "ID": "Elasticbeanstalk-002",
+        "name": "Elastic Beanstalk environments should have enhanced health reporting enabled",
+        "description": "This control checks whether enhanced health reporting is enabled for your AWS Elastic Beanstalk environments.",
+        "cloudProvider": "AWS",
+        "service name": "elasticbeanstalk"
+    },
+    {
+        "ID": "Elasticbeanstalk-003",
+        "name": "Elastic Beanstalk environment should stream logs to CloudWatch",
+        "description": "This control checks whether an Elastic Beanstalk environment is configured to send logs to CloudWatch Logs. The control fails if an Elastic Beanstalk environment isn't configured to send logs to CloudWatch Logs.",
+        "cloudProvider": "AWS",
+        "service name": "elasticbeanstalk"
+    }
+]

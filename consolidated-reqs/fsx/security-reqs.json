@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "fsx:001",
+    "name": "Enable encryption at rest using AWS KMS Customer Managed Key (CMK) for Amazon FSx for Lustre file systems",
+    "description": "Ensure that all Amazon FSx for Lustre file systems are encrypted at rest using a Customer Managed Key (CMK) from AWS Key Management Service (KMS). This provides an additional layer of data protection and control over the encryption keys.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "fsx:002",
+    "name": "Enable encryption at rest using AWS KMS Customer Managed Key (CMK) for Amazon FSx for NetApp ONTAP file systems",
+    "description": "Ensure that all Amazon FSx for NetApp ONTAP file systems are encrypted at rest using a Customer Managed Key (CMK) from AWS Key Management Service (KMS). This provides an additional layer of data protection and control over the encryption keys.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "fsx:003",
+    "name": "Enable encryption at rest using AWS KMS Customer Managed Key (CMK) for Amazon FSx for Windows File Server file systems",
+    "description": "Ensure that all Amazon FSx for Windows File Server file systems are encrypted at rest using a Customer Managed Key (CMK) from AWS Key Management Service (KMS). This provides an additional layer of data protection and control over the encryption keys.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "fsx:004",
+    "name": "Enable tag copying to backups for Amazon FSx file systems",
+    "description": "Configure Amazon FSx file systems to automatically copy tags to their backups. This ensures consistent tagging across file systems and their backups, facilitating better resource management and cost allocation.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "fsx:005",
+    "name": "Enable tag copying to volumes for Amazon FSx file systems",
+    "description": "Configure Amazon FSx file systems to automatically copy tags to their volumes. This ensures consistent tagging across file systems and their volumes, facilitating better resource management and cost allocation.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "fsx:006",
+    "name": "Implement least privilege access for Amazon FSx file systems",
+    "description": "Ensure that IAM policies and file system policies follow the principle of least privilege, granting only the necessary permissions to authorized entities for accessing and managing Amazon FSx file systems.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "fsx:007",
+    "name": "Enable automatic backups for Amazon FSx file systems",
+    "description": "Configure automatic daily backups for all Amazon FSx file systems to ensure data recoverability and protection against accidental deletion or corruption.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "fsx:008",
+    "name": "Implement secure network configuration for Amazon FSx file systems",
+    "description": "Ensure that Amazon FSx file systems are deployed in private subnets within a VPC, with appropriate security group rules to restrict access to only necessary sources and protocols.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "fsx:009",
+    "name": "Enable encryption in transit for Amazon FSx for Windows File Server",
+    "description": "Enforce the use of encryption in transit for Amazon FSx for Windows File Server by enabling SMB encryption, which secures data as it travels between the file system and clients.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "fsx:010",
+    "name": "Configure access control for Amazon FSx for Windows File Server",
+    "description": "Implement proper access control for Amazon FSx for Windows File Server using Active Directory integration and file-level permissions to ensure only authorized users and groups can access the file system resources.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "fsx:011",
+    "name": "Enable data deduplication for Amazon FSx for Windows File Server",
+    "description": "Enable data deduplication on Amazon FSx for Windows File Server file systems to optimize storage usage and potentially reduce the attack surface by minimizing redundant data storage.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "fsx:012",
+    "name": "Configure monitoring and alerting for Amazon FSx file systems",
+    "description": "Set up Amazon CloudWatch alarms and metrics to monitor the performance, health, and security of Amazon FSx file systems, including alerts for suspicious activities or potential security incidents.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "fsx:013",
+    "name": "Implement regular patching for Amazon FSx for Windows File Server",
+    "description": "Ensure that Amazon FSx for Windows File Server file systems are regularly patched with the latest security updates by enabling automatic patching or implementing a process for regular manual patching.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "fsx:014",
+    "name": "Enable storage capacity monitoring for Amazon FSx file systems",
+    "description": "Configure storage capacity monitoring and alerting for Amazon FSx file systems to prevent potential disruptions due to insufficient storage and to maintain optimal performance.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "fsx:015",
+    "name": "Implement secure data transfer for Amazon FSx for Lustre",
+    "description": "When transferring data between Amazon S3 and Amazon FSx for Lustre, ensure that the S3 bucket is properly secured and that the IAM role used for data transfer has the minimum necessary permissions.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  }
+]

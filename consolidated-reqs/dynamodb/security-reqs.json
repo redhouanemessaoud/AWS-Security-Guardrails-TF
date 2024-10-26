@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "dynamodb:001",
+    "name": "Enable encryption at rest for DynamoDB tables using AWS KMS Customer Managed Keys (CMK)",
+    "description": "Ensure that all DynamoDB tables are encrypted at rest using AWS Key Management Service (KMS) Customer Managed Keys (CMK) for enhanced security and control over encryption keys.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dynamodb:002",
+    "name": "Enable Point-in-Time Recovery (PITR) for DynamoDB tables",
+    "description": "Enable Point-in-Time Recovery (PITR) for all DynamoDB tables to allow continuous backups of table data and provide the ability to restore to any point in time within the last 35 days.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dynamodb:003",
+    "name": "Enable deletion protection for DynamoDB tables",
+    "description": "Enable deletion protection for all DynamoDB tables to prevent accidental deletion during regular table management operations.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "dynamodb:004",
+    "name": "Enable encryption at rest for DynamoDB Accelerator (DAX) clusters using AWS KMS Customer Managed Keys (CMK)",
+    "description": "Ensure that all DynamoDB Accelerator (DAX) clusters are encrypted at rest using AWS Key Management Service (KMS) Customer Managed Keys (CMK) for enhanced security and control over encryption keys.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dynamodb:005",
+    "name": "Enable encryption in transit for DynamoDB Accelerator (DAX) clusters",
+    "description": "Ensure that all DynamoDB Accelerator (DAX) clusters have encryption in transit enabled, with the endpoint encryption type set to TLS, to protect data during transmission.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dynamodb:006",
+    "name": "Deploy DynamoDB Accelerator (DAX) clusters across multiple Availability Zones",
+    "description": "Deploy DynamoDB Accelerator (DAX) clusters across multiple Availability Zones to enhance availability and fault tolerance of the caching layer.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "dynamodb:007",
+    "name": "Include DynamoDB tables in AWS Backup plans",
+    "description": "Ensure that all DynamoDB tables are included in AWS Backup plans to provide an additional layer of protection and enable cross-region backup capabilities.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dynamodb:008",
+    "name": "Restrict DynamoDB table access to specific AWS accounts or IAM principals",
+    "description": "Implement IAM policies that restrict access to DynamoDB tables to only specified AWS accounts or IAM principals, following the principle of least privilege.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "dynamodb:009",
+    "name": "Enable auto-scaling for DynamoDB tables",
+    "description": "Configure DynamoDB tables to automatically scale read and write capacity as needed, either using on-demand capacity mode or provisioned mode with auto-scaling, to ensure optimal performance and cost efficiency.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "dynamodb:010",
+    "name": "Enable encryption at rest for DynamoDB global table replicas using AWS KMS Customer Managed Keys (CMK)",
+    "description": "Ensure that all DynamoDB global table replicas are encrypted at rest using AWS Key Management Service (KMS) Customer Managed Keys (CMK) for enhanced security and control over encryption keys.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dynamodb:011",
+    "name": "Enable VPC endpoints for DynamoDB",
+    "description": "Configure VPC endpoints for DynamoDB to enable private connectivity between your VPC and DynamoDB, without requiring an internet gateway, NAT device, VPN connection, or AWS Direct Connect connection.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "dynamodb:012",
+    "name": "Implement fine-grained access control for DynamoDB tables",
+    "description": "Use IAM policies with conditions to implement fine-grained access control for DynamoDB tables, limiting access to specific items and attributes based on user identity or other contextual information.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "dynamodb:013",
+    "name": "Enable DynamoDB Streams for critical tables",
+    "description": "Enable DynamoDB Streams for critical tables to capture item-level modifications and trigger real-time processing or replication of data changes.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "dynamodb:014",
+    "name": "Implement DynamoDB table tagging strategy",
+    "description": "Implement a consistent tagging strategy for DynamoDB tables to facilitate resource management, cost allocation, and access control based on tags.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "dynamodb:015",
+    "name": "Configure DynamoDB Time to Live (TTL) for applicable tables",
+    "description": "Enable and configure DynamoDB Time to Live (TTL) for tables that contain time-sensitive data to automatically delete expired items and reduce storage costs.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

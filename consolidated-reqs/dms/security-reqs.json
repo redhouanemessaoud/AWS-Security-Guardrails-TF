@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "dms:001",
+    "name": "Enable Multi-AZ for DMS Replication Instances",
+    "description": "Ensure that Multi-AZ is enabled for all AWS Database Migration Service (DMS) replication instances to improve availability and fault tolerance. This configuration deploys a standby replica of the replication instance in a different Availability Zone, providing automatic failover in case of infrastructure failure.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "dms:002",
+    "name": "Disable Public Accessibility for DMS Replication Instances",
+    "description": "Ensure that all AWS Database Migration Service (DMS) replication instances are not publicly accessible. This prevents unauthorized access from the internet and ensures that the instances can only be accessed from within the VPC or through authorized network connections.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "dms:003",
+    "name": "Enable Auto Minor Version Upgrade for DMS Replication Instances",
+    "description": "Enable automatic minor version upgrades for all AWS Database Migration Service (DMS) replication instances. This ensures that the instances automatically receive minor engine version upgrades during their next maintenance window, keeping them up-to-date with the latest patches and security fixes.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "dms:004",
+    "name": "Enable SSL Mode for DMS Endpoints",
+    "description": "Ensure that SSL mode is enabled for all AWS Database Migration Service (DMS) endpoints. This configuration encrypts data in transit between the source and target endpoints, protecting sensitive information during the migration process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dms:005",
+    "name": "Use KMS Customer Managed Key for DMS Endpoint Encryption",
+    "description": "Ensure that AWS Database Migration Service (DMS) endpoints use Customer Managed Keys (CMK) from AWS Key Management Service (KMS) for encryption. This provides greater control over the encryption keys and allows for key rotation and access control policies to be managed separately.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dms:006",
+    "name": "Use KMS Customer Managed Key for DMS Replication Instance Encryption",
+    "description": "Ensure that AWS Database Migration Service (DMS) replication instances are encrypted using Customer Managed Keys (CMK) from AWS Key Management Service (KMS). This provides enhanced control over the encryption keys used to protect data at rest on the replication instances.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dms:007",
+    "name": "Use KMS Customer Managed Key for DMS S3 Endpoint Encryption",
+    "description": "Ensure that AWS Database Migration Service (DMS) S3 endpoints use Customer Managed Keys (CMK) from AWS Key Management Service (KMS) for encryption. This provides greater control over the encryption keys used to protect data stored in S3 buckets during the migration process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dms:008",
+    "name": "Implement Network Isolation for DMS Replication Instances",
+    "description": "Ensure that AWS Database Migration Service (DMS) replication instances are deployed in private subnets within a VPC. Configure security groups to restrict inbound and outbound traffic to only necessary ports and IP ranges, following the principle of least privilege.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "dms:009",
+    "name": "Enable CloudWatch Monitoring for DMS Replication Instances",
+    "description": "Enable detailed CloudWatch monitoring for AWS Database Migration Service (DMS) replication instances. This provides enhanced visibility into the performance and health of the replication instances, allowing for better troubleshooting and capacity planning.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "dms:010",
+    "name": "Implement IAM Roles for DMS Task Execution",
+    "description": "Use IAM roles instead of IAM users for AWS Database Migration Service (DMS) task execution. This follows the principle of least privilege and eliminates the need to manage long-term credentials for DMS tasks.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "dms:011",
+    "name": "Enable Change Data Capture (CDC) Validation for DMS Tasks",
+    "description": "Enable Change Data Capture (CDC) validation for AWS Database Migration Service (DMS) tasks where applicable. This ensures that ongoing changes to the source database are accurately captured and replicated to the target, maintaining data integrity throughout the migration process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dms:012",
+    "name": "Implement Data Validation for DMS Tasks",
+    "description": "Enable data validation for AWS Database Migration Service (DMS) tasks to ensure the accuracy and completeness of migrated data. Configure validation rules to compare source and target data, and set up notifications for any discrepancies detected during the migration process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dms:013",
+    "name": "Use VPC Endpoints for DMS Access to AWS Services",
+    "description": "Utilize VPC endpoints for AWS Database Migration Service (DMS) to access other AWS services like S3 or DynamoDB. This keeps the traffic within the AWS network and reduces exposure to the public internet, enhancing security and potentially improving network performance.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "dms:014",
+    "name": "Implement Resource Tagging for DMS Resources",
+    "description": "Implement a consistent tagging strategy for all AWS Database Migration Service (DMS) resources, including replication instances, endpoints, and tasks. This facilitates better resource management, cost allocation, and access control based on tags.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "dms:015",
+    "name": "Enable AWS Secrets Manager Integration for DMS Endpoint Credentials",
+    "description": "Use AWS Secrets Manager to store and manage credentials for AWS Database Migration Service (DMS) endpoints. This improves security by centralizing credential management and allows for automatic rotation of secrets.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

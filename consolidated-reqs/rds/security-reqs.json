@@ -1,0 +1,177 @@
+[
+  {
+    "ID": "rds:001",
+    "name": "Enable Multi-AZ Deployment for RDS Instances",
+    "description": "Ensure that all RDS instances have Multi-AZ deployment enabled to improve availability and fault tolerance. This feature creates a primary DB instance and synchronously replicates the data to a standby instance in a different Availability Zone.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "rds:002",
+    "name": "Use Supported and Up-to-Date RDS Engine Versions",
+    "description": "Ensure that all RDS instances are using supported and up-to-date engine versions for MariaDB, MySQL, and PostgreSQL. Regularly update to the latest minor version to benefit from security patches and performance improvements.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "rds:003",
+    "name": "Enable Event Subscriptions for RDS Parameter Groups",
+    "description": "Configure Amazon RDS event notification subscriptions for database parameter group events to stay informed about important configuration changes and potential security issues.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "rds:004",
+    "name": "Enable Automatic Minor Version Upgrades for RDS Instances and Clusters",
+    "description": "Ensure that automatic minor version upgrades are enabled for all RDS instances and clusters. This ensures that your databases receive the latest minor version updates, which often include important security patches and bug fixes.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "rds:005",
+    "name": "Enable CloudWatch Logs Integration for RDS Instances and Clusters",
+    "description": "Configure RDS instances and clusters to send database logs to Amazon CloudWatch Logs. This integration enables centralized log management and analysis for Aurora MySQL, Aurora PostgreSQL, MySQL, and PostgreSQL database engines.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "rds:006",
+    "name": "Enable Encryption at Rest for RDS Instances and Clusters",
+    "description": "Ensure that all RDS instances and clusters have encryption at rest enabled using AWS Key Management Service (KMS) Customer Managed Keys (CMKs). This protects your data from unauthorized access to the underlying storage.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "rds:007",
+    "name": "Enable Copy Tags to Snapshots for RDS Instances and Clusters",
+    "description": "Enable the 'Copy Tags to Snapshots' feature for all RDS instances and clusters. This ensures that any tags associated with the RDS resource are automatically copied to its snapshots, maintaining consistent metadata and simplifying resource management.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "rds:008",
+    "name": "Use Non-Default Master Username for RDS Instances and Clusters",
+    "description": "Ensure that RDS instances and clusters are not using the default master username. Create a unique master username for each database to enhance security and reduce the risk of unauthorized access attempts.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "rds:009",
+    "name": "Enable IAM Database Authentication for RDS Instances and Clusters",
+    "description": "Enable IAM database authentication for RDS instances and clusters where supported. This allows you to manage database access using AWS IAM users and roles, providing centralized access control and eliminating the need for password management.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "rds:010",
+    "name": "Enable Backtrack for Aurora MySQL Clusters",
+    "description": "Enable the Backtrack feature for Amazon Aurora MySQL-compatible clusters. This allows you to quickly recover from user errors by rewinding the cluster to a specific point in time without restoring from a backup.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "rds:011",
+    "name": "Enable Event Subscriptions for RDS Instances",
+    "description": "Configure Amazon RDS event notification subscriptions for database instance events, particularly for maintenance, configuration changes, and failures. This ensures timely awareness of important database activities and potential issues.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "rds:012",
+    "name": "Enable Enhanced Monitoring for RDS Instances",
+    "description": "Enable Enhanced Monitoring for RDS instances to gain deeper visibility into the health of your databases. This feature provides real-time metrics for the operating system that your database runs on, allowing for better performance analysis and troubleshooting.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "rds:013",
+    "name": "Deploy RDS Instances within a VPC",
+    "description": "Ensure that all RDS instances are deployed within a Virtual Private Cloud (VPC). This provides network isolation and allows you to control access to your databases using security groups and network ACLs.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "rds:014",
+    "name": "Enable Deletion Protection for RDS Instances and Clusters",
+    "description": "Enable deletion protection for all RDS instances and clusters to prevent accidental deletion. This adds an additional layer of safety requiring manual disabling before a database can be deleted.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "rds:015",
+    "name": "Ensure RDS Snapshots and Cluster Snapshots are Not Public",
+    "description": "Regularly check and ensure that all RDS snapshots and cluster snapshots are not publicly accessible. Public snapshots can lead to data exposure and should be avoided in most scenarios.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "rds:016",
+    "name": "Use Up-to-Date SSL/TLS Certificates for RDS Instances",
+    "description": "Ensure that SSL/TLS certificates used for RDS instances are up-to-date and not expired. Regularly rotate certificates and update to the latest Certificate Authority (CA) certificates to maintain secure connections to your databases.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "rds:017",
+    "name": "Use Non-Default Ports for RDS Instances and Clusters",
+    "description": "Configure RDS instances and clusters to use non-default ports for database connections. This adds an extra layer of security by making it more difficult for potential attackers to identify and target your databases.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "rds:018",
+    "name": "Enable Automatic Backups for RDS Instances",
+    "description": "Enable automatic backups for all RDS instances with an appropriate retention period. This ensures that you can recover your databases to a specific point in time within the retention period in case of data loss or corruption.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "rds:019",
+    "name": "Enable Encryption in Transit for RDS Instances",
+    "description": "Enforce encryption in transit for all RDS instances by enabling SSL/TLS connections. For SQL Server, PostgreSQL, and Aurora PostgreSQL, set the 'rds.force_ssl' parameter to 1. For MySQL, Aurora MySQL, and MariaDB, set the 'require_secure_transport' parameter to ON.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "rds:020",
+    "name": "Enable Performance Insights with KMS Encryption for RDS Instances",
+    "description": "Enable Performance Insights for RDS instances and encrypt the data using AWS KMS Customer Managed Keys (CMKs). This provides valuable performance monitoring capabilities while ensuring the security of the collected data.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "rds:021",
+    "name": "Implement AWS Backup Plans for RDS Instances and Clusters",
+    "description": "Use AWS Backup to create and manage backup plans for RDS instances and clusters. This ensures consistent backup policies across your databases and provides centralized management of backups.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "rds:022",
+    "name": "Enable Query Logging for PostgreSQL RDS Instances and Clusters",
+    "description": "Enable query logging for PostgreSQL RDS instances and Aurora PostgreSQL clusters by setting appropriate parameters in the parameter group. This helps in monitoring database activity and identifying potential performance or security issues.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "rds:023",
+    "name": "Enable Audit Logging for MySQL RDS Instances and Aurora MySQL Clusters",
+    "description": "Enable audit logging for MySQL RDS instances and Aurora MySQL clusters by configuring the appropriate parameters in the parameter group. This provides detailed logs of database activities for security analysis and compliance purposes.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "rds:024",
+    "name": "Use KMS Customer Managed Keys for RDS Cluster Activity Streams",
+    "description": "When using Aurora with database activity streams, encrypt the streams using AWS KMS Customer Managed Keys (CMKs). This ensures that the sensitive data captured in activity streams is protected with customer-controlled encryption keys.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "rds:025",
+    "name": "Enable Encryption for RDS Global Clusters",
+    "description": "Ensure that all RDS Global Clusters are encrypted using AWS KMS Customer Managed Keys (CMKs). This protects data at rest across all regions where the global cluster is deployed.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  }
+]

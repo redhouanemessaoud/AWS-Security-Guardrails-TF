@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "glue:001",
+    "name": "Enable encryption at rest for AWS Glue ETL jobs",
+    "description": "Ensure that AWS Glue ETL jobs have encryption at rest enabled using AWS Key Management Service (KMS) Customer Managed Keys (CMK). This applies to job outputs, job bookmarks, and shuffle data.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "glue:002",
+    "name": "Enable encryption at rest for AWS Glue development endpoints",
+    "description": "Ensure that AWS Glue development endpoints have encryption at rest enabled using AWS Key Management Service (KMS) Customer Managed Keys (CMK). This applies to data stored in the development endpoint.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "glue:003",
+    "name": "Enable metadata encryption for AWS Glue Data Catalog",
+    "description": "Ensure that metadata encryption is enabled for the AWS Glue Data Catalog using AWS Key Management Service (KMS) Customer Managed Keys (CMK).",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "glue:004",
+    "name": "Enable password encryption for AWS Glue Data Catalog connections",
+    "description": "Ensure that password encryption is enabled for AWS Glue Data Catalog connections to protect sensitive connection information.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "glue:005",
+    "name": "Enable encryption at rest for AWS Glue Machine Learning transforms",
+    "description": "Ensure that AWS Glue Machine Learning transforms have encryption at rest enabled using AWS Key Management Service (KMS) Customer Managed Keys (CMK).",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "glue:006",
+    "name": "Enable encryption for AWS Glue development endpoints CloudWatch logs",
+    "description": "Ensure that CloudWatch logs for AWS Glue development endpoints are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMK).",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "glue:007",
+    "name": "Enable SSL for AWS Glue database connections",
+    "description": "Ensure that SSL connections are enabled for AWS Glue database connections to encrypt data in transit.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "glue:008",
+    "name": "Enable encryption for AWS Glue ETL jobs CloudWatch logs",
+    "description": "Ensure that CloudWatch logs for AWS Glue ETL jobs are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMK).",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "glue:009",
+    "name": "Restrict public access to AWS Glue Data Catalogs",
+    "description": "Ensure that AWS Glue Data Catalogs are not publicly accessible by implementing appropriate resource-based policies that restrict access to only authorized AWS accounts or IAM principals.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "glue:010",
+    "name": "Associate security configurations with AWS Glue components",
+    "description": "Ensure that all AWS Glue components (jobs, crawlers, and development endpoints) have appropriate security configurations associated with them to enforce encryption settings.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "glue:011",
+    "name": "Implement least privilege access for AWS Glue resources",
+    "description": "Ensure that IAM policies for AWS Glue resources follow the principle of least privilege, granting only the necessary permissions to authorized entities for performing specific tasks.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "glue:012",
+    "name": "Enable AWS Glue job bookmarks",
+    "description": "Enable job bookmarks for AWS Glue ETL jobs to track data that has already been processed, preventing duplicate processing and ensuring data integrity.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "glue:013",
+    "name": "Use VPC for AWS Glue jobs and development endpoints",
+    "description": "Configure AWS Glue jobs and development endpoints to run within a Virtual Private Cloud (VPC) to enhance network security and control access to resources.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "glue:014",
+    "name": "Enable monitoring for AWS Glue jobs",
+    "description": "Enable CloudWatch metrics and alarms for AWS Glue jobs to monitor job performance, resource utilization, and detect anomalies or failures.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "glue:015",
+    "name": "Implement proper error handling and logging for AWS Glue jobs",
+    "description": "Ensure that AWS Glue jobs implement proper error handling and logging mechanisms to capture and report issues for troubleshooting and auditing purposes.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "elasticbeanstalk:001",
+    "name": "Enable Managed Platform Updates for Elastic Beanstalk Environments",
+    "description": "Ensure that managed platform updates are enabled for all Elastic Beanstalk environments. This allows automatic updates of the platform to the latest version, ensuring that security patches and bug fixes are applied in a timely manner.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elasticbeanstalk:002",
+    "name": "Enable Enhanced Health Reporting for Elastic Beanstalk Environments",
+    "description": "Configure enhanced health reporting for all Elastic Beanstalk environments. This provides more detailed health information about the resources in your environment, allowing for better monitoring and faster troubleshooting of issues.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "elasticbeanstalk:003",
+    "name": "Stream Elastic Beanstalk Environment Logs to CloudWatch Logs",
+    "description": "Configure all Elastic Beanstalk environments to stream logs to CloudWatch Logs. This enables centralized log management, easier log analysis, and long-term log retention for compliance and troubleshooting purposes.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "elasticbeanstalk:004",
+    "name": "Use VPC for Elastic Beanstalk Environments",
+    "description": "Deploy all Elastic Beanstalk environments within a Virtual Private Cloud (VPC). This provides network isolation and allows for fine-grained control over inbound and outbound traffic using security groups and network ACLs.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elasticbeanstalk:005",
+    "name": "Enable HTTPS for Elastic Beanstalk Environment URLs",
+    "description": "Configure HTTPS for all Elastic Beanstalk environment URLs using AWS Certificate Manager (ACM) certificates. This ensures that all data transmitted between clients and the Elastic Beanstalk environment is encrypted in transit.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "elasticbeanstalk:006",
+    "name": "Use IAM Instance Profiles for Elastic Beanstalk EC2 Instances",
+    "description": "Assign IAM instance profiles to EC2 instances in Elastic Beanstalk environments instead of storing AWS credentials in the application code or configuration files. This follows the principle of least privilege and improves security by eliminating the need for long-term credentials.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "elasticbeanstalk:007",
+    "name": "Enable Encryption for Elastic Beanstalk Environment Resources",
+    "description": "Enable encryption for all applicable Elastic Beanstalk environment resources, including EBS volumes and RDS instances, using AWS Key Management Service (KMS) Customer Managed Keys (CMKs). This ensures data-at-rest protection for sensitive information stored in these resources.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "elasticbeanstalk:008",
+    "name": "Implement Strict Security Group Rules for Elastic Beanstalk Environments",
+    "description": "Configure security groups for Elastic Beanstalk environments with strict inbound and outbound rules, allowing only necessary traffic. Restrict access to specific IP ranges or security groups, and avoid using 0.0.0.0/0 in security group rules.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elasticbeanstalk:009",
+    "name": "Enable X-Ray Tracing for Elastic Beanstalk Applications",
+    "description": "Enable AWS X-Ray tracing for Elastic Beanstalk applications to gain insights into application performance and behavior. This helps in identifying and troubleshooting issues, including potential security anomalies.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "elasticbeanstalk:010",
+    "name": "Use Environment Variables for Sensitive Configuration in Elastic Beanstalk",
+    "description": "Store sensitive configuration data, such as database credentials or API keys, as environment variables in Elastic Beanstalk instead of hardcoding them in the application code. This improves security by separating sensitive information from the codebase.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elasticbeanstalk:011",
+    "name": "Implement Auto Scaling for Elastic Beanstalk Environments",
+    "description": "Configure auto scaling for Elastic Beanstalk environments to automatically adjust capacity based on defined metrics. This ensures that the environment can handle varying loads while maintaining performance and availability.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elasticbeanstalk:012",
+    "name": "Enable Elastic Beanstalk Managed Updates for RDS Databases",
+    "description": "If using RDS databases with Elastic Beanstalk, enable managed updates for the databases. This ensures that database engines receive timely security patches and version updates.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elasticbeanstalk:013",
+    "name": "Implement Resource-Based Policies for Elastic Beanstalk S3 Buckets",
+    "description": "Apply resource-based policies to S3 buckets used by Elastic Beanstalk for application versions and environments. These policies should restrict access to only the necessary Elastic Beanstalk resources and IAM principals.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "elasticbeanstalk:014",
+    "name": "Use Latest Elastic Beanstalk Platform Version",
+    "description": "Ensure that Elastic Beanstalk environments are using the latest platform version available. Regularly update to the latest version to benefit from security improvements, bug fixes, and new features.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elasticbeanstalk:015",
+    "name": "Implement AWS WAF for Elastic Beanstalk Environments",
+    "description": "Integrate AWS WAF (Web Application Firewall) with Elastic Beanstalk environments to protect against common web exploits and bots. Configure rules to filter malicious web traffic and improve the security posture of your applications.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  }
+]

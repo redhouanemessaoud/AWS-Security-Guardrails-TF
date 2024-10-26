@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "secretsmanager:001",
+    "name": "Enable automatic rotation for Secrets Manager secrets",
+    "description": "Ensure that automatic rotation is enabled for all Secrets Manager secrets. Configure the rotation interval to be no more than 90 days to maintain the security of the secrets. Implement appropriate Lambda functions for rotation based on the secret type.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "secretsmanager:002",
+    "name": "Use AWS KMS Customer Managed Keys (CMK) for Secrets Manager secret encryption",
+    "description": "Ensure that all Secrets Manager secrets are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMK) instead of the default AWS managed key. This provides more control over the encryption process and allows for fine-grained access control to the encryption keys.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "secretsmanager:003",
+    "name": "Implement resource-based policies to restrict access to Secrets Manager secrets",
+    "description": "Configure resource-based policies for Secrets Manager secrets to restrict access to only authorized IAM principals or AWS accounts. Ensure that these policies follow the principle of least privilege, granting only the necessary permissions required for the application or service to function.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "secretsmanager:004",
+    "name": "Enable CloudTrail logging for Secrets Manager API calls",
+    "description": "Ensure that AWS CloudTrail is configured to log all Secrets Manager API calls. This includes creating, modifying, and accessing secrets. Review these logs regularly to detect any unauthorized access or suspicious activities.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "secretsmanager:005",
+    "name": "Implement a process for regular secret auditing and cleanup",
+    "description": "Establish a regular process to audit and clean up unused Secrets Manager secrets. This includes identifying and removing secrets that are no longer needed, as well as updating secrets that may be outdated. Consider using AWS Config rules or custom scripts to identify unused secrets.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "secretsmanager:006",
+    "name": "Use VPC endpoints for Secrets Manager access within VPCs",
+    "description": "When accessing Secrets Manager from resources within a VPC, use VPC endpoints to ensure that traffic between the VPC and Secrets Manager does not leave the Amazon network. This enhances security by avoiding exposure to the public internet.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "secretsmanager:007",
+    "name": "Implement strict IAM policies for Secrets Manager access",
+    "description": "Create and assign IAM policies that follow the principle of least privilege for accessing Secrets Manager. Limit the ability to create, modify, and delete secrets to only authorized administrators. For applications, grant only the necessary read permissions to access specific secrets.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "secretsmanager:008",
+    "name": "Enable and configure Secrets Manager secret versions",
+    "description": "Utilize Secrets Manager's versioning capability to maintain a history of secret changes. Configure the retention period for previous versions based on your organization's compliance and auditing requirements. This allows for easy rollback in case of errors and provides an audit trail of secret modifications.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "secretsmanager:009",
+    "name": "Implement tagging strategy for Secrets Manager secrets",
+    "description": "Develop and implement a consistent tagging strategy for all Secrets Manager secrets. Include tags that identify the secret's purpose, owner, associated application, and any relevant compliance requirements. This facilitates better organization, management, and auditing of secrets across the AWS environment.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "secretsmanager:010",
+    "name": "Use Secrets Manager for storing and rotating database credentials",
+    "description": "Utilize Secrets Manager to store and automatically rotate database credentials. Configure Secrets Manager to manage credentials for RDS databases, redshift clusters, and other database services. This ensures that database passwords are regularly updated without manual intervention, reducing the risk of compromised credentials.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  }
+]

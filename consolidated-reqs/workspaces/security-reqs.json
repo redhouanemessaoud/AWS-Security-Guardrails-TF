@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "workspaces:001",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for WorkSpaces Root Volume Encryption",
+    "description": "Ensure that Amazon WorkSpaces root volumes are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMKs) to protect sensitive data and meet security and compliance requirements.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "workspaces:002",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for WorkSpaces User Volume Encryption",
+    "description": "Ensure that Amazon WorkSpaces user volumes are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMKs) to protect user data and meet security and compliance requirements.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "workspaces:003",
+    "name": "Configure WorkSpaces to Use Private IP Addresses Only",
+    "description": "Configure Amazon WorkSpaces to use only private IP addresses within the VPC to prevent direct internet access and enhance security. Ensure that internet access, if required, is routed through a NAT Gateway in a private subnet.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "workspaces:004",
+    "name": "Implement Security Group Rules for WorkSpaces",
+    "description": "Configure security group rules for WorkSpaces to restrict inbound and outbound traffic. Allow only necessary protocols and ports, such as RDP (3389) or PCoIP (4172) for inbound access, and limit outbound access to required resources.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "workspaces:005",
+    "name": "Enable Automatic Updates for WorkSpaces",
+    "description": "Enable automatic updates for WorkSpaces to ensure that the latest security patches and software updates are applied regularly, reducing vulnerabilities and improving overall security posture.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "workspaces:006",
+    "name": "Implement IP Access Control Groups for WorkSpaces",
+    "description": "Use IP Access Control Groups to restrict access to WorkSpaces based on IP addresses or ranges. This adds an extra layer of security by allowing connections only from approved networks or locations.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "workspaces:007",
+    "name": "Enable WorkSpaces Access Control Options",
+    "description": "Enable access control options for WorkSpaces, such as clipboard, local device, and USB redirection controls, to prevent data exfiltration and enhance security. Configure these options based on organizational security requirements and user needs.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "workspaces:008",
+    "name": "Implement Custom Images for WorkSpaces",
+    "description": "Use custom images for WorkSpaces to ensure a standardized and secure base configuration. Include necessary security software, approved applications, and hardened OS configurations in the custom image.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "workspaces:009",
+    "name": "Enable Amazon WorkSpaces Streaming Protocol (WSP)",
+    "description": "Enable and use the Amazon WorkSpaces Streaming Protocol (WSP) instead of PCoIP when possible. WSP offers better performance and security features, including support for smart card authentication and USB redirection controls.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "workspaces:010",
+    "name": "Configure WorkSpaces Directory Settings for Enhanced Security",
+    "description": "Configure WorkSpaces directory settings to enhance security, including enabling multi-factor authentication (MFA), setting password policies, and configuring session duration limits according to organizational security requirements.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "workspaces:011",
+    "name": "Implement Tagging for WorkSpaces Resources",
+    "description": "Implement a comprehensive tagging strategy for WorkSpaces resources, including WorkSpaces, images, and bundles. Use tags to categorize resources for better management, cost allocation, and security tracking.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "workspaces:012",
+    "name": "Enable WorkSpaces Maintenance Windows",
+    "description": "Configure and enable maintenance windows for WorkSpaces to ensure that critical updates and patches are applied during specified time periods, minimizing disruption to users while maintaining security.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "workspaces:013",
+    "name": "Implement WorkSpaces Application Manager (WAM) for Application Control",
+    "description": "Use WorkSpaces Application Manager (WAM) to package, deploy, and update applications on WorkSpaces. This enables better control over installed applications, ensuring only approved software is available to users.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "workspaces:014",
+    "name": "Configure WorkSpaces to Use the Latest Operating System Versions",
+    "description": "Ensure that WorkSpaces are configured to use the latest supported operating system versions. Regularly update WorkSpaces bundles and images to include the most recent OS versions with the latest security features and patches.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "workspaces:015",
+    "name": "Implement Monitoring and Logging for WorkSpaces",
+    "description": "Enable and configure monitoring and logging for WorkSpaces using Amazon CloudWatch. Set up alarms for unusual activity, track user connections, and monitor WorkSpaces performance to detect and respond to security incidents promptly.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  }
+]

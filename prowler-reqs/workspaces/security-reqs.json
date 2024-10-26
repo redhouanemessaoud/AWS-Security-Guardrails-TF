@@ -1,0 +1,16 @@
+[
+    {
+        "ID": "Workspaces-001",
+        "name": "Ensure that the Workspaces VPC are deployed following the best practices using 1 public subnet and 2 private subnets with a NAT Gateway attached",
+        "description": "Ensure that the Workspaces VPC are deployed following the best practices using 1 public subnet and 2 private subnets with a NAT Gateway attached",
+        "cloudProvider": "AWS",
+        "service name": "workspaces"
+    },
+    {
+        "ID": "Workspaces-002",
+        "name": "Ensure that your Amazon WorkSpaces storage volumes are encrypted in order to meet security and compliance requirements",
+        "description": "Ensure that your Amazon WorkSpaces storage volumes are encrypted in order to meet security and compliance requirements",
+        "cloudProvider": "AWS",
+        "service name": "workspaces"
+    }
+]

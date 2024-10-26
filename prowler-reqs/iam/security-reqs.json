@@ -1,0 +1,296 @@
+[
+    {
+        "ID": "Iam-001",
+        "name": "Ensure No IAM Users Have Administrator Access Policy",
+        "description": "This check ensures that no IAM users in your AWS account have the 'AdministratorAccess' policy attached. IAM users with this policy have unrestricted access to all AWS services and resources, which poses a significant security risk if misused.",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-002",
+        "name": "Ensure access keys are rotated every 90 days or less",
+        "description": "Ensure access keys are rotated every 90 days or less",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-003",
+        "name": "Ensure IAM policies that allow full \"*:*\" administrative privileges are not created",
+        "description": "Ensure IAM policies that allow full \"*:*\" administrative privileges are not created, may be eventual consistent if an ephemeral resource is using it",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-004",
+        "name": "Ensure only hardware MFA is enabled for the root account",
+        "description": "Ensure only hardware MFA is enabled for the root account",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-005",
+        "name": "Do not setup access keys during initial user setup for all IAM users that have a console password",
+        "description": "Do not setup access keys during initial user setup for all IAM users that have a console password",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-006",
+        "name": "Ensure that all the expired SSL/TLS certificates stored in AWS IAM are removed.",
+        "description": "Ensure that all the expired SSL/TLS certificates stored in AWS IAM are removed.",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-007",
+        "name": "Ensure MFA is enabled for the root account",
+        "description": "Ensure MFA is enabled for the root account",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-008",
+        "name": "Ensure users make use of temporary credentials assuming IAM roles",
+        "description": "Ensure users make use of temporary credentials assuming IAM roles",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-009",
+        "name": "Ensure a support role has been created to manage incidents with AWS Support",
+        "description": "Ensure a support role has been created to manage incidents with AWS Support",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-010",
+        "name": "Check if IAM users have Hardware MFA enabled.",
+        "description": "Check if IAM users have Hardware MFA enabled.",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-011",
+        "name": "Ensure no IAM Inline policies allow actions that may lead into Privilege Escalation",
+        "description": "Ensure no Inline IAM policies allow actions that may lead into Privilege Escalation",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-012",
+        "name": "Ensure IAM inline policies that allow full \"*:*\" administrative privileges are not associated to IAM identities",
+        "description": "Ensure inline policies that allow full \"*:*\" administrative privileges are not associated to IAM identities",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-013",
+        "name": "Ensure IAM AWS-Managed policies that allow full \"*:*\" administrative privileges are not attached",
+        "description": "Ensure IAM AWS-Managed policies that allow full \"*:*\" administrative privileges are not attached",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-014",
+        "name": "Ensure no Customer Managed IAM policies allow actions that may lead into Privilege Escalation",
+        "description": "Ensure no Customer Managed IAM policies allow actions that may lead into Privilege Escalation",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-015",
+        "name": "Check if there are SAML Providers then STS can be used",
+        "description": "Check if there are SAML Providers then STS can be used",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-016",
+        "name": "Ensure IAM policies that allow full \"kms:*\" privileges are not created",
+        "description": "Ensure IAM policies that allow full \"kms:*\" privileges are not created",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-017",
+        "name": "Ensure IAM password policy require at least one number",
+        "description": "Ensure IAM password policy require at least one number",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-018",
+        "name": "Ensure IAM Service Roles prevents against a cross-service confused deputy attack",
+        "description": "Ensure IAM Service Roles prevents against a cross-service confused deputy attack",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-019",
+        "name": "Ensure IAM inline policies that allow full \"cloudtrail:*\" privileges are not created",
+        "description": "Ensure IAM inline policies that allow full \"cloudtrail:*\" privileges are not created",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-020",
+        "name": "Ensure IAM password policy requires minimum length of 14 or greater",
+        "description": "Ensure IAM password policy requires minimum length of 14 or greater",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-021",
+        "name": "Avoid the use of the root accounts",
+        "description": "Avoid the use of the root account",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-022",
+        "name": "Ensure IAM Roles do not have ReadOnlyAccess access for external AWS accounts",
+        "description": "Ensure IAM Roles do not have ReadOnlyAccess access for external AWS accounts",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-023",
+        "name": "Ensure IAM password policy expires passwords within 90 days or less",
+        "description": "Ensure IAM password policy expires passwords within 90 days or less",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-024",
+        "name": "Check if IAM users have two active access keys",
+        "description": "Check if IAM users have two active access keys",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-025",
+        "name": "Ensure IAM inline policies that allow full \"kms:*\" privileges are not created",
+        "description": "Ensure IAM inline policies that allow full \"kms:*\" privileges are not created",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-026",
+        "name": "Ensure IAM password policy require at least one symbol",
+        "description": "Ensure IAM password policy require at least one symbol",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-027",
+        "name": "Ensure User Access Keys unused are disabled",
+        "description": "Ensure User Access Keys unused are disabled",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-028",
+        "name": "Ensure a Security Audit role has been created to conduct security audits",
+        "description": "Ensure a Security Audit role has been created to conduct security audits",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-029",
+        "name": "Ensure that no custom IAM policies exist which allow permissive role assumption (e.g. sts:AssumeRole on *)",
+        "description": "Ensure that no custom IAM policies exist which allow permissive role assumption (e.g. sts:AssumeRole on *)",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-030",
+        "name": "Ensure IAM password policy prevents password reuse: 24 or greater",
+        "description": "Ensure IAM password policy prevents password reuse: 24 or greater",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-031",
+        "name": "Check if IAM identities (users,groups,roles) have the AWSCloudShellFullAccess policy attached.",
+        "description": "This control checks whether an IAM identity (user, role, or group) has the AWS managed policy AWSCloudShellFullAccess attached. The control fails if an IAM identity has the AWSCloudShellFullAccess policy attached.",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-032",
+        "name": "Ensure IAM password policy require at least one lowercase letter",
+        "description": "Ensure IAM password policy requires at least one uppercase letter",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-033",
+        "name": "Ensure no root account access key exists",
+        "description": "Ensure no root account access key exists",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-034",
+        "name": "Ensure IAM Customer-Managed policies that allow full \"*:*\" administrative privileges are not attached",
+        "description": "Ensure IAM Customer-Managed policies that allow full \"*:*\" administrative privileges are not attached",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-035",
+        "name": "Ensure No IAM Groups Have Administrator Access Policy",
+        "description": "This check ensures that no IAM groups in your AWS account have the 'AdministratorAccess' policy attached. IAM users with this policy have unrestricted access to all AWS services and resources, which poses a significant security risk if misused.",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-036",
+        "name": "Ensure unused user console access are disabled",
+        "description": "Ensure unused user console access are disabled",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-037",
+        "name": "Ensure IAM policies are attached only to groups or roles",
+        "description": "Ensure IAM policies are attached only to groups or roles",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-038",
+        "name": "Ensure IAM policies that allow full \"cloudtrail:*\" privileges are not created",
+        "description": "Ensure IAM policies that allow full \"cloudtrail:*\" privileges are not created",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-039",
+        "name": "Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password.",
+        "description": "Ensure multi-factor authentication (MFA) is enabled for all IAM users that have a console password.",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-040",
+        "name": "Ensure IAM password policy requires at least one uppercase letter",
+        "description": "Ensure IAM password policy requires at least one uppercase letter",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-041",
+        "name": "Ensure IAM Roles do not have AdministratorAccess policy attached",
+        "description": "Ensure IAM Roles do not have AdministratorAccess policy attached",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    },
+    {
+        "ID": "Iam-042",
+        "name": "Ensure users of groups with AdministratorAccess policy have MFA tokens enabled",
+        "description": "Ensure users of groups with AdministratorAccess policy have MFA tokens enabled",
+        "cloudProvider": "AWS",
+        "service name": "iam"
+    }
+]

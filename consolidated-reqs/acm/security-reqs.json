@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "acm:001",
+    "name": "Use secure key algorithms for ACM certificates",
+    "description": "Ensure that all ACM certificates use secure key algorithms. Use RSA with a key size of 2048 bits or more, or ECDSA with a key size of 256 bits or more. Avoid using weak algorithms like RSA-1024 which are vulnerable to factorization attacks.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "acm:002",
+    "name": "Set up automated renewal for ACM certificates",
+    "description": "Configure automated renewal for ACM certificates to prevent expiration. Set up AWS Lambda functions or other automated processes to renew certificates at least 30 days before their expiration date.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "acm:003",
+    "name": "Enable Certificate Transparency logging for ACM certificates",
+    "description": "Ensure Certificate Transparency (CT) logging is enabled for all ACM certificates. CT logging helps detect and prevent the misuse of certificates by making certificate issuance publicly visible.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "acm:004",
+    "name": "Avoid wildcard domains in ACM certificates",
+    "description": "Refrain from using wildcard domains (e.g., *.example.com) in ACM certificates. Instead, use specific domain names to limit the potential impact of a compromised certificate.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "acm:005",
+    "name": "Implement 'create before destroy' for ACM certificates",
+    "description": "When replacing ACM certificates, use the 'create before destroy' approach to ensure continuous availability. Create and validate the new certificate before removing the old one to prevent service interruptions.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "acm:006",
+    "name": "Use ACM Private Certificate Authority for internal services",
+    "description": "Utilize ACM Private Certificate Authority (PCA) to issue and manage certificates for internal services and applications that don't require public trust.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "acm:007",
+    "name": "Implement certificate pinning for critical applications",
+    "description": "For critical applications, implement certificate pinning to ensure that only specific, predefined certificates issued by ACM are accepted, mitigating the risk of man-in-the-middle attacks.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "acm:008",
+    "name": "Regularly audit and rotate ACM certificates",
+    "description": "Implement a process to regularly audit and rotate ACM certificates, even before their expiration date. This practice helps maintain good security hygiene and reduces the risk of using compromised certificates.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "acm:009",
+    "name": "Use ACM certificates with AWS services that integrate with ACM",
+    "description": "Utilize ACM certificates with AWS services that natively integrate with ACM, such as Elastic Load Balancers, CloudFront, and API Gateway, to ensure proper certificate management and automatic renewal.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "acm:010",
+    "name": "Implement access controls for ACM certificate management",
+    "description": "Implement strict access controls for ACM certificate management. Use IAM policies to ensure that only authorized personnel can request, import, or delete certificates in ACM.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

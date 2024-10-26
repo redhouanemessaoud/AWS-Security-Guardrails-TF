@@ -1,0 +1,62 @@
+[
+    {
+        "ID": "Neptune-001",
+        "name": "Ensure AWS Neptune cluster deletion protection is enabled",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-002",
+        "name": "Ensure Neptune is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-003",
+        "name": "Ensure Neptune logging is enabled",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-004",
+        "name": "Ensure Neptune storage is securely encrypted",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-005",
+        "name": "Ensure that Neptune DB cluster has automated backups enabled with adequate retention",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-006",
+        "name": "Neptune DB clusters should be configured to copy tags to snapshots",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-007",
+        "name": "Neptune DB clusters should have IAM database authentication enabled",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-008",
+        "name": "Ensure Neptune Cluster instance is not publicly available",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-009",
+        "name": "Ensure Neptune snapshot is encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-010",
+        "name": "Ensure Neptune snapshot is securely encrypted",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    }
+]

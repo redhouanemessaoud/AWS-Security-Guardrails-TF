@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "cloudtrail:001",
+    "name": "Enable CloudTrail Insights for enhanced monitoring",
+    "description": "Enable CloudTrail Insights to automatically detect unusual API activity in your AWS account. This feature uses machine learning to analyze your CloudTrail events and identify anomalies in your account activity.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudtrail:002",
+    "name": "Enable log file validation for CloudTrail",
+    "description": "Enable log file validation for CloudTrail to ensure the integrity of your logs. This feature adds a digital signature to each log file, allowing you to detect whether a log file was modified or deleted after CloudTrail delivered it.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudtrail:003",
+    "name": "Integrate CloudTrail with CloudWatch Logs",
+    "description": "Configure CloudTrail to send logs to CloudWatch Logs. This integration allows for real-time monitoring of API activity and enables you to set up alerts for specific actions or patterns in your AWS environment.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudtrail:004",
+    "name": "Encrypt CloudTrail log files at rest using KMS CMK",
+    "description": "Configure CloudTrail to encrypt log files at rest using a Customer Managed Key (CMK) from AWS Key Management Service (KMS). This ensures that your log files are protected with an additional layer of security.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "cloudtrail:005",
+    "name": "Enable CloudTrail log file S3 bucket access logging",
+    "description": "Enable access logging for the S3 bucket that stores CloudTrail log files. This provides an additional layer of auditing for access to your CloudTrail logs.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudtrail:006",
+    "name": "Configure CloudTrail to log data events for S3 buckets",
+    "description": "Configure CloudTrail to log data events (object-level API operations) for S3 buckets. This should include both read events (like GetObject) and write events (like PutObject and DeleteObject) for all S3 buckets in your account.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudtrail:007",
+    "name": "Enable CloudTrail multi-region logging",
+    "description": "Configure CloudTrail to log events from all AWS regions. This ensures comprehensive monitoring of API activity across your entire AWS environment, regardless of the region where the activity occurs.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudtrail:008",
+    "name": "Configure CloudTrail to use an SNS topic for notifications",
+    "description": "Set up an Amazon SNS topic for CloudTrail to deliver notifications. This allows you to receive real-time alerts about specific CloudTrail log events, enhancing your ability to respond quickly to security or operational issues.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "cloudtrail:009",
+    "name": "Use KMS CMK for CloudTrail Event Data Store encryption",
+    "description": "Configure CloudTrail Event Data Store to use a Customer Managed Key (CMK) from AWS Key Management Service (KMS) for encryption. This provides you with full control over the encryption keys used to protect your event data.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "cloudtrail:010",
+    "name": "Implement least privilege access for CloudTrail resources",
+    "description": "Ensure that IAM policies granting access to CloudTrail resources (including trails, event data stores, and associated S3 buckets) follow the principle of least privilege. Grant only the necessary permissions to authorized entities for managing and accessing CloudTrail resources.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

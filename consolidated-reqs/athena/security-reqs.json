@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "athena:001",
+    "name": "Enable encryption at rest for Amazon Athena query results using AWS KMS Customer Managed Key (CMK)",
+    "description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 using AWS Key Management Service (KMS) Customer Managed Keys (CMKs). This enhances data protection and helps meet compliance requirements for data-at-rest encryption.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "athena:002",
+    "name": "Enforce workgroup configuration to prevent client-side overrides",
+    "description": "Configure Athena workgroups to enforce their settings, preventing them from being overridden by client-side configurations. This ensures consistent application of security and operational policies across all queries within the workgroup.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "athena:003",
+    "name": "Enable logging for Amazon Athena workgroups",
+    "description": "Enable logging for all Amazon Athena workgroups to capture query activity, including user actions, query execution details, and potential security events. Configure logs to be stored in a designated S3 bucket with appropriate access controls and retention policies.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "athena:004",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for encrypting Athena databases",
+    "description": "Ensure that all Athena databases are encrypted at rest using AWS Key Management Service (KMS) Customer Managed Keys (CMKs). This provides an additional layer of security and control over the encryption process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "athena:005",
+    "name": "Implement fine-grained access control for Athena resources",
+    "description": "Use IAM policies to implement fine-grained access control for Athena resources, including databases, tables, and workgroups. Ensure that permissions are granted based on the principle of least privilege, allowing users and roles only the access they need to perform their tasks.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "athena:006",
+    "name": "Configure Athena workgroups with query result location encryption",
+    "description": "Configure all Athena workgroups to use a specific S3 location for query results that has server-side encryption enabled with AWS KMS Customer Managed Keys (CMKs). Ensure that the workgroup settings enforce this configuration and prevent it from being overridden by client-side settings.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "athena:007",
+    "name": "Enable Athena query result reuse",
+    "description": "Enable query result reuse in Athena workgroups to improve performance and reduce costs. Configure an appropriate TTL (Time to Live) for cached results to balance performance gains with data freshness requirements.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "athena:008",
+    "name": "Implement Athena prepared statements for security-sensitive queries",
+    "description": "Use Athena prepared statements for queries that involve sensitive data or operations. This helps prevent SQL injection attacks and improves query performance for frequently executed queries.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "athena:009",
+    "name": "Configure Athena workgroup query timeout",
+    "description": "Set an appropriate query timeout limit for Athena workgroups to prevent long-running queries from consuming excessive resources. This helps in maintaining system performance and preventing potential denial-of-service scenarios.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "athena:010",
+    "name": "Use Athena federated query for secure access to diverse data sources",
+    "description": "Implement Athena federated query to securely access data from multiple sources, such as on-premises databases or other AWS services, without moving the data. Ensure that appropriate data connectors are used and access controls are in place for each data source.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  }
+]

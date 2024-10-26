@@ -1,0 +1,100 @@
+[
+  {
+    "ID": "guardduty:001",
+    "name": "Enable AWS GuardDuty in all AWS regions",
+    "description": "Ensure that AWS GuardDuty is enabled in all AWS regions to provide continuous monitoring for malicious or unauthorized behavior across the AWS environment.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "guardduty:002",
+    "name": "Enable GuardDuty Malware Protection for EC2 instances",
+    "description": "Enable GuardDuty Malware Protection for EC2 to detect potential malware by scanning Amazon EBS volumes attached to EC2 instances and container workloads.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "guardduty:003",
+    "name": "Enable GuardDuty S3 Protection",
+    "description": "Ensure GuardDuty S3 Protection is enabled to monitor and detect potential security threats related to S3 bucket activity.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "guardduty:004",
+    "name": "Enable GuardDuty RDS Protection",
+    "description": "Enable GuardDuty RDS Protection to monitor and detect potential security threats related to Amazon RDS database activity.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "guardduty:005",
+    "name": "Enable GuardDuty EKS Audit Log Monitoring",
+    "description": "Enable GuardDuty EKS Audit Log Monitoring to detect potential security threats in Amazon EKS cluster activity.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "guardduty:006",
+    "name": "Enable GuardDuty Lambda Protection",
+    "description": "Enable GuardDuty Lambda Protection to monitor and identify potential security threats when AWS Lambda functions are invoked.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "guardduty:007",
+    "name": "Implement centralized management for GuardDuty",
+    "description": "Configure GuardDuty to be centrally managed across all AWS accounts in the organization using AWS Organizations or delegated administrator account.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "guardduty:008",
+    "name": "Configure automated response for high severity GuardDuty findings",
+    "description": "Implement automated response mechanisms, such as AWS EventBridge rules and AWS Lambda functions, to take immediate action on high severity GuardDuty findings.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "guardduty:009",
+    "name": "Enable GuardDuty findings export to S3",
+    "description": "Configure GuardDuty to automatically export findings to a designated S3 bucket for long-term storage, analysis, and integration with other security tools.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "guardduty:010",
+    "name": "Implement GuardDuty suppression rules",
+    "description": "Create and maintain GuardDuty suppression rules to reduce noise from known false positive findings, allowing security teams to focus on actual threats.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "guardduty:011",
+    "name": "Configure GuardDuty custom threat lists",
+    "description": "Implement custom threat lists in GuardDuty to enhance detection capabilities based on organization-specific threat intelligence and known malicious IP addresses or domains.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "guardduty:012",
+    "name": "Enable GuardDuty integration with Security Hub",
+    "description": "Configure GuardDuty to send findings to AWS Security Hub for centralized visibility and correlation with other security findings across the AWS environment.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "guardduty:013",
+    "name": "Implement regular review process for GuardDuty findings",
+    "description": "Establish a process for regular review and triage of GuardDuty findings, including assigning ownership, setting resolution timeframes, and tracking remediation actions.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "guardduty:014",
+    "name": "Configure GuardDuty notifications",
+    "description": "Set up GuardDuty notifications using Amazon SNS to alert security teams of new high-severity findings or other critical security events detected by GuardDuty.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  }
+]

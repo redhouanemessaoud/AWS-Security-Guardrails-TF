@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "redshift:001",
+    "name": "Use a custom admin username for Amazon Redshift clusters",
+    "description": "Ensure that all Amazon Redshift clusters use a custom admin username instead of the default 'awsuser'. This enhances security by making it harder for potential attackers to guess the admin credentials.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "redshift:002",
+    "name": "Enable audit logging for Amazon Redshift clusters",
+    "description": "Enable audit logging for all Amazon Redshift clusters to track user activity, database changes, and connection attempts. This helps in monitoring and investigating potential security incidents.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "redshift:003",
+    "name": "Enable encryption at rest for Amazon Redshift clusters using AWS KMS Customer Managed Keys (CMKs)",
+    "description": "Ensure all Amazon Redshift clusters are encrypted at rest using AWS Key Management Service (KMS) Customer Managed Keys (CMKs). This provides an additional layer of control and security for sensitive data stored in Redshift clusters.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "redshift:004",
+    "name": "Enable enhanced VPC routing for Amazon Redshift clusters",
+    "description": "Enable Enhanced VPC Routing for all Amazon Redshift clusters to force all COPY and UNLOAD traffic between the cluster and data repositories to go through the VPC. This allows the use of VPC security features such as security groups and network access control lists.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "redshift:005",
+    "name": "Disable public accessibility for Amazon Redshift clusters",
+    "description": "Ensure that all Amazon Redshift clusters are not publicly accessible. Redshift clusters should only be accessible from within the VPC or through a secure VPN connection to maintain network isolation and security.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "redshift:006",
+    "name": "Enable automatic version upgrades for Amazon Redshift clusters",
+    "description": "Enable automatic version upgrades for all Amazon Redshift clusters to ensure they are running the latest engine version with the most recent security patches and improvements.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "redshift:007",
+    "name": "Enable Multi-AZ deployment for Amazon Redshift clusters",
+    "description": "Enable Multi-AZ deployment for all Amazon Redshift clusters to improve availability and durability by automatically provisioning and maintaining a synchronous standby replica in a different Availability Zone.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "redshift:008",
+    "name": "Enforce SSL/TLS encryption for connections to Amazon Redshift clusters",
+    "description": "Ensure that all connections to Amazon Redshift clusters are encrypted in transit by setting the 'require_SSL' parameter to 'true'. This enforces the use of SSL/TLS for all client connections, protecting data in transit.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "redshift:009",
+    "name": "Enable automated snapshots for Amazon Redshift clusters",
+    "description": "Enable automated snapshots for all Amazon Redshift clusters with an appropriate retention period. This ensures regular backups are taken, allowing for point-in-time recovery and protecting against data loss.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "redshift:010",
+    "name": "Use a custom database name for Amazon Redshift clusters",
+    "description": "Ensure that all Amazon Redshift clusters use a custom database name instead of the default 'dev'. This enhances security by making it harder for potential attackers to guess the database name.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "redshift:011",
+    "name": "Encrypt Amazon Redshift snapshot copies using AWS KMS Customer Managed Keys (CMKs)",
+    "description": "Ensure that all Amazon Redshift snapshot copies are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMKs). This provides an additional layer of control and security for sensitive data in Redshift snapshot copies.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "redshift:012",
+    "name": "Encrypt Amazon Redshift Serverless namespaces using AWS KMS Customer Managed Keys (CMKs)",
+    "description": "Ensure that all Amazon Redshift Serverless namespaces are encrypted using AWS Key Management Service (KMS) Customer Managed Keys (CMKs). This provides an additional layer of control and security for sensitive data in Redshift Serverless environments.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "redshift:013",
+    "name": "Implement least privilege access for Amazon Redshift clusters",
+    "description": "Ensure that IAM policies and Redshift cluster policies follow the principle of least privilege, granting only the necessary permissions to authorized entities. Regularly review and audit access permissions to maintain a secure posture.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "redshift:014",
+    "name": "Configure VPC security groups for Amazon Redshift clusters",
+    "description": "Configure VPC security groups for all Amazon Redshift clusters to control inbound and outbound traffic. Ensure that only necessary ports are open and access is restricted to known IP ranges or security groups.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "redshift:015",
+    "name": "Enable Redshift query logging",
+    "description": "Enable query logging for all Amazon Redshift clusters to capture detailed information about queries executed against the database. This helps in performance tuning, troubleshooting, and security analysis.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  }
+]

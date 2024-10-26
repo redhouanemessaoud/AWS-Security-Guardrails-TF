@@ -1,0 +1,44 @@
+[
+    {
+        "ID": "Ecr-001",
+        "name": "ECR repositories should have tag immutability configured",
+        "description": "This control checks whether a ECR repository has tag immutability enabled. The control fails if a ECR repository has tag immutability disabled and passes if tag immutability is set to IMMUTABLE.",
+        "cloudProvider": "AWS",
+        "service name": "ecr"
+    },
+    {
+        "ID": "Ecr-002",
+        "name": "Check if ECR Registry has scan on push enabled",
+        "description": "Check if ECR Registry has scan on push enabled",
+        "cloudProvider": "AWS",
+        "service name": "ecr"
+    },
+    {
+        "ID": "Ecr-003",
+        "name": "[DEPRECATED] Check if ECR image scan on push is enabled",
+        "description": "[DEPRECATED] Check if ECR image scan on push is enabled",
+        "cloudProvider": "AWS",
+        "service name": "ecr"
+    },
+    {
+        "ID": "Ecr-004",
+        "name": "Check if ECR repositories have lifecycle policies enabled",
+        "description": "Check if ECR repositories have lifecycle policies enabled",
+        "cloudProvider": "AWS",
+        "service name": "ecr"
+    },
+    {
+        "ID": "Ecr-005",
+        "name": "Ensure there are no ECR repositories set as Public",
+        "description": "Ensure there are no ECR repositories set as Public",
+        "cloudProvider": "AWS",
+        "service name": "ecr"
+    },
+    {
+        "ID": "Ecr-006",
+        "name": "Check if ECR image scan found vulnerabilities in the newest image version",
+        "description": "Check if ECR image scan found vulnerabilities in the newest image version",
+        "cloudProvider": "AWS",
+        "service name": "ecr"
+    }
+]

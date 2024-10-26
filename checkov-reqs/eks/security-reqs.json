@@ -1,0 +1,38 @@
+[
+    {
+        "ID": "Eks-001",
+        "name": "Ensure Amazon EKS control plane logging is enabled for all log types",
+        "cloudProvider": "AWS",
+        "service name": "eks"
+    },
+    {
+        "ID": "Eks-002",
+        "name": "Ensure Amazon EKS public endpoint disabled",
+        "cloudProvider": "AWS",
+        "service name": "eks"
+    },
+    {
+        "ID": "Eks-003",
+        "name": "Ensure Amazon EKS public endpoint not accessible to 0.0.0.0/0",
+        "cloudProvider": "AWS",
+        "service name": "eks"
+    },
+    {
+        "ID": "Eks-004",
+        "name": "Ensure EKS Cluster has Secrets Encryption Enabled",
+        "cloudProvider": "AWS",
+        "service name": "eks"
+    },
+    {
+        "ID": "Eks-005",
+        "name": "Ensure EKS clusters run on a supported Kubernetes version",
+        "cloudProvider": "AWS",
+        "service name": "eks"
+    },
+    {
+        "ID": "Eks-006",
+        "name": "Ensure AWS EKS node group does not have implicit SSH access from 0.0.0.0/0",
+        "cloudProvider": "AWS",
+        "service name": "eks"
+    }
+]

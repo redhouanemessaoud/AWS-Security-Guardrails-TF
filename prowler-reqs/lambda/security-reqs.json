@@ -1,0 +1,65 @@
+[
+    {
+        "ID": "Lambda-001",
+        "name": "Find secrets in Lambda functions code.",
+        "description": "Find secrets in Lambda functions code.",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-002",
+        "name": "Find secrets in Lambda functions variables.",
+        "description": "Find secrets in Lambda functions variables.",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-003",
+        "name": "Check if Lambda functions invoke API operations are being recorded by CloudTrail.",
+        "description": "Check if Lambda functions invoke API operations are being recorded by CloudTrail.",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-004",
+        "name": "Check Public Lambda Function URL.",
+        "description": "Check Public Lambda Function URL.",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-005",
+        "name": "Check Lambda Function URL CORS configuration.",
+        "description": "Check Lambda Function URL CORS configuration.",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-006",
+        "name": "Find obsolete Lambda runtimes.",
+        "description": "Find obsolete Lambda runtimes.",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-007",
+        "name": "Check if AWS Lambda Function VPC is deployed Across Multiple Availability Zones",
+        "description": "This control checks whether an AWS Lambda function connected to a VPC operates in at least the specified number of Availability Zones (AZs). A failure occurs if the function does not operate in the required number of AZs, which by default is two.",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-008",
+        "name": "Ensure AWS Lambda Functions Are Deployed Inside a VPC",
+        "description": "This check verifies whether an AWS Lambda function is deployed within a Virtual Private Cloud (VPC). Deploying Lambda functions inside a VPC improves security by allowing control over the network environment, reducing the exposure to public internet threats.",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    },
+    {
+        "ID": "Lambda-009",
+        "name": "Check if Lambda functions have resource-based policy set as Public.",
+        "description": "Check if Lambda functions have resource-based policy set as Public.",
+        "cloudProvider": "AWS",
+        "service name": "lambda"
+    }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "eks:001",
+    "name": "Enable Network Policy for EKS Clusters",
+    "description": "Enable Network Policy for Amazon EKS clusters to provide pod-level firewalling and restrict traffic between sources, enhancing network security within the cluster. Configure appropriate network policies based on the specific requirements of your applications and services.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "eks:002",
+    "name": "Encrypt Kubernetes Secrets using AWS KMS Customer Managed Keys (CMKs)",
+    "description": "Enable encryption for Kubernetes Secrets in Amazon EKS clusters using AWS Key Management Service (KMS) Customer Managed Keys (CMKs). This provides an additional layer of security for sensitive information stored in Kubernetes Secrets.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "eks:003",
+    "name": "Use Supported Kubernetes Version for EKS Clusters",
+    "description": "Ensure that Amazon EKS clusters are running on a supported Kubernetes version. Regularly update the cluster to the latest supported version to receive security patches, bug fixes, and new features.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "eks:004",
+    "name": "Disable Public Access to EKS Cluster API Server Endpoint",
+    "description": "Ensure that the Kubernetes API server endpoint of the Amazon EKS cluster is not publicly accessible from the internet. Configure the cluster with private access only to minimize security risks and protect sensitive data.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "eks:005",
+    "name": "Create EKS Clusters with Private Nodes",
+    "description": "Create Amazon EKS clusters with private nodes by disabling public IP addresses for cluster nodes. This restricts access to internal networks and enhances security by preventing direct internet access to the nodes.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "eks:006",
+    "name": "Enable EKS Control Plane Logging for All Log Types",
+    "description": "Enable Amazon EKS Control Plane Logging for all available log types (api, audit, authenticator, controllerManager, scheduler). This provides comprehensive visibility into cluster operations and helps with troubleshooting and security analysis.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "eks:007",
+    "name": "Disable SSH Access to EKS Node Groups from 0.0.0.0/0",
+    "description": "Ensure that Amazon EKS node groups do not have implicit SSH access from 0.0.0.0/0. Configure security groups to restrict SSH access to only necessary IP ranges or use AWS Systems Manager Session Manager for secure node access.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "eks:008",
+    "name": "Enable VPC CNI Network Policy",
+    "description": "Enable the VPC CNI network policy for Amazon EKS clusters to allow fine-grained control over pod-to-pod communication within the cluster. This enhances network security by allowing you to define rules for ingress and egress traffic between pods.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "eks:009",
+    "name": "Use IAM Roles for Service Accounts (IRSA)",
+    "description": "Implement IAM Roles for Service Accounts (IRSA) in Amazon EKS to provide fine-grained access control for pods. This allows you to assign IAM roles directly to Kubernetes service accounts, following the principle of least privilege for accessing AWS resources.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "eks:010",
+    "name": "Enable Envelope Encryption for EKS Secrets",
+    "description": "Enable envelope encryption for Amazon EKS secrets using AWS KMS. This provides an additional layer of encryption for Kubernetes secrets, protecting sensitive data at rest with a customer-managed KMS key.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "eks:011",
+    "name": "Implement Pod Security Policies",
+    "description": "Implement Pod Security Policies in Amazon EKS clusters to control security-sensitive aspects of pod specifications. This helps enforce security best practices and prevents the creation of pods that do not meet your security requirements.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "eks:012",
+    "name": "Enable EKS Add-ons with Managed Updates",
+    "description": "Enable Amazon EKS add-ons with managed updates for critical components such as CoreDNS, kube-proxy, and the VPC CNI plugin. This ensures that these components are automatically updated with the latest security patches and bug fixes.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "eks:013",
+    "name": "Implement EKS Cluster Autoscaler",
+    "description": "Implement the Kubernetes Cluster Autoscaler in Amazon EKS to automatically adjust the number of nodes in response to resource utilization. This ensures efficient resource usage and helps maintain the desired performance and availability of your applications.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "eks:014",
+    "name": "Use EKS Managed Node Groups",
+    "description": "Utilize Amazon EKS Managed Node Groups for easier management and automatic updates of worker nodes. This ensures that your nodes are running the latest Amazon EKS-optimized AMIs with current security patches and kernel updates.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "eks:015",
+    "name": "Implement EKS Fargate Profiles for Serverless Workloads",
+    "description": "Use Amazon EKS Fargate profiles for running serverless Kubernetes workloads. This eliminates the need to manage EC2 instances for certain workloads, reducing the attack surface and simplifying security management.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

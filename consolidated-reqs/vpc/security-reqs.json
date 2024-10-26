@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "vpc:001",
+    "name": "Configure VPC subnets to not assign public IP addresses by default",
+    "description": "Ensure that all VPC subnets are configured to not automatically assign public IP addresses to instances launched within them. This helps prevent unintended public exposure of resources.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "vpc:002",
+    "name": "Deploy VPC subnets across multiple Availability Zones",
+    "description": "Ensure that each VPC has subnets deployed in at least two different Availability Zones to improve fault tolerance and high availability of applications.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "vpc:003",
+    "name": "Implement least privilege routing for VPC peering connections",
+    "description": "Configure routing tables for VPC peering connections to allow only necessary traffic between peered VPCs, adhering to the principle of least privilege.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "vpc:004",
+    "name": "Ensure both VPN tunnels are active for AWS Site-to-Site VPN connections",
+    "description": "Monitor and maintain both VPN tunnels for each AWS Site-to-Site VPN connection to ensure high availability and redundancy for connections between AWS VPCs and on-premises networks.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "vpc:005",
+    "name": "Implement strict allow-listing for VPC endpoint service principals",
+    "description": "Carefully manage and regularly review the list of allowed principals for VPC endpoint services to maintain strong access controls and prevent unauthorized access.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "vpc:006",
+    "name": "Regularly review and audit VPC endpoint connections",
+    "description": "Implement a process to periodically review and audit VPC endpoint connections to identify and remove any unnecessary or potentially risky connections.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "vpc:007",
+    "name": "Deploy VPCs across multiple AWS regions",
+    "description": "Implement a multi-region VPC strategy by deploying VPCs in more than one AWS region to improve disaster recovery capabilities and reduce latency for global users.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "vpc:008",
+    "name": "Configure VPC endpoints for Amazon EC2 service",
+    "description": "Create and configure VPC endpoints for the Amazon EC2 service in each VPC to enable private communication between your VPC and EC2 without traversing the public internet.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "vpc:009",
+    "name": "Implement manual acceptance for VPC Endpoint Service connections",
+    "description": "Configure VPC Endpoint Services to require manual acceptance of connection requests, allowing for review and approval of each connection attempt.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "vpc:010",
+    "name": "Avoid provisioning default VPCs",
+    "description": "Ensure that no default VPCs are provisioned in your AWS accounts. Instead, create custom VPCs with specific configurations tailored to your security requirements.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "vpc:011",
+    "name": "Implement VPC flow logs for network traffic analysis",
+    "description": "Enable VPC flow logs to capture information about IP traffic going to and from network interfaces in your VPC. This data can be used for security analysis, monitoring, and troubleshooting.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "vpc:012",
+    "name": "Implement network segmentation using public and private subnets",
+    "description": "Design VPCs with both public and private subnets to implement network segmentation. Place internet-facing resources in public subnets and internal resources in private subnets to enhance security.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "vpc:013",
+    "name": "Use AWS Network Firewall for advanced traffic filtering",
+    "description": "Deploy AWS Network Firewall to provide advanced filtering for network traffic entering and leaving your VPCs, enhancing protection against network-based threats.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "vpc:014",
+    "name": "Implement VPC peering encryption",
+    "description": "Enable encryption for VPC peering connections when peering VPCs across different AWS regions to ensure the confidentiality of inter-region traffic.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "vpc:015",
+    "name": "Use VPC security groups for fine-grained access control",
+    "description": "Implement and regularly review VPC security groups to control inbound and outbound traffic at the instance level, following the principle of least privilege.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  }
+]

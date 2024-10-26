@@ -1,0 +1,26 @@
+[
+    {
+        "ID": "Ecr-001",
+        "name": "Ensure ECR image scanning on push is enabled",
+        "cloudProvider": "AWS",
+        "service name": "ecr"
+    },
+    {
+        "ID": "Ecr-002",
+        "name": "Ensure ECR Image Tags are immutable",
+        "cloudProvider": "AWS",
+        "service name": "ecr"
+    },
+    {
+        "ID": "Ecr-003",
+        "name": "Ensure that ECR repositories are encrypted using KMS",
+        "cloudProvider": "AWS",
+        "service name": "ecr"
+    },
+    {
+        "ID": "Ecr-004",
+        "name": "Ensure ECR policy is not set to public",
+        "cloudProvider": "AWS",
+        "service name": "ecr"
+    }
+]

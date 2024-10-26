@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "ebs:001",
+    "name": "Enable EBS default encryption using AWS KMS Customer Managed Key (CMK)",
+    "description": "Ensure that EBS default encryption is enabled at the account level using a customer managed key (CMK) from AWS Key Management Service (KMS). This ensures that all new EBS volumes and their snapshots are automatically encrypted at creation time.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ebs:002",
+    "name": "Encrypt EBS snapshots using AWS KMS Customer Managed Key (CMK)",
+    "description": "Ensure that all EBS snapshots, including those created during copy operations, are encrypted using a customer managed key (CMK) from AWS Key Management Service (KMS). This provides an additional layer of security for data at rest.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ebs:003",
+    "name": "Encrypt all existing EBS volumes using AWS KMS Customer Managed Key (CMK)",
+    "description": "Ensure that all existing EBS volumes are encrypted using a customer managed key (CMK) from AWS Key Management Service (KMS). For unencrypted volumes, create a snapshot, encrypt the snapshot, and then create a new encrypted volume from the snapshot.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ebs:004",
+    "name": "Implement IAM policies for EBS volume and snapshot management",
+    "description": "Implement IAM policies that restrict the ability to create, modify, or delete EBS volumes and snapshots to only authorized principals. Follow the principle of least privilege when assigning these permissions.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "ebs:005",
+    "name": "Enable EBS volume termination protection",
+    "description": "Enable termination protection for critical EBS volumes to prevent accidental deletion. This can be done by setting the 'DeleteOnTermination' flag to 'false' for the volume when attaching it to an EC2 instance.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ebs:006",
+    "name": "Implement regular backups of EBS volumes",
+    "description": "Implement a regular backup strategy for EBS volumes by creating snapshots on a defined schedule. Use AWS Backup or a custom solution to automate this process and ensure data recoverability.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "ebs:007",
+    "name": "Monitor EBS volume performance and usage",
+    "description": "Implement monitoring for EBS volume performance metrics using Amazon CloudWatch. Set up alarms for metrics such as volume read/write operations, queue length, and burst balance to ensure optimal performance and detect potential issues.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "ebs:008",
+    "name": "Implement lifecycle policies for EBS snapshots",
+    "description": "Implement lifecycle policies to manage the retention and deletion of EBS snapshots. This helps in maintaining compliance requirements and optimizing storage costs. Use AWS Data Lifecycle Manager or custom scripts to automate this process.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ebs:009",
+    "name": "Use EBS encryption with supported EC2 instance types",
+    "description": "Ensure that EBS encrypted volumes are only attached to EC2 instance types that support EBS encryption. Refer to the AWS documentation for a list of supported instance types and plan your deployments accordingly.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "ebs:010",
+    "name": "Implement cross-region replication for critical EBS snapshots",
+    "description": "For critical data stored on EBS volumes, implement cross-region replication of EBS snapshots. This ensures data redundancy and availability across multiple AWS regions in case of regional failures.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  }
+]

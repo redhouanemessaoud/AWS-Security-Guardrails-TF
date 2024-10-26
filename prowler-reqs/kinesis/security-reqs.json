@@ -1,0 +1,9 @@
+[
+    {
+        "ID": "Kinesis-001",
+        "name": "Kinesis streams should be encrypted at rest.",
+        "description": "Ensure Kinesis streams use server-side encryption with AWS KMS keys for data protection.",
+        "cloudProvider": "AWS",
+        "service name": "kinesis"
+    }
+]

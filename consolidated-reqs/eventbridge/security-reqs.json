@@ -1,0 +1,86 @@
+[
+  {
+    "ID": "eventbridge:001",
+    "name": "Restrict EventBridge event bus access to known principals",
+    "description": "Ensure that the AWS EventBridge event bus is not exposed to everyone. Configure the event bus policy to allow access only from known and authorized AWS accounts, IAM roles, or services.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "eventbridge:002",
+    "name": "Limit cross-account access for EventBridge event buses",
+    "description": "Ensure that AWS EventBridge event buses do not allow unknown cross-account access for delivery of events. Explicitly define and limit the AWS accounts that are allowed to put events on the event bus using resource-based policies.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "eventbridge:003",
+    "name": "Enable event replication for EventBridge global endpoints",
+    "description": "Enable event replication for Amazon EventBridge global endpoints to ensure high availability and disaster recovery across multiple regions. This allows events to be replicated to secondary regions in case of a regional outage.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "eventbridge:004",
+    "name": "Restrict cross-account access for EventBridge schema registries",
+    "description": "Ensure that AWS EventBridge schema registries do not allow unknown cross-account access. Configure resource-based policies to explicitly define and limit the AWS accounts that are allowed to access and use the schema registries.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "eventbridge:005",
+    "name": "Use AWS KMS Customer Managed Keys (CMK) for EventBridge rule encryption",
+    "description": "Encrypt EventBridge rules using AWS Key Management Service (KMS) Customer Managed Keys (CMK) instead of AWS managed keys. This provides more control over the encryption keys and allows for fine-grained access control and auditing of key usage.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "eventbridge:006",
+    "name": "Implement least privilege access for EventBridge resources",
+    "description": "Ensure that IAM policies for EventBridge follow the principle of least privilege. Grant only the necessary permissions to authorized entities for managing and interacting with EventBridge resources such as event buses, rules, and targets.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "eventbridge:007",
+    "name": "Enable logging for EventBridge API calls",
+    "description": "Enable AWS CloudTrail logging specifically for EventBridge API calls to track and monitor all actions performed on EventBridge resources. This helps in auditing and troubleshooting EventBridge-related activities.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "eventbridge:008",
+    "name": "Use HTTPS endpoints for EventBridge API calls and targets",
+    "description": "Ensure that all API calls to EventBridge and all target endpoints configured in EventBridge rules use HTTPS (TLS) for secure communication. This prevents potential eavesdropping or man-in-the-middle attacks.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "eventbridge:009",
+    "name": "Implement tagging for EventBridge resources",
+    "description": "Apply consistent and meaningful tags to all EventBridge resources including event buses, rules, and targets. This facilitates better organization, cost allocation, and access control management of EventBridge resources.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "eventbridge:010",
+    "name": "Use dead-letter queues for failed event processing",
+    "description": "Configure dead-letter queues (DLQ) for EventBridge rules to capture and handle events that fail to be delivered to their targets. This ensures that no events are lost and allows for analysis and reprocessing of failed events.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "eventbridge:011",
+    "name": "Implement input transformation for sensitive data in events",
+    "description": "Use EventBridge input transformation to remove or mask sensitive data in events before they are sent to targets. This helps prevent exposure of confidential information in logs or downstream systems.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "eventbridge:012",
+    "name": "Regularly review and audit EventBridge rules and targets",
+    "description": "Implement a process to regularly review and audit EventBridge rules and their associated targets. This helps ensure that all rules are still relevant, targets are valid and secure, and no unauthorized changes have been made to the event routing configuration.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

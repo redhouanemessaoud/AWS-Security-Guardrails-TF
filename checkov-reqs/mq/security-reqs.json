@@ -1,0 +1,38 @@
+[
+    {
+        "ID": "Mqbroker-001",
+        "name": "Ensure MQ Broker Audit logging is enabled",
+        "cloudProvider": "AWS",
+        "service name": "mqbroker"
+    },
+    {
+        "ID": "Mqbroker-002",
+        "name": "Ensure MQ broker encrypted by KMS using a customer managed Key (CMK)",
+        "cloudProvider": "AWS",
+        "service name": "mqbroker"
+    },
+    {
+        "ID": "Mqbroker-003",
+        "name": "Ensure MQ Broker is not publicly exposed",
+        "cloudProvider": "AWS",
+        "service name": "mqbroker"
+    },
+    {
+        "ID": "Mqbroker-004",
+        "name": "Ensure MQ Broker logging is enabled",
+        "cloudProvider": "AWS",
+        "service name": "mqbroker"
+    },
+    {
+        "ID": "Mqbroker-005",
+        "name": "Ensure MQ Broker minor version updates are enabled",
+        "cloudProvider": "AWS",
+        "service name": "mqbroker"
+    },
+    {
+        "ID": "Mqbroker-006",
+        "name": "Ensure MQ Broker version is current",
+        "cloudProvider": "AWS",
+        "service name": "mqbroker"
+    }
+]

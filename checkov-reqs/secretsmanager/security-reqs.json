@@ -1,0 +1,20 @@
+[
+    {
+        "ID": "Secretsmanager-001",
+        "name": "Ensure Secrets Manager secrets should have automatic rotation enabled",
+        "cloudProvider": "AWS",
+        "service name": "secretsmanager"
+    },
+    {
+        "ID": "Secretsmanager-002",
+        "name": "Ensure that Secrets Manager secret is encrypted using KMS CMK",
+        "cloudProvider": "AWS",
+        "service name": "secretsmanager"
+    },
+    {
+        "ID": "Secretsmanager-003",
+        "name": "Ensure Secrets Manager secrets should be rotated within 90 days",
+        "cloudProvider": "AWS",
+        "service name": "secretsmanager"
+    }
+]

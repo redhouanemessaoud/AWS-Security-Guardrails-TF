@@ -1,0 +1,9 @@
+[
+    {
+        "ID": "Ses-001",
+        "name": "Ensure that SES identities are not publicly accessible",
+        "description": "This control checks whether SES identities are not publicly accessible via resource policies.",
+        "cloudProvider": "AWS",
+        "service name": "ses"
+    }
+]

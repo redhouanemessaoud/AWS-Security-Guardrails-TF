@@ -1,0 +1,478 @@
+[
+    {
+        "ID": "Ec2-001",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 389 or 636 (LDAP).",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 389 or 636 (LDAP).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-002",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to any port.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to any port and not attached to a network interface with not allowed network interface types or instance owners. By default, the allowed network interface types are 'api_gateway_managed' and 'vpc_endpoint', and the allowed instance owners are 'amazon-elb', you can customize these values by setting the 'ec2_allowed_interface_types' and 'ec2_allowed_instance_owners' variables.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-003",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 88, 464, 749 or 750 (Kerberos).",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 88, 464, 749 or 750 (Kerberos).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-004",
+        "name": "Check if EC2 instances have detailed monitoring enabled.",
+        "description": "Check if EC2 instances have detailed monitoring enabled.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-005",
+        "name": "Security Groups created by EC2 Launch Wizard.",
+        "description": "Security Groups created by EC2 Launch Wizard.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-006",
+        "name": "Ensure there are no Security Groups not being used.",
+        "description": "Ensure there are no Security Groups not being used.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-007",
+        "name": "Check if there is any unassigned Elastic IP.",
+        "description": "Check if there is any unassigned Elastic IP.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-008",
+        "name": "Find secrets in EC2 User Data.",
+        "description": "Find secrets in EC2 User Data.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-009",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Cassandra ports 7199 or 9160 or 8888.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Cassandra ports 7199 or 9160 or 8888.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-010",
+        "name": "Ensure the default security group of every VPC restricts all traffic.",
+        "description": "Ensure the default security group of every VPC restricts all traffic.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-011",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 139 or 445 (CIFS).",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 139 or 445 (CIFS).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-012",
+        "name": "Amazon EC2 instances should not use multiple ENIs",
+        "description": "This control checks whether an EC2 instance uses multiple Elastic Network Interfaces (ENIs) or Elastic Fabric Adapters (EFAs). This control passes if a single network adapter is used. The control includes an optional parameter list to identify the allowed ENIs. This control also fails if an EC2 instance that belongs to an Amazon EKS cluster uses more than one ENI. If your EC2 instances need to have multiple ENIs as part of an Amazon EKS cluster, you can suppress those control findings.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-013",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 9092 (Kafka).",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 9092 (Kafka).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-014",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Oracle ports 1521 or 2483.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Oracle ports 1521 or 2483.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-015",
+        "name": "Ensure Instance Metadata Service Version 2 (IMDSv2) is enforced for EC2 instances at the account level to protect against SSRF vulnerabilities.",
+        "description": "Ensure Instance Metadata Service Version 2 (IMDSv2) is enforced for EC2 instances at the account level to protect against SSRF vulnerabilities.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-016",
+        "name": "Ensure that public access to EBS snapshots is disabled",
+        "description": "EBS snapshots can be shared with other AWS accounts or made public. By default, EBS snapshots are private and only the AWS account that created the snapshot can access it. If an EBS snapshot is shared with another AWS account or made public, the data in the snapshot can be accessed by the other account or by anyone on the internet. Ensure that public access to EBS snapshots is disabled.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-017",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 3306 (MySQL).",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 3306 (MySQL).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-018",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Kafka port 9092.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Kafka port 9092.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-019",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to MongoDB ports 27017 and 27018.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to MongoDB ports 27017 and 27018.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-020",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 22 (SSH)",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 22 (SSH).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-021",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Postgres port 5432.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Postgres port 5432.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-022",
+        "name": "Check if any of the Elastic or Public IP are in Shodan (requires Shodan API KEY).",
+        "description": "Check if any of the Elastic or Public IP are in Shodan (requires Shodan API KEY).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-023",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 3389 (RDP)",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 3389 (RDP).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-024",
+        "name": "Check for internet facing EC2 instances with Instance Profiles attached.",
+        "description": "Check for internet facing EC2 instances with Instance Profiles attached.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-025",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Redis port 6379.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Redis port 6379.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-026",
+        "name": "Amazon EC2 paravirtual virtualization type should not be used.",
+        "description": "Ensure that the virtualization type of an EC2 instance is not paravirtual. The control fails if the virtualizationType of the EC2 instance is set to paravirtual.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-027",
+        "name": "Ensure no security groups allow ingress and egress from wide-open IP address with a mask between 0 and 24.",
+        "description": "Ensure no security groups allow ingress and egress from ide-open IP address with a mask between 0 and 24.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-028",
+        "name": "Ensure no EC2 instances allow ingress from the internet to Cassandra ports (TCP 7000, 7001, 7199, 9042, 9160).",
+        "description": "Ensure no EC2 instances allow ingress from the internet to Cassandra ports (TCP 7000, 7001, 7199, 9042, 9160).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-029",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Telnet port 23.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Telnet port 23.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-030",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Windows SQL Server ports 1433 or 1434.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Windows SQL Server ports 1433 or 1434.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-031",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 11211 (Memcached).",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 11211 (Memcached).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-032",
+        "name": "Check if EC2 instances are managed by Systems Manager.",
+        "description": "Check if EC2 instances are managed by Systems Manager.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-033",
+        "name": "Ensure no Network ACLs allow ingress from 0.0.0.0/0 to any port.",
+        "description": "Ensure no Network ACLs allow ingress from 0.0.0.0/0 to any port.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-034",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to MySQL port 3306.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to MySQL port 3306.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-035",
+        "name": "Ensure there are no EBS Snapshots set as Public.",
+        "description": "Ensure there are no EBS Snapshots set as Public.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-036",
+        "name": "Unused Network Access Control Lists should be removed.",
+        "description": "Ensure that there are no unused network access control lists (network ACLs) in your virtual private cloud (VPC). The control fails if the network ACL isn't associated with a subnet. The control doesn't generate findings for an unused default network ACL.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-037",
+        "name": "Check if EBS Default Encryption is activated.",
+        "description": "Check if EBS Default Encryption is activated.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-038",
+        "name": "Ensure no Network ACLs allow ingress from 0.0.0.0/0 to Microsoft RDP port 3389",
+        "description": "Ensure no Network ACLs allow ingress from 0.0.0.0/0 to Microsoft RDP port 3389",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-039",
+        "name": "Check if EBS snapshots exists.",
+        "description": "Check if EBS snapshots exists.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-040",
+        "name": "Amazon EC2 Transit Gateways should not automatically accept VPC attachment requests",
+        "description": "Ensure EC2 transit gateways are not automatically accepting shared VPC attachments. We get a fail if a transit gateway is configured to automatically accept shared VPC attachment requests.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-041",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 5432 (PostgreSQL)",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 5432 (PostgreSQL).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-042",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to FTP ports 20 or 21.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to FTP ports 20 or 21.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-043",
+        "name": "Find security groups with more than 50 ingress or egress rules.",
+        "description": "Find security groups with more than 50 ingress or egress rules.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-044",
+        "name": "Check if EBS snapshots are encrypted.",
+        "description": "Check if EBS snapshots are encrypted.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-045",
+        "name": "Ensure there are no EC2 AMIs set as Public.",
+        "description": "Ensure there are no EC2 AMIs set as Public.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-046",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 1521, 2483 or 2484 (Oracle).",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 1521, 2483 or 2484 (Oracle).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-047",
+        "name": "Check EC2 Instances older than specific days.",
+        "description": "Check EC2 Instances older than specific days.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-048",
+        "name": "Find secrets in EC2 Launch Template",
+        "description": "Find secrets in EC2 Launch Template",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-049",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Elasticsearch/Kibana ports.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Elasticsearch/Kibana ports.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-050",
+        "name": "Check if EC2 Instance Metadata Service Version 2 (IMDSv2) is Enabled and Required.",
+        "description": "Check if EC2 Instance Metadata Service Version 2 (IMDSv2) is Enabled and Required.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-051",
+        "name": "Ensure there are no EBS Volumes unencrypted.",
+        "description": "Ensure there are no EBS Volumes unencrypted.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-052",
+        "name": "EC2 Client VPN endpoints should have client connection logging enabled.",
+        "description": "This control checks whether an AWS Client VPN endpoint has client connection logging enabled. The control fails if the endpoint doesn't have client connection logging enabled.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-053",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to SSH port 22.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to SSH port 22.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-054",
+        "name": "Ensure no EC2 instances allow ingress from the internet to Elasticsearch and Kibana ports (TCP 9200, 9300, 5601).",
+        "description": "Ensure no EC2 instances allow ingress from the internet to Elasticsearch and Kibana ports (TCP 9200, 9300, 5601).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-055",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 6379 (Redis).",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 6379 (Redis).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-056",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to port 3389.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to port 3389.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-057",
+        "name": "Amazon EC2 launch templates should not assign public IPs to network interfaces.",
+        "description": "This control checks if Amazon EC2 launch templates are configured to assign public IP addresses to network interfaces upon launch. The control fails if an EC2 launch template is configured to assign a public IP address to network interfaces or if there is at least one network interface that has a public IP address.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-058",
+        "name": "Ensure IAM instance roles are used for AWS resource access from instances",
+        "description": "Ensure IAM instance roles are used for AWS resource access from instances.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-059",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 1433 or 1434 (SQL Server).",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 1433 or 1434 (SQL Server).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-060",
+        "name": "Amazon EBS volumes should be protected by a backup plan.",
+        "description": "Evaluates if an Amazon EBS volume in in-use state is covered by a backup plan. The check fails if an EBS volume isn't covered by a backup plan. If you set the backupVaultLockCheck parameter equal to true, the control passes only if the EBS volume is backed up in an AWS Backup locked vault.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-061",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Memcached port 11211.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to Memcached port 11211.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-062",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 20 or 21 (FTP)",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 20 or 21 (FTP).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-063",
+        "name": "Check for EC2 Instances with Public IP.",
+        "description": "Check for EC2 Instances with Public IP.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-064",
+        "name": "Ensure no Network ACLs allow ingress from 0.0.0.0/0 to SSH port 22",
+        "description": "Ensure no Network ACLs allow ingress from 0.0.0.0/0 to SSH port 22",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-065",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 27017 or 27018 (MongoDB)",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 27017 or 27018 (MongoDB).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-066",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to all ports.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to all ports.",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-067",
+        "name": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to high risk ports.",
+        "description": "Ensure no security groups allow ingress from 0.0.0.0/0 or ::/0 to ports 25(SMTP), 110(POP3), 135(RCP), 143(IMAP), 445(CIFS), 3000(Go, Node.js, and Ruby web developemnt frameworks), 4333(ahsp), 5000(Python web development frameworks), 5500(fcp-addr-srvr1), 8080(proxy), 8088(legacy HTTP port).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    },
+    {
+        "ID": "Ec2-068",
+        "name": "Ensure no EC2 instances allow ingress from the internet to TCP port 23 (Telnet).",
+        "description": "Ensure no EC2 instances allow ingress from the internet to TCP port 23 (Telnet).",
+        "cloudProvider": "AWS",
+        "service name": "ec2"
+    }
+]

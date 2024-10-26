@@ -1,0 +1,142 @@
+[
+  {
+    "ID": "s3:001",
+    "name": "Enable S3 Account-Level Public Access Block",
+    "description": "Ensure that the S3 Account-Level Public Access Block is enabled to prevent public access to all buckets in the account. This includes blocking public ACLs, public bucket policies, and ignoring public ACLs.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "s3:002",
+    "name": "Enable S3 Bucket-Level Public Access Block",
+    "description": "Ensure that the S3 Bucket-Level Public Access Block is enabled for each individual bucket to prevent public access. This includes blocking public ACLs, public bucket policies, and ignoring public ACLs at the bucket level.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "s3:003",
+    "name": "Use AWS KMS Customer Managed Key (CMK) for S3 Bucket Encryption",
+    "description": "Ensure that all S3 buckets have default encryption enabled using AWS Key Management Service (KMS) Customer Managed Keys (CMKs) for enhanced control over encryption keys.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "s3:004",
+    "name": "Enable S3 Bucket Versioning",
+    "description": "Ensure that versioning is enabled for all S3 buckets to protect against accidental deletion or overwriting of objects, and to maintain a full change history of objects.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "s3:005",
+    "name": "Enable S3 Bucket Logging",
+    "description": "Ensure that server access logging is enabled for all S3 buckets to track requests for access to the bucket. Configure logging to capture detailed information about requests made to the bucket.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "s3:006",
+    "name": "Implement S3 Bucket Lifecycle Policies",
+    "description": "Ensure that S3 buckets have appropriate lifecycle policies configured to manage object retention and transition between storage classes. This should include rules for transitioning objects to cheaper storage classes and eventual deletion if required.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "s3:007",
+    "name": "Enforce HTTPS for S3 Bucket Access",
+    "description": "Ensure that S3 bucket policies enforce the use of HTTPS (TLS) for all access to S3 buckets. This should be implemented using a bucket policy that denies any requests not using SSL.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "s3:008",
+    "name": "Restrict S3 Bucket Access to Specific AWS Accounts",
+    "description": "Ensure that S3 bucket policies restrict access to only specified AWS accounts or IAM principals. This should be implemented using bucket policies that explicitly allow access only to trusted entities.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "s3:009",
+    "name": "Enable S3 Object Lock for Critical Buckets",
+    "description": "Enable S3 Object Lock for critical buckets to prevent objects from being deleted or overwritten for a fixed amount of time or indefinitely. Configure appropriate retention periods based on data criticality and compliance requirements.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "s3:010",
+    "name": "Implement Cross-Region Replication for Critical S3 Buckets",
+    "description": "Enable cross-region replication for critical S3 buckets to ensure data redundancy and availability across multiple AWS regions. Configure replication to a bucket in a different region with appropriate encryption and access controls.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "s3:011",
+    "name": "Disable S3 Bucket ACLs",
+    "description": "Disable Access Control Lists (ACLs) for S3 buckets and use bucket policies and IAM policies for access control instead. This simplifies access management and reduces the risk of misconfiguration.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "s3:012",
+    "name": "Enable S3 Event Notifications",
+    "description": "Configure S3 event notifications to track and respond to important bucket and object-level operations. Set up notifications for events such as object creation, deletion, and restoration to relevant AWS services or endpoints.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "s3:013",
+    "name": "Implement Least Privilege Access for S3 Buckets",
+    "description": "Ensure that IAM policies and S3 bucket policies follow the principle of least privilege, granting only the necessary permissions to authorized entities. Regularly review and audit access permissions to maintain a secure posture.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "s3:014",
+    "name": "Enable MFA Delete for Versioned S3 Buckets",
+    "description": "Enable Multi-Factor Authentication (MFA) Delete for versioned S3 buckets to add an extra layer of security for deleting objects. This requires additional authentication before permanent deletion of an object version or changing the versioning state of the bucket.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "s3:015",
+    "name": "Implement S3 Access Points",
+    "description": "Use S3 Access Points to simplify managing access to shared datasets in S3 buckets with specific permissions for different applications or user groups. Configure access points with appropriate VPC restrictions and access point policies.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "s3:016",
+    "name": "Configure S3 Access Point Network Origin Controls",
+    "description": "Ensure that S3 Access Points have appropriate network origin controls configured. Restrict access to specific VPCs or IP ranges to prevent unauthorized access from external networks.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "s3:017",
+    "name": "Enable S3 Intelligent-Tiering for Cost Optimization",
+    "description": "Enable S3 Intelligent-Tiering for buckets with unknown or changing access patterns. This automatically moves objects between access tiers based on usage, optimizing storage costs without impacting performance.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "s3:018",
+    "name": "Implement S3 Inventory for Large-Scale Bucket Management",
+    "description": "Enable S3 Inventory for buckets with a large number of objects. Configure inventory to generate reports on a scheduled basis, including encryption status, replication status, and other metadata to assist in bucket management and compliance.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "s3:019",
+    "name": "Configure S3 Object Lambda Access Points",
+    "description": "Implement S3 Object Lambda Access Points for buckets that require data processing or transformation on retrieval. Configure Lambda functions to process data as it is being retrieved from S3, ensuring that only transformed data is provided to the application.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "s3:020",
+    "name": "Enable S3 Bucket Keys for Cost-Effective Encryption",
+    "description": "Enable S3 Bucket Keys for buckets using AWS KMS encryption. This reduces the number of API calls to AWS KMS and lowers encryption costs while maintaining the security benefits of KMS-managed encryption keys.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  }
+]

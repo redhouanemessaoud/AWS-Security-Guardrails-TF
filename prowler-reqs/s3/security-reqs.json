@@ -1,0 +1,128 @@
+[
+    {
+        "ID": "S3-001",
+        "name": "Block Public Access Settings enabled on Access Points.",
+        "description": "Ensures that public access is blocked on S3 Access Points.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-002",
+        "name": "Check if S3 buckets have a Lifecycle configuration enabled",
+        "description": "Check if S3 buckets have Lifecycle configuration enabled.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-003",
+        "name": "Check if S3 buckets have server access logging enabled",
+        "description": "Check if S3 buckets have server access logging enabled",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-004",
+        "name": "Check if S3 buckets have object versioning enabled",
+        "description": "Check if S3 buckets have object versioning enabled",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-005",
+        "name": "Check if S3 buckets have KMS encryption enabled.",
+        "description": "Check if S3 buckets have KMS encryption enabled.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-006",
+        "name": "Ensure that general-purpose bucket policies restrict access to other AWS accounts.",
+        "description": "This check verifies that S3 bucket policies are configured in a way that limits access to the intended AWS accounts only, preventing unauthorized access by external or unintended accounts.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-007",
+        "name": "Check if S3 bucket MFA Delete is not enabled.",
+        "description": "Check if S3 bucket MFA Delete is not enabled.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-008",
+        "name": "Ensure there are no S3 buckets writable by Everyone or Any AWS customer.",
+        "description": "Ensure there are no S3 buckets writable by Everyone or Any AWS customer.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-009",
+        "name": "Check if S3 buckets have ACLs enabled",
+        "description": "Check if S3 buckets have ACLs enabled",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-010",
+        "name": "Check if S3 buckets have policies which allow WRITE access.",
+        "description": "Check if S3 buckets have policies which allow WRITE access.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-011",
+        "name": "Ensure there are no S3 buckets open to Everyone or Any AWS user.",
+        "description": "Ensure there are no S3 buckets open to Everyone or Any AWS user.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-012",
+        "name": "Ensure there are no S3 buckets listable by Everyone or Any AWS customer.",
+        "description": "Ensure there are no S3 buckets listable by Everyone or Any AWS customer.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-013",
+        "name": "Check if S3 buckets use cross region replication.",
+        "description": "Verifying whether S3 buckets have cross-region replication enabled, ensuring data redundancy and availability across multiple AWS regions",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-014",
+        "name": "Check if S3 buckets have default encryption (SSE) enabled or use a bucket policy to enforce it.",
+        "description": "Check if S3 buckets have default encryption (SSE) enabled or use a bucket policy to enforce it.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-015",
+        "name": "Check S3 Account Level Public Access Block.",
+        "description": "Check S3 Account Level Public Access Block.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-016",
+        "name": "Check if S3 buckets have secure transport policy.",
+        "description": "Check if S3 buckets have secure transport policy.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-017",
+        "name": "Check S3 Bucket Level Public Access Block.",
+        "description": "Check S3 Bucket Level Public Access Block.",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    },
+    {
+        "ID": "S3-018",
+        "name": "Check if S3 buckets have object lock enabled",
+        "description": "Check if S3 buckets have object lock enabled",
+        "cloudProvider": "AWS",
+        "service name": "s3"
+    }
+]

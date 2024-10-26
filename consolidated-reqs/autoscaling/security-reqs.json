@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "autoscaling:001",
+    "name": "Use multiple instance types across multiple Availability Zones for EC2 Auto Scaling Groups",
+    "description": "Configure EC2 Auto Scaling Groups to use multiple instance types across multiple Availability Zones. This enhances availability and fault tolerance by distributing instances across different AZs and leveraging various instance types for cost optimization and performance.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "autoscaling:002",
+    "name": "Enable Instance Metadata Service Version 2 (IMDSv2) for Auto Scaling group launch configurations",
+    "description": "Ensure that Instance Metadata Service Version 2 (IMDSv2) is enabled and required for all instances launched by EC2 Auto Scaling groups. This enhances security by using a session-oriented method to distribute instance metadata, reducing the risk of server-side request forgery (SSRF) attacks.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "autoscaling:003",
+    "name": "Disable public IP address assignment for EC2 instances in Auto Scaling groups",
+    "description": "Configure Auto Scaling group launch configurations or launch templates to not assign public IP addresses to EC2 instances. This reduces the attack surface by preventing direct internet accessibility to the instances. Use NAT Gateways or VPC endpoints for outbound internet connectivity if required.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "autoscaling:004",
+    "name": "Use Elastic Load Balancing (ELB) health checks for Auto Scaling groups",
+    "description": "Configure Auto Scaling groups associated with load balancers to use Elastic Load Balancing (ELB) health checks. This ensures that the Auto Scaling group considers the health status reported by the load balancer when determining instance health, leading to more accurate scaling decisions and improved application availability.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "autoscaling:005",
+    "name": "Use EC2 launch templates for Auto Scaling groups",
+    "description": "Configure Auto Scaling groups to use EC2 launch templates instead of launch configurations. Launch templates provide more flexibility, versioning support, and allow you to specify the latest instance features, such as IMDSv2, which enhances the security and manageability of your Auto Scaling groups.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "autoscaling:006",
+    "name": "Apply consistent tagging strategy for Auto Scaling groups and launched instances",
+    "description": "Implement a consistent tagging strategy for Auto Scaling groups and ensure that tags are propagated to the EC2 instances launched by the group. This facilitates better resource management, cost allocation, and access control based on tags.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "autoscaling:007",
+    "name": "Use VPC endpoints for AWS service access from Auto Scaling group instances",
+    "description": "Configure VPC endpoints for AWS services that your Auto Scaling group instances need to access, such as S3 or DynamoDB. This allows secure communication with AWS services without requiring internet access or NAT devices, reducing the attack surface of your instances.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "autoscaling:008",
+    "name": "Implement instance refresh for Auto Scaling groups",
+    "description": "Use the instance refresh feature for Auto Scaling groups to automatically replace instances in the group when you make changes to the launch template or launch configuration. This ensures that all instances in the group are using the latest configuration, including security updates and patches.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "autoscaling:009",
+    "name": "Enable detailed monitoring for Auto Scaling group instances",
+    "description": "Enable detailed monitoring for EC2 instances launched by Auto Scaling groups. This provides more frequent metrics (at 1-minute intervals) to CloudWatch, allowing for more responsive scaling policies and better visibility into instance performance and health.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "autoscaling:010",
+    "name": "Use AWS Systems Manager for instance management in Auto Scaling groups",
+    "description": "Configure EC2 instances launched by Auto Scaling groups to use AWS Systems Manager for patch management, configuration management, and remote access. This provides a more secure and auditable way to manage instances compared to traditional methods like SSH access.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "autoscaling:011",
+    "name": "Implement lifecycle hooks for Auto Scaling groups",
+    "description": "Use Auto Scaling group lifecycle hooks to perform custom actions when instances are launched or terminated. This can be used to ensure proper instance configuration, data backup, or other security-related tasks before an instance is put into or taken out of service.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "autoscaling:012",
+    "name": "Use latest Amazon Machine Images (AMIs) for Auto Scaling group instances",
+    "description": "Regularly update the Amazon Machine Images (AMIs) used in your Auto Scaling group launch templates or launch configurations to ensure instances are launched with the latest security patches and updates.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "autoscaling:013",
+    "name": "Implement appropriate termination policies for Auto Scaling groups",
+    "description": "Configure appropriate termination policies for Auto Scaling groups to ensure that instances are terminated in a way that maintains the desired capacity distribution across Availability Zones and instance types, preserving fault tolerance and performance.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "autoscaling:014",
+    "name": "Use Auto Scaling group suspension processes judiciously",
+    "description": "Use Auto Scaling group suspension processes carefully and only when necessary. Ensure that any suspended processes (e.g., for maintenance or troubleshooting) are re-enabled promptly to maintain the desired capacity and responsiveness of your Auto Scaling groups.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "autoscaling:015",
+    "name": "Implement appropriate scaling policies for Auto Scaling groups",
+    "description": "Configure appropriate scaling policies (step scaling, target tracking, or scheduled scaling) for Auto Scaling groups based on application requirements. This ensures that the group can respond effectively to changes in demand while maintaining performance and cost-efficiency.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

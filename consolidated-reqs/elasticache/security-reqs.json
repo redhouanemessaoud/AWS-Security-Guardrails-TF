@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "elasticache:001",
+    "name": "Enable Automatic Failover for ElastiCache Redis Clusters",
+    "description": "Ensure ElastiCache Redis clusters have automatic failover enabled to improve availability and fault tolerance. This feature automatically promotes a read replica to primary if the primary node fails.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elasticache:002",
+    "name": "Use Private Subnets for ElastiCache Clusters",
+    "description": "Deploy ElastiCache clusters in private subnets within a VPC to prevent direct internet access. This aligns with the principle of using only private resources unless explicitly required otherwise.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elasticache:003",
+    "name": "Enable Automatic Backups for ElastiCache Redis Clusters",
+    "description": "Ensure ElastiCache Redis clusters have automatic backups enabled. This allows point-in-time recovery and helps protect against data loss.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "elasticache:004",
+    "name": "Enable Multi-AZ for ElastiCache Redis Clusters",
+    "description": "Enable Multi-AZ for ElastiCache Redis clusters to improve availability and fault tolerance. This feature automatically replicates data across multiple Availability Zones.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elasticache:005",
+    "name": "Enable In-Transit Encryption for ElastiCache Redis Clusters",
+    "description": "Ensure ElastiCache Redis clusters have in-transit encryption enabled using TLS. This protects data as it moves between the cache and application servers.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "elasticache:006",
+    "name": "Enable At-Rest Encryption for ElastiCache Redis Clusters",
+    "description": "Ensure ElastiCache Redis clusters have at-rest encryption enabled using AWS Key Management Service (KMS) Customer Managed Keys (CMKs). This protects data stored in the cache.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "elasticache:007",
+    "name": "Enable Redis AUTH for Older ElastiCache Redis Replication Groups",
+    "description": "Ensure ElastiCache Redis replication groups of earlier versions have Redis AUTH enabled. This provides an additional layer of authentication for accessing the Redis server.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "elasticache:008",
+    "name": "Enable Automatic Minor Version Upgrades for ElastiCache Redis Clusters",
+    "description": "Ensure ElastiCache Redis clusters have automatic minor version upgrades enabled. This ensures that clusters receive the latest minor version updates, which often include bug fixes and security patches.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elasticache:009",
+    "name": "Use Custom Subnet Groups for ElastiCache Clusters",
+    "description": "Ensure ElastiCache clusters use custom subnet groups instead of the default subnet group. This allows for better control over network placement and isolation of the cache clusters.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elasticache:010",
+    "name": "Enable Auth Token for ElastiCache Redis Clusters",
+    "description": "Ensure ElastiCache Redis clusters have an auth token enabled. This provides an additional layer of security by requiring a token for client authentication.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "elasticache:011",
+    "name": "Use VPC Security Groups for ElastiCache Clusters",
+    "description": "Ensure ElastiCache clusters use VPC security groups for network access control instead of the deprecated ElastiCache security groups. This provides more granular control over inbound and outbound traffic to the cache clusters.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "elasticache:012",
+    "name": "Implement Least Privilege Access for ElastiCache Clusters",
+    "description": "Ensure that IAM policies follow the principle of least privilege, granting only the necessary permissions to authorized entities for managing and accessing ElastiCache clusters.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "elasticache:013",
+    "name": "Enable ElastiCache Cluster Monitoring",
+    "description": "Ensure that Amazon CloudWatch monitoring is enabled for ElastiCache clusters to track performance metrics, set alarms, and respond to operational issues promptly.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "elasticache:014",
+    "name": "Use Latest ElastiCache Engine Version",
+    "description": "Ensure ElastiCache clusters are using the latest stable engine version to benefit from the most recent security patches, bug fixes, and performance improvements.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "elasticache:015",
+    "name": "Implement Regular Maintenance Windows for ElastiCache Clusters",
+    "description": "Configure regular maintenance windows for ElastiCache clusters to ensure that system updates and patches are applied in a timely manner without disrupting critical operations.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

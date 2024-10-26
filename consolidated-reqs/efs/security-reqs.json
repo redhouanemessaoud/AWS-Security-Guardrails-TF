@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "efs:001",
+    "name": "Restrict EFS mount targets to private subnets",
+    "description": "Ensure that Amazon EFS mount targets are associated only with private subnets to prevent public access from the internet. Configure the mount targets in VPCs connected through Transit Gateways as per the hub and spoke architecture.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "efs:002",
+    "name": "Implement least privilege access for EFS file systems",
+    "description": "Configure EFS file system policies to grant access only to specific IAM roles or AWS accounts, adhering to the principle of least privilege. Avoid policies that allow unrestricted access to all clients within the VPC.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "efs:003",
+    "name": "Enable encryption at rest for EFS file systems using AWS KMS CMK",
+    "description": "Ensure all EFS file systems are encrypted at rest using AWS Key Management Service (KMS) Customer Managed Keys (CMKs) to protect sensitive data.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "efs:004",
+    "name": "Enforce user identity for EFS access points",
+    "description": "Configure all EFS access points to enforce a POSIX user identity. This ensures that file system operations are performed with a specific user context, enhancing access control and auditability.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "efs:005",
+    "name": "Enable automatic backups for EFS file systems",
+    "description": "Ensure that AWS Backup is enabled for all EFS file systems to create automated, scheduled backups. Configure backup plans with appropriate retention periods and lifecycle policies.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "efs:006",
+    "name": "Enforce root directory for EFS access points",
+    "description": "Configure all EFS access points to enforce a specific root directory other than the default root directory ('/') of the file system. This restricts access to a specific directory tree, enhancing security and access control.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "efs:007",
+    "name": "Enable encryption in transit for EFS file systems",
+    "description": "Enforce the use of TLS for all EFS mount targets to ensure data encryption in transit. Configure EFS clients to use the TLS mount option when connecting to EFS file systems.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "efs:008",
+    "name": "Implement lifecycle management for EFS file systems",
+    "description": "Configure EFS lifecycle management policies to automatically move files that have not been accessed for a specified period to the cost-optimized Infrequent Access (IA) storage class.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "efs:009",
+    "name": "Enable performance mode and throughput mode for EFS file systems",
+    "description": "Configure appropriate performance mode (General Purpose or Max I/O) and throughput mode (Bursting or Provisioned) for EFS file systems based on workload requirements to ensure optimal performance and cost efficiency.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "efs:010",
+    "name": "Implement IAM authentication for EFS file systems",
+    "description": "Enable IAM authentication for EFS file systems to control access using IAM policies instead of relying solely on network-level controls. This provides more granular access control and better integration with AWS Identity and Access Management.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "efs:011",
+    "name": "Configure EFS access points with creation info",
+    "description": "When creating EFS access points, specify the 'CreationInfo' parameter to set the POSIX user ID, group ID, and permissions for the access point's root directory. This ensures consistent and secure file ownership and permissions.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "efs:012",
+    "name": "Implement VPC security groups for EFS mount targets",
+    "description": "Configure restrictive VPC security groups for EFS mount targets to control network access. Allow inbound NFS traffic (port 2049) only from authorized sources within the VPC or connected networks.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "efs:013",
+    "name": "Enable EFS file system monitoring with Amazon CloudWatch",
+    "description": "Configure CloudWatch alarms for key EFS metrics such as BurstCreditBalance, PercentIOLimit, and PermittedThroughput to monitor file system performance and usage. Set up appropriate alerting thresholds based on workload requirements.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "efs:014",
+    "name": "Implement cross-region backup for critical EFS file systems",
+    "description": "For critical EFS file systems, configure AWS Backup to create cross-region backup copies. This ensures data redundancy and availability across multiple AWS regions in case of regional failures or disasters.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "efs:015",
+    "name": "Use EFS access points for application-specific entry points",
+    "description": "Create separate EFS access points for different applications or user groups that need access to the same EFS file system. Configure each access point with specific IAM policies, enforced user identities, and root directories to provide granular access control.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  }
+]

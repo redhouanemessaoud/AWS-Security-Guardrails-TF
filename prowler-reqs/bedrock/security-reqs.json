@@ -1,0 +1,30 @@
+[
+    {
+        "ID": "Bedrock-001",
+        "name": "Ensure that Amazon Bedrock model invocation logs are encrypted with KMS.",
+        "description": "Ensure that Amazon Bedrock model invocation logs are encrypted using AWS KMS to protect sensitive data in the request and response logs for all model invocations.",
+        "cloudProvider": "AWS",
+        "service name": "bedrock"
+    },
+    {
+        "ID": "Bedrock-002",
+        "name": "Configure Prompt Attack Filter with the highest strength for Amazon Bedrock Guardrails.",
+        "description": "Ensure that prompt attack filter strength is set to HIGH for Amazon Bedrock guardrails to mitigate prompt injection and bypass techniques.",
+        "cloudProvider": "AWS",
+        "service name": "bedrock"
+    },
+    {
+        "ID": "Bedrock-003",
+        "name": "Ensure that model invocation logging is enabled for Amazon Bedrock.",
+        "description": "Ensure that model invocation logging is enabled for Amazon Bedrock service in order to collect metadata, requests, and responses for all model invocations in your AWS cloud account.",
+        "cloudProvider": "AWS",
+        "service name": "bedrock"
+    },
+    {
+        "ID": "Bedrock-004",
+        "name": "Configure Sensitive Information Filters for Amazon Bedrock Guardrails.",
+        "description": "Ensure that sensitive information filters are enabled for Amazon Bedrock guardrails to prevent the leakage of sensitive data such as personally identifiable information (PII), financial data, or confidential corporate information.",
+        "cloudProvider": "AWS",
+        "service name": "bedrock"
+    }
+]

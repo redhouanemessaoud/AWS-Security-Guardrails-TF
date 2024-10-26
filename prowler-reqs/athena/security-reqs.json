@@ -1,0 +1,23 @@
+[
+    {
+        "ID": "Athena-001",
+        "name": "Ensure that logging is enabled for Amazon Athena workgroups to capture query activity.",
+        "description": "Enabling logging for a workgroup provides valuable insights into query activity, including user actions, query execution details, and potential security events.",
+        "cloudProvider": "AWS",
+        "service name": "athena"
+    },
+    {
+        "ID": "Athena-002",
+        "name": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+        "description": "Ensure that workgroup configuration is enforced so it cannot be overriden by client-side settings.",
+        "cloudProvider": "AWS",
+        "service name": "athena"
+    },
+    {
+        "ID": "Athena-003",
+        "name": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+        "description": "Ensure that encryption at rest is enabled for Amazon Athena query results stored in Amazon S3 in order to secure data and meet compliance requirements for data-at-rest encryption.",
+        "cloudProvider": "AWS",
+        "service name": "athena"
+    }
+]

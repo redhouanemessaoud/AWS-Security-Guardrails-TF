@@ -1,0 +1,107 @@
+[
+  {
+    "ID": "backup:001",
+    "name": "Enable encryption at rest for AWS Backup recovery points using KMS CMK",
+    "description": "Ensure that all AWS Backup recovery points are encrypted at rest using AWS Key Management Service (KMS) Customer Managed Keys (CMK). This provides an additional layer of security for backup data and helps meet compliance requirements.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "backup:002",
+    "name": "Create at least one AWS Backup report plan",
+    "description": "Implement at least one AWS Backup report plan to generate and maintain regular reports on backup activities, job statuses, and resource usage. This helps in monitoring the backup processes and ensuring compliance with backup policies.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "backup:003",
+    "name": "Create and configure AWS Backup vaults",
+    "description": "Ensure that AWS Backup vaults are created and properly configured to provide a secure and durable storage location for backup data. Each vault should have appropriate access policies and encryption settings.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "backup:004",
+    "name": "Encrypt AWS Backup vaults using KMS CMK",
+    "description": "Configure AWS Backup vaults to use encryption with AWS Key Management Service (KMS) Customer Managed Keys (CMK). This ensures that all data stored in the backup vaults is encrypted at rest, providing an additional layer of security.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "backup:005",
+    "name": "Create and implement at least one AWS Backup plan",
+    "description": "Develop and implement at least one comprehensive AWS Backup plan that defines backup schedules, retention periods, and lifecycle management for different resource types. This ensures consistent and automated backup processes across the AWS environment.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "backup:006",
+    "name": "Include EBS volumes in AWS Backup plans",
+    "description": "Ensure that Elastic Block Store (EBS) volumes are included in AWS Backup plans. This guarantees that EBS volumes are regularly backed up and can be restored in case of data loss or disaster recovery scenarios.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "backup:007",
+    "name": "Include Amazon EFS file systems in AWS Backup plans",
+    "description": "Ensure that Elastic File System (Amazon EFS) file systems are included in AWS Backup plans. This ensures that EFS data is regularly backed up and can be restored when needed, maintaining data continuity and protection.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "backup:008",
+    "name": "Implement cross-region backup for critical resources",
+    "description": "Configure cross-region backup copies for critical resources in AWS Backup plans. This enhances disaster recovery capabilities by storing backup data in a different AWS region, protecting against regional failures or data loss events.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "backup:009",
+    "name": "Enable continuous backups for supported services",
+    "description": "Activate continuous backups for supported AWS services within AWS Backup plans. This feature allows point-in-time recovery, minimizing data loss by enabling restoration to any point within the backup window.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "backup:010",
+    "name": "Implement least privilege access for AWS Backup",
+    "description": "Ensure that IAM policies for AWS Backup follow the principle of least privilege, granting only the necessary permissions to authorized entities for managing backup operations, vaults, and recovery points.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "backup:011",
+    "name": "Configure backup lifecycle management",
+    "description": "Implement appropriate lifecycle management policies for AWS Backup recovery points. This includes defining retention periods and transitioning backups to cold storage tiers like Amazon S3 Glacier for long-term retention and cost optimization.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "backup:012",
+    "name": "Enable AWS Backup audit manager",
+    "description": "Activate AWS Backup Audit Manager to continuously monitor and track backup activity, helping ensure compliance with organizational backup policies and regulatory requirements.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "backup:013",
+    "name": "Implement backup notifications using Amazon SNS",
+    "description": "Configure Amazon Simple Notification Service (SNS) to receive notifications for important AWS Backup events, such as successful or failed backup jobs, restoration activities, and vault access attempts.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "backup:014",
+    "name": "Use resource tagging for AWS Backup management",
+    "description": "Implement a consistent tagging strategy for resources protected by AWS Backup. Use these tags to organize, automate, and manage backup operations more effectively across the AWS environment.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "backup:015",
+    "name": "Regularly test backup restoration processes",
+    "description": "Establish a routine schedule to test the restoration process of AWS Backup recovery points. This ensures the integrity of backups and verifies the ability to recover data when needed.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

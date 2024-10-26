@@ -1,0 +1,9 @@
+[
+    {
+        "ID": "Fms-001",
+        "name": "Ensure that all FMS policies inside an admin account are compliant",
+        "description": "This check ensures all FMS policies inside an admin account are compliant",
+        "cloudProvider": "AWS",
+        "service name": "fms"
+    }
+]

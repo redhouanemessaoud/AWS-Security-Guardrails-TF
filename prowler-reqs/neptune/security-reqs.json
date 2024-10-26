@@ -1,0 +1,72 @@
+[
+    {
+        "ID": "Neptune-001",
+        "name": "Check if Neptune Clusters have audit cloudwatch logs enabled.",
+        "description": "Check if Neptune Clusters have audit cloudwatch logs enabled.",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-002",
+        "name": "Check if Neptune Clusters storage is encrypted at rest.",
+        "description": "Check if Neptune Clusters storage is encrypted at rest.",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-003",
+        "name": "Check if Neptune DB clusters are configured to copy tags to snapshots.",
+        "description": "This check ensures that Neptune DB clusters are configured to copy all tags to snapshots when the snapshots are created.",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-004",
+        "name": "Check if Neptune DB cluster snapshots are encrypted at rest.",
+        "description": "This check ensures that Neptune DB cluster snapshots are encrypted at rest to protect sensitive data from unauthorized access.",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-005",
+        "name": "Check for Neptune Clusters Backup Retention Period.",
+        "description": "Check if Neptune Clusters have backup enabled.",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Rds-006",
+        "name": "Check if Neptune Clusters have IAM authentication enabled.",
+        "description": "Check if Neptune Clusters have IAM authentication enabled.",
+        "cloudProvider": "AWS",
+        "service name": "rds"
+    },
+    {
+        "ID": "Neptune-007",
+        "name": "Ensure Neptune Cluster is not using a public subnet",
+        "description": "Ensure Neptune Cluster is not using a public subnet",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-008",
+        "name": "Check if NeptuneDB manual cluster snapshot is public.",
+        "description": "Check if NeptuneDB manual cluster snapshot is public.",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-009",
+        "name": "Check if Neptune Clusters have multi-AZ enabled.",
+        "description": "Check if Neptune Clusters have multi-AZ enabled.",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    },
+    {
+        "ID": "Neptune-010",
+        "name": "Check if Neptune Clusters storage has deletion protection enabled.",
+        "description": "Check if Neptune Clusters storage has deletion protection enabled.",
+        "cloudProvider": "AWS",
+        "service name": "neptune"
+    }
+]

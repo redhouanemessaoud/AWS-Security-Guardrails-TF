@@ -1,0 +1,128 @@
+[
+  {
+    "ID": "sagemaker:001",
+    "name": "Enable network isolation for Amazon SageMaker Training jobs",
+    "description": "Ensure that network isolation is enabled for all Amazon SageMaker Training jobs. This prevents the training container from making any outbound network calls, enhancing security by isolating the training environment.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "sagemaker:002",
+    "name": "Configure multiple instances for SageMaker endpoint production variants",
+    "description": "Ensure that production variants of Amazon SageMaker endpoints have an initial instance count greater than 1. This improves availability and eliminates single points of failure.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "sagemaker:003",
+    "name": "Configure VPC settings for Amazon SageMaker Models",
+    "description": "Ensure that all Amazon SageMaker Models are configured with VPC settings. This allows the model to access resources within your VPC and enhances network security by isolating the model within your private network.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "sagemaker:004",
+    "name": "Enable KMS encryption for Amazon SageMaker Training job volumes and outputs",
+    "description": "Ensure that all Amazon SageMaker Training jobs have KMS encryption enabled for both the EBS volumes attached to the training instances and the output artifacts. Use a customer managed KMS key for enhanced control over the encryption process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sagemaker:005",
+    "name": "Configure VPC settings for Amazon SageMaker Training jobs",
+    "description": "Ensure that all Amazon SageMaker Training jobs are configured with VPC settings. This allows the training job to access resources within your VPC and enhances network security by isolating the training environment within your private network.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "sagemaker:006",
+    "name": "Disable root access for Amazon SageMaker Notebook instances",
+    "description": "Ensure that root access is disabled for all Amazon SageMaker Notebook instances. This restricts users from having elevated privileges on the notebook instance, reducing the risk of unauthorized actions or modifications.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "sagemaker:007",
+    "name": "Enable intercontainer encryption for Amazon SageMaker Training jobs",
+    "description": "Ensure that intercontainer encryption is enabled for all Amazon SageMaker Training jobs. This encrypts traffic between containers in distributed training jobs, enhancing data protection during the training process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sagemaker:008",
+    "name": "Enable network isolation for Amazon SageMaker Models",
+    "description": "Ensure that network isolation is enabled for all Amazon SageMaker Models. This prevents the model container from making any outbound network calls, enhancing security by isolating the model environment.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "sagemaker:009",
+    "name": "Disable direct internet access for Amazon SageMaker Notebook instances",
+    "description": "Ensure that direct internet access is disabled for all Amazon SageMaker Notebook instances. This forces all network traffic from the notebook instance to go through your VPC, allowing you to monitor and control access using VPC security groups and network ACLs.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "sagemaker:010",
+    "name": "Enable KMS encryption for Amazon SageMaker Notebook instances",
+    "description": "Ensure that all Amazon SageMaker Notebook instances have data encryption enabled using a customer managed KMS key. This encrypts the EBS volumes attached to the notebook instance, protecting data at rest.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sagemaker:011",
+    "name": "Configure VPC settings for Amazon SageMaker Notebook instances",
+    "description": "Ensure that all Amazon SageMaker Notebook instances are configured with VPC settings. This allows the notebook instance to access resources within your VPC and enhances network security by isolating the notebook within your private network.",
+    "cloudProvider": "AWS",
+    "domain": "network security"
+  },
+  {
+    "ID": "sagemaker:012",
+    "name": "Enable encryption for inter-instance communication in Amazon SageMaker Data Quality Jobs",
+    "description": "Ensure that all communications between instances used for Amazon SageMaker Data Quality Jobs are encrypted. This protects data in transit during the monitoring process.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sagemaker:013",
+    "name": "Enable KMS encryption for Amazon SageMaker Data Quality Job storage volumes",
+    "description": "Ensure that Amazon SageMaker Data Quality Jobs use KMS with a customer managed key to encrypt data on attached storage volumes. This protects data at rest on the instances used for monitoring jobs.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sagemaker:014",
+    "name": "Enable KMS encryption for Amazon SageMaker Data Quality Job model artifacts",
+    "description": "Ensure that Amazon SageMaker Data Quality Jobs use KMS with a customer managed key to encrypt model artifacts. This protects the model data at rest.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sagemaker:015",
+    "name": "Enable KMS encryption for Amazon SageMaker Domain",
+    "description": "Ensure that Amazon SageMaker Domain is encrypted using a customer managed KMS key. This encrypts all EBS volumes and data stored within the domain.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sagemaker:016",
+    "name": "Enable KMS encryption for Amazon SageMaker Endpoints",
+    "description": "Ensure that all data stored in Amazon SageMaker Endpoints is encrypted at rest using a customer managed KMS key. This protects the model data and any associated metadata.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sagemaker:017",
+    "name": "Enable KMS encryption for Amazon SageMaker Flow Definition outputs",
+    "description": "Ensure that Amazon SageMaker Flow Definitions use KMS with a customer managed key for encrypting output configurations. This protects the output data of human review workflows.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "sagemaker:018",
+    "name": "Enable IMDSv2 for Amazon SageMaker Notebook Instances",
+    "description": "Ensure that all Amazon SageMaker Notebook Instances are configured to use IMDSv2 only. This provides enhanced security for accessing instance metadata by requiring session authentication.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

@@ -1,0 +1,65 @@
+[
+    {
+        "ID": "Ecs-001",
+        "name": "Check if secrets exists in ECS task definitions environment variables",
+        "description": "Check if secrets exists in ECS task definitions environment variables. If a secret is detected, the line number shown in the finding matches with the environment variable \"Name\" attribute starting to count at the \"environment\" key from the ECS Task Definition in JSON format.",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-002",
+        "name": "Amazon ECS task definitions should have secure networking modes and user definitions",
+        "description": "This control checks whether an active Amazon ECS task definition with host networking mode has privileged or user container definitions. The control fails for task definitions that have host network mode and container definitions of privileged=false or empty, and user=root or empty.",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-003",
+        "name": "ECS services should not assign public IPs automatically",
+        "description": "This control checks whether Amazon ECS services are configured to automatically assign public IP addresses. The control fails if AssignPublicIP is ENABLED and passes if it is DISABLED.",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-004",
+        "name": "ECS task definitions shouldn't have privileged containers",
+        "description": "This control checks if the privileged parameter in the container definition of Amazon ECS Task Definitions is set to true. The control fails if this parameter is equal to true.",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-005",
+        "name": "ECS clusters should use Container Insights",
+        "description": "This control checks if ECS clusters use Container Insights. This control fails if Container Insights are not set up for a cluster.",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-006",
+        "name": "ECS containers should be limited to read-only access to root filesystems",
+        "description": "This control checks if Amazon ECS containers are limited to read-only access to mounted root filesystems. The control fails if the readonlyRootFilesystem parameter is set to false or if the parameter doesn't exist in the container definition.",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-007",
+        "name": "ECS task definitions should not share the host's process namespace",
+        "description": "This control checks if Amazon ECS task definitions are configured to share a host's process namespace with its containers. The control fails if the task definition shares the host's process namespace.",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-008",
+        "name": "ECS task definitions containers should have a logging configuration",
+        "description": "This control checks if the latest active Amazon ECS task definition has a logging configuration specified. The control fails if the task definition doesn't have the logConfiguration property defined or if the value for logDriver is null in at least one container definition.",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    },
+    {
+        "ID": "Ecs-009",
+        "name": "ECS Fargate services should run on the latest Fargate platform version",
+        "description": "This control checks if Amazon ECS Fargate services are running the latest Fargate platform version. The control fails if the platform version is not the latest.",
+        "cloudProvider": "AWS",
+        "service name": "ecs"
+    }
+]

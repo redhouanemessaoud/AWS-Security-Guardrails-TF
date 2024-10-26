@@ -1,0 +1,72 @@
+[
+  {
+    "ID": "dlm:001",
+    "name": "Define EBS Snapshot Lifecycle Policies",
+    "description": "Ensure that Amazon EBS snapshot lifecycle policies are defined using AWS Data Lifecycle Manager (DLM). These policies should automate the creation, retention, and deletion of EBS snapshots according to your data retention and compliance requirements.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "dlm:002",
+    "name": "Encrypt DLM Cross-Region Copy Events with AWS KMS Customer Managed Key",
+    "description": "Ensure that cross-region copy events in Data Lifecycle Manager (DLM) are encrypted using an AWS Key Management Service (KMS) Customer Managed Key (CMK). This provides an additional layer of security for data being transferred across regions.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dlm:003",
+    "name": "Encrypt DLM Cross-Region Copy Schedules with AWS KMS Customer Managed Key",
+    "description": "Ensure that cross-region copy schedules in Data Lifecycle Manager (DLM) are encrypted using an AWS Key Management Service (KMS) Customer Managed Key (CMK). This enhances the security of scheduled cross-region data transfers.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dlm:004",
+    "name": "Implement Least Privilege Access for DLM Policies",
+    "description": "Ensure that IAM policies for Data Lifecycle Manager (DLM) follow the principle of least privilege. Grant only the necessary permissions required for DLM to perform its functions, such as creating and managing snapshots, and avoid overly permissive policies.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "dlm:005",
+    "name": "Enable Retention of DLM Policy-Created Resources",
+    "description": "Configure Data Lifecycle Manager (DLM) policies to retain snapshots and AMIs for an appropriate duration based on your data retention requirements and compliance needs. This ensures that critical point-in-time backups are available when needed.",
+    "cloudProvider": "AWS",
+    "domain": "data protection"
+  },
+  {
+    "ID": "dlm:006",
+    "name": "Use Tags for DLM Policy Resource Selection",
+    "description": "Utilize resource tags in Data Lifecycle Manager (DLM) policies to accurately select the EBS volumes or EC2 instances for snapshot or AMI creation. This ensures that the correct resources are included in your backup strategy.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "dlm:007",
+    "name": "Implement Cross-Account Sharing for DLM Snapshots",
+    "description": "When necessary, configure Data Lifecycle Manager (DLM) policies to share snapshots with other AWS accounts securely. Ensure that proper access controls are in place and that only required snapshots are shared with the appropriate accounts.",
+    "cloudProvider": "AWS",
+    "domain": "identity and access management"
+  },
+  {
+    "ID": "dlm:008",
+    "name": "Enable Fast Snapshot Restore for Critical Volumes",
+    "description": "For critical EBS volumes, configure Data Lifecycle Manager (DLM) policies to enable Fast Snapshot Restore. This feature allows for improved performance when creating volumes from snapshots, which can be crucial for quick disaster recovery scenarios.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  },
+  {
+    "ID": "dlm:009",
+    "name": "Implement Monitoring for DLM Policy Execution",
+    "description": "Set up monitoring and alerting for Data Lifecycle Manager (DLM) policy execution using Amazon CloudWatch. This helps ensure that snapshot and AMI creation processes are running as expected and allows for quick identification of any issues.",
+    "cloudProvider": "AWS",
+    "domain": "logging and monitoring"
+  },
+  {
+    "ID": "dlm:010",
+    "name": "Regularly Review and Update DLM Policies",
+    "description": "Implement a process to regularly review and update Data Lifecycle Manager (DLM) policies. This should include verifying that the policies are aligned with current business needs, compliance requirements, and best practices for data protection and cost optimization.",
+    "cloudProvider": "AWS",
+    "domain": "secure configuration"
+  }
+]

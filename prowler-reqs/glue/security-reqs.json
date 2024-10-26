@@ -1,0 +1,79 @@
+[
+    {
+        "ID": "Glue-001",
+        "name": "Check if Glue ETL Jobs have S3 encryption enabled.",
+        "description": "Check if Glue ETL Jobs have S3 encryption enabled.",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    },
+    {
+        "ID": "Glue-002",
+        "name": "Check if Glue development endpoints have S3 encryption enabled.",
+        "description": "Check if Glue development endpoints have S3 encryption enabled.",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    },
+    {
+        "ID": "Glue-003",
+        "name": "Check if Glue data catalog settings have metadata encryption enabled.",
+        "description": "Check if Glue data catalog settings have metadata encryption enabled.",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    },
+    {
+        "ID": "Glue-004",
+        "name": "Check if Glue data catalog settings have encrypt connection password enabled.",
+        "description": "Check if Glue data catalog settings have encrypt connection password enabled.",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    },
+    {
+        "ID": "Glue-005",
+        "name": "Check if Glue ML Transform Encryption at Rest is Enabled",
+        "description": "This control checks whether an AWS Glue machine learning transform is encrypted at rest. The control fails if the machine learning transform isn't encrypted at rest.",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    },
+    {
+        "ID": "Glue-006",
+        "name": "Check if Glue development endpoints have CloudWatch logs encryption enabled.",
+        "description": "Check if Glue development endpoints have CloudWatch logs encryption enabled.",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    },
+    {
+        "ID": "Glue-007",
+        "name": "Check if Glue database connection has SSL connection enabled.",
+        "description": "Check if Glue database connection has SSL connection enabled.",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    },
+    {
+        "ID": "Glue-008",
+        "name": "Check if Glue ETL Jobs have Job bookmark encryption enabled.",
+        "description": "Check if Glue ETL Jobs have Job bookmark encryption enabled.",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    },
+    {
+        "ID": "Glue-009",
+        "name": "Ensure Glue Data Catalogs are not publicly accessible.",
+        "description": "This control checks whether Glue Data Catalogs are not publicly accessible via resource policies.",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    },
+    {
+        "ID": "Glue-010",
+        "name": "Check if Glue development endpoints have Job bookmark encryption enabled.",
+        "description": "Check if Glue development endpoints have Job bookmark encryption enabled.",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    },
+    {
+        "ID": "Glue-011",
+        "name": "Check if Glue ETL Jobs have CloudWatch Logs encryption enabled.",
+        "description": "Check if Glue ETL Jobs have CloudWatch Logs encryption enabled.",
+        "cloudProvider": "AWS",
+        "service name": "glue"
+    }
+]
