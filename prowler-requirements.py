@@ -46,7 +46,7 @@ for service in os.listdir(root_dir):
                 id_counter += 1
         
         # Define the output file path for the current service's security requirements
-        output_file = "prowler-reqs/"+service+"/security-reqs.json"
+        output_file = "prowler-rules/"+service+"/security-reqs.json"
 
         # Create the output directory structure if it doesn't already exist
         os.makedirs(os.path.dirname(output_file), exist_ok=True)

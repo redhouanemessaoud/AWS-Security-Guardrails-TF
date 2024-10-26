@@ -33,7 +33,7 @@ for service, group in df.groupby('Service Name'):
         id_counter += 1
 
     # Define the output file path for the current service's requirements
-    output_file = "checkov-reqs/"+service+"/security-reqs.json"
+    output_file = "checkov-rules/"+service+"/security-reqs.json"
 
     # Create the output directory structure if it doesn't already exist
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
