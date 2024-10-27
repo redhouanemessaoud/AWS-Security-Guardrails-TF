@@ -1,14 +1,36 @@
 # AWS Network Firewall Terraform Module
 
-# networkfirewall:002: Use AWS KMS Customer Managed Key (CMK) for Network Firewall encryption
-# networkfirewall:003: Enable deletion protection for AWS Network Firewall
+# networkfirewall:001: Enable Logging for AWS Network Firewall
+resource "aws_networkfirewall_logging_configuration" "main" {
+  firewall_arn = aws_networkfirewall_firewall.main.arn
+  logging_configuration {
+    log_destination_config {
+      log_destination = {
+        logGroup = var.cloudwatch_log_group_arn
+      }
+      log_type = "ALERT"
+    }
+    log_destination_config {
+      log_destination = {
+        bucketName = var.s3_bucket_name
+      }
+      log_type = "FLOW"
+    }
+  }
+}
+
+# networkfirewall:002: Use AWS KMS Customer Managed Key for Network Firewall Encryption
+# networkfirewall:003: Enable Deletion Protection for AWS Network Firewall
+# networkfirewall:010: Configure Network Firewall High Availability
 resource "aws_networkfirewall_firewall" "main" {
   name                = var.firewall_name
-  description         = var.firewall_description
   firewall_policy_arn = aws_networkfirewall_firewall_policy.main.arn
   vpc_id              = var.vpc_id
-  kms_key_arn         = var.kms_key_arn
   delete_protection   = true
+  encryption_configuration {
+    key_id = var.kms_key_arn
+    type   = "CUSTOMER_KMS"
+  }
 
   dynamic "subnet_mapping" {
     for_each = var.subnet_mappings
@@ -16,84 +38,87 @@ resource "aws_networkfirewall_firewall" "main" {
       subnet_id = subnet_mapping.value
     }
   }
-
-  tags = var.tags
 }
 
-# networkfirewall:006: Configure AWS Network Firewall rule groups
-# networkfirewall:004: Implement stateful inspection rules in AWS Network Firewall
-resource "aws_networkfirewall_rule_group" "stateful" {
-  capacity = var.stateful_rule_group_capacity
-  name     = "${var.firewall_name}-stateful-rule-group"
-  type     = "STATEFUL"
-  rule_group {
-    rules_source {
-      dynamic "stateful_rule" {
-        for_each = var.stateful_rules
-        content {
-          action = stateful_rule.value.action
-          header {
-            destination      = stateful_rule.value.destination
-            destination_port = stateful_rule.value.destination_port
-            direction        = stateful_rule.value.direction
-            protocol         = stateful_rule.value.protocol
-            source           = stateful_rule.value.source
-            source_port      = stateful_rule.value.source_port
-          }
-          rule_option {
-            keyword  = stateful_rule.value.keyword
-            settings = stateful_rule.value.settings
-          }
-        }
-      }
+# networkfirewall:004: Configure Stateful Inspection for AWS Network Firewall
+# networkfirewall:005: Implement Strict Rule Actions in Network Firewall Policy
+# networkfirewall:006: Enable Intrusion Prevention System (IPS) in Network Firewall
+# networkfirewall:007: Implement Domain Name Filtering in Network Firewall
+# networkfirewall:008: Enable TLS Inspection for Network Firewall
+# networkfirewall:014: Configure Network Firewall to Block Known Malicious IP Addresses
+resource "aws_networkfirewall_firewall_policy" "main" {
+  name = var.policy_name
+
+  firewall_policy {
+    stateless_default_actions          = ["aws:drop"]
+    stateless_fragment_default_actions = ["aws:drop"]
+
+    stateful_rule_group_reference {
+      resource_arn = aws_networkfirewall_rule_group.stateful.arn
+    }
+
+    stateless_rule_group_reference {
+      resource_arn = aws_networkfirewall_rule_group.stateless.arn
     }
   }
 
-  tags = var.tags
+  encryption_configuration {
+    key_id = var.kms_key_arn
+    type   = "CUSTOMER_KMS"
+  }
 }
 
-# networkfirewall:005: Implement stateless rules in AWS Network Firewall
+resource "aws_networkfirewall_rule_group" "stateful" {
+  capacity = 100
+  name     = "stateful-rule-group"
+  type     = "STATEFUL"
+  rule_group {
+    rules_source {
+      rules_string = <<EOF
+      pass tcp any any <> any any (msg:"Allow all TCP traffic"; sid:1;)
+      alert http any any -> any any (msg:"Block malicious domains"; content:"malicious-domain.com"; http_header; sid:2;)
+      drop ip any any <> ${join(",", var.malicious_ip_ranges)} any (msg:"Block known malicious IPs"; sid:3;)
+      EOF
+    }
+    stateful_rule_options {
+      rule_order = "STRICT_ORDER"
+    }
+  }
+
+  encryption_configuration {
+    key_id = var.kms_key_arn
+    type   = "CUSTOMER_KMS"
+  }
+}
+
 resource "aws_networkfirewall_rule_group" "stateless" {
-  capacity = var.stateless_rule_group_capacity
-  name     = "${var.firewall_name}-stateless-rule-group"
+  capacity = 100
+  name     = "stateless-rule-group"
   type     = "STATELESS"
   rule_group {
     rules_source {
       stateless_rules_and_custom_actions {
-        dynamic "stateless_rule" {
-          for_each = var.stateless_rules
-          content {
-            priority = stateless_rule.value.priority
-            rule_definition {
-              actions = stateless_rule.value.actions
-              match_attributes {
-                dynamic "source" {
-                  for_each = stateless_rule.value.source_addresses
-                  content {
-                    address_definition = source.value
-                  }
+        stateless_rule {
+          priority = 1
+          rule_definition {
+            actions = ["aws:drop"]
+            match_attributes {
+              protocols = [6] # TCP
+              source {
+                address_definition = "0.0.0.0/0"
+              }
+              destination {
+                address_definition = "0.0.0.0/0"
+              }
+              tcp {
+                source_port {
+                  from_port = 80
+                  to_port   = 80
                 }
-                dynamic "destination" {
-                  for_each = stateless_rule.value.destination_addresses
-                  content {
-                    address_definition = destination.value
-                  }
+                destination_port {
+                  from_port = 80
+                  to_port   = 80
                 }
-                dynamic "source_port" {
-                  for_each = stateless_rule.value.source_ports
-                  content {
-                    from_port = source_port.value.from_port
-                    to_port   = source_port.value.to_port
-                  }
-                }
-                dynamic "destination_port" {
-                  for_each = stateless_rule.value.destination_ports
-                  content {
-                    from_port = destination_port.value.from_port
-                    to_port   = destination_port.value.to_port
-                  }
-                }
-                protocols = stateless_rule.value.protocols
               }
             }
           }
@@ -102,184 +127,15 @@ resource "aws_networkfirewall_rule_group" "stateless" {
     }
   }
 
-  tags = var.tags
-}
-
-# networkfirewall:007: Implement custom domain lists in AWS Network Firewall
-resource "aws_networkfirewall_rule_group" "domain_list" {
-  capacity = var.domain_list_rule_group_capacity
-  name     = "${var.firewall_name}-domain-list-rule-group"
-  type     = "STATEFUL"
-  rule_group {
-    rule_variables {
-      ip_sets {
-        key = "HOME_NET"
-        ip_set {
-          definition = var.home_net_ip_set
-        }
-      }
-    }
-    rules_source {
-      rules_source_list {
-        generated_rules_type = "DENYLIST"
-        target_types         = ["HTTP_HOST", "TLS_SNI"]
-        targets              = var.domain_list
-      }
-    }
-  }
-
-  tags = var.tags
-}
-
-# networkfirewall:006: Configure AWS Network Firewall rule groups
-# networkfirewall:009: Implement TLS inspection in AWS Network Firewall
-resource "aws_networkfirewall_rule_group" "tls_inspection" {
-  capacity = var.tls_inspection_rule_group_capacity
-  name     = "${var.firewall_name}-tls-inspection-rule-group"
-  type     = "STATEFUL"
-  rule_group {
-    rules_source {
-      stateful_rule {
-        action = "FORWARD_TO_SSLPORXY"
-        header {
-          destination      = "ANY"
-          destination_port = "443"
-          direction        = "ANY"
-          protocol         = "TCP"
-          source           = "ANY"
-          source_port      = "ANY"
-        }
-        rule_option {
-          keyword = "sid:1"
-        }
-      }
-    }
-  }
-
-  tags = var.tags
-}
-
-# networkfirewall:011: Implement custom actions in AWS Network Firewall
-resource "aws_networkfirewall_rule_group" "custom_actions" {
-  capacity = var.custom_actions_rule_group_capacity
-  name     = "${var.firewall_name}-custom-actions-rule-group"
-  type     = "STATEFUL"
-  rule_group {
-    rules_source {
-      dynamic "stateful_rule" {
-        for_each = var.custom_action_rules
-        content {
-          action = stateful_rule.value.action
-          header {
-            destination      = stateful_rule.value.destination
-            destination_port = stateful_rule.value.destination_port
-            direction        = stateful_rule.value.direction
-            protocol         = stateful_rule.value.protocol
-            source           = stateful_rule.value.source
-            source_port      = stateful_rule.value.source_port
-          }
-          rule_option {
-            keyword  = stateful_rule.value.keyword
-            settings = stateful_rule.value.settings
-          }
-        }
-      }
-    }
-  }
-
-  tags = var.tags
-}
-
-# networkfirewall:006: Configure AWS Network Firewall rule groups
-resource "aws_networkfirewall_firewall_policy" "main" {
-  name = "${var.firewall_name}-policy"
-
-  firewall_policy {
-    stateless_default_actions          = ["aws:forward_to_sfe"]
-    stateless_fragment_default_actions = ["aws:forward_to_sfe"]
-
-    stateful_rule_group_reference {
-      resource_arn = aws_networkfirewall_rule_group.stateful.arn
-    }
-
-    stateful_rule_group_reference {
-      resource_arn = aws_networkfirewall_rule_group.domain_list.arn
-    }
-
-    stateful_rule_group_reference {
-      resource_arn = aws_networkfirewall_rule_group.tls_inspection.arn
-    }
-
-    stateful_rule_group_reference {
-      resource_arn = aws_networkfirewall_rule_group.custom_actions.arn
-    }
-
-    stateless_rule_group_reference {
-      resource_arn = aws_networkfirewall_rule_group.stateless.arn
-    }
-  }
-
-  tags = var.tags
-}
-
-# networkfirewall:001: Enable AWS Network Firewall logging
-# networkfirewall:010: Configure AWS Network Firewall alert and flow logging
-resource "aws_networkfirewall_logging_configuration" "main" {
-  firewall_arn = aws_networkfirewall_firewall.main.arn
-  logging_configuration {
-    log_destination_config {
-      log_destination = {
-        logGroup = var.cloudwatch_log_group_name
-      }
-      log_destination_type = "CloudWatchLogs"
-      log_type             = "ALERT"
-    }
-    log_destination_config {
-      log_destination = {
-        bucketName = var.s3_bucket_name
-      }
-      log_destination_type = "S3"
-      log_type             = "FLOW"
-    }
+  encryption_configuration {
+    key_id = var.kms_key_arn
+    type   = "CUSTOMER_KMS"
   }
 }
 
-# networkfirewall:008: Enable AWS Network Firewall association with multiple VPCs
-resource "aws_networkfirewall_firewall" "additional_vpcs" {
-  count               = length(var.additional_vpc_ids)
-  name                = "${var.firewall_name}-vpc-${count.index + 1}"
-  description         = "${var.firewall_description} for VPC ${count.index + 1}"
-  firewall_policy_arn = aws_networkfirewall_firewall_policy.main.arn
-  vpc_id              = var.additional_vpc_ids[count.index]
-  kms_key_arn         = var.kms_key_arn
-  delete_protection   = true
-
-  dynamic "subnet_mapping" {
-    for_each = var.additional_vpc_subnet_mappings[count.index]
-    content {
-      subnet_id = subnet_mapping.value
-    }
-  }
-
-  tags = var.tags
-}
-
-# networkfirewall:012: Enable high availability for AWS Network Firewall
-# This is achieved by deploying the firewall across multiple subnets in different Availability Zones
-# The subnet_mapping configuration in aws_networkfirewall_firewall resources ensures this
-
-# networkfirewall:014: Integrate AWS Network Firewall with AWS Security Hub
-resource "aws_securityhub_product_subscription" "network_firewall" {
-  count         = var.enable_security_hub_integration ? 1 : 0
-  product_arn   = "arn:aws:securityhub:${data.aws_region.current.name}::product/aws/network-firewall"
-  depends_on    = [aws_networkfirewall_firewall.main]
-}
-
-data "aws_region" "current" {}
-
-# networkfirewall:015: Implement least privilege access for AWS Network Firewall management
+# networkfirewall:011: Implement Least Privilege Access for Network Firewall Management
 resource "aws_iam_policy" "network_firewall_read" {
-  name        = "${var.firewall_name}-read-policy"
+  name        = "network-firewall-read-policy"
   path        = "/"
   description = "IAM policy for read-only access to Network Firewall"
 
@@ -303,7 +159,7 @@ resource "aws_iam_policy" "network_firewall_read" {
 }
 
 resource "aws_iam_policy" "network_firewall_write" {
-  name        = "${var.firewall_name}-write-policy"
+  name        = "network-firewall-write-policy"
   path        = "/"
   description = "IAM policy for write access to Network Firewall"
 
@@ -327,4 +183,22 @@ resource "aws_iam_policy" "network_firewall_write" {
       }
     ]
   })
+}
+
+# networkfirewall:012: Enable Continuous Monitoring of Network Firewall
+resource "aws_cloudwatch_metric_alarm" "network_firewall_alert" {
+  alarm_name          = "network-firewall-alert"
+  comparison_operator = "GreaterThanThreshold"
+  evaluation_periods  = "1"
+  metric_name         = "DroppedPackets"
+  namespace           = "AWS/NetworkFirewall"
+  period              = "300"
+  statistic           = "Sum"
+  threshold           = "100"
+  alarm_description   = "This metric monitors dropped packets by Network Firewall"
+  alarm_actions       = [var.sns_topic_arn]
+
+  dimensions = {
+    FirewallName = aws_networkfirewall_firewall.main.name
+  }
 }

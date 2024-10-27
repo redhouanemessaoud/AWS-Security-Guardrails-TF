@@ -20,7 +20,7 @@ variable "initial_instance_count" {
 }
 
 variable "instance_type" {
-  description = "Instance type for the endpoint"
+  description = "Instance type for SageMaker resources"
   type        = string
 }
 
@@ -30,7 +30,7 @@ variable "execution_role_arn" {
 }
 
 variable "container_image" {
-  description = "Container image for the SageMaker model"
+  description = "Docker image for the SageMaker model"
   type        = string
 }
 
@@ -45,28 +45,33 @@ variable "security_group_ids" {
 }
 
 variable "kms_key_id" {
-  description = "ID of the KMS key for encryption"
+  description = "KMS key ID for encryption"
   type        = string
 }
 
-variable "training_instance_type" {
-  description = "Instance type for training jobs"
+variable "s3_output_path" {
+  description = "S3 path for output data"
   type        = string
 }
 
-variable "training_instance_count" {
-  description = "Number of instances for training jobs"
+variable "training_image" {
+  description = "Docker image for training"
+  type        = string
+}
+
+variable "instance_count" {
+  description = "Number of instances for training or monitoring jobs"
   type        = number
   default     = 1
 }
 
 variable "volume_size_in_gb" {
-  description = "Size of the EBS volume in GB for training jobs"
+  description = "Size of the EBS volume in GB"
   type        = number
   default     = 30
 }
 
-variable "notebook_name" {
+variable "notebook_instance_name" {
   description = "Name of the SageMaker notebook instance"
   type        = string
 }
@@ -82,33 +87,22 @@ variable "notebook_role_arn" {
 }
 
 variable "subnet_id" {
-  description = "ID of the subnet for the notebook instance"
+  description = "Subnet ID for the notebook instance"
   type        = string
 }
 
 variable "data_quality_job_name" {
-  description = "Name of the SageMaker data quality job"
-  type        = string
-}
-
-variable "data_quality_role_arn" {
-  description = "ARN of the IAM role for the data quality job"
+  description = "Name of the data quality job definition"
   type        = string
 }
 
 variable "data_quality_image_uri" {
-  description = "URI of the image for the data quality job"
+  description = "URI of the data quality monitoring image"
   type        = string
 }
 
-variable "data_quality_instance_count" {
-  description = "Number of instances for the data quality job"
-  type        = number
-  default     = 1
-}
-
-variable "data_quality_instance_type" {
-  description = "Instance type for the data quality job"
+variable "endpoint_name" {
+  description = "Name of the SageMaker endpoint"
   type        = string
 }
 
@@ -118,19 +112,13 @@ variable "domain_name" {
 }
 
 variable "vpc_id" {
-  description = "ID of the VPC for the SageMaker domain"
+  description = "ID of the VPC"
   type        = string
 }
 
-variable "endpoint_name" {
-  description = "Name of the SageMaker endpoint"
+variable "data_capture_s3_uri" {
+  description = "S3 URI for data capture output"
   type        = string
-}
-
-variable "alarm_names" {
-  description = "List of CloudWatch alarm names for endpoint auto-rollback"
-  type        = list(string)
-  default     = []
 }
 
 variable "flow_definition_name" {
@@ -138,38 +126,34 @@ variable "flow_definition_name" {
   type        = string
 }
 
-variable "flow_definition_role_arn" {
-  description = "ARN of the IAM role for the flow definition"
-  type        = string
-}
-
 variable "human_task_ui_arn" {
-  description = "ARN of the human task UI for the flow definition"
-  type        = string
-}
-
-variable "task_count" {
-  description = "Number of tasks for the flow definition"
-  type        = number
-  default     = 1
-}
-
-variable "task_description" {
-  description = "Description of the task for the flow definition"
+  description = "ARN of the human task UI"
   type        = string
 }
 
 variable "task_title" {
-  description = "Title of the task for the flow definition"
+  description = "Title of the human review task"
   type        = string
 }
 
-variable "workflow_arn" {
-  description = "ARN of the workflow for the flow definition"
+variable "task_description" {
+  description = "Description of the human review task"
   type        = string
 }
 
-variable "s3_output_path" {
-  description = "S3 output path for the flow definition"
+variable "task_count" {
+  description = "Number of human workers to assign to a task"
+  type        = number
+  default     = 1
+}
+
+variable "task_availability_lifetime_in_seconds" {
+  description = "Time that a task remains available for review by human workers"
+  type        = number
+  default     = 3600 # 1 hour
+}
+
+variable "work_team_arn" {
+  description = "ARN of the work team"
   type        = string
 }
