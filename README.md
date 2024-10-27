@@ -1,6 +1,6 @@
 # AWS Security Guardrails & Terraform Generator
 
-This repository contains a set of scripts designed to automate the generation of security requirements and infrastructure-as-code for AWS services. The process is broken down into four main scripts, each with specific roles in parsing, consolidating, and implementing security rules for AWS environments. 
+This repository contains a set of scripts designed to automate the generation of security requirements and infrastructure-as-code for AWS services. The process is broken down into four main scripts, each with specific roles in parsing, consolidating, and implementing security rules for AWS environments.
 
 ## Workflow Overview
 
@@ -8,13 +8,6 @@ This repository contains a set of scripts designed to automate the generation of
 2. **prowler-requirements.py** - Parses and standardizes security requirements from Prowler.
 3. **requirements-generator.py** - Uses an LLM to consolidate and enhance security requirements.
 4. **terraform-creator.py** - Generates reusable Terraform modules based on consolidated requirements or custom input.
-
-### Running Order
-
-1. `checkov-requirements.py`
-2. `prowler-requirements.py`
-3. `requirements-generator.py`
-4. `terraform-creator.py`
 
 ---
 
