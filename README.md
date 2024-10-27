@@ -1,4 +1,4 @@
-# AWS Security Requirements Automation
+# AWS Security Guardrails & Terraform Generator
 
 This repository contains a set of scripts designed to automate the generation of security requirements and infrastructure-as-code for AWS services. The process is broken down into four main scripts, each with specific roles in parsing, consolidating, and implementing security rules for AWS environments. 
 
