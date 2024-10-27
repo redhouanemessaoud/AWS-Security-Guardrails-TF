@@ -32,7 +32,7 @@ This repository contains a set of scripts designed to automate the generation of
 
 ## 2. prowler-requirements.py
 
-- **Purpose**: This script collects and organizes security requirements from Prowler. After cloning the Prowler repository, some services were excluded to keep the focus on commonly used services.
+- **Purpose**: This script collects and organizes security requirements from Prowler. After cloning the [Prowler repository](https://github.com/prowler-cloud/prowler), some services were excluded to keep the focus on commonly used services.
 - **Input**: Security rules from the Prowler repository.
 - **Output**: A JSON file, `security-reqs.json`, for each AWS service under `prowler-rules/`.
 
@@ -46,7 +46,7 @@ This repository contains a set of scripts designed to automate the generation of
 
 - **Purpose**: This script processes and consolidates requirements from Checkov and Prowler with the help of **Anthropic's Claude 3.5 Sonnet model**. The LLM enhances the initial requirements and structures them in a unified format.
 - **Input**: JSON files generated from `checkov-requirements.py` and `prowler-requirements.py`.
-- **Output**: Consolidated JSON files under `consolidated-rules/` for each service, e.g., `s3/security-reqs.json`, `glue/security-reqs.json`, etc.
+- **Output**: Consolidated JSON files under `security-guardrails/` for each service, e.g., `s3/security-reqs.json`, `glue/security-reqs.json`, etc.
 
 ### LLM Prompt Details
 
