@@ -1,6 +1,6 @@
 # AWS Security Guardrails & Terraform
 
-This repository contains a set of scripts designed to automate the generation of security requirements and secure Terraform modules for AWS services (supporting blog post can be found [here](https://naman16.github.io/cloud-security/AWS%20Security%20Guardrails%20%26%20Terraform/). The process is broken down into four main scripts, each with specific roles in parsing, consolidating, and implementing security rules for AWS environments.
+This repository contains a set of scripts designed to automate the generation of security requirements and secure Terraform modules for AWS services (supporting blog post can be found [here](https://naman16.github.io/cloud-security/AWS%20Security%20Guardrails%20%26%20Terraform/)). The process is broken down into four main scripts, each with specific roles in parsing, consolidating, and implementing security rules for AWS environments.
 
 ## Workflow Overview
 
