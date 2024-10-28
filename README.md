@@ -6,8 +6,8 @@ This repository contains a set of scripts designed to automate the generation of
 
 1. **checkov-requirements.py** - Parses and standardizes security requirements from Checkov.
 2. **prowler-requirements.py** - Parses and standardizes security requirements from Prowler.
-3. **requirements-generator.py** - Uses an LLM to consolidate and enhance security requirements.
-4. **terraform-creator.py** - Generates reusable Terraform modules based on consolidated requirements or custom input.
+3. **requirements-generator.py** - Uses a LLM to consolidate and enhance security requirements.
+4. **terraform-creator.py** - Uses a LLM to generate Terraform modules based on consolidated requirements or custom input.
 
 ---
 
