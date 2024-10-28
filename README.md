@@ -41,12 +41,6 @@ This repository contains a set of scripts designed to automate the generation of
 - **Input**: JSON files generated from `checkov-requirements.py` and `prowler-requirements.py`.
 - **Output**: Consolidated JSON files under `security-requirements/` for each service, e.g., `s3/security-reqs.json`, `glue/security-reqs.json`, etc.
 
-### LLM Prompt Details
-
-The **LLM prompt** is customized for **AWS environments** with an emphasis on **multi-account setups**. It directs the model to generate requirements that accommodate common practices in multi-account AWS configurations, like account isolation and cross-account permissions. 
-
-While designed for AWS, the prompt can be adapted for other cloud providers like **Azure** by changing the cloud-specific terminology. The prompt uses **Checkov** and **Prowler** as baseline sources but incorporates the LLM's AWS knowledge to enhance and add context to the requirements. 
-
 #### Extensibility
 
 This setup is flexible and can be expanded by:
