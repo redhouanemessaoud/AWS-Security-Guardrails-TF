@@ -1,4 +1,4 @@
-# AWS Security Guardrails & Terraform Generator
+# AWS Security Guardrails & Terraform
 
 This repository contains a set of scripts designed to automate the generation of security requirements and secure Terraform modules for AWS services (supporting blog post can be found [here](https://naman16.github.io/cloud-security/AWS%20Security%20Guardrails%20%26%20Terraform/). The process is broken down into four main scripts, each with specific roles in parsing, consolidating, and implementing security rules for AWS environments.
 
@@ -39,7 +39,7 @@ This repository contains a set of scripts designed to automate the generation of
 
 - **Purpose**: This script processes and consolidates requirements from Checkov and Prowler with the help of **Anthropic's Claude 3.5 Sonnet model**. The LLM enhances the initial requirements and structures them in a unified format.
 - **Input**: JSON files generated from `checkov-requirements.py` and `prowler-requirements.py`.
-- **Output**: Consolidated JSON files under `security-guardrails/` for each service, e.g., `s3/security-reqs.json`, `glue/security-reqs.json`, etc.
+- **Output**: Consolidated JSON files under `security-requirements/` for each service, e.g., `s3/security-reqs.json`, `glue/security-reqs.json`, etc.
 
 ### LLM Prompt Details
 
@@ -67,7 +67,7 @@ This setup is flexible and can be expanded by:
 
 ### Custom Requirements Option
 
-If you already have security requirements or policies defined, you can skip the Checkov and Prowler steps and provide your own JSON files directly to `terraform-creator.py`. Ensure your custom JSON files follow the same standardized format used by the `requirements-generator.py` output, and place them in the `security-guardrails/` directory. This allows you to leverage this automation solely for Terraform generation without modifying or generating new requirements.
+If you already have security requirements or policies defined, you can skip the Checkov and Prowler steps and provide your own JSON files directly to `terraform-creator.py`. Ensure your custom JSON files follow the same standardized format used by the `requirements-generator.py` output, and place them in the `security-requirements/` directory. This allows you to leverage this automation solely for Terraform generation without modifying or generating new requirements.
 
 ### LLM Prompt Details
 
