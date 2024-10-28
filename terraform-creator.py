@@ -161,7 +161,7 @@ def create_terraform_module(service_name, num_service_requirement, service_requi
 if __name__ == '__main__':
     # Directory containing security requirements for different services
     # This directory should contain subdirectories for each AWS service
-    security_reqs_directory = "security-guardrails/"
+    security_reqs_directory = "security-requirements/"
 
     # Process each service directory
     for service_name in os.listdir(security_reqs_directory):

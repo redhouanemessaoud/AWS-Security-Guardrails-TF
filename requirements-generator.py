@@ -466,7 +466,7 @@ def main():
     # Define input and output directory paths
     prowler_path = "prowler-rules"        # Directory containing Prowler requirements
     checkov_path = "checkov-rules"        # Directory containing Checkov requirements
-    output_path  = "security-guardrails"  # Directory for storing consolidated output
+    output_path  = "security-requirements"  # Directory for storing consolidated output
     
     # Initialize the SecurityRequirementsConsolidator with specified paths
     consolidator = SecurityRequirementsConsolidator(
