@@ -6,8 +6,8 @@ This repository contains a set of scripts designed to automate the generation of
 
 1. **checkov-requirements.py** - Parses and standardizes security requirements from Checkov.
 2. **prowler-requirements.py** - Parses and standardizes security requirements from Prowler.
-3. **requirements-generator.py** - Uses an LLM to consolidate and enhance security requirements.
-4. **terraform-creator.py** - Uses an LLM to generate Terraform modules based on consolidated requirements or custom input.
+3. **requirements-generator.py** - Uses an LLM to consolidate and enhance security requirements (Claude via Bedrock by default, optionally Hugging Face).
+4. **terraform-creator.py** - Uses an LLM to generate Terraform modules based on consolidated requirements or custom input. By default this uses Claude through Bedrock, but you can enable a Hugging Face model using the same environment variables as above.
 
 ---
 
@@ -37,7 +37,7 @@ This repository contains a set of scripts designed to automate the generation of
 
 ## 3. requirements-generator.py
 
-- **Purpose**: This script processes and consolidates requirements from Checkov and Prowler with the help of **Anthropic's Claude 3.5 Sonnet model**. The LLM enhances the initial requirements and structures them in a unified format.
+- **Purpose**: This script processes and consolidates requirements from Checkov and Prowler with the help of **Anthropic's Claude 3.5 Sonnet model** by default. You can also use a Hugging Face model by setting the `USE_HF` environment variable to `true` and providing `HF_MODEL_ID` (and optionally `HF_API_TOKEN`). The LLM enhances the initial requirements and structures them in a unified format.
 - **Input**: JSON files generated from `checkov-requirements.py` and `prowler-requirements.py`.
 - **Output**: Consolidated JSON files under `security-requirements/` for each service, e.g., `s3/security-reqs.json`, `glue/security-reqs.json`, etc.
 
@@ -52,7 +52,7 @@ This setup is flexible and can be expanded by:
 
 ## 4. terraform-creator.py
 
-- **Purpose**: This script generates **Terraform modules** for each AWS service based on the consolidated security requirements, focusing on reusability. The generated modules provide a modular approach, allowing users to use components like **S3 buckets** and **KMS keys** consistently across multiple configurations by passing required values.
+- **Purpose**: This script generates **Terraform modules** for each AWS service based on the consolidated security requirements, focusing on reusability. The generated modules provide a modular approach, allowing users to use components like **S3 buckets** and **KMS keys** consistently across multiple configurations by passing required values. The LLM provider can be switched to Hugging Face by setting `USE_HF=true`.
 - **Input**: Consolidated JSON files from `requirements-generator.py` or custom requirements JSON files formatted as specified.
 - **Output**: A directory for each AWS service under `aws-terraform/`, containing:
   - `main.tf`: Contains Terraform resources and configurations.

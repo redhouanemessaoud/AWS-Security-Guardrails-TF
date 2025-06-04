@@ -6,22 +6,41 @@ import boto3
 import re
 from boto3 import client
 from botocore.config import Config
+import requests
 
 # Configuration for the Bedrock client with an extended read timeout
 config = Config(read_timeout=1000)
 
 # Initialize the Bedrock client for AWS services
-bedrock = boto3.client(service_name='bedrock-runtime', 
+bedrock = boto3.client(service_name='bedrock-runtime',
                        region_name='us-east-1',
                        config=config)
 
 # Model ID to be used with the Bedrock API
 model_id = "anthropic.claude-3-5-sonnet-20240620-v1:0"
 
+# Settings for Hugging Face API (optional)
+HF_MODEL_ID = os.environ.get("HF_MODEL_ID", "HuggingFaceH4/zephyr-7b-beta")
+HF_API_TOKEN = os.environ.get("HF_API_TOKEN")
+USE_HF = os.environ.get("USE_HF", "false").lower() == "true"
+
+def invoke_hf(prompt: str) -> str:
+    """Invoke a Hugging Face text-generation model and return the generated text."""
+    api_url = f"https://api-inference.huggingface.co/models/{HF_MODEL_ID}"
+    headers = {}
+    if HF_API_TOKEN:
+        headers["Authorization"] = f"Bearer {HF_API_TOKEN}"
+    response = requests.post(api_url, headers=headers, json={"inputs": prompt})
+    response.raise_for_status()
+    data = response.json()
+    if isinstance(data, list) and data:
+        return data[0].get("generated_text", "")
+    return data.get("generated_text", "")
+
 class SecurityRequirementsConsolidator:
     """
     A class to consolidate security requirements from multiple sources (Prowler and Checkov)
-    and enhance them using AWS Bedrock's Claude LLM.
+    and enhance them using a large language model (AWS Bedrock Claude by default).
 
     This class reads security requirements from specified directories, processes them using
     an LLM to improve quality and consistency, and saves the consolidated output.
@@ -277,15 +296,18 @@ class SecurityRequirementsConsolidator:
 
         request = json.dumps(prompt)
 
-        # Call Bedrock with the prompt to generate enhanced requirements
-        response = bedrock.invoke_model(
-            modelId=model_id,
-            body=request
-        )
-
-        # Extract and format the model response
-        model_response = json.loads(response["body"].read())
-        response_text = model_response["content"][0]["text"]
+        if USE_HF:
+            # Combine system and user prompts into a single string for HF models
+            combined_prompt = f"{sys_prompt}\n\n{user_prompt}"
+            response_text = invoke_hf(combined_prompt)
+        else:
+            # Call Bedrock with the prompt to generate enhanced requirements
+            response = bedrock.invoke_model(
+                modelId=model_id,
+                body=request
+            )
+            model_response = json.loads(response["body"].read())
+            response_text = model_response["content"][0]["text"]
         
         # Format and clean the requirements before returning
         return self.format_requirements(response_text)

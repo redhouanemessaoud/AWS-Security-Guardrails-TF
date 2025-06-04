@@ -4,6 +4,7 @@ import boto3
 import re
 from boto3 import client
 from botocore.config import Config
+import requests
 
 # Configuration for the Bedrock client with extended read timeout
 # This is necessary for handling large responses from the model
@@ -11,13 +12,31 @@ config = Config(read_timeout=1000)
 
 # Initialize the Bedrock client for AWS services
 # This client will be used to interact with the AWS Bedrock Runtime service
-bedrock = boto3.client(service_name='bedrock-runtime', 
+bedrock = boto3.client(service_name='bedrock-runtime',
                       region_name='us-east-1',
                       config=config)
 
 # Model ID for Claude 3.5 Sonnet
 # This specific model version is optimized for infrastructure and security tasks
 model_id = "anthropic.claude-3-5-sonnet-20240620-v1:0"
+
+def invoke_hf(prompt: str) -> str:
+    """Invoke a Hugging Face text-generation model and return the generated text."""
+    api_url = f"https://api-inference.huggingface.co/models/{HF_MODEL_ID}"
+    headers = {}
+    if HF_API_TOKEN:
+        headers["Authorization"] = f"Bearer {HF_API_TOKEN}"
+    response = requests.post(api_url, headers=headers, json={"inputs": prompt})
+    response.raise_for_status()
+    data = response.json()
+    if isinstance(data, list) and data:
+        return data[0].get("generated_text", "")
+    return data.get("generated_text", "")
+
+# Settings for Hugging Face API (optional)
+HF_MODEL_ID = os.environ.get("HF_MODEL_ID", "HuggingFaceH4/zephyr-7b-beta")
+HF_API_TOKEN = os.environ.get("HF_API_TOKEN")
+USE_HF = os.environ.get("USE_HF", "false").lower() == "true"
 
 def read_json_file(file_path):
     """
@@ -45,7 +64,7 @@ def create_terraform_module(service_name, num_service_requirement, service_requi
     """
     Generate a Terraform module based on provided security requirements.
 
-    This function constructs a prompt for the Claude model to generate secure Terraform configurations.
+    This function constructs a prompt for the LLM (Claude by default) to generate secure Terraform configurations.
     It includes detailed instructions about security best practices, implementation guidelines,
     and formatting requirements.
 
@@ -147,15 +166,19 @@ def create_terraform_module(service_name, num_service_requirement, service_requi
 
     request = json.dumps(prompt)
 
-    # Make the API call to Bedrock
-    response = bedrock.invoke_model(
-        modelId=model_id,
-        body=request
-    )
+    if USE_HF:
+        combined_prompt = f"{sys_prompt}\n\n{user_prompt}"
+        response_text = invoke_hf(combined_prompt)
+    else:
+        # Make the API call to Bedrock
+        response = bedrock.invoke_model(
+            modelId=model_id,
+            body=request
+        )
 
-    # Parse and extract the response
-    model_response = json.loads(response["body"].read())
-    response_text = model_response["content"][0]["text"]
+        # Parse and extract the response
+        model_response = json.loads(response["body"].read())
+        response_text = model_response["content"][0]["text"]
     return response_text
 
 if __name__ == '__main__':
